@@ -2336,6 +2336,9 @@ const ComparisonTable = ({ universities, onRemove }) => {
     universities.forEach(uni => {
       if (uni.programs) {
         Object.keys(uni.programs).forEach(program => programSet.add(program));
+      } else {
+        // Add default programs for universities without full program data
+        Object.keys(generateDefaultPrograms(uni)).forEach(program => programSet.add(program));
       }
     });
     return Array.from(programSet).sort();
