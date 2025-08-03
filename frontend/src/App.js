@@ -70,6 +70,48 @@ const universitiesData = [
     entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)",
     ucasPoints: "152",
     scholarships: "Rhodes Scholarship, Clarendon Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Functional Programming, Logic & Proof, Digital Systems, Machine Learning",
+        duration: "3 years (BA), 4 years (MEng)",
+        entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
+      },
+      "Engineering": {
+        courseContent: "Engineering Science, Materials, Electrical, Mechanical, Chemical Engineering",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A (including Mathematics and Physics)"
+      },
+      "Business & Management": {
+        courseContent: "Strategy, Finance, Marketing, Entrepreneurship, International Business",
+        duration: "3 years (BA)",
+        entryRequirements: "A*A*A (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Pathology, Pharmacology",
+        duration: "6 years (BM BCh)",
+        entryRequirements: "A*AA (including Chemistry and Biology/Physics/Mathematics)"
+      },
+      "Law": {
+        courseContent: "Constitutional Law, Contract Law, Criminal Law, Jurisprudence, European Law",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (no specific subjects)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Economic History, Development Economics",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (Mathematics strongly recommended)"
+      },
+      "Psychology": {
+        courseContent: "Experimental Psychology, Social Psychology, Developmental Psychology, Neuroscience",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (Mathematics or Science recommended)"
+      },
+      "English Literature": {
+        courseContent: "Anglo-Saxon Literature, Shakespeare, Romantic Poetry, Modern Literature",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (including English Literature)"
+      }
+    },
     courseContent: "Functional Programming, Logic & Proof, Digital Systems, Machine Learning",
     duration: "3 years (BA), 4 years (MEng)",
     employmentRate: "99%",
@@ -85,6 +127,48 @@ const universitiesData = [
     entryRequirements: "A*A*A (including Mathematics and Further Mathematics)",
     ucasPoints: "152",
     scholarships: "Imperial College Scholarships, President's Scholarships",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Algorithms, Systems Architecture, AI, Data Science",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "A*A*A (including Mathematics and Further Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aeronautical, Chemical, Civil, Electrical, Mechanical, Materials Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "A*A*A (including Mathematics and Physics)"
+      },
+      "Business & Management": {
+        courseContent: "Finance, Strategy, Operations, Innovation, Technology Management",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Medicine": {
+        courseContent: "Biomedical Sciences, Clinical Medicine, Surgery, Public Health",
+        duration: "6 years (MBBS)",
+        entryRequirements: "A*AA (including Chemistry and Biology)"
+      },
+      "Physics": {
+        courseContent: "Quantum Mechanics, Relativity, Particle Physics, Astrophysics",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "A*AA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Biochemistry",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "A*AA (including Chemistry and Mathematics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "A*A*A (including Mathematics and Further Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Genetics, Ecology, Evolution, Biochemistry",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "A*AA (including Biology and Chemistry)"
+      }
+    },
     courseContent: "Programming, Algorithms, Systems Architecture, AI, Data Science",
     duration: "3 years (BEng), 4 years (MEng)",
     employmentRate: "97%",
