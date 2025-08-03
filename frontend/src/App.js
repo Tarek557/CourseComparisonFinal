@@ -2329,6 +2329,7 @@ const UniversityCard = ({ university, isSelected, onSelect, isCompareMode }) => 
 
 const ComparisonTable = ({ universities, onRemove }) => {
   const [selectedProgram, setSelectedProgram] = useState('Computer Science');
+  const [activeTab, setActiveTab] = useState('comparison');
   
   // Get all available programs across selected universities
   const availablePrograms = useMemo(() => {
