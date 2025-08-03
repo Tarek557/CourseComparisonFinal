@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import './App.css';
 
-// Comprehensive UK Universities Data for Computer Science Programs
+// Comprehensive UK Universities Data with Multiple Program Types
 const universitiesData = [
   {
     id: 1,
@@ -13,7 +13,49 @@ const universitiesData = [
     entryRequirements: "A*AA (including Mathematics)",
     ucasPoints: "144",
     scholarships: "Gates Cambridge Scholarship, Trinity College Scholarships",
-    courseContent: "Algorithms, Computer Systems, Software Engineering, Machine Learning, AI",
+    programs: {
+      "Computer Science": {
+        courseContent: "Algorithms, Computer Systems, Software Engineering, Machine Learning, AI",
+        duration: "3 years (BA), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Mathematics, Physics, Materials Science, Thermodynamics, Design Engineering",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics and Physics)"
+      },
+      "Business & Management": {
+        courseContent: "Strategy, Finance, Marketing, Operations, Organizational Behaviour",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Anatomy, Physiology, Pathology, Clinical Medicine, Research Methods",
+        duration: "6 years (MB BChir)",
+        entryRequirements: "A*AA (including Chemistry and Biology)"
+      },
+      "Law": {
+        courseContent: "Constitutional Law, Contract Law, Criminal Law, Human Rights, Legal Theory",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (no specific subjects)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Mathematical Economics",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (including Mathematics recommended)"
+      },
+      "English Literature": {
+        courseContent: "Medieval Literature, Renaissance Drama, Victorian Novel, Modern Poetry",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA (including English Literature)"
+      }
+    },
+    courseContent: "Algorithms, Computer Systems, Software Engineering, Machine Learning, AI", // Default for display
     duration: "3 years (BA), 4 years (MEng)",
     employmentRate: "98%",
     researchRating: "5*"
