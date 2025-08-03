@@ -1,6 +1,46 @@
 import React, { useState, useMemo } from 'react';
 import './App.css';
 
+// Function to generate default programs for universities without full program data
+const generateDefaultPrograms = (university) => {
+  const basePrograms = {
+    "Computer Science": {
+      courseContent: university.courseContent || "Programming, Software Engineering, Data Structures, Algorithms",
+      duration: university.duration || "3 years (BSc), 4 years (MEng)",
+      entryRequirements: university.entryRequirements
+    },
+    "Engineering": {
+      courseContent: "Mathematics, Physics, Design, Problem-solving, Technical Skills",
+      duration: "3 years (BEng), 4 years (MEng)",
+      entryRequirements: university.entryRequirements.includes("Mathematics") ? 
+        university.entryRequirements : university.entryRequirements + " and Physics"
+    },
+    "Business & Management": {
+      courseContent: "Strategy, Finance, Marketing, Operations, Leadership, Economics",
+      duration: "3 years (BSc/BA)",
+      entryRequirements: university.entryRequirements.replace("including Mathematics", "no specific subjects")
+    },
+    "Medicine": {
+      courseContent: "Anatomy, Physiology, Pathology, Clinical Practice, Medical Ethics",
+      duration: "5-6 years (MBBS/MBChB)",
+      entryRequirements: university.entryRequirements.includes("Chemistry") ? 
+        university.entryRequirements : "AAA (including Chemistry and Biology)"
+    },
+    "Law": {
+      courseContent: "Legal System, Contract Law, Criminal Law, Constitutional Law, Legal Skills",
+      duration: "3 years (LLB)",
+      entryRequirements: university.entryRequirements.replace(/including.*/, "no specific subjects")
+    },
+    "Psychology": {
+      courseContent: "Cognitive Psychology, Social Psychology, Research Methods, Statistics",
+      duration: "3 years (BSc)",
+      entryRequirements: university.entryRequirements
+    }
+  };
+  
+  return basePrograms;
+};
+
 // Comprehensive UK Universities Data with Multiple Program Types
 const universitiesData = [
   {
