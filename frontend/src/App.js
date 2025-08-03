@@ -2381,9 +2381,9 @@ function App() {
                 <div className="text-gray-600">Selected for Comparison</div>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
-                <div className="text-3xl font-bold text-purple-600 mb-2">3</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">8+</div>
                 <div className="text-gray-600">Program Types</div>
-                <div className="text-sm text-gray-500 mt-1">CS, Computing, Data Science</div>
+                <div className="text-sm text-gray-500 mt-1">CS, Engineering, Business, Medicine, Law, etc.</div>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-yellow-600 mb-2">THE</div>
