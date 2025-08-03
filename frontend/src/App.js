@@ -184,6 +184,48 @@ const universitiesData = [
     entryRequirements: "A*AA (including Mathematics)",
     ucasPoints: "144", 
     scholarships: "UCL Global Undergraduate Scholarship, Denys Holland Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Data Structures, AI, Machine Learning, Human-Computer Interaction",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Civil, Mechanical, Electronic, Chemical, Biomedical Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics and Physics)"
+      },
+      "Business & Management": {
+        courseContent: "Management Science, Finance, Marketing, Operations Research",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Medicine": {
+        courseContent: "Medical Sciences, Clinical Practice, Public Health, Medical Ethics",
+        duration: "6 years (MBBS)",
+        entryRequirements: "A*AA (including Chemistry and Biology)"
+      },
+      "Law": {
+        courseContent: "English Legal System, Contract Law, Tort Law, Criminal Law, EU Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "A*AA (no specific subjects)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Economic Policy",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Neuroscience, Social Psychology, Statistics",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics/Science)"
+      },
+      "Architecture": {
+        courseContent: "Design Studio, History of Architecture, Building Technology, Urban Planning",
+        duration: "3 years (BSc), 2 years (MArch)",
+        entryRequirements: "A*AA (no specific subjects, portfolio required)"
+      }
+    },
     courseContent: "Programming, Data Structures, AI, Machine Learning, Human-Computer Interaction",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "95%",
@@ -199,6 +241,48 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Edinburgh Global Undergraduate Scholarships, Principal's Career Development PhD Scholarships",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Algorithms, AI, Machine Learning, Software Engineering, Data Science",
+        duration: "4 years (BEng/BSc), 5 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Electronic, Mechanical, Chemical, Civil, Structural Engineering",
+        duration: "4 years (BEng), 5 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Business & Management": {
+        courseContent: "Strategy, International Business, Entrepreneurship, Finance",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Medical Sciences, Clinical Medicine, Surgery, Community Medicine",
+        duration: "6 years (MBChB)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Law": {
+        courseContent: "Scots Law, Criminal Law, Contract Law, Constitutional Law",
+        duration: "4 years (LLB)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Economics": {
+        courseContent: "Economic Theory, Applied Economics, Economic History, Development Economics",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including Mathematics recommended)"
+      },
+      "Veterinary Medicine": {
+        courseContent: "Animal Anatomy, Veterinary Pathology, Clinical Practice, Animal Welfare",
+        duration: "5 years (BVM&S)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      }
+    },
     courseContent: "Programming, Algorithms, AI, Machine Learning, Software Engineering, Data Science",
     duration: "4 years (BEng/BSc), 5 years (MEng)",
     employmentRate: "94%",
@@ -214,6 +298,48 @@ const universitiesData = [
     entryRequirements: "AAA (including Mathematics)",
     ucasPoints: "144",
     scholarships: "King's International Scholarship, Dickson Poon Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Data Structures, AI, Cybersecurity, Software Engineering",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Electronic Engineering, Robotics, Telecommunications, Biomedical Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Business & Management": {
+        courseContent: "International Management, Digital Business, Strategic Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Medical Education, Clinical Skills, Research Methods, Global Health",
+        duration: "5 years (MBBS)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Law": {
+        courseContent: "English Law, International Law, Human Rights Law, Medical Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Psychology": {
+        courseContent: "Clinical Psychology, Neuropsychology, Health Psychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics/Science)"
+      },
+      "International Relations": {
+        courseContent: "Global Politics, Diplomatic Studies, International Security, Political Theory",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "History": {
+        courseContent: "British History, European History, World History, Historical Methods",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (including History)"
+      }
+    },
     courseContent: "Programming, Data Structures, AI, Cybersecurity, Software Engineering",
     duration: "3 years (BSc), 4 years (MSci)",
     employmentRate: "92%", 
