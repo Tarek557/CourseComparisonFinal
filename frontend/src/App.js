@@ -355,6 +355,48 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Manchester Global Part-time MBA Scholarship, Undergraduate Academic Achievement Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Algorithms, AI, Data Science, Software Engineering, Cybersecurity",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aerospace, Chemical, Civil, Electrical, Mechanical, Materials Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Business & Management": {
+        courseContent: "Finance, Marketing, Operations, International Business, Innovation",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Medical Sciences, Clinical Practice, Community Health, Medical Research",
+        duration: "5 years (MBChB)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Law": {
+        courseContent: "English Legal System, Commercial Law, Criminal Law, International Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Economics": {
+        courseContent: "Economic Theory, Econometrics, Development Economics, Financial Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics/Science)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Genetics, Ecology, Evolution, Biochemistry",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+      }
+    },
     courseContent: "Programming, Algorithms, AI, Data Science, Software Engineering, Cybersecurity",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "91%",
