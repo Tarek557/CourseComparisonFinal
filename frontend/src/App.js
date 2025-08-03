@@ -794,6 +794,7 @@ function App() {
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-blue-600 mb-2">{filteredAndSortedUniversities.length}</div>
                 <div className="text-gray-600">Universities Listed</div>
+                <div className="text-sm text-gray-500 mt-1">37 total available</div>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-green-600 mb-2">{selectedUniversities.length}</div>
