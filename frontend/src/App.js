@@ -2783,57 +2783,61 @@ const ComparisonTable = ({ universities, onRemove }) => {
       
       {/* Tab Content */}
       {activeTab === 'comparison' ? (
-        <table className="w-full">
-          <thead className="bg-gray-50">
-            <tr>
-              <th className="text-left p-4 font-semibold text-gray-700 border-b">Criteria</th>
-              {universities.map((uni, index) => (
-                <th key={uni.id} className="text-left p-4 font-semibold text-gray-700 border-b min-w-64">
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <span className="block">{uni.name}</span>
-                      <span className="text-sm text-purple-600 font-normal">
-                        {selectedProgram}
-                      </span>
+        <div className="overflow-x-auto">
+          <table className="w-full">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="text-left p-4 font-semibold text-gray-700 border-b">Criteria</th>
+                {universities.map((uni, index) => (
+                  <th key={uni.id} className="text-left p-4 font-semibold text-gray-700 border-b min-w-64">
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <span className="block">{uni.name}</span>
+                        <span className="text-sm text-purple-600 font-normal">
+                          {selectedProgram}
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => onRemove(uni.id)}
+                        className="ml-2 text-red-500 hover:text-red-700 font-normal text-sm"
+                      >
+                        Remove
+                      </button>
                     </div>
-                    <button
-                      onClick={() => onRemove(uni.id)}
-                      className="ml-2 text-red-500 hover:text-red-700 font-normal text-sm"
-                    >
-                      Remove
-                    </button>
-                  </div>
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {comparisonFields.map((field, fieldIndex) => (
-              <tr key={field.key} className={fieldIndex % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                <td className="p-4 font-semibold text-gray-700 border-r">
-                  {field.label}
-                  {field.type === 'program-specific' && (
-                    <span className="text-xs text-purple-600 block">({selectedProgram})</span>
-                  )}
-                </td>
-                {universities.map((uni) => (
-                  <td key={`${uni.id}-${field.key}`} className="p-4 border-r">
-                    {getCellValue(uni, field)}
-                  </td>
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      
-      {/* Program Availability Notice */}
-      <div className="bg-blue-50 p-4 border-t">
-        <p className="text-sm text-blue-700">
-          <span className="font-semibold">Note:</span> Course content, entry requirements, and duration may vary by program type. 
-          Select different programs above to see specific requirements for each field of study.
-        </p>
-      </div>
+            </thead>
+            <tbody>
+              {comparisonFields.map((field, fieldIndex) => (
+                <tr key={field.key} className={fieldIndex % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
+                  <td className="p-4 font-semibold text-gray-700 border-r">
+                    {field.label}
+                    {field.type === 'program-specific' && (
+                      <span className="text-xs text-purple-600 block">({selectedProgram})</span>
+                    )}
+                  </td>
+                  {universities.map((uni) => (
+                    <td key={`${uni.id}-${field.key}`} className="p-4 border-r">
+                      {getCellValue(uni, field)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          
+          {/* Program Availability Notice */}
+          <div className="bg-blue-50 p-4 border-t">
+            <p className="text-sm text-blue-700">
+              <span className="font-semibold">Note:</span> Course content, entry requirements, and duration may vary by program type. 
+              Select different programs above to see specific requirements for each field of study.
+            </p>
+          </div>
+        </div>
+      ) : (
+        <StudentReviewsTab />
+      )}
     </div>
   );
 };
