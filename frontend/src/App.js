@@ -2611,32 +2611,178 @@ const ComparisonTable = ({ universities, onRemove }) => {
     }
   };
 
+  const StudentReviewsTab = () => {
+    return (
+      <div className="bg-white">
+        <div className="grid gap-6">
+          {universities.map((university) => {
+            const reviewData = getStudentReviews(university.name);
+            
+            return (
+              <div key={university.id} className="border border-gray-200 rounded-lg p-6">
+                {/* University Header */}
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800">{university.name}</h3>
+                    <div className="flex items-center gap-2 mt-1">
+                      <div className="flex items-center">
+                        <span className="text-2xl font-bold text-yellow-500 mr-1">
+                          {reviewData.overallRating.toFixed(1)}
+                        </span>
+                        <div className="flex">
+                          {[...Array(5)].map((_, i) => (
+                            <span 
+                              key={i} 
+                              className={i < Math.floor(reviewData.overallRating) ? 'text-yellow-400' : 'text-gray-300'}
+                            >
+                              ★
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                      <span className="text-sm text-gray-600">
+                        ({reviewData.totalReviews} reviews)
+                      </span>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => onRemove(university.id)}
+                    className="text-red-500 hover:text-red-700 text-sm"
+                  >
+                    Remove
+                  </button>
+                </div>
+
+                {/* Category Ratings */}
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-6">
+                  {Object.entries(reviewData.categories).map(([category, rating]) => (
+                    <div key={category} className="text-center">
+                      <div className="text-sm text-gray-600 mb-1">{category}</div>
+                      <div className="text-lg font-bold text-blue-600">{rating.toFixed(1)}</div>
+                      <div className="flex justify-center">
+                        {[...Array(5)].map((_, i) => (
+                          <span 
+                            key={i} 
+                            className={i < Math.floor(rating) ? 'text-yellow-400 text-xs' : 'text-gray-300 text-xs'}
+                          >
+                            ★
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Individual Reviews */}
+                <div className="space-y-4">
+                  <h4 className="font-semibold text-gray-800 border-b pb-2">Recent Student Reviews</h4>
+                  {reviewData.reviews.map((review, index) => (
+                    <div key={index} className="border-l-4 border-blue-200 pl-4 py-2">
+                      <div className="flex justify-between items-start mb-2">
+                        <div className="flex items-center gap-2">
+                          <div className="flex">
+                            {[...Array(5)].map((_, i) => (
+                              <span 
+                                key={i} 
+                                className={i < review.rating ? 'text-yellow-400 text-sm' : 'text-gray-300 text-sm'}
+                              >
+                                ★
+                              </span>
+                            ))}
+                          </div>
+                          <span className="font-semibold text-gray-800 text-sm">{review.title}</span>
+                        </div>
+                        <div className="text-xs text-gray-500">
+                          {review.source}
+                        </div>
+                      </div>
+                      <p className="text-gray-700 text-sm mb-2 leading-relaxed">{review.review}</p>
+                      <div className="flex justify-between items-center text-xs text-gray-500">
+                        <div>
+                          <span className="font-medium">{review.course}</span> • {review.year} • {review.date}
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <span>👍 {review.helpful} helpful</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Source Attribution */}
+                <div className="mt-4 p-3 bg-gray-50 rounded text-xs text-gray-600">
+                  <strong>Sources:</strong> Reviews compiled from StudentCrowd, Whatuni, and The Student Room. 
+                  Reviews are authentic student experiences and may not reflect all perspectives.
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        
+        {/* General Notice */}
+        <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+          <p className="text-sm text-blue-800">
+            <span className="font-semibold">Important:</span> These reviews represent individual student experiences and opinions. 
+            Consider multiple sources and visit universities in person when making your decision. 
+            Reviews are sourced from public platforms including StudentCrowd, Whatuni, and The Student Room forums.
+          </p>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div>
             <h2 className="text-2xl font-bold">University Comparison</h2>
-            <p className="text-blue-100">Compare Programs Side-by-Side</p>
+            <p className="text-blue-100">Compare Programs & Student Reviews Side-by-Side</p>
           </div>
           
-          {/* Program Type Selector */}
-          <div className="flex flex-col">
-            <label className="text-blue-100 text-sm mb-1">Select Program:</label>
-            <select
-              value={selectedProgram}
-              onChange={(e) => setSelectedProgram(e.target.value)}
-              className="bg-white text-gray-800 px-3 py-2 rounded-lg font-semibold min-w-48"
-            >
-              {availablePrograms.map(program => (
-                <option key={program} value={program}>{program}</option>
-              ))}
-            </select>
-          </div>
+          {activeTab === 'comparison' && (
+            <div className="flex flex-col">
+              <label className="text-blue-100 text-sm mb-1">Select Program:</label>
+              <select
+                value={selectedProgram}
+                onChange={(e) => setSelectedProgram(e.target.value)}
+                className="bg-white text-gray-800 px-3 py-2 rounded-lg font-semibold min-w-48"
+              >
+                {availablePrograms.map(program => (
+                  <option key={program} value={program}>{program}</option>
+                ))}
+              </select>
+            </div>
+          )}
+        </div>
+        
+        {/* Tab Navigation */}
+        <div className="flex gap-2 mt-4">
+          <button
+            onClick={() => setActiveTab('comparison')}
+            className={`px-4 py-2 rounded-lg font-medium transition-all ${
+              activeTab === 'comparison' 
+                ? 'bg-white text-blue-600' 
+                : 'bg-blue-700 text-blue-100 hover:bg-blue-600'
+            }`}
+          >
+            Program Comparison
+          </button>
+          <button
+            onClick={() => setActiveTab('reviews')}
+            className={`px-4 py-2 rounded-lg font-medium transition-all ${
+              activeTab === 'reviews' 
+                ? 'bg-white text-blue-600' 
+                : 'bg-blue-700 text-blue-100 hover:bg-blue-600'
+            }`}
+          >
+            Student Reviews
+          </button>
         </div>
       </div>
       
-      <div className="overflow-x-auto">
+      {/* Tab Content */}
+      {activeTab === 'comparison' ? (
         <table className="w-full">
           <thead className="bg-gray-50">
             <tr>
