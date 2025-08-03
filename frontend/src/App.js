@@ -2362,9 +2362,15 @@ const ComparisonTable = ({ universities, onRemove }) => {
   const getCellValue = (university, field) => {
     let value;
     
-    if (field.type === 'program-specific' && university.programs && university.programs[selectedProgram]) {
-      // Use program-specific data if available
-      value = university.programs[selectedProgram][field.key] || university[field.key] || 'Not available for this program';
+    if (field.type === 'program-specific') {
+      // Check if university has program data, otherwise use defaults
+      const programData = university.programs || generateDefaultPrograms(university);
+      
+      if (programData[selectedProgram]) {
+        value = programData[selectedProgram][field.key] || university[field.key] || 'Not available for this program';
+      } else {
+        value = university[field.key] || 'Not available for this program';
+      }
     } else {
       value = university[field.key];
     }
