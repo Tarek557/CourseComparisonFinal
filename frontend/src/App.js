@@ -2311,8 +2311,8 @@ function App() {
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg">
         <div className="container mx-auto px-4 py-8">
-          <h1 className="text-4xl font-bold mb-2">UK Universities CS Program Finder</h1>
-          <p className="text-xl text-blue-100">Compare Computer Science, Computing & Data Science programs from top UK universities</p>
+          <h1 className="text-4xl font-bold mb-2">UK Universities Program Finder</h1>
+          <p className="text-xl text-blue-100">Compare programs across multiple disciplines from top UK universities - Computer Science, Engineering, Business, Medicine, Law & more</p>
         </div>
       </header>
 
