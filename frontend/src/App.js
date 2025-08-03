@@ -2120,23 +2120,44 @@ const UniversityCard = ({ university, isSelected, onSelect, isCompareMode }) => 
 };
 
 const ComparisonTable = ({ universities, onRemove }) => {
+  const [selectedProgram, setSelectedProgram] = useState('Computer Science');
+  
+  // Get all available programs across selected universities
+  const availablePrograms = useMemo(() => {
+    const programSet = new Set();
+    universities.forEach(uni => {
+      if (uni.programs) {
+        Object.keys(uni.programs).forEach(program => programSet.add(program));
+      }
+    });
+    return Array.from(programSet).sort();
+  }, [universities]);
+
   const comparisonFields = [
     { key: 'name', label: 'University Name', type: 'text' },
     { key: 'ranking', label: 'THE Ranking', type: 'ranking' },
     { key: 'location', label: 'Location', type: 'text' },
     { key: 'tuitionFeesUK', label: 'UK Student Fees', type: 'fee' },
     { key: 'tuitionFeesInternational', label: 'International Fees', type: 'fee' },
-    { key: 'entryRequirements', label: 'Entry Requirements', type: 'text' },
+    { key: 'entryRequirements', label: 'Entry Requirements', type: 'program-specific' },
     { key: 'ucasPoints', label: 'UCAS Points', type: 'text' },
-    { key: 'duration', label: 'Course Duration', type: 'text' },
+    { key: 'duration', label: 'Course Duration', type: 'program-specific' },
     { key: 'employmentRate', label: 'Employment Rate', type: 'percentage' },
     { key: 'researchRating', label: 'Research Rating', type: 'rating' },
-    { key: 'courseContent', label: 'Course Content', type: 'text' },
+    { key: 'courseContent', label: 'Course Content', type: 'program-specific' },
     { key: 'scholarships', label: 'Available Scholarships', type: 'text' }
   ];
 
   const getCellValue = (university, field) => {
-    const value = university[field.key];
+    let value;
+    
+    if (field.type === 'program-specific' && university.programs && university.programs[selectedProgram]) {
+      // Use program-specific data if available
+      value = university.programs[selectedProgram][field.key] || university[field.key] || 'Not available for this program';
+    } else {
+      value = university[field.key];
+    }
+    
     switch (field.type) {
       case 'ranking':
         const rankingColor = value <= 10 ? 'text-green-600' : 
@@ -2148,6 +2169,8 @@ const ComparisonTable = ({ universities, onRemove }) => {
         return <span className="font-semibold text-green-600">{value}</span>;
       case 'rating':
         return <span className="font-bold text-purple-600">{value}</span>;
+      case 'program-specific':
+        return <span className="text-gray-800 text-sm">{value}</span>;
       default:
         return <span className="text-gray-800">{value}</span>;
     }
@@ -2156,8 +2179,26 @@ const ComparisonTable = ({ universities, onRemove }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4">
-        <h2 className="text-2xl font-bold">University Comparison</h2>
-        <p className="text-blue-100">Computer Science Programs Side-by-Side</p>
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div>
+            <h2 className="text-2xl font-bold">University Comparison</h2>
+            <p className="text-blue-100">Compare Programs Side-by-Side</p>
+          </div>
+          
+          {/* Program Type Selector */}
+          <div className="flex flex-col">
+            <label className="text-blue-100 text-sm mb-1">Select Program:</label>
+            <select
+              value={selectedProgram}
+              onChange={(e) => setSelectedProgram(e.target.value)}
+              className="bg-white text-gray-800 px-3 py-2 rounded-lg font-semibold min-w-48"
+            >
+              {availablePrograms.map(program => (
+                <option key={program} value={program}>{program}</option>
+              ))}
+            </select>
+          </div>
+        </div>
       </div>
       
       <div className="overflow-x-auto">
@@ -2168,7 +2209,12 @@ const ComparisonTable = ({ universities, onRemove }) => {
               {universities.map((uni, index) => (
                 <th key={uni.id} className="text-left p-4 font-semibold text-gray-700 border-b min-w-64">
                   <div className="flex justify-between items-center">
-                    <span>{uni.name}</span>
+                    <div>
+                      <span className="block">{uni.name}</span>
+                      <span className="text-sm text-purple-600 font-normal">
+                        {selectedProgram}
+                      </span>
+                    </div>
                     <button
                       onClick={() => onRemove(uni.id)}
                       className="ml-2 text-red-500 hover:text-red-700 font-normal text-sm"
@@ -2183,7 +2229,12 @@ const ComparisonTable = ({ universities, onRemove }) => {
           <tbody>
             {comparisonFields.map((field, fieldIndex) => (
               <tr key={field.key} className={fieldIndex % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
-                <td className="p-4 font-semibold text-gray-700 border-r">{field.label}</td>
+                <td className="p-4 font-semibold text-gray-700 border-r">
+                  {field.label}
+                  {field.type === 'program-specific' && (
+                    <span className="text-xs text-purple-600 block">({selectedProgram})</span>
+                  )}
+                </td>
                 {universities.map((uni) => (
                   <td key={`${uni.id}-${field.key}`} className="p-4 border-r">
                     {getCellValue(uni, field)}
@@ -2193,6 +2244,14 @@ const ComparisonTable = ({ universities, onRemove }) => {
             ))}
           </tbody>
         </table>
+      </div>
+      
+      {/* Program Availability Notice */}
+      <div className="bg-blue-50 p-4 border-t">
+        <p className="text-sm text-blue-700">
+          <span className="font-semibold">Note:</span> Course content, entry requirements, and duration may vary by program type. 
+          Select different programs above to see specific requirements for each field of study.
+        </p>
       </div>
     </div>
   );
