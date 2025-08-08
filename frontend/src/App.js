@@ -2937,9 +2937,36 @@ function App() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
             <div className="flex flex-col sm:flex-row gap-4 flex-1">
+              {/* Search Mode Toggle */}
+              <div className="flex bg-gray-100 rounded-lg p-1">
+                <button
+                  onClick={() => {setSearchMode('universities'); setSearchTerm('');}}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
+                    searchMode === 'universities' 
+                      ? 'bg-white text-blue-600 shadow-sm' 
+                      : 'text-gray-600 hover:text-gray-800'
+                  }`}
+                >
+                  Search Universities
+                </button>
+                <button
+                  onClick={() => {setSearchMode('courses'); setSearchTerm('');}}
+                  className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
+                    searchMode === 'courses' 
+                      ? 'bg-white text-blue-600 shadow-sm' 
+                      : 'text-gray-600 hover:text-gray-800'
+                  }`}
+                >
+                  Search Courses
+                </button>
+              </div>
+              
               <input
                 type="text"
-                placeholder="Search universities or locations..."
+                placeholder={searchMode === 'courses' 
+                  ? "Search courses (e.g., Computer Science, Medicine, Law)..." 
+                  : "Search universities or locations..."
+                }
                 className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent flex-1"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
