@@ -2847,12 +2847,43 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('ranking');
   const [showComparison, setShowComparison] = useState(false);
+  const [searchMode, setSearchMode] = useState('universities'); // 'universities' or 'courses'
 
   const filteredAndSortedUniversities = useMemo(() => {
-    let filtered = universitiesData.filter(uni =>
-      uni.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      uni.location.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    let filtered = [];
+    
+    if (searchMode === 'courses') {
+      // Search by course/program name
+      if (searchTerm.trim()) {
+        filtered = universitiesData.filter(uni => {
+          // Check main programs
+          const hasMainProgram = uni.programs && Object.keys(uni.programs).some(program =>
+            program.toLowerCase().includes(searchTerm.toLowerCase())
+          );
+          
+          // Check majors/specializations within programs
+          const hasMajor = uni.programs && Object.values(uni.programs).some(program =>
+            program.majors && program.majors.some(major =>
+              major.name.toLowerCase().includes(searchTerm.toLowerCase())
+            )
+          );
+          
+          // Check default course content
+          const hasInContent = uni.courseContent && 
+            uni.courseContent.toLowerCase().includes(searchTerm.toLowerCase());
+          
+          return hasMainProgram || hasMajor || hasInContent;
+        });
+      } else {
+        filtered = universitiesData;
+      }
+    } else {
+      // Search by university name or location (original functionality)
+      filtered = universitiesData.filter(uni =>
+        uni.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        uni.location.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
 
     return filtered.sort((a, b) => {
       switch (sortBy) {
@@ -2866,7 +2897,7 @@ function App() {
           return a.ranking - b.ranking;
       }
     });
-  }, [searchTerm, sortBy]);
+  }, [searchTerm, sortBy, searchMode]);
 
   const handleUniversitySelect = (university) => {
     setSelectedUniversities(prev => {
