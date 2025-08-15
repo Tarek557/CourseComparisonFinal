@@ -2734,39 +2734,49 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Functional Programming, Logic and Proof, Design and Analysis of Algorithms, Digital Systems, Probability and Computing, Databases, Computer Security, Machine Learning"
+        yearAbroad: "Optional",
+        courseContent: "Algorithms, Data Structures, Software Engineering, Machine Learning, Computer Vision, Natural Language Processing, Databases, Computer Networks"
+      },
+      {
+        name: "Computer Science and Philosophy",
+        fullTitle: "BA Computer Science and Philosophy",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Logic, Philosophy of Mind, Ethics in Computing, AI Philosophy, Mathematical Logic, Computational Theory"
+      },
+      // Mathematics & Statistics
+      {
+        name: "Mathematics",
+        fullTitle: "BA Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Analysis, Algebra, Geometry, Number Theory, Mathematical Logic, Differential Equations, Statistics"
+      },
+      {
+        name: "Mathematics and Statistics",
+        fullTitle: "BA Mathematics and Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Statistical Theory, Probability, Data Analysis, Bayesian Statistics, Mathematical Statistics, Statistical Computing"
       },
       {
         name: "Mathematics and Computer Science",
         fullTitle: "BA Mathematics and Computer Science",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Not Available", 
-        yearAbroad: "Not Available",
-        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Algorithms, Programming Languages, Computational Complexity, Computer Systems"
-      },
-      // Business & Economics
-      {
-        name: "Philosophy, Politics and Economics",
-        fullTitle: "BA Philosophy, Politics and Economics (PPE)",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Moral Philosophy, Political Theory, Microeconomics, Macroeconomics, Logic, Philosophy of Mind, Comparative Government, Economic History"
-      },
-      {
-        name: "Economics and Management",
-        fullTitle: "BA Economics and Management",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Microeconomics, Macroeconomics, Management Theory, Corporate Finance, Strategic Management, Organizational Behaviour"
+        yearAbroad: "Optional",
+        courseContent: "Discrete Mathematics, Algorithms, Computational Mathematics, Mathematical Modelling, Numerical Analysis"
       },
       // Sciences
       {
@@ -2776,60 +2786,101 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Atomic Physics, Particle Physics, Condensed Matter Physics"
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Statistical Physics, Particle Physics, Condensed Matter Physics"
       },
       {
-        name: "Chemistry",
-        fullTitle: "BA Chemistry",
-        duration: "4 years",
+        name: "Physics and Philosophy",
+        fullTitle: "BA Physics and Philosophy",
+        duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Quantum Chemistry, Spectroscopy, Chemical Kinetics"
+        yearAbroad: "Optional",
+        courseContent: "Philosophy of Science, Quantum Philosophy, Physics, Ethics in Science, Mathematical Physics"
       },
+      {
+        name: "Chemistry",
+        fullTitle: "MChem Chemistry",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Quantum Chemistry, Spectroscopy, Catalysis"
+      },
+      // Biological Sciences
       {
         name: "Biological Sciences",
         fullTitle: "BA Biological Sciences",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Cell Biology, Genetics, Evolution, Ecology, Biochemistry, Molecular Biology, Physiology"
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cell Biology, Genetics, Evolution, Ecology, Molecular Biology, Biochemistry, Physiology, Developmental Biology"
       },
-      // Engineering
       {
-        name: "Engineering Science",
-        fullTitle: "MEng Engineering Science",
-        duration: "4 years",
+        name: "Biochemistry",
+        fullTitle: "BA Biochemistry",
+        duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
+        workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Engineering Mathematics, Mechanics, Electrical Circuits, Thermodynamics, Materials, Information Engineering, Civil Engineering, Chemical Engineering"
+        courseContent: "Protein Chemistry, Enzymology, Metabolism, Molecular Biology, Structural Biology, Bioinformatics, Cell Signaling"
       },
-      // Social Sciences & Humanities
+      {
+        name: "Biomedical Sciences",
+        fullTitle: "BA Biomedical Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Human Physiology, Pathology, Immunology, Pharmacology, Medical Genetics, Disease Mechanisms, Clinical Biochemistry"
+      },
+      // Psychology
       {
         name: "Psychology",
         fullTitle: "BA Psychology",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Abnormal Psychology, Research Methods, Statistics"
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Biological Psychology, Research Methods, Statistics, Neuropsychology"
       },
+      {
+        name: "Psychology, Philosophy and Linguistics",
+        fullTitle: "BA Psychology, Philosophy and Linguistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Science, Philosophy of Mind, Psycholinguistics, Language Processing, Philosophy of Language"
+      },
+      // Geography & Environmental Sciences
       {
         name: "Geography",
         fullTitle: "BA Geography",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
+        workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Physical Geography, Human Geography, GIS, Environmental Science, Urban Planning, Climate Change"
+        courseContent: "Physical Geography, Human Geography, Environmental Change, Geographic Information Systems, Climate Science, Urban Geography"
+      },
+      {
+        name: "Earth Sciences",
+        fullTitle: "BA Earth Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Geology, Geophysics, Environmental Geoscience, Climate Change, Mineralogy, Petrology, Hydrogeology"
       }
     ],
     "University of Cambridge": [
