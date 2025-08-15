@@ -4390,6 +4390,143 @@ const universitiesData = [
     entryRequirements: "AAA-BBB (including Mathematics)",
     ucasPoints: "144-96",
     scholarships: "International Excellence Scholarship, Swansea University Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Computer Graphics, Data Science, Software Engineering, Human-Computer Interaction, Computational Intelligence, Mobile Computing, Cloud Computing",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aerospace Engineering, Chemical Engineering, Civil Engineering, Electronic Engineering, Materials Engineering, Biomedical Engineering, Sustainable Engineering, Process Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Modelling, Financial Mathematics, Computational Mathematics, Mathematical Physics, Optimization",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA-ABB (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Particle Physics, Condensed Matter Physics, Quantum Physics, Nuclear Physics, Medical Physics, Renewable Energy Physics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Environmental Chemistry, Materials Chemistry, Pharmaceutical Chemistry, Green Chemistry",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA-ABB (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Marine Biology, Molecular Biology, Ecology, Genetics, Zoology, Botany, Conservation Biology, Evolutionary Biology, Environmental Biology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Health Psychology, Developmental Psychology, Neuropsychology, Applied Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics, Development Economics, Environmental Economics, Economic Policy, Business Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Politics and International Relations": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Welsh Politics, European Politics, Public Policy, Political Economy, Global Governance",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "History": {
+        courseContent: "Welsh History, British History, European History, Medieval History, Modern History, Maritime History, Social History, Cultural History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (including History preferred)"
+      },
+      "English Literature": {
+        courseContent: "English Literature, Welsh Literature, Creative Writing, Literary Theory, Medieval Literature, Modern Literature, Postcolonial Literature, Comparative Literature",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Metaphysics, Philosophy of Mind, Political Philosophy, Philosophy of Science, Applied Ethics, Welsh Philosophy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, Welsh Law, Human Rights Law, International Law, Commercial Law, Legal Skills",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Ethics, Public Health, Global Health, Medical Research, Community Medicine, Healthcare Management",
+        duration: "5 years (MBBCh)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Business Management": {
+        courseContent: "Strategic Management, International Business, Marketing, Finance, Entrepreneurship, Operations Management, Business Analytics, Digital Innovation",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment Analysis, Banking, Financial Markets, Risk Management, Auditing",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Geography, GIS, Climate Change, Coastal Geography, Urban Geography, Cultural Geography",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "AAA-BBB (including Geography preferred)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology, Urban Sociology, Welsh Society, Social Psychology, Community Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Welsh, Translation Studies, European Studies, Applied Linguistics, Language Teaching",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA-BBB (including relevant language)"
+      },
+      "Welsh": {
+        courseContent: "Welsh Language, Welsh Literature, Celtic Studies, Welsh Culture, Welsh History, Translation, Creative Writing in Welsh, Welsh Linguistics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (Welsh language skills preferred)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Composition, Music Technology, Musicology, Welsh Music, Popular Music Studies, Audio Production, Music Education",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAA-BBB (audition required)"
+      },
+      "American Studies": {
+        courseContent: "American History, American Literature, American Politics, American Culture, Film Studies, African American Studies, Native American Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Sports Science": {
+        courseContent: "Exercise Physiology, Sports Psychology, Biomechanics, Sports Nutrition, Coaching Science, Sport Management, Exercise Rehabilitation, Performance Analysis",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Science subjects)"
+      },
+      "Environmental Science": {
+        courseContent: "Environmental Chemistry, Ecology, Climate Science, Conservation Biology, Environmental Management, Renewable Energy, Pollution Control, Sustainability",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Science subjects)"
+      },
+      "Archaeology": {
+        courseContent: "Field Archaeology, Welsh Archaeology, Classical Archaeology, Archaeological Science, Heritage Studies, Museum Studies, Conservation, Digital Archaeology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Education": {
+        courseContent: "Primary Education, Secondary Education, Welsh-medium Education, Special Educational Needs, Educational Psychology, Education Policy, Teaching Methods",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Health Sciences": {
+        courseContent: "Public Health, Health Promotion, Healthcare Management, Mental Health, Community Health, Health Policy, Epidemiology, Health Psychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Science subjects)"
+      }
+    },
     courseContent: "Programming, AI, Computer Graphics, Data Science, Software Engineering",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "80%",
