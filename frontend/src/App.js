@@ -5515,6 +5515,108 @@ const universitiesData = [
     entryRequirements: "ABB-BBC (including Mathematics)",
     ucasPoints: "128-80",
     scholarships: "International Study Scholarship, Academic Excellence Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Software Engineering, Data Analytics, Computer Networks, Cybersecurity, Games Development, Web Development",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "ABB-BBC (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Mechanical Engineering, Electronic Engineering, Civil Engineering, Chemical Engineering, Automotive Engineering, Manufacturing Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "ABB-BBC (including Mathematics and Physics)"
+      },
+      "Business": {
+        courseContent: "Business Management, International Business, Marketing, Finance, Accounting, Human Resource Management, Logistics",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Health Sciences": {
+        courseContent: "Nursing, Physiotherapy, Pharmacy, Public Health, Biomedical Science, Health Psychology, Clinical Sciences",
+        duration: "3 years (BSc), some 4 years",
+        entryRequirements: "ABB-BBC (including Science subjects)"
+      },
+      "Music": {
+        courseContent: "Music Technology, Music Performance, Audio Engineering, Popular Music, Music Business, Composition, Sound Design",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "ABB-BBC (audition required)"
+      },
+      "Art and Design": {
+        courseContent: "Fine Art, Graphic Design, Fashion Design, Product Design, Interior Design, Photography, Digital Arts",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (portfolio required)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Forensic Psychology, Educational Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Mathematics or Science)"
+      },
+      "Education": {
+        courseContent: "Primary Education, Secondary Education, Early Years Education, Special Educational Needs, Educational Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Media and Journalism": {
+        courseContent: "Journalism, Media Production, Digital Media, Broadcasting, Public Relations, Film Studies, Media Communications",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Commercial Law, Human Rights Law, Constitutional Law, Legal Practice",
+        duration: "3 years (LLB)",
+        entryRequirements: "ABB (no specific subjects)"
+      },
+      "Sports Science": {
+        courseContent: "Exercise Physiology, Sports Psychology, Biomechanics, Sports Nutrition, Coaching Science, Sport Development",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Science subjects)"
+      },
+      "Architecture": {
+        courseContent: "Architectural Design, Building Technology, Sustainable Design, Urban Planning, Construction Management",
+        duration: "3 years (BA), 2 years (MArch)",
+        entryRequirements: "ABB (portfolio required)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, English Language, Literary Studies, Contemporary Literature, Drama",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (including English Literature)"
+      },
+      "History": {
+        courseContent: "British History, European History, Local History, Social History, Cultural History, Historical Research",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (including History preferred)"
+      },
+      "Politics": {
+        courseContent: "Political Theory, International Relations, Public Policy, Comparative Politics, Political Economy, Governance",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Social Work": {
+        courseContent: "Social Work Practice, Social Policy, Community Development, Child Protection, Mental Health Support, Social Research",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Geography, GIS, Climate Science, Urban Geography",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "ABB-BBC (including Geography preferred)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Modelling, Actuarial Science, Financial Mathematics",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB (including Mathematics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Medicinal Chemistry, Environmental Chemistry",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Chemistry and Mathematics)"
+      },
+      "Criminology": {
+        courseContent: "Criminal Justice, Forensic Science, Criminal Psychology, Criminal Law, Policing, Crime Analysis",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      }
+    },
     courseContent: "Programming, AI, Software Engineering, Computer Networks, Data Analytics",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "79%",
