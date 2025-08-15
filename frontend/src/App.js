@@ -3537,20 +3537,34 @@ function App() {
               </div>
             </div>
 
-            {/* University Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredAndSortedUniversities.map((university) => (
-                <UniversityCard
-                  key={university.id}
-                  university={university}
-                  isSelected={selectedUniversities.some(uni => uni.id === university.id)}
-                  onSelect={handleUniversitySelect}
-                  isCompareMode={selectedUniversities.length > 0}
-                  searchMode={searchMode}
-                  searchTerm={searchTerm}
-                />
-              ))}
-            </div>
+            {/* University Grid or Course Listings */}
+            {searchMode === 'courses' && searchTerm ? (
+              // Professional Course Listings (DiscoverUni style)
+              <div className="space-y-6">
+                {filteredAndSortedUniversities.map((university) => (
+                  <UniversityCoursesSection
+                    key={university.id}
+                    university={university}
+                    searchTerm={searchTerm}
+                  />
+                ))}
+              </div>
+            ) : (
+              // Regular University Grid
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredAndSortedUniversities.map((university) => (
+                  <UniversityCard
+                    key={university.id}
+                    university={university}
+                    isSelected={selectedUniversities.some(uni => uni.id === university.id)}
+                    onSelect={handleUniversitySelect}
+                    isCompareMode={selectedUniversities.length > 0}
+                    searchMode={searchMode}
+                    searchTerm={searchTerm}
+                  />
+                ))}
+              </div>
+            )}
 
             {filteredAndSortedUniversities.length === 0 && (
               <div className="text-center py-12">
