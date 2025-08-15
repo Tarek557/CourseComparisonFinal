@@ -3956,6 +3956,16 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Software Development, System Design, Testing, Project Management, Agile Methods, User Interface Design, Database Systems"
       },
+      {
+        name: "Computing (Security and Reliability)",
+        fullTitle: "BSc Computing (Security and Reliability)",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cybersecurity, Network Security, Cryptography, System Reliability, Risk Assessment, Digital Forensics"
+      },
       // Mathematics
       {
         name: "Mathematics",
@@ -3987,6 +3997,16 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Mathematical Methods, Quantum Mechanics, Classical Mechanics, Electromagnetism, Special Relativity, Mathematical Physics"
       },
+      {
+        name: "Mathematics with Applied Mathematics/Mathematical Physics",
+        fullTitle: "BSc Mathematics with Applied Mathematics/Mathematical Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Applied Mathematics, Mathematical Modelling, Fluid Mechanics, Continuum Mechanics, Computational Methods"
+      },
       // Sciences
       {
         name: "Physics",
@@ -4009,6 +4029,16 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Advanced Quantum Mechanics, Field Theory, Statistical Mechanics, Mathematical Methods, Particle Physics Theory, Cosmology"
       },
       {
+        name: "Physics with Space Science",
+        fullTitle: "BSc Physics with Space Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Space Physics, Planetary Science, Astrophysics, Satellite Technology, Space Instrumentation, Remote Sensing"
+      },
+      {
         name: "Chemistry",
         fullTitle: "BSc Chemistry",
         duration: "3 years",
@@ -4027,6 +4057,16 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Optional",
         yearAbroad: "Optional",
         courseContent: "Physical Chemistry, Quantum Mechanics, Molecular Spectroscopy, Statistical Mechanics, Chemical Physics, Computational Chemistry"
+      },
+      {
+        name: "Chemistry with Medicinal Chemistry",
+        fullTitle: "BSc Chemistry with Medicinal Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Drug Design, Pharmacology, Medicinal Chemistry, Biochemistry, Molecular Biology, Drug Discovery, Clinical Chemistry"
       },
       // Life Sciences
       {
@@ -4058,6 +4098,37 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Optional",
         yearAbroad: "Optional",
         courseContent: "Genetic Engineering, Bioprocessing, Microbiology, Cell Culture, Protein Production, Bioinformatics, Bioethics"
+      },
+      {
+        name: "Microbiology",
+        fullTitle: "BSc Microbiology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Bacterial Biology, Virology, Medical Microbiology, Environmental Microbiology, Immunology, Molecular Microbiology"
+      },
+      // Environmental Sciences
+      {
+        name: "Environmental Geoscience",
+        fullTitle: "BSc Environmental Geoscience",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Environmental Geology, Hydrogeology, Environmental Chemistry, Climate Science, Environmental Monitoring, Contamination Assessment"
+      },
+      {
+        name: "Environmental Science",
+        fullTitle: "BSc Environmental Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Environmental Chemistry, Ecology, Environmental Monitoring, Pollution Control, Conservation Biology, Sustainability, Climate Change"
       }
     ],
     "King's College London": [
