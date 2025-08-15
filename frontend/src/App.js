@@ -4163,13 +4163,17 @@ function App() {
             </div>
             
             <div className="flex gap-2">
-              {selectedUniversities.length > 0 && (
+              {(selectedUniversities.length > 0 || selectedCourses.length > 0) && (
                 <>
                   <button
                     onClick={() => setShowComparison(!showComparison)}
                     className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
                   >
-                    {showComparison ? 'Show Universities' : `Compare Selected (${selectedUniversities.length})`}
+                    {showComparison ? 'Show Results' : 
+                      searchMode === 'courses' && selectedCourses.length > 0 
+                        ? `Compare Courses (${selectedCourses.length})`
+                        : `Compare Selected (${selectedUniversities.length})`
+                    }
                   </button>
                   <button
                     onClick={clearComparison}
