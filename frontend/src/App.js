@@ -9964,6 +9964,9 @@ function App() {
                     searchTerm={searchTerm}
                     onSelectCourse={handleCourseSelect}
                     selectedCourses={selectedCourses}
+                    currentPage={coursePage[university.name] || 1}
+                    onPageChange={handleCoursePageChange}
+                    coursesPerPage={COURSES_PER_PAGE}
                   />
                 ))}
               </div>
