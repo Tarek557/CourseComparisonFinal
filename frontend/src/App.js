@@ -8972,10 +8972,10 @@ function App() {
       )}
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8 mt-12">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">© 2025 UK Universities CS Program Finder. Data based on Times Higher Education rankings and official university websites.</p>
-          <p className="text-sm text-gray-500 mt-2">Compare tuition fees, entry requirements, course content, scholarships, and locations for Computer Science programs.</p>
+      <footer className="bg-gray-800 dark:bg-gray-900 text-white shadow-lg border-t dark:border-gray-700 transition-colors duration-300">
+        <div className="container mx-auto px-4 py-8 text-center">
+          <p className="text-gray-400 dark:text-gray-500">© 2025 UK Universities Course Comparison Platform. Data based on Times Higher Education rankings and official university websites.</p>
+          <p className="text-sm text-gray-500 dark:text-gray-600 mt-2">Compare tuition fees, entry requirements, course content, scholarships, and locations for Bachelor degree programs.</p>
         </div>
       </footer>
     </div>
