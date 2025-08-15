@@ -6643,16 +6643,8 @@ const generateComprehensiveCourseData = (university, programName, programData) =
     course.courseContent.toLowerCase().includes(programName.toLowerCase())
   );
 };
-      },
-      // Sciences
-      {
-        name: "Physics",
-        fullTitle: "BA Physics",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Optional",
+
+const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCourses = [] }) => {
         courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Statistical Physics, Particle Physics, Condensed Matter Physics"
       },
       {
