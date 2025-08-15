@@ -8563,19 +8563,85 @@ function App() {
                 onChange={handleSearchChange}
               />
               
-              {/* Institution Filter */}
-              <select
-                className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
-                value={selectedInstitution}
-                onChange={handleInstitutionChange}
-              >
-                <option value="">All Institutions</option>
-                {universitiesData.slice(0, 50).map(uni => (
-                  <option key={uni.id} value={uni.name}>
-                    {uni.name}
-                  </option>
-                ))}
-              </select>
+              {/* Institution Multi-Select Filter */}
+              <div className="relative">
+                <div 
+                  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 cursor-pointer bg-white min-w-64"
+                  onClick={() => setIsInstitutionDropdownOpen(!isInstitutionDropdownOpen)}
+                >
+                  <div className="flex justify-between items-center">
+                    <span className="text-gray-700">
+                      {selectedInstitutions.length === 0 
+                        ? 'All Institutions' 
+                        : `${selectedInstitutions.length} institution${selectedInstitutions.length > 1 ? 's' : ''} selected`
+                      }
+                    </span>
+                    <svg className={`w-4 h-4 transition-transform ${isInstitutionDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+                
+                {isInstitutionDropdownOpen && (
+                  <div className="absolute z-50 mt-1 w-full bg-white border border-gray-300 rounded-lg shadow-lg max-h-80 overflow-hidden">
+                    {/* Search input */}
+                    <div className="p-3 border-b border-gray-200">
+                      <input
+                        type="text"
+                        placeholder="Search institutions..."
+                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                        value={institutionSearchTerm}
+                        onChange={handleInstitutionSearchChange}
+                        onClick={(e) => e.stopPropagation()}
+                      />
+                    </div>
+                    
+                    {/* Clear all button */}
+                    {selectedInstitutions.length > 0 && (
+                      <div className="p-2 border-b border-gray-200">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleClearInstitutions();
+                          }}
+                          className="text-sm text-red-600 hover:text-red-800 font-medium"
+                        >
+                          Clear all ({selectedInstitutions.length})
+                        </button>
+                      </div>
+                    )}
+                    
+                    {/* Institution list */}
+                    <div className="max-h-60 overflow-y-auto">
+                      {universitiesData
+                        .filter(uni => 
+                          uni.name.toLowerCase().includes(institutionSearchTerm.toLowerCase())
+                        )
+                        .slice(0, 50)
+                        .map(uni => (
+                          <div
+                            key={uni.id}
+                            className="px-3 py-2 hover:bg-gray-50 cursor-pointer flex items-center gap-2"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleInstitutionToggle(uni.name);
+                            }}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={selectedInstitutions.includes(uni.name)}
+                              onChange={() => {}}
+                              className="rounded text-blue-600 focus:ring-blue-500"
+                            />
+                            <span className="text-sm text-gray-700 flex-1">{uni.name}</span>
+                            <span className="text-xs text-gray-500">#{uni.ranking}</span>
+                          </div>
+                        ))
+                      }
+                    </div>
+                  </div>
+                )}
+              </div>
               
               <select
                 className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
