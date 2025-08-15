@@ -1179,6 +1179,138 @@ const universitiesData = [
     entryRequirements: "AAA-BBB (including Mathematics)", 
     ucasPoints: "144-96",
     scholarships: "Glasgow International Leadership Scholarship, Undergraduate Excellence Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Software Engineering, AI, Data Science, Computer Systems, HCI",
+        duration: "4 years (BSc), 5 years (MEng)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aerospace, Civil, Electronic, Mechanical, Naval Architecture",
+        duration: "4 years (BEng), 5 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics",
+        duration: "4 years (BSc), 5 years (MSci)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Particle Physics, Astrophysics",
+        duration: "4 years (BSc), 5 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Chemical Biology",
+        duration: "4 years (BSc), 5 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Marine Biology, Ecology, Genetics, Biotechnology",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Neuropsychology, Clinical Psychology",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including Mathematics recommended)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Politics": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Scottish Politics",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "History": {
+        courseContent: "Scottish History, Medieval History, Modern History, Economic History",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including History preferred)"
+      },
+      "English Literature": {
+        courseContent: "Scottish Literature, English Literature, Creative Writing, Literary Theory",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Metaphysics, Philosophy of Mind, Political Philosophy",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Scots Law, Criminal Law, Contract Law, Constitutional Law",
+        duration: "4 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Ethics, Global Health",
+        duration: "5 years (MBChB)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Veterinary Medicine": {
+        courseContent: "Animal Anatomy, Veterinary Pathology, Clinical Practice, Animal Welfare",
+        duration: "5 years (BVMS)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Dentistry": {
+        courseContent: "Dental Anatomy, Oral Pathology, Clinical Dentistry, Dental Materials",
+        duration: "5 years (BDS)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Business and Management": {
+        courseContent: "Management, Finance, Marketing, International Business, Entrepreneurship",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Urban Studies",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Science, Urban Planning",
+        duration: "4 years (MA/BSc)",
+        entryRequirements: "AAA-ABB (including Geography preferred)"
+      },
+      "Music": {
+        courseContent: "Music Theory, Composition, Performance, Music History, Ethnomusicology",
+        duration: "4 years (BMus/MA)",
+        entryRequirements: "AAA-ABB (audition required)"
+      },
+      "Fine Art": {
+        courseContent: "Drawing, Painting, Sculpture, Digital Art, Art History",
+        duration: "4 years (BFA)",
+        entryRequirements: "AAA-ABB (portfolio required)"
+      },
+      "Theatre Studies": {
+        courseContent: "Performance Studies, Theatre History, Playwriting, Stage Management",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (audition required)"
+      },
+      "Celtic Studies": {
+        courseContent: "Scottish Gaelic, Irish, Celtic History, Celtic Literature",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Archaeology": {
+        courseContent: "Field Archaeology, Scottish Archaeology, Cultural Heritage, Archaeological Science",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Education": {
+        courseContent: "Educational Psychology, Primary Education, Secondary Education, Special Needs",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      }
+    },
     courseContent: "Programming, Software Engineering, AI, Data Science, Computer Systems, HCI",
     duration: "4 years (BSc), 5 years (MEng)",
     employmentRate: "89%",
