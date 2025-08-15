@@ -7372,7 +7372,7 @@ function App() {
   const [selectedInstitution, setSelectedInstitution] = useState(''); // New state for institution filter
   const [sortBy, setSortBy] = useState('ranking');
   const [showComparison, setShowComparison] = useState(false);
-  const [searchMode, setSearchMode] = useState('universities'); // 'universities' or 'courses'
+  const [searchMode, setSearchMode] = useState('courses'); // Always 'courses' mode
   const [currentSearchPage, setCurrentSearchPage] = useState(1); // For paginating search results
 
   const UNIVERSITIES_PER_PAGE = 6;
