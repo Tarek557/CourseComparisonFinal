@@ -240,7 +240,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Search Courses UI Improvement"
+    - "BSc Course Data Expansion"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
