@@ -3877,6 +3877,133 @@ const universitiesData = [
     entryRequirements: "AAA-BBB (including Mathematics)",
     ucasPoints: "144-96",
     scholarships: "University of Reading International Scholarship, Excellence Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Data Science, Cybersecurity, Software Engineering",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Mathematics and Statistics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Actuarial Science",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Meteorology, Climate Physics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Environmental Chemistry",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Ecology, Genetics, Zoology, Microbiology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Developmental Psychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Politics and International Relations": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Diplomacy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "History": {
+        courseContent: "British History, European History, Medieval History, War Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including History preferred)"
+      },
+      "English Literature": {
+        courseContent: "English Literature, Creative Writing, Literary Theory, Theatre Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Philosophy of Mind, Political Philosophy, Ancient Philosophy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, International Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Business and Management": {
+        courseContent: "Strategic Management, International Business, Marketing, Finance",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Geography and Environmental Science": {
+        courseContent: "Physical Geography, Human Geography, Environmental Science, Climate Change",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "AAA-ABB (including Geography preferred)"
+      },
+      "Agriculture": {
+        courseContent: "Crop Science, Animal Science, Agricultural Technology, Sustainable Agriculture",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Science subjects)"
+      },
+      "Food Science": {
+        courseContent: "Food Technology, Food Safety, Nutrition, Food Processing",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Chemistry and Biology)"
+      },
+      "Architecture": {
+        courseContent: "Design Studio, Building Technology, Architectural History, Environmental Design",
+        duration: "3 years (BA), 2 years (MArch)",
+        entryRequirements: "AAA (portfolio required)"
+      },
+      "Art": {
+        courseContent: "Fine Art, Graphic Design, Art History, Contemporary Art",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (portfolio required)"
+      },
+      "Film Studies": {
+        courseContent: "Film Theory, Cinema History, Film Production, Digital Media",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Applied Linguistics",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA-ABB (including relevant language)"
+      },
+      "Education": {
+        courseContent: "Educational Studies, Primary Education, Secondary Education, Special Needs",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Pharmacy": {
+        courseContent: "Pharmaceutical Sciences, Clinical Pharmacy, Drug Development, Pharmacology",
+        duration: "4 years (MPharm)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Speech and Language Therapy": {
+        courseContent: "Linguistics, Speech Pathology, Language Development, Communication Disorders",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Science subjects)"
+      },
+      "Meteorology": {
+        courseContent: "Atmospheric Physics, Climate Science, Weather Forecasting, Environmental Meteorology",
+        duration: "3 years (BSc), 4 years (MMet)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      }
+    },
     courseContent: "Programming, AI, Data Science, Cybersecurity, Software Engineering",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "84%",
