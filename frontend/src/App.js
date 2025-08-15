@@ -4248,6 +4248,133 @@ const universitiesData = [
     entryRequirements: "AAA-BBB (including Mathematics)",
     ucasPoints: "144-96",
     scholarships: "Kent Scholarship for Academic Excellence, International Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Cybersecurity, Software Engineering, Data Analytics, Machine Learning, Computer Vision, Natural Language Processing, Distributed Systems",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Electronic Engineering, Computer Systems Engineering, Telecommunications, Signal Processing, Embedded Systems, VLSI Design, Robotics",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Actuarial Science, Financial Mathematics, Operational Research, Mathematical Biology, Cryptography",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA-ABB (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Astrophysics, Particle Physics, Quantum Mechanics, Solid State Physics, Medical Physics, Computational Physics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Forensic Psychology, Neuropsychology, Developmental Psychology, Health Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics, Development Economics, Financial Economics, Industrial Economics, Game Theory",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Politics and International Relations": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, European Politics, Security Studies, Diplomacy, Political Economy, Conflict Resolution",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "History": {
+        courseContent: "British History, European History, Medieval History, Modern History, Social History, Military History, Cultural History, Historical Research Methods",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (including History preferred)"
+      },
+      "English and American Literature": {
+        courseContent: "English Literature, American Literature, Creative Writing, Literary Theory, Victorian Literature, Modern Literature, Poetry, Drama Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Metaphysics, Philosophy of Mind, Political Philosophy, Continental Philosophy, Philosophy of Science, Applied Ethics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, International Law, European Law, Human Rights Law, Commercial Law, Legal Research Methods",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Business": {
+        courseContent: "Strategic Management, International Business, Marketing, Finance, Entrepreneurship, Operations Management, Business Analytics, Digital Business",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment Analysis, Banking, Financial Markets, Risk Management, International Finance",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology, Urban Sociology, Gender Studies, Race and Ethnicity, Social Psychology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Anthropology": {
+        courseContent: "Cultural Anthropology, Social Anthropology, Biological Anthropology, Archaeological Anthropology, Ethnography, Medical Anthropology, Applied Anthropology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Film Studies": {
+        courseContent: "Film Theory, Cinema History, Documentary Studies, Film Production, Digital Media, World Cinema, Genre Studies, Film Criticism",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Composition, Music Technology, Musicology, Popular Music Studies, Music Theory, Audio Production, Sound Design",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAA-BBB (audition required)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Russian, Translation Studies, Comparative Literature, European Studies, Language Teaching",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA-BBB (including relevant language)"
+      },
+      "Journalism": {
+        courseContent: "News Writing, Media Law, Digital Journalism, Broadcast Journalism, Investigative Journalism, Media Ethics, Multimedia Reporting, News Production",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Drama": {
+        courseContent: "Performance Studies, Theatre History, Playwriting, Directing, Stage Management, Applied Theatre, Community Theatre, Theatre Criticism",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (audition required)"
+      },
+      "Architecture": {
+        courseContent: "Design Studio, Building Technology, Architectural History, Urban Planning, Environmental Design, Construction Management, Digital Architecture, Sustainable Design",
+        duration: "3 years (BA), 2 years (MArch)",
+        entryRequirements: "AAA (portfolio required)"
+      },
+      "Biosciences": {
+        courseContent: "Molecular Biology, Cell Biology, Genetics, Biochemistry, Microbiology, Biotechnology, Bioinformatics, Evolutionary Biology, Ecology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Biology and Chemistry)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Medicinal Chemistry, Environmental Chemistry, Materials Chemistry, Chemical Biology",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA-ABB (including Chemistry and Mathematics)"
+      },
+      "Sport and Exercise Science": {
+        courseContent: "Exercise Physiology, Sports Psychology, Biomechanics, Sports Nutrition, Coaching Science, Sport Sociology, Exercise Rehabilitation, Performance Analysis",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Science subjects)"
+      },
+      "Education": {
+        courseContent: "Educational Psychology, Primary Education, Secondary Education, Special Educational Needs, Education Policy, Curriculum Studies, Teaching Methods, Educational Research",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      }
+    },
     courseContent: "Programming, AI, Cybersecurity, Software Engineering, Data Analytics",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "82%",
