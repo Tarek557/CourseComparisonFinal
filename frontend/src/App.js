@@ -6608,9 +6608,28 @@ const universitiesData = [
   }
 ];
 
-// Comprehensive authentic BSc course data for all UK universities
+// Get authentic courses from university programs data
 const getAuthenticCoursesForUniversity = (universityName) => {
-  const universityCoursesMap = {
+  // Find the university in our data
+  const university = universitiesData.find(uni => uni.name === universityName);
+  
+  if (!university || !university.programs) {
+    return [];
+  }
+  
+  // Convert programs object to array format expected by the UI
+  return Object.entries(university.programs).map(([programName, programData]) => ({
+    name: programName,
+    fullTitle: `${programData.duration.includes('BA') ? 'BA' : programData.duration.includes('BSc') ? 'BSc' : programData.duration.includes('BEng') ? 'BEng' : programData.duration.includes('MEng') ? 'MEng' : 'Bachelor'} ${programName}`,
+    duration: programData.duration,
+    studyMode: "Full time",
+    distanceLearning: "Contact university",
+    workPlacement: "Contact university", 
+    yearAbroad: "Contact university",
+    courseContent: programData.courseContent,
+    entryRequirements: programData.entryRequirements
+  }));
+};
     "University of Oxford": [
       // Computer Science & IT
       {
