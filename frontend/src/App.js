@@ -14342,6 +14342,23 @@ function App() {
                 value={searchTerm}
                 onChange={handleSearchChange}
               />
+              
+              {/* Institution Filter - only show in course search mode */}
+              {searchMode === 'courses' && (
+                <select
+                  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                  value={selectedInstitution}
+                  onChange={handleInstitutionChange}
+                >
+                  <option value="">All Institutions</option>
+                  {universitiesData.slice(0, 50).map(uni => (
+                    <option key={uni.id} value={uni.name}>
+                      {uni.name}
+                    </option>
+                  ))}
+                </select>
+              )}
+              
               <select
                 className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
                 value={sortBy}
