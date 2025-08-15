@@ -2722,10 +2722,11 @@ const universitiesData = [
   }
 ];
 
-// Authentic course data based on real UK university websites
+// Comprehensive authentic BSc course data for all UK universities
 const getAuthenticCoursesForUniversity = (universityName) => {
   const universityCoursesMap = {
     "University of Oxford": [
+      // Computer Science & IT
       {
         name: "Computer Science",
         fullTitle: "BA Computer Science",
@@ -2746,6 +2747,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Not Available",
         courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Algorithms, Programming Languages, Computational Complexity, Computer Systems"
       },
+      // Business & Economics
       {
         name: "Philosophy, Politics and Economics",
         fullTitle: "BA Philosophy, Politics and Economics (PPE)",
@@ -2757,6 +2759,48 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Moral Philosophy, Political Theory, Microeconomics, Macroeconomics, Logic, Philosophy of Mind, Comparative Government, Economic History"
       },
       {
+        name: "Economics and Management",
+        fullTitle: "BA Economics and Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Microeconomics, Macroeconomics, Management Theory, Corporate Finance, Strategic Management, Organizational Behaviour"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BA Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Atomic Physics, Particle Physics, Condensed Matter Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BA Chemistry",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Quantum Chemistry, Spectroscopy, Chemical Kinetics"
+      },
+      {
+        name: "Biological Sciences",
+        fullTitle: "BA Biological Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Cell Biology, Genetics, Evolution, Ecology, Biochemistry, Molecular Biology, Physiology"
+      },
+      // Engineering
+      {
         name: "Engineering Science",
         fullTitle: "MEng Engineering Science",
         duration: "4 years",
@@ -2766,18 +2810,30 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Engineering Mathematics, Mechanics, Electrical Circuits, Thermodynamics, Materials, Information Engineering, Civil Engineering, Chemical Engineering"
       },
+      // Social Sciences & Humanities
       {
-        name: "Medicine",
-        fullTitle: "Medicine (Graduate Entry)",
-        duration: "4 years",
+        name: "Psychology",
+        fullTitle: "BA Psychology",
+        duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Integrated clinical training",
+        workPlacement: "Not Available",
         yearAbroad: "Not Available",
-        courseContent: "Pre-clinical Studies, Clinical Medicine, Pathology, Pharmacology, Public Health, Medical Ethics, Clinical Skills, Research Methods"
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Abnormal Psychology, Research Methods, Statistics"
+      },
+      {
+        name: "Geography",
+        fullTitle: "BA Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Environmental Science, Urban Planning, Climate Change"
       }
     ],
     "University of Cambridge": [
+      // Computer Science & IT
       {
         name: "Computer Science",
         fullTitle: "BA Computer Science",
@@ -2788,6 +2844,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Not Available",
         courseContent: "Foundations of Computer Science, Object-Oriented Programming, Operating Systems, Computer Graphics and Image Processing, Artificial Intelligence, Security, Advanced Algorithms"
       },
+      // Sciences
       {
         name: "Natural Sciences",
         fullTitle: "BA Natural Sciences",
@@ -2797,16 +2854,6 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Not Available",
         yearAbroad: "Not Available",
         courseContent: "Physics, Chemistry, Biology, Mathematics, Earth Sciences, Materials Science, Experimental Methods, Scientific Computing"
-      },
-      {
-        name: "Engineering",
-        fullTitle: "BA Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Optional", 
-        courseContent: "Engineering Mathematics, Mechanics, Structures, Fluid Mechanics, Thermodynamics, Electrical Engineering, Information Engineering, Manufacturing Engineering"
       },
       {
         name: "Mathematics",
@@ -2819,6 +2866,28 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Number Theory, Analysis, Algebra, Geometry, Probability, Mathematical Physics"
       },
       {
+        name: "Medical Sciences",
+        fullTitle: "BSc Medical Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Available",
+        yearAbroad: "Not Available",
+        courseContent: "Human Anatomy, Physiology, Biochemistry, Pharmacology, Pathology, Neuroscience, Immunology"
+      },
+      // Engineering
+      {
+        name: "Engineering",
+        fullTitle: "BA Engineering",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional", 
+        courseContent: "Engineering Mathematics, Mechanics, Structures, Fluid Mechanics, Thermodynamics, Electrical Engineering, Information Engineering, Manufacturing Engineering"
+      },
+      // Economics & Business
+      {
         name: "Economics",
         fullTitle: "BA Economics",
         duration: "3 years",
@@ -2827,9 +2896,41 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Not Available",
         yearAbroad: "Not Available",
         courseContent: "Microeconomics, Macroeconomics, Econometrics, Mathematical Methods, Economic History, Political Economy, Development Economics, Quantitative Economics"
+      },
+      {
+        name: "Management Studies",
+        fullTitle: "BA Management Studies",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Strategic Management, Organizational Behaviour, Marketing, Finance, Operations Management, Innovation Management"
+      },
+      // Social Sciences
+      {
+        name: "Psychological and Behavioural Sciences",
+        fullTitle: "BSc Psychological and Behavioural Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Not Available",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Neuroscience, Research Methods, Statistics, Behavioural Economics"
+      },
+      {
+        name: "Geography",
+        fullTitle: "BA Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, Environmental Science, GIS, Climate Science, Urban Studies"
       }
     ],
     "Imperial College London": [
+      // Computer Science & IT
       {
         name: "Computing",
         fullTitle: "BEng Computing",
@@ -2851,6 +2952,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Robotics, Neural Computation, Reinforcement Learning, AI Ethics"
       },
       {
+        name: "Computing (Software Engineering)",
+        fullTitle: "MEng Computing (Software Engineering)",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Software Architecture, Agile Development, DevOps, Testing, Project Management, Human-Computer Interaction, Web Technologies"
+      },
+      // Engineering
+      {
         name: "Electrical and Electronic Engineering",
         fullTitle: "BEng Electrical and Electronic Engineering",
         duration: "3 years",
@@ -2871,17 +2983,90 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Thermodynamics, Fluid Mechanics, Solid Mechanics, Materials, Design, Manufacturing, Control Engineering, Heat Transfer"
       },
       {
-        name: "Medicine",
-        fullTitle: "MBBS Medicine",
-        duration: "6 years", 
+        name: "Civil Engineering",
+        fullTitle: "BEng Civil Engineering",
+        duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Integrated clinical training",
+        workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Molecular and Cellular Basis of Medicine, Body Systems, Clinical Skills, Pathology, Pharmacology, Clinical Medicine, Surgery, General Practice"
+        courseContent: "Structural Engineering, Geotechnics, Hydraulics, Construction Management, Surveying, Environmental Engineering"
+      },
+      {
+        name: "Chemical Engineering",
+        fullTitle: "BEng Chemical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Process Design, Chemical Reactions, Heat Transfer, Mass Transfer, Process Control, Safety Engineering"
+      },
+      {
+        name: "Aeronautical Engineering",
+        fullTitle: "BEng Aeronautical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Aerodynamics, Flight Mechanics, Propulsion, Aircraft Structures, Flight Control Systems, Aircraft Design"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Statistical Physics, Solid State Physics, Particle Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Computational Chemistry"
+      },
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics, Numerical Analysis, Operations Research"
+      },
+      {
+        name: "Biology",
+        fullTitle: "BSc Biology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cell Biology, Molecular Biology, Genetics, Ecology, Evolution, Biochemistry, Bioinformatics"
+      },
+      // Business & Management
+      {
+        name: "Management",
+        fullTitle: "BSc Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Strategic Management, Finance, Marketing, Operations, Entrepreneurship, Innovation Management"
       }
     ],
     "University College London (UCL)": [
+      // Computer Science & IT
       {
         name: "Computer Science",
         fullTitle: "BSc Computer Science",
@@ -2903,6 +3088,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Information Systems, Business Analysis, Project Management, Database Systems, Web Technologies, Digital Business, Data Analytics, Enterprise Systems"
       },
       {
+        name: "Management Science",
+        fullTitle: "BSc Management Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Operations Research, Statistics, Decision Analysis, Supply Chain Management, Financial Modelling, Business Analytics"
+      },
+      // Engineering
+      {
         name: "Engineering",
         fullTitle: "BEng Engineering",
         duration: "3 years",
@@ -2913,8 +3109,60 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Engineering Mathematics, Mechanics, Electrical Circuits, Materials Science, Design, Thermodynamics, Control Systems, Project Management"
       },
       {
-        name: "Psychology",
-        fullTitle: "BSc Psychology", 
+        name: "Electronic and Electrical Engineering",
+        fullTitle: "BEng Electronic and Electrical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Circuit Analysis, Digital Systems, Signal Processing, Control Systems, Power Electronics, Communications"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Physics, Quantum Mechanics, Electromagnetism, Statistical Physics, Astrophysics, Particle Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Materials Chemistry"
+      },
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics, Numerical Methods"
+      },
+      {
+        name: "Biological Sciences",
+        fullTitle: "BSc Biological Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cell Biology, Genetics, Evolution, Ecology, Biochemistry, Molecular Biology, Bioinformatics"
+      },
+      // Social Sciences & Psychology
+      {
+        name: "Psychology", 
+        fullTitle: "BSc Psychology",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
@@ -2922,6 +3170,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Biological Psychology, Research Methods, Statistics, Individual Differences, Abnormal Psychology"
       },
+      {
+        name: "Economics",
+        fullTitle: "BSc Economics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Mathematical Economics, Development Economics, Public Economics"
+      },
+      // Architecture & Built Environment
       {
         name: "Architecture",
         fullTitle: "BSc Architecture",
@@ -2931,9 +3190,31 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Optional",
         yearAbroad: "Optional",
         courseContent: "Architectural Design, History and Theory, Building Technology, Structures, Environmental Design, Urban Design, Professional Practice, Digital Design"
+      },
+      // Geography & Environmental Sciences
+      {
+        name: "Geography",
+        fullTitle: "BSc Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Environmental Science, Urban Planning, Climate Change"
+      },
+      {
+        name: "Environmental Sciences",
+        fullTitle: "BSc Environmental Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Environmental Chemistry, Ecology, Climate Science, Environmental Management, Sustainability, Pollution Control"
       }
     ],
     "University of Edinburgh": [
+      // Computer Science & IT
       {
         name: "Computer Science",
         fullTitle: "BSc Computer Science",
@@ -2965,6 +3246,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Programming, Discrete Mathematics, Computer Systems, Human-Computer Interaction, Algorithms, Software Engineering, Machine Learning, Data Science"
       },
       {
+        name: "Software Engineering",
+        fullTitle: "BSc Software Engineering",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Software Design, Programming Languages, Software Testing, Project Management, Agile Methods, Human-Computer Interaction"
+      },
+      // Engineering
+      {
         name: "Engineering",
         fullTitle: "BEng Engineering",
         duration: "4 years",
@@ -2975,6 +3267,68 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Engineering Mathematics, Mechanics, Electrical Engineering, Thermodynamics, Materials Science, Design and Manufacturing, Control Systems, Signal Processing"
       },
       {
+        name: "Electrical and Electronic Engineering",
+        fullTitle: "BEng Electrical and Electronic Engineering",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Circuit Analysis, Electronics, Signal Processing, Control Systems, Power Systems, Communications, VLSI Design"
+      },
+      {
+        name: "Mechanical Engineering",
+        fullTitle: "BEng Mechanical Engineering",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Thermodynamics, Fluid Mechanics, Mechanics of Materials, Design, Manufacturing, Heat Transfer, Control Systems"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermal Physics, Optics, Nuclear Physics, Particle Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Medicinal Chemistry"
+      },
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Biology, Numerical Analysis, Operations Research"
+      },
+      {
+        name: "Biological Sciences",
+        fullTitle: "BSc Biological Sciences",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cell Biology, Genetics, Evolution, Ecology, Biochemistry, Molecular Biology, Biotechnology"
+      },
+      // Business & Economics
+      {
         name: "Business Studies",
         fullTitle: "MA Business Studies",
         duration: "4 years", 
@@ -2983,9 +3337,41 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Optional",
         yearAbroad: "Optional",
         courseContent: "Management and Organization, Marketing, Finance, Operations Management, Strategic Management, Business Ethics, International Business, Entrepreneurship"
+      },
+      {
+        name: "Economics",
+        fullTitle: "MA Economics",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Development Economics, International Economics, Public Economics"
+      },
+      // Social Sciences
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Biological Psychology, Research Methods, Statistics"
+      },
+      {
+        name: "Geography",
+        fullTitle: "BSc Geography",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Environmental Science, Urban Planning, Climate Science"
       }
     ],
     "King's College London": [
+      // Computer Science & IT
       {
         name: "Computer Science",
         fullTitle: "BSc Computer Science",
@@ -3007,6 +3393,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Programming, Algorithms, Database Systems, Management Principles, Business Strategy, Project Management, Information Systems, Digital Innovation"
       },
       {
+        name: "Computer Science with Robotics",
+        fullTitle: "BSc Computer Science with Robotics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, AI, Machine Learning, Robotics, Control Systems, Computer Vision, Sensor Systems, Autonomous Systems"
+      },
+      // Engineering
+      {
         name: "Electronic Engineering",
         fullTitle: "BEng Electronic Engineering",
         duration: "3 years",
@@ -3016,6 +3413,69 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Circuit Analysis, Digital Systems, Signal Processing, Communications, Control Systems, Electromagnetics, VLSI Design, Power Electronics"
       },
+      {
+        name: "Electronic Engineering with Management",
+        fullTitle: "BEng Electronic Engineering with Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Electronics, Control Systems, Management Principles, Project Management, Business Strategy, Innovation Management"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermal Physics, Optics, Atomic Physics, Particle Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Biochemistry"
+      },
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics, Numerical Analysis"
+      },
+      // Business & Management
+      {
+        name: "Business Management",
+        fullTitle: "BSc Business Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Foundations of Management, Marketing, Finance, Operations Management, Organizational Behaviour, Strategic Management, International Business, Leadership"
+      },
+      {
+        name: "International Management",
+        fullTitle: "BSc International Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Recommended",
+        courseContent: "Global Business, Cross-cultural Management, International Finance, Global Strategy, International Marketing, Supply Chain Management"
+      },
+      // Social Sciences
       {
         name: "International Relations",
         fullTitle: "BA International Relations",
@@ -3027,14 +3487,171 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "International Politics, Diplomatic Studies, Political Theory, International Law, Global Governance, Security Studies, Political Economy, Regional Studies"
       },
       {
-        name: "Business Management",
-        fullTitle: "BSc Business Management",
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Foundations of Management, Marketing, Finance, Operations Management, Organizational Behaviour, Strategic Management, International Business, Leadership"
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Biological Psychology, Clinical Psychology, Research Methods"
+      },
+      {
+        name: "Geography",
+        fullTitle: "BSc Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Environmental Science, Urban Studies, Development Geography"
+      }
+    ],
+    "University of Manchester": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Algorithms, Software Engineering, Database Systems, Computer Networks, AI, Machine Learning, Cybersecurity"
+      },
+      {
+        name: "Computer Science with Industrial Experience",
+        fullTitle: "BSc Computer Science with Industrial Experience",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Required",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Software Engineering, AI, Database Systems, Industry Project, Professional Skills"
+      },
+      {
+        name: "Computer Science and Mathematics",
+        fullTitle: "BSc Computer Science and Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Discrete Mathematics, Statistics, Algorithms, Computational Mathematics, Mathematical Modelling"
+      },
+      // Engineering
+      {
+        name: "Electrical and Electronic Engineering",
+        fullTitle: "BEng Electrical and Electronic Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Circuit Analysis, Electronics, Power Systems, Control Systems, Signal Processing, Communications"
+      },
+      {
+        name: "Mechanical Engineering",
+        fullTitle: "BEng Mechanical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Thermodynamics, Fluid Mechanics, Materials, Design, Manufacturing, Heat Transfer, Control Systems"
+      },
+      {
+        name: "Civil Engineering",
+        fullTitle: "BEng Civil Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Structural Engineering, Geotechnics, Hydraulics, Construction Management, Environmental Engineering"
+      },
+      {
+        name: "Chemical Engineering",
+        fullTitle: "BEng Chemical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Process Engineering, Chemical Reactions, Heat Transfer, Mass Transfer, Process Control, Safety"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Physics, Quantum Mechanics, Electromagnetism, Statistical Physics, Condensed Matter, Particle Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Materials Chemistry"
+      },
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics, Numerical Analysis"
+      },
+      {
+        name: "Biology",
+        fullTitle: "BSc Biology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cell Biology, Genetics, Evolution, Ecology, Biochemistry, Molecular Biology, Biotechnology"
+      },
+      // Business & Economics
+      {
+        name: "Management",
+        fullTitle: "BSc Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Strategic Management, Finance, Marketing, Operations, Human Resources, International Business"
+      },
+      {
+        name: "Economics",
+        fullTitle: "BSc Economics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Development Economics, International Economics"
+      },
+      // Social Sciences
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
       }
     ]
   };
