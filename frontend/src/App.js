@@ -6635,19 +6635,9 @@ const getAuthenticCoursesForUniversity = (universityName) => {
 const generateComprehensiveCourseData = (university, programName, programData) => {
   // Get authentic courses for this specific university
   const authenticCourses = getAuthenticCoursesForUniversity(university.name);
-        workPlacement: "Not Available",
-        yearAbroad: "Optional",
-        courseContent: "Pure Mathematics, Analysis, Algebra, Geometry, Number Theory, Mathematical Logic, Differential Equations, Statistics"
-      },
-      {
-        name: "Mathematics and Statistics",
-        fullTitle: "BA Mathematics and Statistics",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Optional",
-        courseContent: "Statistical Theory, Probability, Data Analysis, Bayesian Statistics, Mathematical Statistics, Statistical Computing"
+  
+  // Filter courses that match the search term
+  return authenticCourses.filter(course =>
       },
       {
         name: "Mathematics and Computer Science",
