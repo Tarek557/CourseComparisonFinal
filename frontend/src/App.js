@@ -6222,6 +6222,108 @@ const universitiesData = [
     entryRequirements: "ABB-CCC (including Mathematics)",
     ucasPoints: "128-48",
     scholarships: "International Scholarship, Academic Excellence Award",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Software Engineering, Web Development, Data Analytics, Cybersecurity, Mobile Computing, Games Development",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "ABB-CCC (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Mechanical Engineering, Electronic Engineering, Civil Engineering, Automotive Engineering, Sound Engineering, Manufacturing Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "ABB-CCC (including Mathematics and Physics)"
+      },
+      "Business": {
+        courseContent: "Business Management, International Business, Marketing, Finance, Digital Marketing, Entrepreneurship, Retail Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-CCC (no specific subjects)"
+      },
+      "Art and Design": {
+        courseContent: "Fine Art, Graphic Design, Fashion Design, Product Design, Interior Design, Jewellery Design, Visual Communication",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-CCC (portfolio required)"
+      },
+      "Media and Communications": {
+        courseContent: "Media Production, Film Production, Television Production, Radio Production, Journalism, Digital Media",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-CCC (portfolio may be required)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Music Technology, Popular Music, Jazz, Music Business, Sound Engineering, Audio Production",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "ABB-CCC (audition required)"
+      },
+      "Health Sciences": {
+        courseContent: "Nursing, Radiography, Operating Department Practice, Public Health, Health Psychology, Biomedical Science",
+        duration: "3 years (BSc), some 4 years",
+        entryRequirements: "ABB-CCC (including Science subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Commercial Law, Human Rights Law, Constitutional Law, Legal Practice",
+        duration: "3 years (LLB)",
+        entryRequirements: "ABB (no specific subjects)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Forensic Psychology, Health Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-CCC (including Mathematics or Science)"
+      },
+      "Education": {
+        courseContent: "Primary Education, Secondary Education, Early Years Education, Special Educational Needs, Educational Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-CCC (no specific subjects)"
+      },
+      "Architecture": {
+        courseContent: "Architectural Design, Building Technology, Sustainable Architecture, Urban Planning, Interior Architecture",
+        duration: "3 years (BA), 2 years (MArch)",
+        entryRequirements: "ABB (portfolio required)"
+      },
+      "Sports Science": {
+        courseContent: "Exercise Physiology, Sports Psychology, Biomechanics, Sports Nutrition, Coaching Science, Sport Development",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-CCC (including Science subjects)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, English Language, Literary Studies, Contemporary Literature, Drama",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-CCC (including English Literature)"
+      },
+      "History": {
+        courseContent: "British History, European History, Local History, Social History, Cultural History, Public History",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-CCC (including History preferred)"
+      },
+      "Social Work": {
+        courseContent: "Social Work Practice, Social Policy, Community Development, Child Protection, Mental Health Support",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-CCC (no specific subjects)"
+      },
+      "Fashion": {
+        courseContent: "Fashion Design, Fashion Marketing, Fashion Management, Textile Design, Fashion Technology, Sustainable Fashion",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-CCC (portfolio required)"
+      },
+      "Criminology": {
+        courseContent: "Criminal Justice, Forensic Science, Criminal Psychology, Criminal Law, Policing, Crime Prevention",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-CCC (no specific subjects)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Geography, GIS, Urban Geography, Climate Science",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "ABB-CCC (including Geography preferred)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Modelling, Data Analytics",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB (including Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Ecology, Genetics, Microbiology, Environmental Biology, Human Biology",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-CCC (including Biology and Chemistry)"
+      }
+    },
     courseContent: "Programming, AI, Software Engineering, Web Development, Data Analytics",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "74%",
