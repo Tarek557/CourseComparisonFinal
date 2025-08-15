@@ -7634,7 +7634,7 @@ function App() {
             </div>
 
             {/* University Grid or Course Listings */}
-            {searchMode === 'courses' && (searchTerm || selectedInstitution) ? (
+            {(searchTerm || selectedInstitution) ? (
               // Professional Course Listings (DiscoverUni style) with Pagination
               <div>
                 <div className="space-y-6">
@@ -7712,27 +7712,12 @@ function App() {
                   })()}
                 </div>
               </div>
-            ) : searchMode === 'courses' ? (
+            ) : (
               // Empty state for course search mode without search term
               <div className="text-center py-12">
                 <div className="text-gray-400 text-6xl mb-4">🔍</div>
                 <h3 className="text-xl text-gray-600 mb-2">Search for courses</h3>
                 <p className="text-gray-500">Type in the search box above to find courses</p>
-              </div>
-            ) : (
-              // Regular University Grid
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {filteredAndSortedUniversities.map((university) => (
-                  <UniversityCard
-                    key={university.id}
-                    university={university}
-                    isSelected={selectedUniversities.some(uni => uni.id === university.id)}
-                    onSelect={handleUniversitySelect}
-                    isCompareMode={selectedUniversities.length > 0}
-                    searchMode={searchMode}
-                    searchTerm={searchTerm}
-                  />
-                ))}
               </div>
             )}
 
