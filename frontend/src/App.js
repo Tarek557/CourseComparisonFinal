@@ -8395,7 +8395,35 @@ function App() {
   const [selectedInstitutions, setSelectedInstitutions] = useState([]); // Multi-select institutions
   const [institutionSearchTerm, setInstitutionSearchTerm] = useState(''); // Search within institutions
   const [isInstitutionDropdownOpen, setIsInstitutionDropdownOpen] = useState(false); // Dropdown open state
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    // Check localStorage for saved preference, default to false
+    const savedTheme = localStorage.getItem('darkMode');
+    return savedTheme ? JSON.parse(savedTheme) : false;
+  });
   const dropdownRef = useRef(null); // Reference for click outside detection
+
+  // Toggle dark mode and save preference
+  const toggleDarkMode = () => {
+    const newDarkMode = !isDarkMode;
+    setIsDarkMode(newDarkMode);
+    localStorage.setItem('darkMode', JSON.stringify(newDarkMode));
+    
+    // Update document class for Tailwind dark mode
+    if (newDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  };
+
+  // Apply dark mode on component mount
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDarkMode]);
 
   // Close dropdown when clicking outside
   useEffect(() => {
