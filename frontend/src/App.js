@@ -3889,7 +3889,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
       }
     ],
     "University College London (UCL)": [
-      // Computer Science & IT
+      // Computer Science & IT (BSc)
       {
         name: "Computer Science",
         fullTitle: "BSc Computer Science",
@@ -3920,7 +3920,48 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Information Systems, Database Management, Business Analytics, Project Management, Digital Business Strategy, Systems Analysis and Design"
       },
-      // Business & Economics
+      // Engineering (BEng)
+      {
+        name: "Civil Engineering",
+        fullTitle: "BEng Civil Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Structural Engineering, Geotechnical Engineering, Hydraulics, Construction Management, Environmental Engineering, Transportation Engineering"
+      },
+      {
+        name: "Mechanical Engineering",
+        fullTitle: "BEng Mechanical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Thermodynamics, Fluid Mechanics, Materials Science, Design Engineering, Manufacturing, Control Systems, Heat Transfer"
+      },
+      {
+        name: "Electronic and Electrical Engineering",
+        fullTitle: "BEng Electronic and Electrical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Circuit Analysis, Electronics, Signal Processing, Power Systems, Communications, Control Systems, VLSI Design"
+      },
+      {
+        name: "Chemical Engineering",
+        fullTitle: "BEng Chemical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Process Engineering, Chemical Reactions, Heat and Mass Transfer, Process Control, Safety Engineering, Environmental Engineering"
+      },
+      // Business & Economics (BA)
       {
         name: "Management Science",
         fullTitle: "BSc Management Science",
@@ -3941,7 +3982,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Microeconomics, Macroeconomics, Econometrics, Mathematical Economics, Economic History, Development Economics, International Economics"
       },
-      // Sciences
+      {
+        name: "European Business",
+        fullTitle: "BA European Business",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Mandatory",
+        courseContent: "International Business, European Economics, Business Strategy, Marketing, Finance, Cross-Cultural Management, Foreign Languages"
+      },
+      // Sciences (BSc)
       {
         name: "Mathematics",
         fullTitle: "BSc Mathematics",
@@ -3992,7 +4043,58 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Cell Biology, Genetics, Molecular Biology, Ecology, Evolution, Biochemistry, Physiology, Neuroscience"
       },
-      // Psychology
+      {
+        name: "Biochemistry",
+        fullTitle: "BSc Biochemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Protein Chemistry, Enzymology, Metabolism, Molecular Biology, Structural Biology, Bioinformatics, Medical Biochemistry"
+      },
+      // Arts & Humanities (BA)
+      {
+        name: "English Language and Literature",
+        fullTitle: "BA English Language and Literature",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Literary Analysis, Creative Writing, Linguistics, British Literature, World Literature, Critical Theory, Language History"
+      },
+      {
+        name: "History",
+        fullTitle: "BA History",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "British History, European History, World History, Historical Research Methods, Social History, Political History, Cultural History"
+      },
+      {
+        name: "Philosophy",
+        fullTitle: "BA Philosophy",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Logic, Ethics, Metaphysics, Philosophy of Mind, Political Philosophy, History of Philosophy, Epistemology"
+      },
+      {
+        name: "Ancient History",
+        fullTitle: "BA Ancient History",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Greek History, Roman History, Ancient Civilizations, Classical Archaeology, Ancient Languages, Historical Analysis"
+      },
+      // Social Sciences (BA)
       {
         name: "Psychology",
         fullTitle: "BSc Psychology",
@@ -4012,6 +4114,68 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Optional",
         yearAbroad: "Optional",
         courseContent: "Educational Psychology, Developmental Psychology, Learning Theories, Assessment Methods, Special Educational Needs, Research Methods"
+      },
+      {
+        name: "Anthropology",
+        fullTitle: "BA Anthropology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cultural Anthropology, Social Anthropology, Archaeological Methods, Ethnography, Human Evolution, Cross-Cultural Studies"
+      },
+      {
+        name: "Politics and International Relations",
+        fullTitle: "BA Politics and International Relations",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Political Theory, Comparative Politics, International Relations, Public Policy, Political Economy, Security Studies"
+      },
+      // Languages (BA)
+      {
+        name: "Modern Languages",
+        fullTitle: "BA Modern Languages",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Mandatory",
+        courseContent: "French, German, Spanish, Italian, Language Studies, Literature, Cultural Studies, Translation Studies"
+      },
+      {
+        name: "Linguistics",
+        fullTitle: "BA Linguistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Phonetics, Syntax, Semantics, Psycholinguistics, Sociolinguistics, Language Acquisition, Computational Linguistics"
+      },
+      // Creative Arts (BA)
+      {
+        name: "Fine Art",
+        fullTitle: "BA Fine Art",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Drawing, Painting, Sculpture, Digital Art, Art History, Contemporary Art Practice, Critical Studies, Exhibition Design"
+      },
+      {
+        name: "History of Art",
+        fullTitle: "BA History of Art",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Art History, Museum Studies, Visual Culture, Renaissance Art, Modern Art, Contemporary Art, Art Criticism"
       },
       // Geography & Environmental Sciences
       {
@@ -4033,6 +4197,27 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Optional",
         yearAbroad: "Optional",
         courseContent: "Geology, Environmental Chemistry, Hydrology, Climate Science, Environmental Monitoring, Pollution Control, Sustainability"
+      },
+      // Architecture & Planning (BA)
+      {
+        name: "Architecture",
+        fullTitle: "BA Architecture",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Architectural Design, Building Technology, History of Architecture, Urban Planning, Sustainable Design, Construction Methods"
+      },
+      {
+        name: "Urban Planning",
+        fullTitle: "BA Urban Planning",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Urban Design, Planning Theory, Housing Policy, Transportation Planning, Environmental Planning, GIS, Public Policy"
       }
     ],
     "Imperial College London": [
