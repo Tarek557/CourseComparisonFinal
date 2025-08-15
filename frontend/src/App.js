@@ -14475,6 +14475,7 @@ function App() {
                             key={university.id}
                             university={university}
                             searchTerm={searchTerm}
+                            selectedInstitution={selectedInstitution}
                             onSelectCourse={handleCourseSelect}
                             selectedCourses={selectedCourses}
                           />
