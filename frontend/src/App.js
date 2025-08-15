@@ -8392,7 +8392,9 @@ function App() {
   const [selectedUniversities, setSelectedUniversities] = useState([]);
   const [selectedCourses, setSelectedCourses] = useState([]); // New state for course-level selection
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedInstitution, setSelectedInstitution] = useState(''); // New state for institution filter
+  const [selectedInstitutions, setSelectedInstitutions] = useState([]); // Multi-select institutions
+  const [institutionSearchTerm, setInstitutionSearchTerm] = useState(''); // Search within institutions
+  const [isInstitutionDropdownOpen, setIsInstitutionDropdownOpen] = useState(false); // Dropdown open state
   const [sortBy, setSortBy] = useState('ranking');
   const [showComparison, setShowComparison] = useState(false);
   const [searchMode, setSearchMode] = useState('courses'); // Always 'courses' mode
