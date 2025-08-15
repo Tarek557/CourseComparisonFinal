@@ -14214,7 +14214,6 @@ function App() {
         courseCount: 0
       }));
     }
-    }
 
     return filtered.sort((a, b) => {
       switch (sortBy) {
