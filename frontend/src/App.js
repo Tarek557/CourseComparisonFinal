@@ -14311,7 +14311,7 @@ function App() {
               {/* Search Mode Toggle */}
               <div className="flex bg-gray-100 rounded-lg p-1">
                 <button
-                  onClick={() => {setSearchMode('universities'); setSearchTerm('');}}
+                  onClick={() => {setSearchMode('universities'); setSearchTerm(''); setSelectedInstitution('');}}
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
                     searchMode === 'universities' 
                       ? 'bg-white text-blue-600 shadow-sm' 
@@ -14321,7 +14321,7 @@ function App() {
                   Search Universities
                 </button>
                 <button
-                  onClick={() => {setSearchMode('courses'); setSearchTerm('');}}
+                  onClick={() => {setSearchMode('courses'); setSearchTerm(''); setSelectedInstitution('');}}
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
                     searchMode === 'courses' 
                       ? 'bg-white text-blue-600 shadow-sm' 
