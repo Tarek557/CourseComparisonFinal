@@ -14419,10 +14419,12 @@ function App() {
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-blue-600 mb-2">{filteredAndSortedUniversities.length}</div>
                 <div className="text-gray-600">
-                  {searchMode === 'courses' && searchTerm ? 'Provider(s)' : 'Universities Listed'}
+                  {searchMode === 'courses' && (searchTerm || selectedInstitution) ? 'Provider(s)' : 'Universities Listed'}
                 </div>
                 <div className="text-sm text-gray-500 mt-1">
-                  {searchMode === 'courses' && searchTerm ? `for "${searchTerm}"` : '130+ total available'}
+                  {searchMode === 'courses' && searchTerm ? `for "${searchTerm}"` 
+                    : searchMode === 'courses' && selectedInstitution ? `from ${selectedInstitution}`
+                    : '130+ total available'}
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
