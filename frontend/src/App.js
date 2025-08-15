@@ -3759,44 +3759,17 @@ function App() {
         filtered = universitiesData.map(uni => {
           let matchingCourses = [];
           
-          // Check main programs and generate comprehensive course data
-          if (uni.programs) {
-            Object.entries(uni.programs).forEach(([programName, programData]) => {
-              if (programName.toLowerCase().includes(searchTerm.toLowerCase())) {
-                const comprehensiveCourses = generateComprehensiveCourseData(uni, programName, programData);
-                matchingCourses.push(...comprehensiveCourses);
-              }
-              
-              // Check if search term matches any course variations
-              const comprehensiveCourses = generateComprehensiveCourseData(uni, programName, programData);
-              comprehensiveCourses.forEach(course => {
-                if (course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                    course.fullTitle.toLowerCase().includes(searchTerm.toLowerCase())) {
-                  if (!matchingCourses.some(existing => existing.fullTitle === course.fullTitle)) {
-                    matchingCourses.push(course);
-                  }
-                }
-              });
-            });
-          }
+          // Get authentic courses for this university
+          const authenticCourses = getAuthenticCoursesForUniversity(uni.name);
           
-          // Check default course content for basic matches
-          if (uni.courseContent && uni.courseContent.toLowerCase().includes(searchTerm.toLowerCase())) {
-            const defaultCourse = {
-              name: "Computer Science",
-              fullTitle: "BSc (Hons) Computer Science",
-              duration: uni.duration || "3 years",
-              studyMode: "Full time",
-              distanceLearning: "Not Available",
-              workPlacement: "Optional",
-              yearAbroad: "Optional",
-              type: 'default',
-              courseContent: uni.courseContent
-            };
-            if (!matchingCourses.some(existing => existing.fullTitle === defaultCourse.fullTitle)) {
-              matchingCourses.push(defaultCourse);
+          // Filter courses that match the search term
+          authenticCourses.forEach(course => {
+            if (course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                course.fullTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                course.courseContent.toLowerCase().includes(searchTerm.toLowerCase())) {
+              matchingCourses.push(course);
             }
-          }
+          });
           
           return {
             ...uni,
