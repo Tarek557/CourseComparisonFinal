@@ -3260,6 +3260,9 @@ function App() {
                 <option value="ranking">Sort by Ranking</option>
                 <option value="name">Sort by Name</option>
                 <option value="fees">Sort by UK Fees</option>
+                {searchMode === 'courses' && searchTerm && (
+                  <option value="courses">Sort by Course Count</option>
+                )}
               </select>
             </div>
             
