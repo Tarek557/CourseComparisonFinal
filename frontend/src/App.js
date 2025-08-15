@@ -8769,17 +8769,17 @@ function App() {
           <>
             {/* Stats */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <span className="text-2xl font-bold text-blue-600">
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+                <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
                   {(searchTerm || selectedInstitutions.length > 0) ? 
                     filteredAndSortedUniversities.filter(uni => uni.courseCount > 0).length : 
                     130
                   }
                 </span>
-                <div className="text-sm text-gray-600">
+                <div className="text-sm text-gray-600 dark:text-gray-400">
                   {(searchTerm || selectedInstitutions.length > 0) ? 'Provider(s)' : 'Universities Listed'}
                 </div>
-                <div className="text-xs text-gray-500">
+                <div className="text-xs text-gray-500 dark:text-gray-500">
                   {(searchTerm || selectedInstitutions.length > 0) ?
                     (searchTerm ? `for "${searchTerm}"` : 
                      selectedInstitutions.length > 0 ? `${selectedInstitutions.length} selected` : 
@@ -8787,25 +8787,25 @@ function App() {
                     ) : '130+ total available'
                   }</div>
               </div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <div className="text-3xl font-bold text-green-600 mb-2">
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+                <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
                   {(searchTerm || selectedInstitutions.length > 0) ? 
                     filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0) : 
                     0
                   }
                 </div>
-                <div className="text-gray-600">Course(s) Found</div>
-                <div className="text-sm text-gray-500 mt-1">Across selected providers</div>
+                <div className="text-gray-600 dark:text-gray-400">Course(s) Found</div>
+                <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Across selected providers</div>
               </div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <div className="text-3xl font-bold text-purple-600 mb-2">8+</div>
-                <div className="text-gray-600">Program Types</div>
-                <div className="text-sm text-gray-500 mt-1">CS, Engineering, Business, Medicine, Law, etc.</div>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">8+</div>
+                <div className="text-gray-600 dark:text-gray-400">Program Types</div>
+                <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">CS, Engineering, Business, Medicine, Law, etc.</div>
               </div>
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <div className="text-3xl font-bold text-yellow-600 mb-2">THE</div>
-                <div className="text-gray-600">Ranking Source</div>
-                <div className="text-sm text-gray-500 mt-1">Times Higher Education</div>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+                <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">THE</div>
+                <div className="text-gray-600 dark:text-gray-400">Ranking Source</div>
+                <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Times Higher Education</div>
               </div>
             </div>
 
