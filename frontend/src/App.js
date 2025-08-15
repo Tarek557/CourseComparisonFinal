@@ -3069,36 +3069,72 @@ function App() {
     let filtered = [];
     
     if (searchMode === 'courses') {
-      // Search by course/program name
+      // Search by course/program name and return universities with course counts
       if (searchTerm.trim()) {
-        filtered = universitiesData.filter(uni => {
-          // Check main programs
-          const hasMainProgram = uni.programs && Object.keys(uni.programs).some(program =>
-            program.toLowerCase().includes(searchTerm.toLowerCase())
-          );
+        filtered = universitiesData.map(uni => {
+          let matchingCourses = [];
           
-          // Check majors/specializations within programs
-          const hasMajor = uni.programs && Object.values(uni.programs).some(program =>
-            program.majors && program.majors.some(major =>
-              major.name.toLowerCase().includes(searchTerm.toLowerCase())
-            )
-          );
+          // Check main programs
+          if (uni.programs) {
+            Object.entries(uni.programs).forEach(([programName, programData]) => {
+              if (programName.toLowerCase().includes(searchTerm.toLowerCase())) {
+                matchingCourses.push({
+                  name: programName,
+                  type: 'program',
+                  ...programData
+                });
+              }
+              
+              // Check majors/specializations within programs
+              if (programData.majors) {
+                programData.majors.forEach(major => {
+                  if (major.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+                    matchingCourses.push({
+                      name: major.name,
+                      type: 'major',
+                      parentProgram: programName,
+                      ...major
+                    });
+                  }
+                });
+              }
+            });
+          }
           
           // Check default course content
-          const hasInContent = uni.courseContent && 
-            uni.courseContent.toLowerCase().includes(searchTerm.toLowerCase());
+          if (uni.courseContent && uni.courseContent.toLowerCase().includes(searchTerm.toLowerCase())) {
+            matchingCourses.push({
+              name: `Computer Science (${searchTerm})`,
+              type: 'default',
+              courseContent: uni.courseContent,
+              duration: uni.duration,
+              entryRequirements: uni.entryRequirements
+            });
+          }
           
-          return hasMainProgram || hasMajor || hasInContent;
-        });
+          return {
+            ...uni,
+            matchingCourses,
+            courseCount: matchingCourses.length
+          };
+        }).filter(uni => uni.courseCount > 0);
       } else {
-        filtered = universitiesData;
+        filtered = universitiesData.map(uni => ({
+          ...uni,
+          matchingCourses: [],
+          courseCount: 0
+        }));
       }
     } else {
       // Search by university name or location (original functionality)
       filtered = universitiesData.filter(uni =>
         uni.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         uni.location.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+      ).map(uni => ({
+        ...uni,
+        matchingCourses: [],
+        courseCount: 0
+      }));
     }
 
     return filtered.sort((a, b) => {
@@ -3109,6 +3145,8 @@ function App() {
           return a.name.localeCompare(b.name);
         case 'fees':
           return parseInt(a.tuitionFeesUK.replace(/[£,]/g, '')) - parseInt(b.tuitionFeesUK.replace(/[£,]/g, ''));
+        case 'courses':
+          return b.courseCount - a.courseCount; // Sort by course count descending
         default:
           return a.ranking - b.ranking;
       }
