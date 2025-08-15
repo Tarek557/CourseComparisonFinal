@@ -3716,17 +3716,17 @@ function App() {
         filtered = universitiesData.map(uni => {
           let matchingCourses = [];
           
-          // Check main programs and generate enhanced course data
+          // Check main programs and generate comprehensive course data
           if (uni.programs) {
             Object.entries(uni.programs).forEach(([programName, programData]) => {
               if (programName.toLowerCase().includes(searchTerm.toLowerCase())) {
-                const enhancedCourses = generateEnhancedCourseData(uni, programName, programData);
-                matchingCourses.push(...enhancedCourses);
+                const comprehensiveCourses = generateComprehensiveCourseData(uni, programName, programData);
+                matchingCourses.push(...comprehensiveCourses);
               }
               
               // Check if search term matches any course variations
-              const enhancedCourses = generateEnhancedCourseData(uni, programName, programData);
-              enhancedCourses.forEach(course => {
+              const comprehensiveCourses = generateComprehensiveCourseData(uni, programName, programData);
+              comprehensiveCourses.forEach(course => {
                 if (course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                     course.fullTitle.toLowerCase().includes(searchTerm.toLowerCase())) {
                   if (!matchingCourses.some(existing => existing.fullTitle === course.fullTitle)) {
