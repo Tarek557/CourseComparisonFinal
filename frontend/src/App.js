@@ -5081,10 +5081,102 @@ const universitiesData = [
     tuitionFeesInternational: "£18,500",
     entryRequirements: "AAB-BBB (including Mathematics)",
     ucasPoints: "136-96",
-    scholarships: "International Entrance Scholarship, Bangor University Scholarship",
-    courseContent: "Programming, AI, Web Development, Mobile Computing, Data Science",
+    scholarships: "Bangor University International Scholarship, Wales Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Data Science, Software Engineering, Computer Networks, Cybersecurity, Game Development, Mobile Computing, Web Technologies",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAB-BBB (including Mathematics)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Sports Psychology, Neuropsychology, Health Psychology, Child Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBB (including Mathematics or Science)"
+      },
+      "Business": {
+        courseContent: "Business Management, Marketing, Finance, International Business, Entrepreneurship, Digital Business, Operations Management, Strategic Planning",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBB (no specific subjects)"
+      },
+      "Ocean Sciences": {
+        courseContent: "Marine Biology, Oceanography, Marine Chemistry, Marine Geology, Fisheries Science, Marine Conservation, Coastal Management, Climate Change",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBB (including Science subjects)"
+      },
+      "Environmental Science": {
+        courseContent: "Environmental Chemistry, Ecology, Conservation Biology, Climate Science, Environmental Management, Renewable Energy, Sustainability, GIS",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBB (including Science subjects)"
+      },
+      "Forestry": {
+        courseContent: "Forest Management, Silviculture, Forest Ecology, Wood Science, Conservation, Arboriculture, Forest Economics, Sustainable Forestry",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBB (including Science subjects)"
+      },
+      "English Literature": {
+        courseContent: "English Literature, Welsh Literature, Creative Writing, Literary Theory, Medieval Literature, Modern Literature, Poetry, Drama",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBB (including English Literature)"
+      },
+      "History": {
+        courseContent: "Welsh History, British History, Medieval History, Modern History, Social History, Cultural History, Archaeological History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBB (including History preferred)"
+      },
+      "Welsh": {
+        courseContent: "Welsh Language, Welsh Literature, Celtic Studies, Welsh Culture, Welsh History, Translation, Creative Writing in Welsh, Welsh Linguistics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBB (Welsh language skills preferred)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Chinese, Translation Studies, European Studies, Applied Linguistics, International Communication",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAB-BBB (including relevant language)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Composition, Music Technology, Musicology, Welsh Music, Popular Music Studies, Music Education, Audio Production",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAB-BBB (audition required)"
+      },
+      "Sport Science": {
+        courseContent: "Exercise Physiology, Sports Psychology, Biomechanics, Sports Nutrition, Coaching Science, Sport Management, Exercise Rehabilitation",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBB (including Science subjects)"
+      },
+      "Education": {
+        courseContent: "Primary Education, Secondary Education, Welsh-medium Education, Special Educational Needs, Educational Psychology, Teaching Methods",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBB (no specific subjects)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology, Welsh Society, Community Studies, Social Psychology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBB (no specific subjects)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Geography, GIS, Climate Change, Coastal Geography, Welsh Geography",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "AAB-BBB (including Geography preferred)"
+      },
+      "Archaeology": {
+        courseContent: "Field Archaeology, Welsh Archaeology, Prehistoric Archaeology, Medieval Archaeology, Heritage Studies, Archaeological Science",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, Welsh Law, Human Rights Law, Commercial Law, Legal Practice",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAB (no specific subjects)"
+      },
+      "Banking and Finance": {
+        courseContent: "Banking, Corporate Finance, Investment Analysis, Financial Markets, Risk Management, International Finance, Financial Planning",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBB (including Mathematics)"
+      }
+    },
+    courseContent: "Programming, AI, Data Science, Software Engineering, Computer Networks",
     duration: "3 years (BSc), 4 years (MEng)",
-    employmentRate: "79%",
+    employmentRate: "78%",
     researchRating: "3*"
   },
   {
