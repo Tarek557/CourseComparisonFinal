@@ -11,7 +11,7 @@ import sys
 from typing import Dict, Any
 
 # Get backend URL from frontend environment
-BACKEND_URL = "https://unicompare.preview.emergentagent.com/api"
+BACKEND_URL = "https://degreeseeker.preview.emergentagent.com/api"
 
 class BackendTester:
     def __init__(self):
@@ -165,7 +165,7 @@ class BackendTester:
         try:
             # Test preflight request
             headers = {
-                'Origin': 'https://unicompare.preview.emergentagent.com',
+                'Origin': 'https://degreeseeker.preview.emergentagent.com',
                 'Access-Control-Request-Method': 'GET',
                 'Access-Control-Request-Headers': 'Content-Type'
             }
