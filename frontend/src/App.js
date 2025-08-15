@@ -2669,6 +2669,103 @@ const universitiesData = [
     entryRequirements: "AAA (including Mathematics)",
     ucasPoints: "144",
     scholarships: "Bath Postgraduate Scholarship, International Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Machine Learning, Software Engineering, Data Science",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aerospace Engineering, Chemical Engineering, Civil Engineering, Electronic Engineering, Mechanical Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Sciences",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "A*AA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Astrophysics, Mathematical Physics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Medicinal Chemistry",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology and Biochemistry": {
+        courseContent: "Molecular Biology, Biochemistry, Cell Biology, Biotechnology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Neuropsychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Politics": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Public Policy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Management": {
+        courseContent: "Strategic Management, Operations Management, International Business, Marketing",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Architecture": {
+        courseContent: "Design Studio, Building Technology, Architectural History, Environmental Design",
+        duration: "3 years (BSc), 2 years (MArch)",
+        entryRequirements: "AAA (portfolio required)"
+      },
+      "Social Policy": {
+        courseContent: "Social Welfare, Public Policy, Health Policy, Social Research",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Sport and Exercise Science": {
+        courseContent: "Exercise Physiology, Sports Psychology, Biomechanics, Sports Nutrition",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Science subjects)"
+      },
+      "Pharmacy and Pharmacology": {
+        courseContent: "Pharmaceutical Sciences, Clinical Pharmacy, Drug Development, Pharmacology",
+        duration: "4 years (MPharm)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Modern Languages and European Studies": {
+        courseContent: "French, German, Spanish, Italian, European Studies, Translation",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA (including relevant language)"
+      },
+      "Social Sciences": {
+        courseContent: "Sociology, Anthropology, Social Research, Social Theory",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Education": {
+        courseContent: "Educational Studies, Teaching Methods, Educational Psychology, Special Needs",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Natural Sciences": {
+        courseContent: "Interdisciplinary Science, Environmental Science, Materials Science",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "AAA (including Science subjects)"
+      }
+    },
     courseContent: "Programming, AI, Machine Learning, Software Engineering, Data Science",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "92%",
