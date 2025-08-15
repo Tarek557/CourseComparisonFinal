@@ -8654,7 +8654,7 @@ function App() {
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-green-600 mb-2">
-                  {(searchTerm || selectedInstitution) ? 
+                  {(searchTerm || selectedInstitutions.length > 0) ? 
                     filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0) : 
                     0
                   }
