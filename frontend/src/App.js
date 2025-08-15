@@ -594,6 +594,31 @@ const universitiesData = [
         duration: "3 years (BA), 4 years (MEng)",
         entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
       },
+      "Software Engineering": {
+        courseContent: "Software Development, System Architecture, Project Management, Quality Assurance, Agile Methods",
+        duration: "3 years (BA), 4 years (MEng)",
+        entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
+      },
+      "Information Technology": {
+        courseContent: "IT Systems, Network Management, Database Systems, Cloud Computing, Information Security",
+        duration: "3 years (BA)",
+        entryRequirements: "A*A*A (including Mathematics)"
+      },
+      "Cybersecurity": {
+        courseContent: "Network Security, Cryptography, Ethical Hacking, Digital Forensics, Cyber Law, Information Assurance",
+        duration: "3 years (BA), 4 years (MEng)",
+        entryRequirements: "A*A*A (including Mathematics)"
+      },
+      "Data Science": {
+        courseContent: "Big Data Analytics, Machine Learning, Statistical Analysis, Data Mining, Predictive Modeling",
+        duration: "3 years (BA), 4 years (MEng)",
+        entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
+      },
+      "Artificial Intelligence": {
+        courseContent: "Machine Learning, Neural Networks, Computer Vision, Natural Language Processing, AI Ethics",
+        duration: "3 years (BA), 4 years (MEng)",
+        entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
+      },
       "Engineering": {
         courseContent: "Engineering Science, Materials, Electrical, Mechanical, Chemical Engineering",
         duration: "4 years (MEng)",
