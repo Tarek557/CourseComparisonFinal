@@ -1042,6 +1042,128 @@ const universitiesData = [
     entryRequirements: "A*AA (including Mathematics)",
     ucasPoints: "144",
     scholarships: "Warwick Undergraduate Global Excellence Scholarship, Chancellor's International Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Algorithms, AI, Machine Learning, Data Science, Software Engineering",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Systems Engineering, Manufacturing Engineering, Electronic Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Operational Research",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "A*AA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Quantum Physics, Particle Physics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "A*AA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Physical Chemistry, Chemical Biology, Materials Chemistry",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Life Sciences": {
+        courseContent: "Molecular Biology, Biochemistry, Microbiology, Biotechnology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Statistics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Game Theory",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Politics and International Studies": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Security Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "History": {
+        courseContent: "British History, European History, American History, Social History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (including History preferred)"
+      },
+      "English and Comparative Literary Studies": {
+        courseContent: "English Literature, Comparative Literature, Creative Writing, Literary Theory",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Philosophy of Mind, Political Philosophy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Public Law, European Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "A*AA (no specific subjects)"
+      },
+      "Business": {
+        courseContent: "Management, Finance, Marketing, Strategy, International Business",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Corporate Finance, Investment Analysis, Risk Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Film and Television Studies": {
+        courseContent: "Film Theory, Television Studies, Media Production, Screen Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Theatre and Performance Studies": {
+        courseContent: "Performance Theory, Theatre History, Devising, Applied Theatre",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (audition required)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Hispanic Studies, European Studies",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA (including relevant language)"
+      },
+      "Classical Civilisation": {
+        courseContent: "Ancient History, Latin Literature, Greek Literature, Classical Archaeology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Art History": {
+        courseContent: "European Art, Contemporary Art, Visual Culture, Museum Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Statistics": {
+        courseContent: "Statistical Theory, Data Analysis, Probability, Statistical Computing",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Liberal Arts": {
+        courseContent: "Interdisciplinary Studies, Critical Thinking, Research Skills, Global Perspectives",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Ethics, Global Health",
+        duration: "4 years (Graduate Entry MBBS)",
+        entryRequirements: "Graduate degree required plus GAMSAT"
+      }
+    },
     courseContent: "Programming, Algorithms, AI, Data Science, Software Engineering, Computer Systems",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "93%",
