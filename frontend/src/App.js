@@ -3304,7 +3304,7 @@ const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCo
   );
 };
 
-const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, selectedCourses }) => {
+const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, selectedCourses = [] }) => {
   return (
     <div className="mb-8">
       {/* University Header */}
@@ -3324,7 +3324,7 @@ const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, sele
       
       {/* Course Cards */}
       <div className="bg-yellow-50 p-4 rounded-b-lg">
-        {university.matchingCourses.map((course, index) => (
+        {university.matchingCourses && university.matchingCourses.map((course, index) => (
           <CourseCard 
             key={index}
             course={course}
