@@ -4888,6 +4888,78 @@ const universitiesData = [
     entryRequirements: "AAB-ABB (including Mathematics)",
     ucasPoints: "136-112",
     scholarships: "International Scholarship, Aston Excellence Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Data Science, Software Engineering, Computer Networks, Cybersecurity, Mobile Computing, Web Development, Database Systems",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAB-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Chemical Engineering, Civil Engineering, Electronic Engineering, Mechanical Engineering, Biomedical Engineering, Design Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAB-ABB (including Mathematics and Physics)"
+      },
+      "Business": {
+        courseContent: "Management, Marketing, Finance, International Business, Entrepreneurship, Business Analytics, Operations Management, Strategic Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-ABB (no specific subjects)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Business Psychology, Health Psychology, Applied Psychology, Research Methods, Developmental Psychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-ABB (including Mathematics or Science)"
+      },
+      "Biology": {
+        courseContent: "Human Biology, Cell Biology, Molecular Biology, Genetics, Biochemistry, Microbiology, Biotechnology, Medical Biology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-ABB (including Biology and Chemistry)"
+      },
+      "Pharmacy": {
+        courseContent: "Pharmaceutical Sciences, Clinical Pharmacy, Drug Development, Pharmacology, Medicinal Chemistry, Pharmacy Practice, Patient Care",
+        duration: "4 years (MPharm)",
+        entryRequirements: "AAB (including Chemistry and Biology)"
+      },
+      "Optometry": {
+        courseContent: "Vision Science, Ocular Anatomy, Visual Optics, Contact Lenses, Binocular Vision, Ocular Disease, Clinical Practice",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-ABB (including Biology and Physics/Chemistry)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Modelling, Financial Mathematics, Computational Mathematics",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAB-ABB (including Mathematics)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics, Financial Economics, Business Economics, Economic Policy",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-ABB (including Mathematics)"
+      },
+      "Politics and International Relations": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, European Politics, Public Policy, Political Economy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-ABB (no specific subjects)"
+      },
+      "English Language": {
+        courseContent: "English Language, Linguistics, Applied Linguistics, Language Teaching, Translation Studies, Communication Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-ABB (including English)"
+      },
+      "History": {
+        courseContent: "British History, European History, Social History, Cultural History, Political History, Economic History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-ABB (including History preferred)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology, Social Psychology, Urban Studies, Community Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-ABB (no specific subjects)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Translation Studies, European Studies, International Business Communication",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAB-ABB (including relevant language)"
+      }
+    },
     courseContent: "Programming, AI, Data Science, Software Engineering, Computer Networks",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "84%",
