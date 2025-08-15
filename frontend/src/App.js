@@ -4189,11 +4189,18 @@ function App() {
       </div>
 
       <div className="container mx-auto px-4 py-8">
-        {showComparison && selectedUniversities.length > 0 ? (
-          <ComparisonTable 
-            universities={selectedUniversities} 
-            onRemove={removeFromComparison}
-          />
+        {showComparison && (selectedUniversities.length > 0 || selectedCourses.length > 0) ? (
+          searchMode === 'courses' && selectedCourses.length > 0 ? (
+            <CourseComparisonTable 
+              courses={selectedCourses} 
+              onRemove={removeFromCourseComparison}
+            />
+          ) : (
+            <ComparisonTable 
+              universities={selectedUniversities} 
+              onRemove={removeFromComparison}
+            />
+          )
         ) : (
           <>
             {/* Stats */}
