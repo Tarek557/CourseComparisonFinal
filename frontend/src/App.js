@@ -8960,19 +8960,7 @@ const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCo
   );
 };
 
-const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, selectedCourses = [], currentPage = 1, onPageChange, coursesPerPage = 6 }) => {
-  const totalCourses = university.matchingCourses ? university.matchingCourses.length : 0;
-  const totalPages = Math.ceil(totalCourses / coursesPerPage);
-  const startIndex = (currentPage - 1) * coursesPerPage;
-  const endIndex = startIndex + coursesPerPage;
-  const currentCourses = university.matchingCourses ? university.matchingCourses.slice(startIndex, endIndex) : [];
-
-  const handlePageChange = (page) => {
-    if (onPageChange) {
-      onPageChange(university.name, page);
-    }
-  };
-
+const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, selectedCourses = [] }) => {
   return (
     <div className="mb-8">
       {/* University Header */}
@@ -8987,19 +8975,14 @@ const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, sele
         </div>
         <div className="text-right">
           <div className="text-2xl font-bold">{university.courseCount} course(s)</div>
-          {totalPages > 1 && (
-            <div className="text-sm text-green-200">
-              Page {currentPage} of {totalPages}
-            </div>
-          )}
         </div>
       </div>
       
       {/* Course Cards */}
-      <div className="bg-yellow-50 p-4">
-        {currentCourses.map((course, index) => (
+      <div className="bg-yellow-50 p-4 rounded-b-lg">
+        {university.matchingCourses && university.matchingCourses.map((course, index) => (
           <CourseCard 
-            key={startIndex + index}
+            key={index}
             course={course}
             university={university}
             searchTerm={searchTerm}
@@ -9008,57 +8991,6 @@ const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, sele
           />
         ))}
       </div>
-
-      {/* Pagination Controls */}
-      {totalPages > 1 && (
-        <div className="bg-gray-50 px-4 py-3 rounded-b-lg border-t border-gray-200">
-          <div className="flex items-center justify-between">
-            <div className="text-sm text-gray-700">
-              Showing {startIndex + 1} to {Math.min(endIndex, totalCourses)} of {totalCourses} courses
-            </div>
-            <div className="flex space-x-2">
-              <button
-                onClick={() => handlePageChange(currentPage - 1)}
-                disabled={currentPage === 1}
-                className={`px-3 py-1 text-sm rounded ${
-                  currentPage === 1 
-                    ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
-                }`}
-              >
-                Previous
-              </button>
-              
-              {/* Page Numbers */}
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
-                <button
-                  key={page}
-                  onClick={() => handlePageChange(page)}
-                  className={`px-3 py-1 text-sm rounded ${
-                    currentPage === page
-                      ? 'bg-green-600 text-white'
-                      : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
-                  }`}
-                >
-                  {page}
-                </button>
-              ))}
-              
-              <button
-                onClick={() => handlePageChange(currentPage + 1)}
-                disabled={currentPage === totalPages}
-                className={`px-3 py-1 text-sm rounded ${
-                  currentPage === totalPages 
-                    ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
-                    : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
-                }`}
-              >
-                Next
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
