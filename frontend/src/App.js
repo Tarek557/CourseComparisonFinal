@@ -9753,11 +9753,8 @@ function App() {
     });
   }, [searchTerm, sortBy, searchMode]);
 
-  const handleCoursePageChange = (universityName, page) => {
-    setCoursePage(prev => ({
-      ...prev,
-      [universityName]: page
-    }));
+  const handleSearchPageChange = (page) => {
+    setCurrentSearchPage(page);
   };
 
   const handleUniversitySelect = (university) => {
