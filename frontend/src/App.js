@@ -4644,6 +4644,108 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Global Scholarship, James Watt Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Robotics, Data Science, Software Engineering, Human-Computer Interaction, Cybersecurity, Machine Learning, Computer Networks",
+        duration: "4 years (BSc), 5 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Chemical Engineering, Civil Engineering, Electrical Engineering, Mechanical Engineering, Petroleum Engineering, Renewable Energy Engineering, Robotics",
+        duration: "4 years (BEng), 5 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Actuarial Mathematics, Financial Mathematics, Mathematical Biology, Computational Mathematics",
+        duration: "4 years (MA), 5 years (MMath)",
+        entryRequirements: "AAA-ABB (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Applied Physics, Renewable Energy Physics, Medical Physics, Quantum Physics, Materials Physics",
+        duration: "4 years (BSc), 5 years (MPhys)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Pure Chemistry, Applied Chemistry, Materials Chemistry, Environmental Chemistry, Pharmaceutical Chemistry, Chemical Analysis, Green Chemistry",
+        duration: "4 years (BSc), 5 years (MChem)",
+        entryRequirements: "AAA-ABB (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Marine Biology, Molecular Biology, Environmental Biology, Biotechnology, Conservation Biology, Microbiology, Ecology",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Business Psychology, Applied Psychology, Research Methods, Statistics, Developmental Psychology",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics, Business Economics, Economic Policy, Financial Economics",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Business and Management": {
+        courseContent: "Strategic Management, International Business, Marketing, Finance, Entrepreneurship, Operations Management, Digital Business, Supply Chain",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment Analysis, Risk Management, International Finance, Banking",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Architecture": {
+        courseContent: "Design Studio, Building Technology, Architectural History, Urban Planning, Sustainable Design, Construction Management, Digital Architecture",
+        duration: "5 years (MArch)",
+        entryRequirements: "AAA (portfolio required)"
+      },
+      "Construction Project Management": {
+        courseContent: "Project Management, Construction Technology, Quantity Surveying, Building Information Modelling, Sustainable Construction, Contract Law",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Brewing and Distilling": {
+        courseContent: "Fermentation Science, Brewing Technology, Distillation, Quality Control, Product Development, Business Management, Food Safety",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA-ABB (including Chemistry and Biology)"
+      },
+      "Fashion Marketing": {
+        courseContent: "Fashion Marketing, Brand Management, Retail Management, Consumer Behavior, Fashion Buying, Digital Marketing, Global Fashion",
+        duration: "4 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Textiles and Fashion Design": {
+        courseContent: "Textile Design, Fashion Design, Pattern Making, Garment Construction, Fashion Technology, Sustainable Fashion, Fashion History",
+        duration: "4 years (BA)",
+        entryRequirements: "AAA-ABB (portfolio required)"
+      },
+      "Urban Planning": {
+        courseContent: "Urban Design, Planning Policy, Environmental Planning, Transportation Planning, Housing Policy, Sustainability, GIS",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Actuarial Science": {
+        courseContent: "Probability, Statistics, Financial Mathematics, Risk Management, Insurance, Pension Planning, Investment Analysis",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Information Systems": {
+        courseContent: "Database Systems, Systems Analysis, Business Intelligence, IT Project Management, Cybersecurity, Cloud Computing, Data Analytics",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Languages and Intercultural Studies": {
+        courseContent: "French, German, Spanish, Mandarin, Japanese, Translation Studies, Intercultural Communication, International Business",
+        duration: "5 years (MA) with year abroad",
+        entryRequirements: "AAA-ABB (including relevant language)"
+      },
+      "Petroleum Engineering": {
+        courseContent: "Reservoir Engineering, Drilling Engineering, Production Engineering, Petroleum Geology, Well Design, Enhanced Oil Recovery",
+        duration: "4 years (BEng), 5 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      }
+    },
     courseContent: "Programming, AI, Robotics, Data Science, Software Engineering",
     duration: "4 years (BSc), 5 years (MEng)",
     employmentRate: "86%",
