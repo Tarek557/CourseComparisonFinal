@@ -6633,16 +6633,8 @@ const getAuthenticCoursesForUniversity = (universityName) => {
 
 // Enhanced comprehensive course data with authentic university-specific courses
 const generateComprehensiveCourseData = (university, programName, programData) => {
-        yearAbroad: "Optional",
-        courseContent: "Logic, Philosophy of Mind, Ethics in Computing, AI Philosophy, Mathematical Logic, Computational Theory"
-      },
-      // Mathematics & Statistics
-      {
-        name: "Mathematics",
-        fullTitle: "BA Mathematics",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
+  // Get authentic courses for this specific university
+  const authenticCourses = getAuthenticCoursesForUniversity(university.name);
         workPlacement: "Not Available",
         yearAbroad: "Optional",
         courseContent: "Pure Mathematics, Analysis, Algebra, Geometry, Number Theory, Mathematical Logic, Differential Equations, Statistics"
