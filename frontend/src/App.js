@@ -1620,6 +1620,133 @@ const universitiesData = [
     entryRequirements: "AAA (including Mathematics)",
     ucasPoints: "144",
     scholarships: "St Andrews Scholarship, Access Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Software Engineering, AI, Human-Computer Interaction, Data Science",
+        duration: "4 years (BSc), 5 years (MEng)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Biology",
+        duration: "4 years (BSc), 5 years (MMath)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Astrophysics, Quantum Physics",
+        duration: "4 years (BSc), 5 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Chemical Physics",
+        duration: "4 years (BSc), 5 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Marine Biology, Molecular Biology, Ecology, Cell Biology, Evolutionary Biology",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Neuroscience",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "International Relations": {
+        courseContent: "International Politics, Security Studies, International Law, Diplomacy",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "History": {
+        courseContent: "Scottish History, Medieval History, Modern History, Art History",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (including History preferred)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, Literary Theory, Medieval Literature",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Moral Philosophy, Logic, Metaphysics, Philosophy of Mind",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Classics": {
+        courseContent: "Latin Literature, Greek Literature, Ancient History, Classical Archaeology",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (Latin or Greek preferred)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Russian, Arabic",
+        duration: "5 years (MA) with year abroad",
+        entryRequirements: "AAA (including relevant language)"
+      },
+      "Art History": {
+        courseContent: "Renaissance Art, Modern Art, Scottish Art, Museum Studies",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Film Studies": {
+        courseContent: "Film Theory, Cinema History, Documentary Studies, Digital Media",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Geography and Sustainable Development": {
+        courseContent: "Physical Geography, Environmental Science, Sustainable Development, GIS",
+        duration: "4 years (BSc/MA)",
+        entryRequirements: "AAA (including Geography preferred)"
+      },
+      "Management": {
+        courseContent: "Strategic Management, International Business, Marketing, Finance",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Research, Global Health",
+        duration: "6 years (MBChB)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Divinity": {
+        courseContent: "Christian Theology, Biblical Studies, Church History, Ethics",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Social Anthropology": {
+        courseContent: "Cultural Anthropology, Social Theory, Ethnography, Applied Anthropology",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Arabic": {
+        courseContent: "Arabic Language, Islamic Studies, Middle Eastern Studies, Arabic Literature",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Hebrew": {
+        courseContent: "Hebrew Language, Biblical Hebrew, Jewish Studies, Ancient Near East",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Neuroscience": {
+        courseContent: "Cellular Neuroscience, Cognitive Neuroscience, Neuroanatomy, Neurophysiology",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA (including Biology and Chemistry)"
+      },
+      "Earth and Environmental Sciences": {
+        courseContent: "Geology, Environmental Science, Climate Change, Earth System Science",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA (including Mathematics and Science)"
+      },
+      "Statistics": {
+        courseContent: "Statistical Theory, Data Analysis, Probability, Statistical Computing",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      }
+    },
     courseContent: "Programming, Software Engineering, AI, Human-Computer Interaction, Data Science",
     duration: "4 years (BSc), 5 years (MEng)",
     employmentRate: "91%",
