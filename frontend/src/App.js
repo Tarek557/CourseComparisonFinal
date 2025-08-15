@@ -2071,6 +2071,138 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Vice-Chancellor's Scholarship, Overseas Continuation Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Cybersecurity, Software Engineering, Data Analytics",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Electronic Engineering, Biomedical Engineering, Chemical Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Finance",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Astrophysics, Plasma Physics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Green Chemistry",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Ecology, Genetics, Biotechnology, Conservation Biology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Health Psychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Behavioural Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Politics": {
+        courseContent: "Political Theory, International Relations, Public Policy, Political Economy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "History": {
+        courseContent: "British History, Medieval History, Modern History, Social History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including History preferred)"
+      },
+      "English and Related Literature": {
+        courseContent: "English Literature, Creative Writing, Literary Theory, Medieval Literature",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Philosophy of Mind, Political Philosophy, Ancient Philosophy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, Human Rights Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Ethics, Community Medicine",
+        duration: "5 years (MBChB)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Management": {
+        courseContent: "Strategic Management, Operations Management, International Business, Marketing",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Accounting, Business Finance and Management": {
+        courseContent: "Financial Accounting, Corporate Finance, Management Accounting, Business Strategy",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Environment": {
+        courseContent: "Environmental Science, Environmental Management, Conservation, Sustainability",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Science subjects)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Gender Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Composition, Music Technology, Musicology",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAA-ABB (audition required)"
+      },
+      "Linguistics": {
+        courseContent: "Phonetics, Syntax, Semantics, Psycholinguistics, Sociolinguistics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Language and Linguistic Science": {
+        courseContent: "General Linguistics, Language Acquisition, Phonology, Historical Linguistics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Theatre: Writing, Directing and Performance": {
+        courseContent: "Playwriting, Directing, Acting, Theatre History, Applied Theatre",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (audition required)"
+      },
+      "Film and Television Production": {
+        courseContent: "Film Production, Television Production, Screenwriting, Post-production",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (portfolio required)"
+      },
+      "Education": {
+        courseContent: "Educational Psychology, Primary Education, Secondary Education, Special Needs",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Social Policy": {
+        courseContent: "Social Welfare, Public Policy, Health Policy, Housing Policy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Archaeology": {
+        courseContent: "Field Archaeology, Heritage Studies, Archaeological Science, Medieval Archaeology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      }
+    },
     courseContent: "Programming, AI, Cybersecurity, Software Engineering, Data Analytics",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "86%",
