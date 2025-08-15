@@ -3269,16 +3269,22 @@ const generateComprehensiveCourseData = (university, programName, programData) =
   return courses;
 };
 
-const CourseCard = ({ course, university, searchTerm }) => {
+const CourseCard = ({ course, university, searchTerm, onSelectUniversity, isSelected }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-4 border border-gray-200">
       <div className="flex justify-between items-start mb-4">
         <h3 className="text-lg font-semibold text-blue-600 hover:text-blue-800 cursor-pointer">
           {course.fullTitle || course.name}
         </h3>
-        <button className="flex items-center gap-2 px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition-colors">
-          <span>📌</span>
-          Save course
+        <button 
+          onClick={() => onSelectUniversity(university)}
+          className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ${
+            isSelected 
+              ? 'bg-blue-600 text-white hover:bg-blue-700' 
+              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+          }`}
+        >
+          {isSelected ? 'Selected' : 'Select University'}
         </button>
       </div>
       
@@ -3294,7 +3300,9 @@ const CourseCard = ({ course, university, searchTerm }) => {
   );
 };
 
-const UniversityCoursesSection = ({ university, searchTerm }) => {
+const UniversityCoursesSection = ({ university, searchTerm, onSelectUniversity, selectedUniversities }) => {
+  const isSelected = selectedUniversities.some(uni => uni.id === university.id);
+  
   return (
     <div className="mb-8">
       {/* University Header */}
@@ -3320,6 +3328,8 @@ const UniversityCoursesSection = ({ university, searchTerm }) => {
             course={course}
             university={university}
             searchTerm={searchTerm}
+            onSelectUniversity={onSelectUniversity}
+            isSelected={isSelected}
           />
         ))}
       </div>
