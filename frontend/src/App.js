@@ -6613,10 +6613,6 @@ const getAuthenticCoursesForUniversity = (universityName) => {
   // Find the university in our data
   const university = universitiesData.find(uni => uni.name === universityName);
   
-  console.log('getAuthenticCoursesForUniversity called for:', universityName);
-  console.log('Found university:', university ? 'Yes' : 'No');
-  console.log('Has programs:', university && university.programs ? 'Yes' : 'No');
-  
   if (!university || !university.programs) {
     return [];
   }
@@ -6634,7 +6630,6 @@ const getAuthenticCoursesForUniversity = (universityName) => {
     entryRequirements: programData.entryRequirements
   }));
   
-  console.log('Returning courses:', courses.length);
   return courses;
 };
 
