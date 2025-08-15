@@ -7380,53 +7380,41 @@ function App() {
   const filteredAndSortedUniversities = useMemo(() => {
     let filtered = [];
     
-    if (searchMode === 'courses') {
-      // Search by course/program name and return universities with detailed course data
-      if (searchTerm.trim() || selectedInstitution) {
-        filtered = universitiesData.map(uni => {
-          let matchingCourses = [];
-          
-          // Get authentic courses for this university
-          const authenticCourses = getAuthenticCoursesForUniversity(uni.name);
-          
-          // If only institution is selected (no search term), show all courses for that institution
-          if (selectedInstitution && !searchTerm.trim()) {
-            if (uni.name === selectedInstitution) {
-              matchingCourses = authenticCourses;
-            }
-          } else if (searchTerm.trim()) {
-            // Filter courses that match the search term
-            // If institution filter is also selected, only search within that institution
-            if (!selectedInstitution || uni.name === selectedInstitution) {
-              authenticCourses.forEach(course => {
-                if (course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                    course.fullTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                    course.courseContent.toLowerCase().includes(searchTerm.toLowerCase())) {
-                  matchingCourses.push(course);
-                }
-              });
-            }
+    // Search by course/program name and return universities with detailed course data
+    if (searchTerm.trim() || selectedInstitution) {
+      filtered = universitiesData.map(uni => {
+        let matchingCourses = [];
+        
+        // Get authentic courses for this university
+        const authenticCourses = getAuthenticCoursesForUniversity(uni.name);
+        
+        // If only institution is selected (no search term), show all courses for that institution
+        if (selectedInstitution && !searchTerm.trim()) {
+          if (uni.name === selectedInstitution) {
+            matchingCourses = authenticCourses;
           }
-          
-          return {
-            ...uni,
-            matchingCourses,
-            courseCount: matchingCourses.length
-          };
-        }).filter(uni => uni.courseCount > 0);
-      } else {
-        filtered = universitiesData.map(uni => ({
+        } else if (searchTerm.trim()) {
+          // Filter courses that match the search term
+          // If institution filter is also selected, only search within that institution
+          if (!selectedInstitution || uni.name === selectedInstitution) {
+            authenticCourses.forEach(course => {
+              if (course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                  course.fullTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                  course.courseContent.toLowerCase().includes(searchTerm.toLowerCase())) {
+                matchingCourses.push(course);
+              }
+            });
+          }
+        }
+        
+        return {
           ...uni,
-          matchingCourses: [],
-          courseCount: 0
-        }));
-      }
+          matchingCourses,
+          courseCount: matchingCourses.length
+        };
+      }).filter(uni => uni.courseCount > 0);
     } else {
-      // Search by university name or location (original functionality)
-      filtered = universitiesData.filter(uni =>
-        uni.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        uni.location.toLowerCase().includes(searchTerm.toLowerCase())
-      ).map(uni => ({
+      filtered = universitiesData.map(uni => ({
         ...uni,
         matchingCourses: [],
         courseCount: 0
@@ -7447,7 +7435,7 @@ function App() {
           return a.ranking - b.ranking;
       }
     });
-  }, [searchTerm, selectedInstitution, sortBy, searchMode]);
+  }, [searchTerm, selectedInstitution, sortBy]);
 
   const handleSearchPageChange = (page) => {
     setCurrentSearchPage(page);
