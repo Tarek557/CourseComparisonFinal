@@ -4156,6 +4156,83 @@ const universitiesData = [
     entryRequirements: "AAA-BBB (including Mathematics)",
     ucasPoints: "144-96",
     scholarships: "International Excellence Scholarship, Brunel International Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Games Development, Cybersecurity, Data Science",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aerospace Engineering, Civil Engineering, Electronic Engineering, Mechanical Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematics with Computing",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Business": {
+        courseContent: "Business Management, International Business, Marketing, Finance",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Economics and Finance": {
+        courseContent: "Economics, Finance, Accounting, Business Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Design": {
+        courseContent: "Industrial Design, Product Design, Digital Design, Design Engineering",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (portfolio required)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Human Rights Law, International Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Politics": {
+        courseContent: "Political Science, International Relations, Public Policy, Government",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, Journalism, Media Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (including English)"
+      },
+      "Psychology": {
+        courseContent: "Psychology, Social Psychology, Cognitive Psychology, Applied Psychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Mathematics or Science)"
+      },
+      "Life Sciences": {
+        courseContent: "Biomedical Sciences, Biosciences, Environmental Sciences, Sport Sciences",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Biology and Chemistry)"
+      },
+      "Health Sciences": {
+        courseContent: "Public Health, Health Studies, Occupational Therapy, Physiotherapy",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Science subjects)"
+      },
+      "Social Sciences": {
+        courseContent: "Sociology, Anthropology, Social Work, Criminology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Theatre": {
+        courseContent: "Theatre Arts, Drama, Performance Studies, Stage Management",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (audition required)"
+      },
+      "Games Design": {
+        courseContent: "Game Design, Digital Games Theory, Game Development, Interactive Media",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (portfolio required)"
+      }
+    },
     courseContent: "Programming, AI, Games Development, Cybersecurity, Data Science",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "81%",
