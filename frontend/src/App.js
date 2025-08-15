@@ -3269,7 +3269,11 @@ const generateComprehensiveCourseData = (university, programName, programData) =
   return courses;
 };
 
-const CourseCard = ({ course, university, searchTerm, onSelectUniversity, isSelected }) => {
+const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCourses }) => {
+  const isSelected = selectedCourses.some(selectedCourse => 
+    selectedCourse.courseId === `${university.id}-${course.fullTitle}`
+  );
+
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-4 border border-gray-200">
       <div className="flex justify-between items-start mb-4">
@@ -3277,14 +3281,14 @@ const CourseCard = ({ course, university, searchTerm, onSelectUniversity, isSele
           {course.fullTitle || course.name}
         </h3>
         <button 
-          onClick={() => onSelectUniversity(university)}
+          onClick={() => onSelectCourse(course, university)}
           className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ${
             isSelected 
               ? 'bg-blue-600 text-white hover:bg-blue-700' 
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
           }`}
         >
-          {isSelected ? 'Selected' : 'Select University'}
+          {isSelected ? 'Selected' : 'Select Course'}
         </button>
       </div>
       
@@ -3300,9 +3304,7 @@ const CourseCard = ({ course, university, searchTerm, onSelectUniversity, isSele
   );
 };
 
-const UniversityCoursesSection = ({ university, searchTerm, onSelectUniversity, selectedUniversities }) => {
-  const isSelected = selectedUniversities.some(uni => uni.id === university.id);
-  
+const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, selectedCourses }) => {
   return (
     <div className="mb-8">
       {/* University Header */}
@@ -3328,8 +3330,8 @@ const UniversityCoursesSection = ({ university, searchTerm, onSelectUniversity, 
             course={course}
             university={university}
             searchTerm={searchTerm}
-            onSelectUniversity={onSelectUniversity}
-            isSelected={isSelected}
+            onSelectCourse={onSelectCourse}
+            selectedCourses={selectedCourses}
           />
         ))}
       </div>
