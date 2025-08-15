@@ -2722,7 +2722,7 @@ const universitiesData = [
   }
 ];
 
-const UniversityCard = ({ university, isSelected, onSelect, isCompareMode }) => {
+const UniversityCard = ({ university, isSelected, onSelect, isCompareMode, searchMode, searchTerm }) => {
   const rankingColor = university.ranking <= 10 ? 'text-green-600' : 
                        university.ranking <= 50 ? 'text-yellow-600' : 'text-blue-600';
   
@@ -2737,6 +2737,33 @@ const UniversityCard = ({ university, isSelected, onSelect, isCompareMode }) => 
           <div className="text-sm text-gray-600">THE Ranking</div>
         </div>
       </div>
+      
+      {/* Course Search Mode - Show matching courses */}
+      {searchMode === 'courses' && searchTerm && university.courseCount > 0 && (
+        <div className="mb-4 p-3 bg-green-50 rounded-lg border border-green-200">
+          <div className="flex items-center justify-between mb-2">
+            <h4 className="font-semibold text-green-800">
+              {university.courseCount} course{university.courseCount !== 1 ? 's' : ''} found
+            </h4>
+            <span className="text-sm text-green-600">for "{searchTerm}"</span>
+          </div>
+          <div className="space-y-1">
+            {university.matchingCourses.slice(0, 3).map((course, index) => (
+              <div key={index} className="text-sm">
+                <span className="font-medium text-green-700">{course.name}</span>
+                {course.type === 'major' && (
+                  <span className="text-green-600 ml-2">({course.parentProgram})</span>
+                )}
+              </div>
+            ))}
+            {university.courseCount > 3 && (
+              <div className="text-sm text-green-600 font-medium">
+                +{university.courseCount - 3} more course{university.courseCount - 3 !== 1 ? 's' : ''}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
       
       <div className="space-y-3 text-sm">
         <div><span className="font-semibold text-gray-700">Location:</span> {university.location}</div>
