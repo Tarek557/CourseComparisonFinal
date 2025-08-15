@@ -9687,9 +9687,9 @@ function App() {
   const [sortBy, setSortBy] = useState('ranking');
   const [showComparison, setShowComparison] = useState(false);
   const [searchMode, setSearchMode] = useState('universities'); // 'universities' or 'courses'
-  const [coursePage, setCoursePage] = useState({}); // Track current page for each university's courses
+  const [currentSearchPage, setCurrentSearchPage] = useState(1); // For paginating search results
 
-  const COURSES_PER_PAGE = 6;
+  const UNIVERSITIES_PER_PAGE = 6;
 
   const filteredAndSortedUniversities = useMemo(() => {
     let filtered = [];
