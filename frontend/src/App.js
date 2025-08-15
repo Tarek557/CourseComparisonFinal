@@ -5391,7 +5391,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
       }
     ],
     "University of Southampton": [
-      // Computer Science & IT
+      // Computer Science & IT (BSc)
       {
         name: "Computer Science",
         fullTitle: "BSc Computer Science",
@@ -5412,7 +5412,78 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Machine Learning, Neural Networks, Computer Vision, Natural Language Processing, Robotics, Expert Systems, AI Ethics"
       },
-      // Mathematics
+      {
+        name: "Computer Science with Cyber Security",
+        fullTitle: "BSc Computer Science with Cyber Security",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Network Security, Cryptography, Ethical Hacking, Digital Forensics, Risk Management, Security Systems"
+      },
+      {
+        name: "Software Engineering",
+        fullTitle: "BSc Software Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Mandatory",
+        yearAbroad: "Optional",
+        courseContent: "Software Development, System Design, Testing, Project Management, Agile Methods, Database Systems, User Experience"
+      },
+      // Engineering (BEng)
+      {
+        name: "Electronic Engineering",
+        fullTitle: "BEng Electronic Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Circuit Analysis, Electronics, Signal Processing, Communications, Control Systems, Power Electronics, VLSI Design"
+      },
+      {
+        name: "Electrical and Electronic Engineering",
+        fullTitle: "BEng Electrical and Electronic Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Power Systems, Electronics, Control Systems, Communications, Signal Processing, Renewable Energy"
+      },
+      {
+        name: "Mechanical Engineering",
+        fullTitle: "BEng Mechanical Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Thermodynamics, Fluid Mechanics, Materials Science, Design Engineering, Manufacturing, Control Systems"
+      },
+      {
+        name: "Aerospace Engineering",
+        fullTitle: "BEng Aerospace Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Aerodynamics, Flight Mechanics, Aircraft Design, Propulsion Systems, Materials, Control Systems, Space Technology"
+      },
+      {
+        name: "Civil Engineering",
+        fullTitle: "BEng Civil Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Structural Engineering, Geotechnical Engineering, Hydraulics, Construction Management, Environmental Engineering"
+      },
+      // Mathematics (BSc)
       {
         name: "Mathematics",
         fullTitle: "BSc Mathematics",
@@ -5433,7 +5504,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Statistical Theory, Probability, Data Analysis, Regression Analysis, Time Series, Statistical Computing, Bayesian Statistics"
       },
-      // Sciences
+      {
+        name: "Mathematics with Finance",
+        fullTitle: "BSc Mathematics with Finance",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Financial Mathematics, Risk Management, Derivatives, Portfolio Theory, Quantitative Finance, Statistics"
+      },
+      // Sciences (BSc)
       {
         name: "Physics",
         fullTitle: "BSc Physics",
@@ -5464,7 +5545,27 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Computational Chemistry, Materials Chemistry"
       },
-      // Psychology
+      {
+        name: "Biological Sciences",
+        fullTitle: "BSc Biological Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cell Biology, Genetics, Molecular Biology, Ecology, Evolution, Biochemistry, Physiology, Marine Biology"
+      },
+      {
+        name: "Biochemistry",
+        fullTitle: "BSc Biochemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Protein Chemistry, Enzymology, Metabolism, Molecular Biology, Structural Biology, Bioinformatics"
+      },
+      // Psychology (BSc)
       {
         name: "Psychology",
         fullTitle: "BSc Psychology",
@@ -5473,9 +5574,123 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         distanceLearning: "Not Available",
         workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Biological Psychology, Research Methods, Statistics"
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics, Neuropsychology"
       },
-      // Geography
+      {
+        name: "Psychology with Cognitive Neuroscience",
+        fullTitle: "BSc Psychology with Cognitive Neuroscience",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Neuroscience, Brain Imaging, Neuropsychology, Experimental Methods, Statistics"
+      },
+      // Business & Economics (BSc/BA)
+      {
+        name: "Economics",
+        fullTitle: "BSc Economics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Development Economics, International Economics, Economic Policy"
+      },
+      {
+        name: "Management",
+        fullTitle: "BSc Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Strategic Management, Operations Management, Marketing, Finance, Human Resources, International Business"
+      },
+      {
+        name: "Accounting and Finance",
+        fullTitle: "BSc Accounting and Finance",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment Analysis, Financial Markets"
+      },
+      // Arts & Humanities (BA)
+      {
+        name: "English Language and Literature",
+        fullTitle: "BA English Language and Literature",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Literary Analysis, Creative Writing, British Literature, World Literature, Critical Theory, Linguistics"
+      },
+      {
+        name: "History",
+        fullTitle: "BA History",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "British History, European History, World History, Medieval History, Modern History, Social History"
+      },
+      {
+        name: "Philosophy",
+        fullTitle: "BA Philosophy",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Logic, Ethics, Metaphysics, Philosophy of Mind, Political Philosophy, Epistemology"
+      },
+      {
+        name: "Music",
+        fullTitle: "BA Music",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Music Theory, Composition, Performance, Music History, Ethnomusicology, Music Technology"
+      },
+      // Social Sciences (BA)
+      {
+        name: "Politics and International Relations",
+        fullTitle: "BA Politics and International Relations",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Political Theory, International Relations, Comparative Politics, Security Studies, Political Economy"
+      },
+      {
+        name: "Sociology",
+        fullTitle: "BA Sociology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Sociological Theory, Social Research Methods, Social Stratification, Cultural Sociology, Political Sociology"
+      },
+      // Languages (BA)
+      {
+        name: "Modern Languages",
+        fullTitle: "BA Modern Languages",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Mandatory",
+        courseContent: "French, German, Spanish, Italian, Language Studies, Literature, Cultural Studies, Translation"
+      },
+      // Geography (BSc)
       {
         name: "Geography",
         fullTitle: "BSc Geography",
@@ -5484,7 +5699,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         distanceLearning: "Not Available",
         workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Physical Geography, Human Geography, GIS, Remote Sensing, Environmental Management, Climate Change"
+        courseContent: "Physical Geography, Human Geography, Environmental Science, GIS, Remote Sensing, Climate Change"
       }
     ],
     "University of Warwick": [
