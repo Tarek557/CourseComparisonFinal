@@ -4211,11 +4211,18 @@ function App() {
                 <div className="text-3xl font-bold text-green-600 mb-2">
                   {searchMode === 'courses' && searchTerm 
                     ? filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0)
+                    : searchMode === 'courses' && selectedCourses.length > 0
+                    ? selectedCourses.length
                     : selectedUniversities.length
                   }
                 </div>
                 <div className="text-gray-600">
-                  {searchMode === 'courses' && searchTerm ? 'Course(s) Found' : 'Selected for Comparison'}
+                  {searchMode === 'courses' && searchTerm 
+                    ? 'Course(s) Found' 
+                    : searchMode === 'courses' && selectedCourses.length > 0
+                    ? 'Courses Selected'
+                    : 'Selected for Comparison'
+                  }
                 </div>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
