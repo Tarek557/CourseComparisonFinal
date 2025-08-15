@@ -3702,6 +3702,7 @@ const ComparisonTable = ({ universities, onRemove }) => {
 
 function App() {
   const [selectedUniversities, setSelectedUniversities] = useState([]);
+  const [selectedCourses, setSelectedCourses] = useState([]); // New state for course-level selection
   const [searchTerm, setSearchTerm] = useState('');
   const [sortBy, setSortBy] = useState('ranking');
   const [showComparison, setShowComparison] = useState(false);
@@ -3810,12 +3811,37 @@ function App() {
     });
   };
 
+  const handleCourseSelect = (course, university) => {
+    const courseWithUniversity = {
+      ...course,
+      university: university,
+      courseId: `${university.id}-${course.fullTitle}` // Unique identifier
+    };
+
+    setSelectedCourses(prev => {
+      const isAlreadySelected = prev.some(selectedCourse => selectedCourse.courseId === courseWithUniversity.courseId);
+      if (isAlreadySelected) {
+        return prev.filter(selectedCourse => selectedCourse.courseId !== courseWithUniversity.courseId);
+      } else if (prev.length < 4) {
+        return [...prev, courseWithUniversity];
+      } else {
+        alert('You can compare maximum 4 courses at once');
+        return prev;
+      }
+    });
+  };
+
   const removeFromComparison = (universityId) => {
     setSelectedUniversities(prev => prev.filter(uni => uni.id !== universityId));
   };
 
+  const removeFromCourseComparison = (courseId) => {
+    setSelectedCourses(prev => prev.filter(course => course.courseId !== courseId));
+  };
+
   const clearComparison = () => {
     setSelectedUniversities([]);
+    setSelectedCourses([]);
     setShowComparison(false);
   };
 
