@@ -2781,6 +2781,138 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Cardiff University International Scholarship, Vice-Chancellor's International Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Data Science, Computer Vision, Software Engineering",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Civil Engineering, Electronic Engineering, Mechanical Engineering, Architecture Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Operational Research",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Physics and Astronomy": {
+        courseContent: "Theoretical Physics, Experimental Physics, Astrophysics, Particle Physics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Medicinal Chemistry",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Ecology, Genetics, Biotechnology, Marine Biology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Health Psychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Development Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Politics and International Relations": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Welsh Politics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "History": {
+        courseContent: "Welsh History, British History, European History, Ancient History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including History preferred)"
+      },
+      "English Literature": {
+        courseContent: "English Literature, Welsh Literature, Creative Writing, Literary Theory",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Philosophy of Mind, Political Philosophy, Welsh Philosophy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, Welsh Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Ethics, Public Health",
+        duration: "5 years (MB BCh)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Dentistry": {
+        courseContent: "Dental Anatomy, Clinical Dentistry, Oral Pathology, Dental Public Health",
+        duration: "5 years (BDS)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Business Management": {
+        courseContent: "Strategic Management, International Business, Marketing, Finance",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Geography and Planning": {
+        courseContent: "Physical Geography, Human Geography, Urban Planning, Environmental Geography",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "AAA-ABB (including Geography preferred)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Architecture": {
+        courseContent: "Design Studio, Building Technology, Architectural History, Environmental Design",
+        duration: "3 years (BSc), 2 years (MArch)",
+        entryRequirements: "AAA (portfolio required)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Composition, Music Technology, Welsh Music",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAA-ABB (audition required)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Welsh, Translation Studies",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA-ABB (including relevant language)"
+      },
+      "Welsh": {
+        courseContent: "Welsh Language, Welsh Literature, Celtic Studies, Welsh Culture",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (Welsh language skills required)"
+      },
+      "Journalism": {
+        courseContent: "News Writing, Media Law, Digital Journalism, Broadcast Journalism",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Education": {
+        courseContent: "Educational Studies, Primary Education, Secondary Education, Welsh Education",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Archaeology": {
+        courseContent: "Field Archaeology, Welsh Archaeology, Classical Archaeology, Heritage Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      }
+    },
     courseContent: "Programming, AI, Data Science, Computer Vision, Software Engineering",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "84%",
