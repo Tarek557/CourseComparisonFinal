@@ -8636,18 +8636,18 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
               <div className="bg-white rounded-lg shadow-md p-6">
                 <span className="text-2xl font-bold text-blue-600">
-                  {(searchTerm || selectedInstitution) ? 
+                  {(searchTerm || selectedInstitutions.length > 0) ? 
                     filteredAndSortedUniversities.filter(uni => uni.courseCount > 0).length : 
                     130
                   }
                 </span>
                 <div className="text-sm text-gray-600">
-                  {(searchTerm || selectedInstitution) ? 'Provider(s)' : 'Universities Listed'}
+                  {(searchTerm || selectedInstitutions.length > 0) ? 'Provider(s)' : 'Universities Listed'}
                 </div>
                 <div className="text-xs text-gray-500">
-                  {(searchTerm || selectedInstitution) ?
+                  {(searchTerm || selectedInstitutions.length > 0) ?
                     (searchTerm ? `for "${searchTerm}"` : 
-                     selectedInstitution ? `from ${selectedInstitution}` : 
+                     selectedInstitutions.length > 0 ? `${selectedInstitutions.length} selected` : 
                      'matching criteria'
                     ) : '130+ total available'
                   }</div>
