@@ -159,7 +159,7 @@ frontend:
     file: "/app/frontend/src/App.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: true
         agent: "main"
@@ -167,6 +167,9 @@ frontend:
       - working: true
         agent: "testing"
         comment: "Backend stability verified after BSc course data expansion. All API endpoints responding correctly with excellent performance. No memory or performance issues detected. Backend can handle the expanded frontend data without problems."
+      - working: true
+        agent: "main"
+        comment: "Successfully expanded 7 additional universities (Bristol, Warwick, Glasgow, Durham, Southampton, St Andrews, Birmingham, Sheffield) from basic course data to comprehensive programs structure. Each university now has 20-30 detailed Bachelor degree programs across major disciplines (Computer Science, Engineering, Mathematics, Physics, Chemistry, Biology, Psychology, Economics, Politics, History, English, Philosophy, Law, Medicine, Business, etc.). Total: 15 universities now have comprehensive course data. Progress: Universities 1-7 were already expanded, now universities 8-15 also expanded. Need to continue with remaining 35 universities (16-50) to reach target of 50 fully expanded universities."
 
   - task: "University Rankings Display"
     implemented: true
