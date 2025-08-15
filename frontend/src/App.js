@@ -5189,6 +5189,68 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Strathclyde Excellence Scholarship, International Leading Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Software Engineering, Computer Systems, Data Analytics, Cybersecurity, Machine Learning, Human-Computer Interaction",
+        duration: "4 years (BSc), 5 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aerospace Engineering, Biomedical Engineering, Chemical Engineering, Civil Engineering, Electronic Engineering, Mechanical Engineering, Naval Architecture",
+        duration: "4 years (BEng), 5 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Business": {
+        courseContent: "Business Administration, International Business, Marketing, Finance, Entrepreneurship, Strategic Management, Operations Management",
+        duration: "4 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Pharmacy": {
+        courseContent: "Pharmaceutical Sciences, Clinical Pharmacy, Drug Development, Pharmacology, Medicinal Chemistry, Pharmacy Practice",
+        duration: "5 years (MPharm)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Law": {
+        courseContent: "Scots Law, Criminal Law, Contract Law, Constitutional Law, International Law, Commercial Law",
+        duration: "4 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Modelling, Financial Mathematics, Actuarial Mathematics",
+        duration: "4 years (BSc), 5 years (MMath)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Applied Physics, Medical Physics, Renewable Energy Physics",
+        duration: "4 years (BSc), 5 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Pure Chemistry, Applied Chemistry, Forensic Chemistry, Environmental Chemistry, Materials Chemistry",
+        duration: "4 years (BSc), 5 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Marine Biology, Microbiology, Biotechnology, Immunology, Genetics",
+        duration: "4 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Psychology, Applied Psychology, Forensic Psychology, Health Psychology, Research Methods",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (including Mathematics or Science)"
+      },
+      "Architecture": {
+        courseContent: "Architectural Design, Building Technology, Urban Planning, Sustainable Design, Digital Architecture",
+        duration: "5 years (MArch)",
+        entryRequirements: "AAA (portfolio required)"
+      },
+      "Education": {
+        courseContent: "Primary Education, Secondary Education, Educational Psychology, Special Educational Needs, Teaching Methods",
+        duration: "4 years (MA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      }
+    },
     courseContent: "Programming, AI, Software Engineering, Computer Systems, Data Analytics",
     duration: "4 years (BSc), 5 years (MEng)",
     employmentRate: "86%",
