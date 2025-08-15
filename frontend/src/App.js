@@ -3302,47 +3302,48 @@ function App() {
     let filtered = [];
     
     if (searchMode === 'courses') {
-      // Search by course/program name and return universities with course counts
+      // Search by course/program name and return universities with detailed course data
       if (searchTerm.trim()) {
         filtered = universitiesData.map(uni => {
           let matchingCourses = [];
           
-          // Check main programs
+          // Check main programs and generate enhanced course data
           if (uni.programs) {
             Object.entries(uni.programs).forEach(([programName, programData]) => {
               if (programName.toLowerCase().includes(searchTerm.toLowerCase())) {
-                matchingCourses.push({
-                  name: programName,
-                  type: 'program',
-                  ...programData
-                });
+                const enhancedCourses = generateEnhancedCourseData(uni, programName, programData);
+                matchingCourses.push(...enhancedCourses);
               }
               
-              // Check majors/specializations within programs
-              if (programData.majors) {
-                programData.majors.forEach(major => {
-                  if (major.name.toLowerCase().includes(searchTerm.toLowerCase())) {
-                    matchingCourses.push({
-                      name: major.name,
-                      type: 'major',
-                      parentProgram: programName,
-                      ...major
-                    });
+              // Check if search term matches any course variations
+              const enhancedCourses = generateEnhancedCourseData(uni, programName, programData);
+              enhancedCourses.forEach(course => {
+                if (course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    course.fullTitle.toLowerCase().includes(searchTerm.toLowerCase())) {
+                  if (!matchingCourses.some(existing => existing.fullTitle === course.fullTitle)) {
+                    matchingCourses.push(course);
                   }
-                });
-              }
+                }
+              });
             });
           }
           
-          // Check default course content
+          // Check default course content for basic matches
           if (uni.courseContent && uni.courseContent.toLowerCase().includes(searchTerm.toLowerCase())) {
-            matchingCourses.push({
-              name: `Computer Science (${searchTerm})`,
+            const defaultCourse = {
+              name: "Computer Science",
+              fullTitle: "BSc (Hons) Computer Science",
+              duration: uni.duration || "3 years",
+              studyMode: "Full time",
+              distanceLearning: "Not Available",
+              workPlacement: "Optional",
+              yearAbroad: "Optional",
               type: 'default',
-              courseContent: uni.courseContent,
-              duration: uni.duration,
-              entryRequirements: uni.entryRequirements
-            });
+              courseContent: uni.courseContent
+            };
+            if (!matchingCourses.some(existing => existing.fullTitle === defaultCourse.fullTitle)) {
+              matchingCourses.push(defaultCourse);
+            }
           }
           
           return {
