@@ -2891,21 +2891,21 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Foundations of Computer Science, Object-Oriented Programming, Operating Systems, Computer Graphics and Image Processing, Artificial Intelligence, Security, Advanced Algorithms"
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Algorithms, Data Structures, Computer Systems, Software Engineering, Machine Learning, Computer Graphics, Artificial Intelligence"
       },
-      // Sciences
       {
-        name: "Natural Sciences",
-        fullTitle: "BA Natural Sciences",
+        name: "Computer Science with Mathematics",
+        fullTitle: "BA Computer Science with Mathematics",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Physics, Chemistry, Biology, Mathematics, Earth Sciences, Materials Science, Experimental Methods, Scientific Computing"
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Discrete Mathematics, Computational Mathematics, Algorithm Analysis, Mathematical Modelling, Numerical Methods"
       },
+      // Mathematics & Statistics
       {
         name: "Mathematics",
         fullTitle: "BA Mathematics",
@@ -2913,18 +2913,59 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Number Theory, Analysis, Algebra, Geometry, Probability, Mathematical Physics"
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Geometry, Number Theory, Differential Equations"
       },
       {
-        name: "Medical Sciences",
-        fullTitle: "BSc Medical Sciences",
+        name: "Mathematics with Physics",
+        fullTitle: "BA Mathematics with Physics",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Not Available",
-        courseContent: "Human Anatomy, Physiology, Biochemistry, Pharmacology, Pathology, Neuroscience, Immunology"
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Mathematical Physics, Quantum Mechanics, Statistical Mechanics, Differential Equations, Mathematical Methods"
+      },
+      // Sciences
+      {
+        name: "Natural Sciences - Physics",
+        fullTitle: "BA Natural Sciences (Physics)",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Physics, Electromagnetism, Thermodynamics, Particle Physics, Condensed Matter, Astrophysics"
+      },
+      {
+        name: "Natural Sciences - Chemistry",
+        fullTitle: "BA Natural Sciences (Chemistry)",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Quantum Chemistry, Materials Chemistry"
+      },
+      {
+        name: "Natural Sciences - Biological Sciences",
+        fullTitle: "BA Natural Sciences (Biological Sciences)",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cell Biology, Genetics, Evolution, Ecology, Molecular Biology, Biochemistry, Physiology, Neuroscience"
+      },
+      {
+        name: "Natural Sciences - Earth Sciences",
+        fullTitle: "BA Natural Sciences (Earth Sciences)",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Geology, Geophysics, Geochemistry, Paleontology, Environmental Earth Sciences, Climate Science"
       },
       // Engineering
       {
@@ -2933,51 +2974,82 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         duration: "4 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Optional", 
-        courseContent: "Engineering Mathematics, Mechanics, Structures, Fluid Mechanics, Thermodynamics, Electrical Engineering, Information Engineering, Manufacturing Engineering"
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Engineering Mathematics, Mechanics, Electrical Engineering, Civil Engineering, Chemical Engineering, Information Engineering"
       },
-      // Economics & Business
       {
-        name: "Economics",
-        fullTitle: "BA Economics",
-        duration: "3 years",
+        name: "Manufacturing Engineering",
+        fullTitle: "MEng Manufacturing Engineering",
+        duration: "4 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Microeconomics, Macroeconomics, Econometrics, Mathematical Methods, Economic History, Political Economy, Development Economics, Quantitative Economics"
+        workPlacement: "Mandatory",
+        yearAbroad: "Optional",
+        courseContent: "Manufacturing Systems, Operations Management, Quality Control, Supply Chain Management, Industrial Engineering"
       },
+      // Biological & Medical Sciences
       {
-        name: "Management Studies",
-        fullTitle: "BA Management Studies",
-        duration: "3 years",
+        name: "Veterinary Medicine",
+        fullTitle: "VetMB Veterinary Medicine",
+        duration: "6 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Not Available",
-        courseContent: "Strategic Management, Organizational Behaviour, Marketing, Finance, Operations Management, Innovation Management"
+        workPlacement: "Mandatory",
+        yearAbroad: "Optional",
+        courseContent: "Animal Anatomy, Physiology, Pathology, Pharmacology, Surgery, Clinical Practice, Animal Welfare"
       },
-      // Social Sciences
       {
-        name: "Psychological and Behavioural Sciences",
-        fullTitle: "BSc Psychological and Behavioural Sciences",
+        name: "Medicine",
+        fullTitle: "MB BChir Medicine",
+        duration: "6 years",  
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Mandatory",
+        yearAbroad: "Optional",
+        courseContent: "Human Anatomy, Physiology, Pathology, Pharmacology, Clinical Medicine, Surgery, Medical Ethics"
+      },
+      // Psychology & Human Sciences
+      {
+        name: "Psychology and Behavioural Sciences",
+        fullTitle: "BA Psychology and Behavioural Sciences",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Optional",
-        yearAbroad: "Not Available",
-        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Neuroscience, Research Methods, Statistics, Behavioural Economics"
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Neuroscience, Research Methods, Statistics"
       },
+      {
+        name: "Human, Social and Political Sciences",
+        fullTitle: "BA Human, Social and Political Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Anthropology, Sociology, Political Science, International Relations, Social Theory, Research Methods"
+      },
+      // Geography & Environmental Sciences
       {
         name: "Geography",
         fullTitle: "BA Geography",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Not Available",
+        workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Physical Geography, Human Geography, Environmental Science, GIS, Climate Science, Urban Studies"
+        courseContent: "Physical Geography, Human Geography, Environmental Science, GIS, Climate Change, Urban Geography"
+      },
+      {
+        name: "Land Economy",
+        fullTitle: "BA Land Economy",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Environmental Economics, Property Law, Planning Theory, Rural Development, Urban Economics, Sustainability"
       }
     ],
     "Imperial College London": [
