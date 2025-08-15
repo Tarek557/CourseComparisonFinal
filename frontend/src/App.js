@@ -7357,15 +7357,6 @@ function App() {
       // Search by course/program name and return universities with detailed course data
       if (searchTerm.trim() || selectedInstitution) {
         filtered = universitiesData.map(uni => {
-          // If institution filter is selected, only process that specific university
-          if (selectedInstitution && uni.name !== selectedInstitution) {
-            return {
-              ...uni,
-              matchingCourses: [],
-              courseCount: 0
-            };
-          }
-
           let matchingCourses = [];
           
           // Get authentic courses for this university
@@ -7373,16 +7364,21 @@ function App() {
           
           // If only institution is selected (no search term), show all courses for that institution
           if (selectedInstitution && !searchTerm.trim()) {
-            matchingCourses = authenticCourses;
+            if (uni.name === selectedInstitution) {
+              matchingCourses = authenticCourses;
+            }
           } else if (searchTerm.trim()) {
             // Filter courses that match the search term
-            authenticCourses.forEach(course => {
-              if (course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                  course.fullTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                  course.courseContent.toLowerCase().includes(searchTerm.toLowerCase())) {
-                matchingCourses.push(course);
-              }
-            });
+            // If institution filter is also selected, only search within that institution
+            if (!selectedInstitution || uni.name === selectedInstitution) {
+              authenticCourses.forEach(course => {
+                if (course.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    course.fullTitle.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    course.courseContent.toLowerCase().includes(searchTerm.toLowerCase())) {
+                  matchingCourses.push(course);
+                }
+              });
+            }
           }
           
           return {
