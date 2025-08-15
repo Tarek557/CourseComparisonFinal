@@ -6632,17 +6632,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
 };
 
 // Enhanced comprehensive course data with authentic university-specific courses
-        workPlacement: "Not Available",
-        yearAbroad: "Optional",
-        courseContent: "Algorithms, Data Structures, Software Engineering, Machine Learning, Computer Vision, Natural Language Processing, Databases, Computer Networks"
-      },
-      {
-        name: "Computer Science and Philosophy",
-        fullTitle: "BA Computer Science and Philosophy",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Not Available",
+const generateComprehensiveCourseData = (university, programName, programData) => {
         yearAbroad: "Optional",
         courseContent: "Logic, Philosophy of Mind, Ethics in Computing, AI Philosophy, Mathematical Logic, Computational Theory"
       },
