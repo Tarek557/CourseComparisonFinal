@@ -5398,6 +5398,108 @@ const universitiesData = [
     entryRequirements: "AAB-BBC (including Mathematics)",
     ucasPoints: "136-80",
     scholarships: "Vice-Chancellor's Global Scholarship, International Academic Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Cybersecurity, Data Science, Software Engineering, Games Development, Web Development, Mobile Computing",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAB-BBC (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Mechanical Engineering, Electronic Engineering, Civil Engineering, Automotive Engineering, Engineering Management, Sustainable Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAB-BBC (including Mathematics and Physics)"
+      },
+      "Business and Management": {
+        courseContent: "Business Management, International Business, Marketing, Finance, Human Resource Management, Supply Chain Management, Digital Business",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBC (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Human Rights Law, Commercial Law, International Law, Legal Practice, Advocacy",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAB (no specific subjects)"
+      },
+      "Health Sciences": {
+        courseContent: "Nursing, Physiotherapy, Occupational Therapy, Midwifery, Public Health, Sport Rehabilitation, Healthcare Management",
+        duration: "3 years (BSc), some 4 years",
+        entryRequirements: "AAB-BBC (including Science subjects)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Forensic Psychology, Health Psychology, Applied Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBC (including Mathematics or Science)"
+      },
+      "Design": {
+        courseContent: "Graphic Design, Product Design, Interior Design, Fashion Design, Digital Design, Design Management",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBC (portfolio required)"
+      },
+      "Media and Communications": {
+        courseContent: "Media Production, Journalism, Digital Media, Public Relations, Film Studies, Broadcasting, Social Media",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBC (no specific subjects)"
+      },
+      "Education": {
+        courseContent: "Primary Education, Secondary Education, Special Educational Needs, Early Childhood Studies, Educational Leadership",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBC (no specific subjects)"
+      },
+      "Sports Science": {
+        courseContent: "Exercise Physiology, Sports Psychology, Biomechanics, Sports Nutrition, Coaching Science, Sport Development",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBC (including Science subjects)"
+      },
+      "Architecture": {
+        courseContent: "Architectural Design, Building Technology, Sustainable Architecture, Urban Planning, Construction Management",
+        duration: "3 years (BA), 2 years (MArch)",
+        entryRequirements: "AAB (portfolio required)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Modelling, Financial Mathematics, Data Science",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB (including Mathematics)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, English Language, Literary Theory, Contemporary Writing, Drama",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBC (including English Literature)"
+      },
+      "History": {
+        courseContent: "British History, European History, Local History, Social History, Military History, Cultural History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBC (including History preferred)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Geography, GIS, Climate Change, Urban Geography",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "AAB-BBC (including Geography preferred)"
+      },
+      "Social Work": {
+        courseContent: "Social Work Practice, Social Policy, Community Work, Child Protection, Mental Health, Social Research",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBC (no specific subjects)"
+      },
+      "Criminology": {
+        courseContent: "Criminal Justice, Forensic Psychology, Criminal Law, Policing, Crime Prevention, Penology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBC (no specific subjects)"
+      },
+      "Tourism and Hospitality": {
+        courseContent: "Tourism Management, Hospitality Management, Event Management, Tourism Marketing, Sustainable Tourism",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAB-BBC (no specific subjects)"
+      },
+      "Fashion": {
+        courseContent: "Fashion Design, Fashion Marketing, Fashion Management, Textile Design, Fashion Technology, Fashion Communication",
+        duration: "3 years (BA)",
+        entryRequirements: "AAB-BBC (portfolio required)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Music Technology, Music Business, Composition, Popular Music, Music Production",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAB-BBC (audition required)"
+      }
+    },
     courseContent: "Programming, AI, Cybersecurity, Software Engineering, Data Science",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "80%",
