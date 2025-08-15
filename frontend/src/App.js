@@ -3269,10 +3269,10 @@ const generateComprehensiveCourseData = (university, programName, programData) =
   return courses;
 };
 
-const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCourses }) => {
-  const isSelected = selectedCourses.some(selectedCourse => 
+const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCourses = [] }) => {
+  const isSelected = selectedCourses && selectedCourses.some ? selectedCourses.some(selectedCourse => 
     selectedCourse.courseId === `${university.id}-${course.fullTitle}`
-  );
+  ) : false;
 
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-4 border border-gray-200">
@@ -3281,7 +3281,7 @@ const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCo
           {course.fullTitle || course.name}
         </h3>
         <button 
-          onClick={() => onSelectCourse(course, university)}
+          onClick={() => onSelectCourse && onSelectCourse(course, university)}
           className={`px-4 py-2 rounded-lg font-semibold transition-all duration-200 ${
             isSelected 
               ? 'bg-blue-600 text-white hover:bg-blue-700' 
