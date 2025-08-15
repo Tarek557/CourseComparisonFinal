@@ -3657,6 +3657,8 @@ const CourseComparisonTable = ({ courses, onRemove }) => {
     </div>
   );
 };
+
+const ComparisonTable = ({ universities, onRemove }) => {
   const [selectedProgram, setSelectedProgram] = useState('Computer Science');
   const [activeTab, setActiveTab] = useState('comparison');
   
