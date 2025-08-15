@@ -1209,6 +1209,138 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Vice-Chancellor's International Scholarship, Presidential Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Machine Learning, Data Science, Cybersecurity, Web Science",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aeronautics, Civil Engineering, Electronic Engineering, Mechanical Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Modelling",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Physics and Astronomy": {
+        courseContent: "Theoretical Physics, Experimental Physics, Astrophysics, Space Science",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Physical Chemistry, Environmental Chemistry, Materials Science",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Marine Biology, Molecular Biology, Ecology, Genetics, Biochemistry",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Neuropsychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, International Economics, Financial Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Geography and Environmental Science": {
+        courseContent: "Physical Geography, Human Geography, Environmental Management, Climate Science",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "AAA-ABB (including Geography preferred)"
+      },
+      "History": {
+        courseContent: "British History, Medieval History, Modern History, Maritime History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including History preferred)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, Linguistics, Film Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Philosophy of Mind, Political Philosophy, Metaphysics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, Maritime Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Research, Global Health",
+        duration: "5 years (BM)",
+        entryRequirements: "AAA (including Chemistry and Biology)"
+      },
+      "Business and Management": {
+        courseContent: "Management, Marketing, Finance, International Business, Entrepreneurship",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Corporate Finance, Taxation, Auditing",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Politics and International Relations": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, European Politics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Applied Languages, Translation Studies",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA-ABB (including relevant language)"
+      },
+      "Music": {
+        courseContent: "Music Theory, Composition, Performance, Music Technology, Musicology",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAA-ABB (audition required)"
+      },
+      "Art and Design": {
+        courseContent: "Fine Art, Graphic Design, Fashion Design, Textile Design",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (portfolio required)"
+      },
+      "Archaeology": {
+        courseContent: "Field Archaeology, Maritime Archaeology, Cultural Heritage, Archaeological Science",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Education": {
+        courseContent: "Educational Psychology, Curriculum Studies, Special Educational Needs, Primary Education",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Ocean and Earth Science": {
+        courseContent: "Oceanography, Marine Geology, Climate Science, Environmental Monitoring",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics and Science)"
+      },
+      "Film Studies": {
+        courseContent: "Film Theory, Cinema History, Documentary Studies, Digital Media",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Ship Science": {
+        courseContent: "Naval Architecture, Marine Engineering, Yacht Design, Maritime Technology",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      }
+    },
     courseContent: "Programming, AI, Machine Learning, Data Science, Cybersecurity, Web Science",
     duration: "3 years (BSc), 4 years (MEng)", 
     employmentRate: "87%",
