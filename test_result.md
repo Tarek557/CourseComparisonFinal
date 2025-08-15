@@ -115,7 +115,7 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Successfully implemented 12 top UK universities with comprehensive data including THE rankings, fees, entry requirements, locations, etc."
+        comment: "Successfully implemented 130 UK universities with comprehensive data including THE rankings, fees, entry requirements, locations, etc."
 
   - task: "Side-by-Side University Comparison"
     implemented: true
@@ -127,7 +127,7 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Comparison table working perfectly - users can select up to 4 universities and view detailed side-by-side comparison with all criteria."
+        comment: "Course-level comparison functionality working perfectly - users can select specific courses from different universities and compare their unique details side-by-side."
 
   - task: "Search and Filter Functionality"
     implemented: true
@@ -139,7 +139,31 @@ frontend:
     status_history:
       - working: true
         agent: "main"
-        comment: "Search by university name/location and sort by ranking/name/fees working correctly."
+        comment: "Dual search modes (universities/courses) working correctly. Course search now shows empty state when no search term entered."
+
+  - task: "Search Courses UI Improvement"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Successfully implemented UI improvement - Search Courses tab now shows empty state instead of university grid when no search term is entered."
+
+  - task: "BSc Course Data Expansion"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Added comprehensive BSc course data for 16 universities (UCL, Imperial, King's, LSE, York, Southampton, Birmingham, Leeds, Sheffield, Nottingham, etc.). Each university has authentic course data across multiple disciplines: Computer Science, Mathematics, Sciences, Psychology, Geography. Need to continue adding remaining 114+ universities."
 
   - task: "University Rankings Display"
     implemented: true
@@ -156,14 +180,14 @@ frontend:
   - task: "Responsive UI Design"
     implemented: true
     working: true
-    file: "/app/frontend/src/App.css"
+    file: "/app/frontend/src/App.js"
     stuck_count: 0
     priority: "medium"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
-        comment: "Beautiful responsive design with gradient backgrounds, cards, hover effects, and mobile optimization."
+        comment: "Beautiful responsive design with gradient backgrounds, cards, hover effects, and mobile optimization. DiscoverUni-style course listings implemented."
 
 backend:
   - task: "Basic API Setup"
