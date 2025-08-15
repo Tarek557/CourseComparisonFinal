@@ -7721,10 +7721,10 @@ function App() {
               </div>
             )}
 
-            {filteredAndSortedUniversities.length === 0 && (
+            {filteredAndSortedUniversities.length === 0 && searchTerm && (
               <div className="text-center py-12">
-                <div className="text-gray-400 text-6xl mb-4">🔍</div>
-                <h3 className="text-xl text-gray-600 mb-2">No universities found</h3>
+                <div className="text-gray-400 text-6xl mb-4">😔</div>
+                <h3 className="text-xl text-gray-600 mb-2">No courses found</h3>
                 <p className="text-gray-500">Try adjusting your search criteria</p>
               </div>
             )}
