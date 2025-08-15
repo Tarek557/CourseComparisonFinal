@@ -210,11 +210,12 @@ metadata:
 
 test_plan:
   current_focus:
-    - "All core features implemented and tested successfully"
+    - "BSc Course Data Expansion"
+    - "Search Courses UI Improvement"
   stuck_tasks: []
-  test_all: true
+  test_all: false
   test_priority: "high_first"
 
 agent_communication:
   - agent: "main"
-    message: "Successfully created comprehensive UK university comparison website with 12 top universities, side-by-side comparison, search/filter, THE rankings, and responsive design. All core functionality working perfectly as demonstrated by screenshots."
+    message: "Successfully implemented UI improvement for Search Courses tab (now shows empty state when no search term). Added comprehensive BSc course data for 16 universities including UCL, Imperial, King's, LSE, York, Southampton, Birmingham, Leeds, Sheffield, Nottingham. Each university has authentic courses across Computer Science, Mathematics, Sciences, Psychology, Geography disciplines. Still need to add BSc courses for remaining 114+ universities to complete the comprehensive data expansion."
