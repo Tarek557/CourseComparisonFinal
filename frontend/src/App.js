@@ -303,6 +303,51 @@ const universitiesData = [
           }
         ]
       },
+      "Software Engineering": {
+        courseContent: "Software Development, System Design, Project Management, Quality Assurance, Agile Methods",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Information Technology": {
+        courseContent: "IT Systems, Network Administration, Database Management, Cloud Computing, IT Security, System Integration",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Information Systems": {
+        courseContent: "Business Information Systems, Enterprise Systems, IT Management, Systems Analysis, Data Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Cybersecurity": {
+        courseContent: "Network Security, Cryptography, Ethical Hacking, Digital Forensics, Information Assurance, Cyber Law",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Data Science": {
+        courseContent: "Big Data Analytics, Machine Learning, Statistical Analysis, Data Mining, Visualization, Predictive Modeling",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Artificial Intelligence": {
+        courseContent: "Machine Learning, Neural Networks, Computer Vision, Natural Language Processing, Robotics, AI Ethics",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Computer Games Technology": {
+        courseContent: "Game Programming, 3D Graphics, Game Engines, Virtual Reality, Game Design, Interactive Media",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Web Development": {
+        courseContent: "Front-end Development, Back-end Development, Database Design, Web Security, Mobile Web Development",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
+      "Mobile Computing": {
+        courseContent: "Mobile App Development, iOS Development, Android Development, Cross-platform Development, Mobile Security",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*AA (including Mathematics)"
+      },
       "Engineering": {
         courseContent: "Mathematics, Physics, Materials Science, Thermodynamics, Design Engineering",
         duration: "4 years (MEng)",
