@@ -6630,14 +6630,8 @@ const getAuthenticCoursesForUniversity = (universityName) => {
     entryRequirements: programData.entryRequirements
   }));
 };
-    "University of Oxford": [
-      // Computer Science & IT
-      {
-        name: "Computer Science",
-        fullTitle: "BA Computer Science",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
+
+// Enhanced comprehensive course data with authentic university-specific courses
         workPlacement: "Not Available",
         yearAbroad: "Optional",
         courseContent: "Algorithms, Data Structures, Software Engineering, Machine Learning, Computer Vision, Natural Language Processing, Databases, Computer Networks"
