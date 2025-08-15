@@ -4704,6 +4704,404 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics, Neuroscience"
       }
+    ],
+    "University of Birmingham": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Data Structures, Algorithms, Software Engineering, Computer Networks, Databases, AI, Machine Learning"
+      },
+      {
+        name: "Computer Science and Artificial Intelligence",
+        fullTitle: "BSc Computer Science and Artificial Intelligence",  
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "AI Programming, Machine Learning, Neural Networks, Computer Vision, Natural Language Processing, Expert Systems"
+      },
+      // Mathematics
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Differential Equations, Mathematical Methods"
+      },
+      {
+        name: "Mathematical Sciences",
+        fullTitle: "BSc Mathematical Sciences",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Applied Mathematics, Statistics, Operational Research, Mathematical Modelling, Numerical Analysis"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Atomic Physics, Particle Physics"
+      },
+      {
+        name: "Physics and Astrophysics",
+        fullTitle: "BSc Physics and Astrophysics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Stellar Physics, Galactic Astronomy, Cosmology, Planetary Science, Observational Techniques"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Materials Chemistry"
+      },
+      // Psychology
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Biological Psychology, Research Methods"
+      },
+      // Geography & Environmental Sciences
+      {
+        name: "Geography",
+        fullTitle: "BSc Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Remote Sensing, Environmental Management, Climate Change"
+      }
+    ],
+    "University of Leeds": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Algorithms, Software Engineering, Computer Systems, AI, Machine Learning, Data Science"
+      },
+      {
+        name: "Computer Science with Artificial Intelligence",
+        fullTitle: "BSc Computer Science with Artificial Intelligence",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "AI Programming, Machine Learning, Neural Networks, Computer Vision, Robotics, Expert Systems"
+      },
+      // Mathematics
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Mathematical Methods"
+      },
+      {
+        name: "Mathematics and Statistics",
+        fullTitle: "BSc Mathematics and Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Statistical Theory, Probability, Data Analysis, Regression Analysis, Time Series, Statistical Computing"
+      },
+      // Sciences  
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Particle Physics"
+      },
+      {
+        name: "Physics with Astrophysics",
+        fullTitle: "BSc Physics with Astrophysics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",  
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Stellar Physics, Galactic Astronomy, Cosmology, Planetary Physics, Observational Astronomy"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Green Chemistry"
+      },
+      // Psychology
+      {
+        name: "Psychology", 
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
+      },
+      // Geography
+      {
+        name: "Geography",
+        fullTitle: "BSc Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Remote Sensing, Environmental Management"
+      }
+    ],
+    "University of Sheffield": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Data Structures, Algorithms, Software Engineering, Computer Networks, AI, Machine Learning"
+      },
+      {
+        name: "Software Engineering",
+        fullTitle: "BSc Software Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Software Development, System Design, Testing, Project Management, Agile Methods, Database Systems"
+      },
+      // Mathematics
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Mathematical Methods"
+      },
+      {
+        name: "Mathematics and Statistics",
+        fullTitle: "BSc Mathematics and Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Statistical Theory, Probability, Data Analysis, Regression, Time Series, Bayesian Statistics"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Particle Physics"
+      },
+      {
+        name: "Physics with Astrophysics",
+        fullTitle: "BSc Physics with Astrophysics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Stellar Physics, Galactic Astronomy, Cosmology, Planetary Science, Space Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Materials Chemistry"
+      },
+      // Psychology
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
+      },
+      // Geography
+      {
+        name: "Geography",
+        fullTitle: "BSc Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Remote Sensing, Environmental Management"
+      }
+    ],
+    "University of Nottingham": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Algorithms, Software Engineering, Computer Systems, AI, Machine Learning, Human-Computer Interaction"
+      },
+      {
+        name: "Computer Science and Artificial Intelligence",
+        fullTitle: "BSc Computer Science and Artificial Intelligence",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "AI Programming, Machine Learning, Neural Networks, Computer Vision, Natural Language Processing"
+      },
+      // Mathematics
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Mathematical Methods"
+      },
+      {
+        name: "Mathematics and Statistics",
+        fullTitle: "BSc Mathematics and Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Statistical Theory, Probability, Data Analysis, Regression Analysis, Statistical Computing"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Particle Physics"
+      },
+      {
+        name: "Physics with Astrophysics",
+        fullTitle: "BSc Physics with Astrophysics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Stellar Physics, Galactic Astronomy, Cosmology, Planetary Science, Observational Techniques"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry"
+      },
+      // Psychology
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
+      },
+      // Geography & Environmental Sciences
+      {
+        name: "Geography",
+        fullTitle: "BSc Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Remote Sensing, Environmental Management"
+      },
+      {
+        name: "Environmental Science",
+        fullTitle: "BSc Environmental Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Environmental Chemistry, Ecology, Environmental Monitoring, Pollution Control, Conservation Biology, Sustainability"
+      }
     ]
   };
 
