@@ -3755,6 +3755,113 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Design School Scholarship, International Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Human-Computer Interaction, Data Science, Software Engineering",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aeronautical Engineering, Automotive Engineering, Civil Engineering, Electronic Engineering, Mechanical Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematics with Economics",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Physics with Astrophysics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Materials Chemistry",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Materials": {
+        courseContent: "Materials Science, Materials Engineering, Biomaterials, Nanotechnology",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics/Chemistry)"
+      },
+      "Sport Sciences": {
+        courseContent: "Sport Science, Exercise Physiology, Sports Psychology, Coaching Science",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Science subjects)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Business Economics",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Business": {
+        courseContent: "Management, Marketing, Finance, International Business, Entrepreneurship",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Accounting and Financial Management": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Architecture": {
+        courseContent: "Design Studio, Building Technology, Architectural History, Urban Design",
+        duration: "3 years (BA), 2 years (MArch)",
+        entryRequirements: "AAA (portfolio required)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Geography, GIS",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "AAA-ABB (including Geography preferred)"
+      },
+      "Politics": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Public Policy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, Drama, Media Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including English Literature)"
+      },
+      "Art and Design": {
+        courseContent: "Fine Art, Graphic Design, Industrial Design, Textiles",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (portfolio required)"
+      },
+      "Social Sciences": {
+        courseContent: "Sociology, Criminology, Social Policy, International Relations",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Media and Communications": {
+        courseContent: "Media Studies, Digital Media, Communication Studies, Journalism",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Sport Psychology, Applied Psychology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics or Science)"
+      },
+      "Information Management": {
+        courseContent: "Information Systems, Data Management, Digital Libraries, Knowledge Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Product Design": {
+        courseContent: "Industrial Design, User Experience Design, Design Engineering, Innovation",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (portfolio required)"
+      },
+      "Transport Studies": {
+        courseContent: "Transport Planning, Logistics, Supply Chain Management, Sustainable Transport",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      }
+    },
     courseContent: "Programming, AI, Human-Computer Interaction, Data Science, Software Engineering",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "90%",
