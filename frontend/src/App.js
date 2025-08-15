@@ -8585,7 +8585,7 @@ function App() {
                 <option value="ranking">Sort by Ranking</option>
                 <option value="name">Sort by Name</option>
                 <option value="fees">Sort by UK Fees</option>
-                {(searchTerm || selectedInstitution) && (
+                {(searchTerm || selectedInstitutions.length > 0) && (
                   <option value="courses">Sort by Course Count</option>
                 )}
               </select>
