@@ -8635,30 +8635,30 @@ function App() {
               {/* Institution Multi-Select Filter */}
               <div className="relative" ref={dropdownRef}>
                 <div 
-                  className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 cursor-pointer bg-white min-w-64"
+                  className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 cursor-pointer bg-white dark:bg-gray-700 min-w-64 transition-colors duration-300"
                   onClick={() => setIsInstitutionDropdownOpen(!isInstitutionDropdownOpen)}
                 >
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-700">
+                    <span className="text-gray-700 dark:text-gray-300">
                       {selectedInstitutions.length === 0 
                         ? 'All Institutions' 
                         : `${selectedInstitutions.length} institution${selectedInstitutions.length > 1 ? 's' : ''} selected`
                       }
                     </span>
-                    <svg className={`w-4 h-4 transition-transform ${isInstitutionDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className={`w-4 h-4 transition-transform text-gray-500 dark:text-gray-400 ${isInstitutionDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>
                 </div>
                 
                 {isInstitutionDropdownOpen && (
-                  <div className="absolute z-50 mt-1 w-full bg-white border border-gray-300 rounded-lg shadow-lg max-h-80 overflow-hidden">
+                  <div className="absolute z-50 mt-1 w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg max-h-80 overflow-hidden transition-colors duration-300">
                     {/* Search input */}
-                    <div className="p-3 border-b border-gray-200">
+                    <div className="p-3 border-b border-gray-200 dark:border-gray-700">
                       <input
                         type="text"
                         placeholder="Search institutions..."
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
+                        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-colors duration-300"
                         value={institutionSearchTerm}
                         onChange={handleInstitutionSearchChange}
                         onClick={(e) => e.stopPropagation()}
@@ -8667,13 +8667,13 @@ function App() {
                     
                     {/* Clear all button */}
                     {selectedInstitutions.length > 0 && (
-                      <div className="p-2 border-b border-gray-200">
+                      <div className="p-2 border-b border-gray-200 dark:border-gray-700">
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             handleClearInstitutions();
                           }}
-                          className="text-sm text-red-600 hover:text-red-800 font-medium"
+                          className="text-sm text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 font-medium transition-colors duration-300"
                         >
                           Clear all ({selectedInstitutions.length})
                         </button>
@@ -8690,7 +8690,7 @@ function App() {
                         .map(uni => (
                           <div
                             key={uni.id}
-                            className="px-3 py-2 hover:bg-gray-50 cursor-pointer flex items-center gap-2"
+                            className="px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer flex items-center gap-2 transition-colors duration-300"
                             onClick={(e) => {
                               e.stopPropagation();
                               handleInstitutionToggle(uni.name);
@@ -8700,10 +8700,10 @@ function App() {
                               type="checkbox"
                               checked={selectedInstitutions.includes(uni.name)}
                               onChange={() => {}}
-                              className="rounded text-blue-600 focus:ring-blue-500"
+                              className="rounded text-blue-600 focus:ring-blue-500 bg-white dark:bg-gray-700 border-gray-300 dark:border-gray-600"
                             />
-                            <span className="text-sm text-gray-700 flex-1">{uni.name}</span>
-                            <span className="text-xs text-gray-500">#{uni.ranking}</span>
+                            <span className="text-sm text-gray-700 dark:text-gray-300 flex-1">{uni.name}</span>
+                            <span className="text-xs text-gray-500 dark:text-gray-400">#{uni.ranking}</span>
                           </div>
                         ))
                       }
