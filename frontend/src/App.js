@@ -4461,6 +4461,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "Physical Geography, Human Geography, GIS, Remote Sensing, Environmental Management, Climate Change"
       }
     ],
+    "University of Warwick": [
       // Computer Science & IT
       {
         name: "Computer Science",
