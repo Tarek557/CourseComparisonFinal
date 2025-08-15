@@ -6945,6 +6945,301 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
       }
+    ],
+    "University of Plymouth": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Data Structures, Algorithms, Software Engineering, Computer Networks, AI, Machine Learning"
+      },
+      {
+        name: "Computing and Games Development",
+        fullTitle: "BSc Computing and Games Development",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Game Programming, Computer Graphics, Game Design, AI for Games, Virtual Reality, Game Engines"
+      },
+      // Mathematics
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Mathematical Methods"
+      },
+      {
+        name: "Mathematics and Statistics",
+        fullTitle: "BSc Mathematics and Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Statistical Theory, Probability, Data Analysis, Regression Analysis, Statistical Computing"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Particle Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry"
+      },
+      // Psychology
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
+      },
+      // Geography
+      {
+        name: "Geography",
+        fullTitle: "BSc Geography",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Physical Geography, Human Geography, GIS, Remote Sensing, Environmental Management"
+      }
+    ],
+    "University of Portsmouth": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Data Structures, Algorithms, Software Engineering, Computer Networks, AI, Machine Learning, Cybersecurity"
+      },
+      {
+        name: "Computer Games Technology",
+        fullTitle: "BSc Computer Games Technology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Game Programming, Computer Graphics, Game Design, AI for Games, Virtual Reality, Game Engines"
+      },
+      // Mathematics  
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Mathematical Methods"
+      },
+      {
+        name: "Mathematics with Statistics",
+        fullTitle: "BSc Mathematics with Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Statistical Theory, Probability, Data Analysis, Regression Analysis, Statistical Computing"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Particle Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry"
+      },
+      // Psychology
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
+      }
+    ],
+    "Coventry University": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Data Structures, Algorithms, Software Engineering, Computer Networks, AI, Machine Learning, Cybersecurity"
+      },
+      {
+        name: "Cyber Security",
+        fullTitle: "BSc Cyber Security",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Network Security, Cryptography, Ethical Hacking, Digital Forensics, Risk Management, Penetration Testing"
+      },
+      // Mathematics
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Mathematical Methods"
+      },
+      {
+        name: "Mathematics and Statistics",
+        fullTitle: "BSc Mathematics and Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Statistical Theory, Probability, Data Analysis, Regression Analysis, Statistical Computing"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Particle Physics"
+      },
+      // Psychology
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
+      }
+    ],
+    "University of Central Lancashire": [
+      // Computer Science & IT
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Data Structures, Algorithms, Software Engineering, Computer Networks, AI, Machine Learning"
+      },
+      {
+        name: "Computer Games Development",
+        fullTitle: "BSc Computer Games Development",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Game Programming, Computer Graphics, Game Design, AI for Games, Virtual Reality, Game Engines"
+      },
+      // Mathematics
+      {
+        name: "Mathematics",
+        fullTitle: "BSc Mathematics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Analysis, Algebra, Mathematical Methods"
+      },
+      // Sciences
+      {
+        name: "Physics",
+        fullTitle: "BSc Physics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Classical Mechanics, Quantum Mechanics, Electromagnetism, Thermodynamics, Particle Physics"
+      },
+      {
+        name: "Chemistry",
+        fullTitle: "BSc Chemistry",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry"
+      },
+      // Psychology
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics"
+      }
     ]
   };
 
