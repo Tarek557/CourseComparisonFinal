@@ -9689,6 +9689,11 @@ function App() {
     setCurrentSearchPage(page);
   };
 
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+    setCurrentSearchPage(1); // Reset to page 1 when search changes
+  };
+
   const handleUniversitySelect = (university) => {
     setSelectedUniversities(prev => {
       const isAlreadySelected = prev.some(uni => uni.id === university.id);
