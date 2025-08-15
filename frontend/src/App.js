@@ -1325,7 +1325,139 @@ const universitiesData = [
     tuitionFeesInternational: "£32,500",
     entryRequirements: "AAA (including Mathematics)",
     ucasPoints: "144",
-    scholarships: "Durham University Business School Scholarships, International Office Scholarships", 
+    scholarships: "Durham University Business School Scholarships, International Office Scholarships",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, Algorithms, AI, Software Engineering, Computer Graphics, Data Science",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Civil Engineering, Electronic Engineering, Mechanical Engineering, General Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "A*AA (including Mathematics and Further Mathematics)"
+      },
+      "Physics": {
+        courseContent: "Theoretical Physics, Experimental Physics, Particle Physics, Astrophysics",
+        duration: "3 years (BSc), 4 years (MPhys)",
+        entryRequirements: "AAA (including Mathematics and Physics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Theoretical Chemistry",
+        duration: "3 years (BSc), 4 years (MChem)",
+        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Ecology, Genetics, Cell Biology, Evolutionary Biology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Biology and Chemistry)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Neuroscience",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Mathematics or Science)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Development Economics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Politics": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Public Policy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "History": {
+        courseContent: "Medieval History, Modern History, British History, World History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (including History preferred)"
+      },
+      "English Literature": {
+        courseContent: "British Literature, World Literature, Literary Theory, Creative Writing",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Metaphysics, Philosophy of Mind, Political Philosophy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, International Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "A*AA (no specific subjects)"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Ethics, Public Health",
+        duration: "5 years (MBBS)",
+        entryRequirements: "A*AA (including Chemistry and Biology)"
+      },
+      "Business and Management": {
+        courseContent: "Management, Finance, Marketing, Strategy, International Business",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (including Mathematics)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Science, GIS",
+        duration: "3 years (BA/BSc)",
+        entryRequirements: "AAA (including Geography preferred)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Anthropology": {
+        courseContent: "Cultural Anthropology, Social Anthropology, Archaeological Anthropology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Theology and Religion": {
+        courseContent: "Christian Theology, World Religions, Religious Studies, Biblical Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Music": {
+        courseContent: "Music Theory, Composition, Performance, Music History, Ethnomusicology",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAA (audition required)"
+      },
+      "Classics": {
+        courseContent: "Latin Literature, Greek Literature, Ancient History, Classical Archaeology",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (Latin or Greek preferred)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Russian, Linguistics",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA (including relevant language)"
+      },
+      "Sport, Exercise and Physical Activity": {
+        courseContent: "Sports Science, Exercise Physiology, Sport Psychology, Coaching",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA (including Science subjects)"
+      },
+      "Education Studies": {
+        courseContent: "Educational Psychology, Curriculum Studies, Education Policy, Teaching Methods",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Archaeology": {
+        courseContent: "Field Archaeology, Medieval Archaeology, Cultural Heritage, Archaeological Science",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA (no specific subjects)"
+      }
+    },
     courseContent: "Programming, Algorithms, AI, Software Engineering, Computer Graphics, Data Science",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "88%",
