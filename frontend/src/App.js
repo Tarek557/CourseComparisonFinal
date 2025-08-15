@@ -14456,7 +14456,7 @@ function App() {
             </div>
 
             {/* University Grid or Course Listings */}
-            {searchMode === 'courses' && searchTerm ? (
+            {searchMode === 'courses' && (searchTerm || selectedInstitution) ? (
               // Professional Course Listings (DiscoverUni style) with Pagination
               <div>
                 <div className="space-y-6">
