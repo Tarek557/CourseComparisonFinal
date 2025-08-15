@@ -6613,9 +6613,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
   // Find the university in our data
   const university = universitiesData.find(uni => uni.name === universityName);
   
-  if (!university || !university.programs) {
+  if (!university) {
+    console.log('University not found:', universityName);
     return [];
   }
+  
+  if (!university.programs) {
+    console.log('University has no programs:', universityName);
+    return [];
+  }
+  
+  console.log('Found university with programs:', universityName, Object.keys(university.programs).length, 'programs');
   
   // Convert programs object to array format expected by the UI
   const courses = Object.entries(university.programs).map(([programName, programData]) => ({
@@ -6630,6 +6638,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
     entryRequirements: programData.entryRequirements
   }));
   
+  console.log('Returning courses for', universityName, ':', courses.length);
   return courses;
 };
 
