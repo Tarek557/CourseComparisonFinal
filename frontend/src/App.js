@@ -6618,28 +6618,51 @@ const getAuthenticCoursesForUniversity = (universityName) => {
     return [];
   }
   
-  if (!university.programs) {
-    console.log('University has no programs:', universityName);
-    return [];
+  // If university has comprehensive programs data, use it
+  if (university.programs) {
+    console.log('Found university with programs:', universityName, Object.keys(university.programs).length, 'programs');
+    
+    // Convert programs object to array format expected by the UI
+    const courses = Object.entries(university.programs).map(([programName, programData]) => ({
+      name: programName,
+      fullTitle: `${programData.duration.includes('BA') ? 'BA' : programData.duration.includes('BSc') ? 'BSc' : programData.duration.includes('BEng') ? 'BEng' : programData.duration.includes('MEng') ? 'MEng' : 'Bachelor'} ${programName}`,
+      duration: programData.duration,
+      studyMode: "Full time",
+      distanceLearning: "Contact university",
+      workPlacement: "Contact university", 
+      yearAbroad: "Contact university",
+      courseContent: programData.courseContent,
+      entryRequirements: programData.entryRequirements
+    }));
+    
+    console.log('Returning courses for', universityName, ':', courses.length);
+    return courses;
   }
   
-  console.log('Found university with programs:', universityName, Object.keys(university.programs).length, 'programs');
+  // Fallback: If university doesn't have programs data, create basic courses from courseContent
+  if (university.courseContent) {
+    console.log('University has basic courseContent, creating fallback courses:', universityName);
+    
+    // Extract course subjects from courseContent and create basic course entries
+    const subjects = university.courseContent.split(', ');
+    const courses = subjects.map(subject => ({
+      name: subject.trim(),
+      fullTitle: `BSc ${subject.trim()}`,
+      duration: university.duration || "3 years (BSc)",
+      studyMode: "Full time",
+      distanceLearning: "Contact university",
+      workPlacement: "Contact university", 
+      yearAbroad: "Contact university",
+      courseContent: `Comprehensive study of ${subject.trim()} including theoretical foundations and practical applications.`,
+      entryRequirements: university.entryRequirements || "Contact university for requirements"
+    }));
+    
+    console.log('Returning fallback courses for', universityName, ':', courses.length);
+    return courses;
+  }
   
-  // Convert programs object to array format expected by the UI
-  const courses = Object.entries(university.programs).map(([programName, programData]) => ({
-    name: programName,
-    fullTitle: `${programData.duration.includes('BA') ? 'BA' : programData.duration.includes('BSc') ? 'BSc' : programData.duration.includes('BEng') ? 'BEng' : programData.duration.includes('MEng') ? 'MEng' : 'Bachelor'} ${programName}`,
-    duration: programData.duration,
-    studyMode: "Full time",
-    distanceLearning: "Contact university",
-    workPlacement: "Contact university", 
-    yearAbroad: "Contact university",
-    courseContent: programData.courseContent,
-    entryRequirements: programData.entryRequirements
-  }));
-  
-  console.log('Returning courses for', universityName, ':', courses.length);
-  return courses;
+  console.log('University has no course data:', universityName);
+  return [];
 };
 
 // Enhanced comprehensive course data with authentic university-specific courses
