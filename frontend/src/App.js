@@ -3955,6 +3955,8 @@ function App() {
                     key={university.id}
                     university={university}
                     searchTerm={searchTerm}
+                    onSelectUniversity={handleUniversitySelect}
+                    selectedUniversities={selectedUniversities}
                   />
                 ))}
               </div>
