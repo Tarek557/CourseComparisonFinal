@@ -2722,7 +2722,68 @@ const universitiesData = [
   }
 ];
 
-const UniversityCard = ({ university, isSelected, onSelect, isCompareMode, searchMode, searchTerm }) => {
+const CourseCard = ({ course, university, searchTerm }) => {
+  return (
+    <div className="bg-white rounded-lg shadow-md p-6 mb-4 border border-gray-200">
+      <div className="flex justify-between items-start mb-4">
+        <h3 className="text-lg font-semibold text-blue-600 hover:text-blue-800 cursor-pointer">
+          {course.fullTitle || course.name}
+        </h3>
+        <button className="flex items-center gap-2 px-4 py-2 border border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition-colors">
+          <span>📌</span>
+          Save course
+        </button>
+      </div>
+      
+      <div className="space-y-2 text-sm text-gray-700">
+        <div><span className="font-medium">{course.duration || "Duration not specified"}</span></div>
+        <div>Study mode: {course.studyMode || "Full time"}</div>
+        <div>Distance learning: {course.distanceLearning || "Not Available"}</div>
+        <div>Work placement year: {course.workPlacement || "Not Available"}</div>
+        <div>Year abroad: {course.yearAbroad || "Optional"}</div>
+        <div>Location: {university.location}</div>
+      </div>
+    </div>
+  );
+};
+
+const UniversityCoursesSection = ({ university, searchTerm }) => {
+  const rankingColor = university.ranking <= 10 ? 'text-green-600' : 
+                       university.ranking <= 50 ? 'text-yellow-600' : 'text-blue-600';
+  
+  return (
+    <div className="mb-8">
+      {/* University Header */}
+      <div className="bg-gradient-to-r from-green-600 to-green-500 text-white p-4 rounded-t-lg flex justify-between items-center">
+        <div>
+          <h2 className="text-xl font-bold">{university.name}</h2>
+          <div className="flex items-center gap-2 mt-1">
+            <span className={`text-sm ${rankingColor === 'text-green-600' ? 'text-green-200' : 'text-white'}`}>
+              THE Ranking: #{university.ranking}
+            </span>
+            <span className="text-green-200">•</span>
+            <span className="text-green-200">Employment Rate: {university.employmentRate}</span>
+          </div>
+        </div>
+        <div className="text-right">
+          <div className="text-2xl font-bold">{university.courseCount} course(s)</div>
+        </div>
+      </div>
+      
+      {/* Course Cards */}
+      <div className="bg-yellow-50 p-4 rounded-b-lg">
+        {university.matchingCourses.map((course, index) => (
+          <CourseCard 
+            key={index}
+            course={course}
+            university={university}
+            searchTerm={searchTerm}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
   const rankingColor = university.ranking <= 10 ? 'text-green-600' : 
                        university.ranking <= 50 ? 'text-yellow-600' : 'text-blue-600';
   
