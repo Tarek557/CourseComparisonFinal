@@ -9952,20 +9952,81 @@ function App() {
 
             {/* University Grid or Course Listings */}
             {searchMode === 'courses' && searchTerm ? (
-              // Professional Course Listings (DiscoverUni style)
-              <div className="space-y-6">
-                {filteredAndSortedUniversities.map((university) => (
-                  <UniversityCoursesSection
-                    key={university.id}
-                    university={university}
-                    searchTerm={searchTerm}
-                    onSelectCourse={handleCourseSelect}
-                    selectedCourses={selectedCourses}
-                    currentPage={coursePage[university.name] || 1}
-                    onPageChange={handleCoursePageChange}
-                    coursesPerPage={COURSES_PER_PAGE}
-                  />
-                ))}
+              // Professional Course Listings (DiscoverUni style) with Pagination
+              <div>
+                <div className="space-y-6">
+                  {(() => {
+                    const startIndex = (currentSearchPage - 1) * UNIVERSITIES_PER_PAGE;
+                    const endIndex = startIndex + UNIVERSITIES_PER_PAGE;
+                    const paginatedUniversities = filteredAndSortedUniversities.slice(startIndex, endIndex);
+                    const totalPages = Math.ceil(filteredAndSortedUniversities.length / UNIVERSITIES_PER_PAGE);
+                    
+                    return (
+                      <>
+                        {paginatedUniversities.map((university) => (
+                          <UniversityCoursesSection
+                            key={university.id}
+                            university={university}
+                            searchTerm={searchTerm}
+                            onSelectCourse={handleCourseSelect}
+                            selectedCourses={selectedCourses}
+                          />
+                        ))}
+                        
+                        {/* Search Results Pagination */}
+                        {totalPages > 1 && (
+                          <div className="bg-white rounded-lg shadow-md p-4 mt-6">
+                            <div className="flex items-center justify-between">
+                              <div className="text-sm text-gray-700">
+                                Showing {startIndex + 1} to {Math.min(endIndex, filteredAndSortedUniversities.length)} of {filteredAndSortedUniversities.length} universities
+                              </div>
+                              <div className="flex space-x-2">
+                                <button
+                                  onClick={() => handleSearchPageChange(currentSearchPage - 1)}
+                                  disabled={currentSearchPage === 1}
+                                  className={`px-4 py-2 text-sm rounded ${
+                                    currentSearchPage === 1 
+                                      ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+                                      : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                                  }`}
+                                >
+                                  Previous
+                                </button>
+                                
+                                {/* Page Numbers */}
+                                {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                                  <button
+                                    key={page}
+                                    onClick={() => handleSearchPageChange(page)}
+                                    className={`px-3 py-2 text-sm rounded ${
+                                      currentSearchPage === page
+                                        ? 'bg-blue-600 text-white'
+                                        : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                                    }`}
+                                  >
+                                    {page}
+                                  </button>
+                                ))}
+                                
+                                <button
+                                  onClick={() => handleSearchPageChange(currentSearchPage + 1)}
+                                  disabled={currentSearchPage === totalPages}
+                                  className={`px-4 py-2 text-sm rounded ${
+                                    currentSearchPage === totalPages 
+                                      ? 'bg-gray-200 text-gray-400 cursor-not-allowed' 
+                                      : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                                  }`}
+                                >
+                                  Next
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        )}
+                      </>
+                    );
+                  })()}
+                </div>
               </div>
             ) : searchMode === 'courses' ? (
               // Empty state for course search mode without search term
