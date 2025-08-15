@@ -8620,7 +8620,7 @@ function App() {
       </header>
 
       {/* Control Panel */}
-      <div className="bg-white shadow-md border-b">
+      <div className="bg-white dark:bg-gray-800 shadow-md border-b dark:border-gray-700 transition-colors duration-300">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
             <div className="flex flex-col sm:flex-row gap-4 flex-1">
