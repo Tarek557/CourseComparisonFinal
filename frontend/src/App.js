@@ -5632,6 +5632,113 @@ const universitiesData = [
     entryRequirements: "ABB-BBC (including Mathematics)",
     ucasPoints: "128-80",
     scholarships: "International Merit Scholarship, Academic Achievement Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Web Development, Mobile Computing, Data Science, Cybersecurity, Games Development, Software Engineering",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "ABB-BBC (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Mechanical Engineering, Electronic Engineering, Civil Engineering, Automotive Engineering, Aerospace Engineering, Manufacturing Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "ABB-BBC (including Mathematics and Physics)"
+      },
+      "Business and Management": {
+        courseContent: "Business Management, International Business, Marketing, Finance, Digital Marketing, Entrepreneurship, Retail Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Art and Design": {
+        courseContent: "Fine Art, Fashion Design, Graphic Design, Interior Design, Textile Design, Digital Arts, Photography, Fashion Communication",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (portfolio required)"
+      },
+      "Architecture": {
+        courseContent: "Architectural Design, Building Technology, Sustainable Architecture, Urban Planning, Landscape Architecture, Interior Architecture",
+        duration: "3 years (BA), 2 years (MArch)",
+        entryRequirements: "ABB (portfolio required)"
+      },
+      "Health Sciences": {
+        courseContent: "Nursing, Physiotherapy, Occupational Therapy, Speech Therapy, Public Health, Biomedical Science, Nutrition",
+        duration: "3 years (BSc), some 4 years",
+        entryRequirements: "ABB-BBC (including Science subjects)"
+      },
+      "Education": {
+        courseContent: "Primary Education, Secondary Education, Early Childhood Studies, Special Educational Needs, Educational Psychology",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Counselling Psychology, Educational Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Mathematics or Science)"
+      },
+      "Sports Science": {
+        courseContent: "Exercise Physiology, Sports Psychology, Biomechanics, Sports Nutrition, Coaching Science, Sport Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Science subjects)"
+      },
+      "Media and Communications": {
+        courseContent: "Media Production, Journalism, Digital Media, Broadcasting, Public Relations, Film Studies, Advertising",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Commercial Law, Human Rights Law, Constitutional Law, International Law",
+        duration: "3 years (LLB)",
+        entryRequirements: "ABB (no specific subjects)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, English Language, Literary Theory, Contemporary Literature, Drama Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (including English Literature)"
+      },
+      "History": {
+        courseContent: "British History, European History, American History, Social History, Cultural History, Local History",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (including History preferred)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Music Technology, Popular Music, Music Business, Composition, Audio Production",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "ABB-BBC (audition required)"
+      },
+      "Geography": {
+        courseContent: "Physical Geography, Human Geography, Environmental Geography, GIS, Urban Geography, Climate Science",
+        duration: "3 years (BSc/BA)",
+        entryRequirements: "ABB-BBC (including Geography preferred)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Modelling, Data Science, Financial Mathematics",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB (including Mathematics)"
+      },
+      "Chemistry": {
+        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Analytical Chemistry, Environmental Chemistry, Medicinal Chemistry",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Chemistry and Mathematics)"
+      },
+      "Biology": {
+        courseContent: "Molecular Biology, Ecology, Genetics, Microbiology, Environmental Biology, Human Biology, Biotechnology",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Biology and Chemistry)"
+      },
+      "Fashion": {
+        courseContent: "Fashion Design, Fashion Marketing, Fashion Business, Fashion Technology, Sustainable Fashion, Fashion Buying",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (portfolio required)"
+      },
+      "Social Work": {
+        courseContent: "Social Work Practice, Social Policy, Community Work, Child Protection, Mental Health, Family Support",
+        duration: "3 years (BA)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      },
+      "Hospitality and Tourism": {
+        courseContent: "Tourism Management, Hotel Management, Event Management, Leisure Studies, Tourism Marketing, Sustainable Tourism",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (no specific subjects)"
+      }
+    },
     courseContent: "Programming, AI, Web Development, Mobile Computing, Data Science",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "77%",
