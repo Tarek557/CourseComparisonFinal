@@ -5947,6 +5947,36 @@ const universitiesData = [
         duration: "3 years (BSc), 4 years (MEng)",
         entryRequirements: "ABB-BBC (including Mathematics)"
       },
+      "Software Engineering": {
+        courseContent: "Software Development, System Design, Agile Methods, Software Testing, Project Management, DevOps",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "ABB-BBC (including Mathematics)"
+      },
+      "Information Technology": {
+        courseContent: "IT Systems, Network Administration, Database Management, Cloud Computing, IT Support, System Integration",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Mathematics)"
+      },
+      "Cybersecurity": {
+        courseContent: "Network Security, Ethical Hacking, Digital Forensics, Information Assurance, Cryptography, Cyber Law",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "ABB-BBC (including Mathematics)"
+      },
+      "Data Science": {
+        courseContent: "Big Data Analytics, Machine Learning, Statistical Analysis, Data Mining, Data Visualization, Predictive Modeling",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "ABB-BBC (including Mathematics)"
+      },
+      "Artificial Intelligence": {
+        courseContent: "Machine Learning, Neural Networks, Computer Vision, Natural Language Processing, Robotics, AI Ethics",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "ABB-BBC (including Mathematics)"
+      },
+      "Web Development": {
+        courseContent: "Front-end Development, Back-end Development, Full-stack Development, Web Security, Mobile Web, E-commerce",
+        duration: "3 years (BSc)",
+        entryRequirements: "ABB-BBC (including Mathematics)"
+      },
       "Games Technology": {
         courseContent: "Game Programming, 3D Graphics, Game Engines, Virtual Reality, Augmented Reality, Game Design, Animation Programming",
         duration: "3 years (BSc), 4 years (MEng)",
