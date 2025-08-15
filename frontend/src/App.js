@@ -8395,6 +8395,21 @@ function App() {
   const [selectedInstitutions, setSelectedInstitutions] = useState([]); // Multi-select institutions
   const [institutionSearchTerm, setInstitutionSearchTerm] = useState(''); // Search within institutions
   const [isInstitutionDropdownOpen, setIsInstitutionDropdownOpen] = useState(false); // Dropdown open state
+  const dropdownRef = useRef(null); // Reference for click outside detection
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsInstitutionDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   const [sortBy, setSortBy] = useState('ranking');
   const [showComparison, setShowComparison] = useState(false);
   const [searchMode, setSearchMode] = useState('courses'); // Always 'courses' mode
