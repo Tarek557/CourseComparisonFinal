@@ -8741,7 +8741,7 @@ function App() {
             </div>
 
             {/* University Grid or Course Listings */}
-            {(searchTerm || selectedInstitution) ? (
+            {(searchTerm || selectedInstitutions.length > 0) ? (
               // Professional Course Listings (DiscoverUni style) with Pagination
               <div>
                 <div className="space-y-6">
