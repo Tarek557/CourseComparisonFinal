@@ -7424,7 +7424,7 @@ function App() {
           return a.ranking - b.ranking;
       }
     });
-  }, [searchTerm, sortBy, searchMode]);
+  }, [searchTerm, selectedInstitution, sortBy, searchMode]);
 
   const handleSearchPageChange = (page) => {
     setCurrentSearchPage(page);
