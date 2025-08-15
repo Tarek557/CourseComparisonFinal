@@ -6638,16 +6638,11 @@ const generateComprehensiveCourseData = (university, programName, programData) =
   
   // Filter courses that match the search term
   return authenticCourses.filter(course =>
-      },
-      {
-        name: "Mathematics and Computer Science",
-        fullTitle: "BA Mathematics and Computer Science",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Not Available",
-        yearAbroad: "Optional",
-        courseContent: "Discrete Mathematics, Algorithms, Computational Mathematics, Mathematical Modelling, Numerical Analysis"
+    course.name.toLowerCase().includes(programName.toLowerCase()) ||
+    course.fullTitle.toLowerCase().includes(programName.toLowerCase()) ||
+    course.courseContent.toLowerCase().includes(programName.toLowerCase())
+  );
+};
       },
       // Sciences
       {
