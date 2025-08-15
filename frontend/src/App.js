@@ -4975,6 +4975,98 @@ const universitiesData = [
     entryRequirements: "AAA-BBB (including Mathematics)",
     ucasPoints: "144-96",
     scholarships: "Essex Postgraduate Research Scholarship, International Excellence Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Machine Learning, Data Science, Computer Games, Cybersecurity, Software Engineering, Human-Computer Interaction, Robotics",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics, Development Economics, Financial Economics, Behavioral Economics, Economic Policy",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Financial Mathematics, Mathematical Biology, Operational Research, Computational Mathematics",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA-ABB (including Mathematics and Further Mathematics)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Developmental Psychology, Forensic Psychology, Health Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Mathematics or Science)"
+      },
+      "Politics": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, European Politics, Public Policy, Political Economy, Human Rights",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Criminology, Urban Studies, Gender Studies, Social Psychology, Community Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Constitutional Law, International Law, Human Rights Law, Commercial Law, European Law, Legal Practice",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "History": {
+        courseContent: "British History, European History, American History, Social History, Cultural History, Political History, Medieval History",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (including History preferred)"
+      },
+      "English Literature": {
+        courseContent: "English Literature, Creative Writing, Literary Theory, American Literature, Modern Literature, Victorian Literature, Drama Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (including English Literature)"
+      },
+      "Philosophy": {
+        courseContent: "Ethics, Logic, Metaphysics, Philosophy of Mind, Political Philosophy, Continental Philosophy, Philosophy of Science, Applied Ethics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Business Management": {
+        courseContent: "Strategic Management, International Business, Marketing, Finance, Entrepreneurship, Operations Management, Digital Business, Leadership",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment Analysis, Banking, Financial Markets, Risk Management",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-BBB (including Mathematics)"
+      },
+      "Film Studies": {
+        courseContent: "Film Theory, Cinema History, Documentary Studies, Film Production, World Cinema, Genre Studies, Digital Media, Screen Writing",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Art History": {
+        courseContent: "European Art, Contemporary Art, Visual Culture, Museum Studies, Art Criticism, Renaissance Art, Modern Art, Curatorial Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Modern Languages": {
+        courseContent: "French, German, Spanish, Italian, Portuguese, Translation Studies, European Studies, Applied Linguistics, Cultural Studies",
+        duration: "4 years (BA) with year abroad",
+        entryRequirements: "AAA-BBB (including relevant language)"
+      },
+      "Linguistics": {
+        courseContent: "Phonetics, Syntax, Semantics, Psycholinguistics, Sociolinguistics, Language Acquisition, Computational Linguistics, Applied Linguistics",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      },
+      "Drama": {
+        courseContent: "Performance Studies, Theatre History, Playwriting, Directing, Stage Management, Applied Theatre, Theatre Criticism, Community Theatre",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (audition required)"
+      },
+      "Human Rights": {
+        courseContent: "Human Rights Law, International Law, Political Theory, Social Justice, Conflict Resolution, Development Studies, Legal Practice",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-BBB (no specific subjects)"
+      }
+    },
     courseContent: "Programming, AI, Machine Learning, Data Science, Computer Games",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "82%",
