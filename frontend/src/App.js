@@ -4542,6 +4542,93 @@ const universitiesData = [
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "City International Scholarship, Academic Excellence Scholarship",
+    programs: {
+      "Computer Science": {
+        courseContent: "Programming, AI, Data Science, Cybersecurity, Software Engineering, Machine Learning, Computer Vision, Big Data Analytics, Cloud Computing",
+        duration: "3 years (BSc), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Engineering": {
+        courseContent: "Aeronautical Engineering, Biomedical Engineering, Civil Engineering, Electronic Engineering, Mechanical Engineering, Energy Engineering",
+        duration: "3 years (BEng), 4 years (MEng)",
+        entryRequirements: "AAA-ABB (including Mathematics and Physics)"
+      },
+      "Mathematics": {
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Actuarial Science, Financial Mathematics, Mathematical Modelling, Data Analytics",
+        duration: "3 years (BSc), 4 years (MMath)",
+        entryRequirements: "AAA-ABB (including Mathematics and Further Mathematics)"
+      },
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Financial Economics, International Economics, Behavioural Economics, Economic Policy",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Business": {
+        courseContent: "Management, Finance, Marketing, International Business, Entrepreneurship, Strategic Management, Business Analytics, Digital Business",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Accounting and Finance": {
+        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment Banking, Risk Management, Financial Markets, Auditing",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics)"
+      },
+      "Law": {
+        courseContent: "Contract Law, Criminal Law, Commercial Law, International Law, Human Rights Law, Legal Practice, Dispute Resolution",
+        duration: "3 years (LLB)",
+        entryRequirements: "AAA (no specific subjects)"
+      },
+      "Psychology": {
+        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Organizational Psychology, Health Psychology, Research Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Mathematics or Science)"
+      },
+      "Politics and International Relations": {
+        courseContent: "Political Theory, International Relations, Comparative Politics, Public Policy, European Politics, Global Governance",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "English": {
+        courseContent: "English Literature, Creative Writing, Literary Theory, Drama, Journalism, Media Studies, Publishing",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (including English Literature)"
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Research Methods, Social Policy, Urban Studies, Criminology, Social Psychology, Community Studies",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Music": {
+        courseContent: "Music Performance, Composition, Music Technology, Musicology, Music Business, Audio Production, Sound Design",
+        duration: "3 years (BA/BMus)",
+        entryRequirements: "AAA-ABB (audition required)"
+      },
+      "Journalism": {
+        courseContent: "News Writing, Digital Journalism, Broadcast Journalism, Investigative Journalism, Media Law, Ethics, Multimedia Reporting",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      },
+      "Optometry": {
+        courseContent: "Ocular Anatomy, Visual Optics, Contact Lenses, Binocular Vision, Ocular Disease, Clinical Practice, Low Vision",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Biology and Physics/Chemistry)"
+      },
+      "Radiography": {
+        courseContent: "Medical Imaging, Radiation Physics, Anatomy, Pathology, Clinical Practice, Patient Care, Radiation Protection",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Science subjects)"
+      },
+      "Nursing": {
+        courseContent: "Adult Nursing, Mental Health Nursing, Clinical Skills, Pharmacology, Health Assessment, Patient Care, Evidence-Based Practice",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (including Science subjects)"
+      },
+      "Criminology": {
+        courseContent: "Criminal Justice, Policing, Forensic Psychology, Crime Analysis, Security Studies, Criminal Law, Victimology",
+        duration: "3 years (BSc)",
+        entryRequirements: "AAA-ABB (no specific subjects)"
+      }
+    },
     courseContent: "Programming, AI, Data Science, Cybersecurity, Software Engineering",
     duration: "3 years (BSc), 4 years (MEng)",
     employmentRate: "85%",
