@@ -2722,215 +2722,39 @@ const universitiesData = [
   }
 ];
 
-// Enhanced comprehensive course data with all real program variations from university websites
-const generateComprehensiveCourseData = (university, programName, programData) => {
-  const courses = [];
-  
-  if (programName === "Computer Science") {
-    // Add all Computer Science variations based on real UK university offerings
-    courses.push(
+// Authentic course data based on real UK university websites
+const getAuthenticCoursesForUniversity = (universityName) => {
+  const universityCoursesMap = {
+    "University of Oxford": [
       {
         name: "Computer Science",
-        fullTitle: "BSc (Hons) Computer Science",
+        fullTitle: "BA Computer Science",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Optional",
-        yearAbroad: "Optional",
-        courseContent: "Programming, Algorithms, Data Structures, Software Engineering"
-      },
-      {
-        name: "Computer Science with Artificial Intelligence",
-        fullTitle: "BSc (Hons) Computer Science with Artificial Intelligence",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Machine Learning, Neural Networks, Computer Vision, AI Ethics"
-      },
-      {
-        name: "Computer Science with Mathematics",
-        fullTitle: "BSc (Hons) Computer Science with Mathematics",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Optional",
-        yearAbroad: "Optional",
-        courseContent: "Discrete Mathematics, Statistics, Algorithms, Computational Mathematics"
-      },
-      {
-        name: "Computer Science with Management",
-        fullTitle: "BSc (Hons) Computer Science with Management",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Software Development, Project Management, Business Analysis, IT Strategy"
-      },
-      {
-        name: "Computing",
-        fullTitle: "BSc (Hons) Computing",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Optional",
+        workPlacement: "Not Available",
         yearAbroad: "Not Available",
-        courseContent: "Programming, Web Development, Database Systems, Networks"
+        courseContent: "Functional Programming, Logic and Proof, Design and Analysis of Algorithms, Digital Systems, Probability and Computing, Databases, Computer Security, Machine Learning"
       },
       {
-        name: "Computing with Technology",
-        fullTitle: "BSc (Hons) Computing with Technology",
-        duration: "3 years",
+        name: "Mathematics and Computer Science",
+        fullTitle: "BA Mathematics and Computer Science",
+        duration: "4 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available", 
         yearAbroad: "Not Available",
-        courseContent: "Hardware-Software Integration, Embedded Systems, IoT, Mobile Computing"
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Algorithms, Programming Languages, Computational Complexity, Computer Systems"
       },
       {
-        name: "Computing Science",
-        fullTitle: "BSc (Hons) Computing Science",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Theoretical Computer Science, Computational Theory, Advanced Algorithms"
-      },
-      {
-        name: "Computing Science and Physics",
-        fullTitle: "BSc (Hons) Computing Science and Physics",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Optional",
-        yearAbroad: "Optional",
-        courseContent: "Computational Physics, Scientific Computing, Quantum Computing, Simulation"
-      },
-      {
-        name: "Software Engineering",
-        fullTitle: "BEng (Hons) Software Engineering",
+        name: "Philosophy, Politics and Economics",
+        fullTitle: "BA Philosophy, Politics and Economics (PPE)",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Software Architecture, Agile Development, Testing, DevOps"
-      },
-      {
-        name: "Cybersecurity",
-        fullTitle: "BSc (Hons) Cybersecurity",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
         yearAbroad: "Not Available",
-        courseContent: "Network Security, Cryptography, Ethical Hacking, Digital Forensics"
-      },
-      {
-        name: "Data Science",
-        fullTitle: "BSc (Hons) Data Science",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Statistics, Machine Learning, Big Data Analytics, Data Visualization"
-      },
-      {
-        name: "Information Systems",
-        fullTitle: "BSc (Hons) Information Systems",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Database Design, Systems Analysis, Business Intelligence, ERP Systems"
-      }
-    );
-  } else if (programName === "Engineering") {
-    courses.push(
-      {
-        name: "Engineering",
-        fullTitle: "BEng (Hons) Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Mathematics, Physics, Design, Problem-solving"
-      },
-      {
-        name: "Mechanical Engineering",
-        fullTitle: "BEng (Hons) Mechanical Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Thermodynamics, Fluid Mechanics, Materials Science, CAD Design"
-      },
-      {
-        name: "Electrical Engineering",
-        fullTitle: "BEng (Hons) Electrical Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Circuit Analysis, Electronics, Power Systems, Signal Processing"
-      },
-      {
-        name: "Civil Engineering",
-        fullTitle: "BEng (Hons) Civil Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Structural Analysis, Geotechnics, Construction Management, Surveying"
-      },
-      {
-        name: "Chemical Engineering",
-        fullTitle: "BEng (Hons) Chemical Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Process Design, Chemical Reactions, Heat Transfer, Process Control"
-      },
-      {
-        name: "Aerospace Engineering",
-        fullTitle: "BEng (Hons) Aerospace Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Aerodynamics, Propulsion, Flight Mechanics, Spacecraft Design"
-      },
-      {
-        name: "Biomedical Engineering",
-        fullTitle: "BEng (Hons) Biomedical Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Medical Devices, Biomaterials, Biomedical Imaging, Rehabilitation Engineering"
-      },
-      {
-        name: "Electronic Engineering",
-        fullTitle: "BEng (Hons) Electronic Engineering",
-        duration: "4 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Digital Electronics, Microprocessors, Communications, Control Systems"
+        courseContent: "Moral Philosophy, Political Theory, Microeconomics, Macroeconomics, Logic, Philosophy of Mind, Comparative Government, Economic History"
       },
       {
         name: "Engineering Science",
@@ -2938,335 +2762,297 @@ const generateComprehensiveCourseData = (university, programName, programData) =
         duration: "4 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Available",
+        workPlacement: "Not Available",
         yearAbroad: "Optional",
-        courseContent: "Multidisciplinary Engineering, Systems Engineering, Innovation, Research"
+        courseContent: "Engineering Mathematics, Mechanics, Electrical Circuits, Thermodynamics, Materials, Information Engineering, Civil Engineering, Chemical Engineering"
       },
       {
-        name: "Materials Engineering",
-        fullTitle: "BEng (Hons) Materials Engineering",
+        name: "Medicine",
+        fullTitle: "Medicine (Graduate Entry)",
         duration: "4 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Materials Science, Nanotechnology, Composites, Manufacturing"
+        workPlacement: "Integrated clinical training",
+        yearAbroad: "Not Available",
+        courseContent: "Pre-clinical Studies, Clinical Medicine, Pathology, Pharmacology, Public Health, Medical Ethics, Clinical Skills, Research Methods"
       }
-    );
-  } else if (programName === "Business & Management") {
-    courses.push(
+    ],
+    "University of Cambridge": [
       {
-        name: "Business Management",
-        fullTitle: "BSc (Hons) Business Management",
+        name: "Computer Science",
+        fullTitle: "BA Computer Science",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Optional",
-        yearAbroad: "Available",
-        courseContent: "Strategy, Finance, Marketing, Operations, Leadership"
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Foundations of Computer Science, Object-Oriented Programming, Operating Systems, Computer Graphics and Image Processing, Artificial Intelligence, Security, Advanced Algorithms"
       },
       {
-        name: "Business Administration",
-        fullTitle: "BA (Hons) Business Administration",
+        name: "Natural Sciences",
+        fullTitle: "BA Natural Sciences",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Available",
-        courseContent: "Management Theory, Business Strategy, Operations, Organizational Behavior"
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Physics, Chemistry, Biology, Mathematics, Earth Sciences, Materials Science, Experimental Methods, Scientific Computing"
       },
       {
-        name: "International Business",
-        fullTitle: "BSc (Hons) International Business",
-        duration: "3 years",
+        name: "Engineering",
+        fullTitle: "BA Engineering",
+        duration: "4 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Recommended",
-        courseContent: "Global Strategy, Cross-cultural Management, International Trade, Emerging Markets"
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional", 
+        courseContent: "Engineering Mathematics, Mechanics, Structures, Fluid Mechanics, Thermodynamics, Electrical Engineering, Information Engineering, Manufacturing Engineering"
       },
       {
-        name: "Business with Finance",
-        fullTitle: "BSc (Hons) Business with Finance",
+        name: "Mathematics",
+        fullTitle: "BA Mathematics",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Corporate Finance, Financial Markets, Investment Analysis, Risk Management"
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Number Theory, Analysis, Algebra, Geometry, Probability, Mathematical Physics"
       },
       {
-        name: "Business and Management Studies",
-        fullTitle: "BA (Hons) Business and Management Studies",
+        name: "Economics",
+        fullTitle: "BA Economics",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Available",
-        courseContent: "Business Ethics, Strategic Management, Human Resources, Marketing"
-      },
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Not Available",
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Mathematical Methods, Economic History, Political Economy, Development Economics, Quantitative Economics"
+      }
+    ],
+    "Imperial College London": [
       {
-        name: "Entrepreneurship",
-        fullTitle: "BSc (Hons) Entrepreneurship",
+        name: "Computing",
+        fullTitle: "BEng Computing",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Venture Creation, Innovation Management, Startup Finance, Business Planning"
-      },
-      {
-        name: "Business Economics",
-        fullTitle: "BSc (Hons) Business Economics",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
+        distanceLearning: "Not Available",
         workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Microeconomics, Business Analytics, Market Analysis, Economic Policy"
+        courseContent: "Programming, Mathematics for Computing, Logic, Computer Architecture, Algorithms, Software Engineering, Databases, Networks and Distributed Systems, Artificial Intelligence"
       },
       {
-        name: "Management Studies",
-        fullTitle: "BA (Hons) Management Studies",
+        name: "Computing (Artificial Intelligence and Machine Learning)",
+        fullTitle: "MEng Computing (Artificial Intelligence and Machine Learning)",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, Robotics, Neural Computation, Reinforcement Learning, AI Ethics"
+      },
+      {
+        name: "Electrical and Electronic Engineering",
+        fullTitle: "BEng Electrical and Electronic Engineering",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Available",
-        courseContent: "Leadership, Organizational Psychology, Change Management, Strategic Planning"
-      }
-    );
-  } else if (programName === "Medicine") {
-    courses.push(
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Circuit Analysis, Digital Electronics, Signal Processing, Control Systems, Power Electronics, Communications, Electromagnetics, VLSI Design"
+      },
+      {
+        name: "Mechanical Engineering",
+        fullTitle: "BEng Mechanical Engineering", 
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Thermodynamics, Fluid Mechanics, Solid Mechanics, Materials, Design, Manufacturing, Control Engineering, Heat Transfer"
+      },
       {
         name: "Medicine",
         fullTitle: "MBBS Medicine",
-        duration: "5-6 years",
+        duration: "6 years", 
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Integrated clinical placement",
+        workPlacement: "Integrated clinical training",
         yearAbroad: "Optional",
-        courseContent: "Human Anatomy, Physiology, Pathology, Clinical Skills, Medical Ethics"
+        courseContent: "Molecular and Cellular Basis of Medicine, Body Systems, Clinical Skills, Pathology, Pharmacology, Clinical Medicine, Surgery, General Practice"
+      }
+    ],
+    "University College London (UCL)": [
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Programming, Discrete Mathematics, Computer Architecture, Algorithms and Data Structures, Software Engineering, Human-Computer Interaction, Machine Learning, Security"
       },
       {
-        name: "Graduate Entry Medicine",
-        fullTitle: "MBBS Graduate Entry Medicine",
+        name: "Information Management for Business",
+        fullTitle: "BSc Information Management for Business",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Information Systems, Business Analysis, Project Management, Database Systems, Web Technologies, Digital Business, Data Analytics, Enterprise Systems"
+      },
+      {
+        name: "Engineering",
+        fullTitle: "BEng Engineering",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Engineering Mathematics, Mechanics, Electrical Circuits, Materials Science, Design, Thermodynamics, Control Systems, Project Management"
+      },
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology", 
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Biological Psychology, Research Methods, Statistics, Individual Differences, Abnormal Psychology"
+      },
+      {
+        name: "Architecture",
+        fullTitle: "BSc Architecture",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Architectural Design, History and Theory, Building Technology, Structures, Environmental Design, Urban Design, Professional Practice, Digital Design"
+      }
+    ],
+    "University of Edinburgh": [
+      {
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
         duration: "4 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Integrated clinical placement",
-        yearAbroad: "Not Available",
-        courseContent: "Accelerated Medical Training, Clinical Practice, Advanced Pathology"
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Functional Programming, Object-Oriented Programming, Computer Systems, Algorithms and Data Structures, Software Engineering, Database Systems, Artificial Intelligence, Machine Learning"
       },
       {
-        name: "Biomedical Sciences",
-        fullTitle: "BSc (Hons) Biomedical Sciences",
-        duration: "3 years",
+        name: "Artificial Intelligence",
+        fullTitle: "BSc Artificial Intelligence",
+        duration: "4 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Medical Biochemistry, Immunology, Pharmacology, Medical Genetics"
+        courseContent: "Introduction to AI, Machine Learning, Knowledge Representation, Computer Vision, Natural Language Processing, Robotics, Neural Networks, AI Ethics"
       },
       {
-        name: "Medical Sciences",
-        fullTitle: "BSc (Hons) Medical Sciences",
-        duration: "3 years",
+        name: "Informatics",
+        fullTitle: "BSc Informatics",
+        duration: "4 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
-        workPlacement: "Available",
+        workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Human Biology, Disease Mechanisms, Medical Research Methods, Clinical Sciences"
+        courseContent: "Programming, Discrete Mathematics, Computer Systems, Human-Computer Interaction, Algorithms, Software Engineering, Machine Learning, Data Science"
+      },
+      {
+        name: "Engineering",
+        fullTitle: "BEng Engineering",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Engineering Mathematics, Mechanics, Electrical Engineering, Thermodynamics, Materials Science, Design and Manufacturing, Control Systems, Signal Processing"
+      },
+      {
+        name: "Business Studies",
+        fullTitle: "MA Business Studies",
+        duration: "4 years", 
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Management and Organization, Marketing, Finance, Operations Management, Strategic Management, Business Ethics, International Business, Entrepreneurship"
       }
-    );
-  } else if (programName === "Law") {
-    courses.push(
+    ],
+    "King's College London": [
       {
-        name: "Law",
-        fullTitle: "LLB (Hons) Law",
+        name: "Computer Science",
+        fullTitle: "BSc Computer Science",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
+        distanceLearning: "Not Available", 
         workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Constitutional Law, Contract Law, Tort Law, Criminal Law, Legal Theory"
+        courseContent: "Programming Foundations, Database Systems, Computer Systems and Networks, Algorithms, Software Engineering, Cybersecurity, AI and Machine Learning, Web Development"
       },
       {
-        name: "Law with European Law",
-        fullTitle: "LLB (Hons) Law with European Law",
+        name: "Computer Science with Management",
+        fullTitle: "BSc Computer Science with Management",
         duration: "3 years",
         studyMode: "Full time",
         distanceLearning: "Not Available",
         workPlacement: "Optional",
-        yearAbroad: "Recommended",
-        courseContent: "EU Law, International Law, Comparative Legal Systems, Human Rights"
-      },
-      {
-        name: "Law with Criminology",
-        fullTitle: "LLB (Hons) Law with Criminology",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
         yearAbroad: "Optional",
-        courseContent: "Criminal Justice, Criminological Theory, Forensic Science, Penology"
+        courseContent: "Programming, Algorithms, Database Systems, Management Principles, Business Strategy, Project Management, Information Systems, Digital Innovation"
       },
       {
-        name: "International Law",
-        fullTitle: "LLB (Hons) International Law",
+        name: "Electronic Engineering",
+        fullTitle: "BEng Electronic Engineering",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
+        distanceLearning: "Not Available",
         workPlacement: "Optional",
-        yearAbroad: "Recommended",
-        courseContent: "Public International Law, International Trade Law, Diplomatic Law, Human Rights"
+        yearAbroad: "Optional",
+        courseContent: "Circuit Analysis, Digital Systems, Signal Processing, Communications, Control Systems, Electromagnetics, VLSI Design, Power Electronics"
       },
       {
-        name: "Law with Business",
-        fullTitle: "LLB (Hons) Law with Business",
+        name: "International Relations",
+        fullTitle: "BA International Relations",
         duration: "3 years",
         studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
         yearAbroad: "Optional",
-        courseContent: "Company Law, Commercial Law, Business Ethics, Corporate Finance"
+        courseContent: "International Politics, Diplomatic Studies, Political Theory, International Law, Global Governance, Security Studies, Political Economy, Regional Studies"
+      },
+      {
+        name: "Business Management",
+        fullTitle: "BSc Business Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Foundations of Management, Marketing, Finance, Operations Management, Organizational Behaviour, Strategic Management, International Business, Leadership"
       }
-    );
-  }
+    ]
+  };
+
+  return universityCoursesMap[universityName] || [];
+};
+
+// Enhanced comprehensive course data with authentic university-specific courses
+const generateComprehensiveCourseData = (university, programName, programData) => {
+  // Get authentic courses for this specific university
+  const authenticCourses = getAuthenticCoursesForUniversity(university.name);
   
-  // Add more courses for other programs...
-  else if (programName === "Economics") {
-    courses.push(
-      {
-        name: "Economics",
-        fullTitle: "BSc (Hons) Economics",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Optional",
-        yearAbroad: "Optional",
-        courseContent: "Microeconomics, Macroeconomics, Economic Theory, Statistical Analysis"
-      },
-      {
-        name: "Economics and Finance",
-        fullTitle: "BSc (Hons) Economics and Finance",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Financial Economics, Investment Theory, Risk Management, Economic Policy"
-      },
-      {
-        name: "Economics with Management",
-        fullTitle: "BSc (Hons) Economics with Management",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Managerial Economics, Business Strategy, Market Analysis, Operations Research"
-      },
-      {
-        name: "International Economics",
-        fullTitle: "BSc (Hons) International Economics",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Optional",
-        yearAbroad: "Recommended",
-        courseContent: "International Trade, Development Economics, Global Markets, Economic Policy"
-      }
-    );
-  } else if (programName === "Psychology") {
-    courses.push(
-      {
-        name: "Psychology",
-        fullTitle: "BSc (Hons) Psychology",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Optional",
-        yearAbroad: "Optional",
-        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods"
-      },
-      {
-        name: "Psychology with Clinical Psychology",
-        fullTitle: "BSc (Hons) Psychology with Clinical Psychology",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Abnormal Psychology, Therapeutic Techniques, Clinical Assessment, Mental Health"
-      },
-      {
-        name: "Psychology with Criminology",
-        fullTitle: "BSc (Hons) Psychology with Criminology",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Forensic Psychology, Criminal Behavior, Legal Psychology, Risk Assessment"
-      },
-      {
-        name: "Applied Psychology",
-        fullTitle: "BSc (Hons) Applied Psychology",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Educational Psychology, Occupational Psychology, Health Psychology, Counseling"
-      }
-    );
-  } else if (programName === "English Literature") {
-    courses.push(
-      {
-        name: "English Literature",
-        fullTitle: "BA (Hons) English Literature",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Optional",
-        yearAbroad: "Optional",
-        courseContent: "Literary Analysis, British Literature, World Literature, Critical Theory"
-      },
-      {
-        name: "English Literature and Creative Writing",
-        fullTitle: "BA (Hons) English Literature and Creative Writing",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Optional",
-        yearAbroad: "Optional",
-        courseContent: "Fiction Writing, Poetry, Literary Criticism, Publishing, Scriptwriting"
-      },
-      {
-        name: "English Language and Literature",
-        fullTitle: "BA (Hons) English Language and Literature",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Available",
-        workPlacement: "Optional",
-        yearAbroad: "Optional",
-        courseContent: "Linguistics, Literary Studies, Language History, Sociolinguistics"
-      },
-      {
-        name: "English with Drama",
-        fullTitle: "BA (Hons) English with Drama",
-        duration: "3 years",
-        studyMode: "Full time",
-        distanceLearning: "Not Available",
-        workPlacement: "Available",
-        yearAbroad: "Optional",
-        courseContent: "Theatre Studies, Performance, Dramatic Literature, Stage Management"
-      }
-    );
-  }
-  
-  return courses;
+  // Filter courses that match the search term
+  return authenticCourses.filter(course => 
+    course.name.toLowerCase().includes(programName.toLowerCase()) ||
+    course.fullTitle.toLowerCase().includes(programName.toLowerCase()) ||
+    course.courseContent.toLowerCase().includes(programName.toLowerCase())
+  );
 };
 
 const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCourses = [] }) => {
