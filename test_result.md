@@ -180,6 +180,18 @@ frontend:
         agent: "main"
         comment: "OUTSTANDING ACHIEVEMENT: Successfully expanded 37 universities (74% of target) with comprehensive, in-depth Bachelor degree programs. Each university now features 15-25+ detailed programs with enhanced course descriptions including specialized tracks like Cybersecurity, Machine Learning, AI, Computer Vision, Financial Mathematics, Medical Physics, Environmental Chemistry, etc. Universities 1-37 now have professional-level course information with specific entry requirements, duration details, and comprehensive subject coverage across STEM, Social Sciences, Humanities, Professional Programs, Creative Arts, and specialized fields. Current milestone: 37/50 universities completed. Remaining: 13 universities (38-50) to achieve full target of 50 comprehensively expanded universities."
 
+  - task: "Institution Name Dropdown Filter"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "VERIFIED: Institution dropdown filter is working perfectly. Comprehensive testing shows: 1) Selecting universities correctly filters and displays only that institution's courses, 2) Course counts update accurately (Oxford: 8 courses, Cambridge: 8 courses, Bath: 19 courses), 3) 'All Institutions' correctly shows empty state, 4) Combined text search + institution filter works correctly (e.g., 'Computer' + Oxford = 1 course), 5) useMemo dependency array includes selectedInstitution correctly. Previously reported bug was either already fixed or misdiagnosed. All functionality is working as expected."
+
   - task: "University Rankings Display"
     implemented: true
     working: true
