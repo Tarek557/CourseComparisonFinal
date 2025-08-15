@@ -2722,6 +2722,154 @@ const universitiesData = [
   }
 ];
 
+// Enhanced course data with professional degree titles and details
+const generateEnhancedCourseData = (university, programName, programData) => {
+  const baseCourses = [];
+  
+  if (programName === "Computer Science") {
+    baseCourses.push(
+      {
+        name: "Computer Science",
+        fullTitle: "BSc (Hons) Computer Science",
+        duration: programData.duration || "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        type: 'program',
+        courseContent: programData.courseContent
+      },
+      {
+        name: "Computer Science with Artificial Intelligence",
+        fullTitle: "BSc (Hons) Computer Science with Artificial Intelligence",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Available",
+        yearAbroad: "Optional",
+        type: 'major',
+        courseContent: "Machine Learning, Neural Networks, Computer Vision, Natural Language Processing"
+      },
+      {
+        name: "Computer Science with Cybersecurity",
+        fullTitle: "BSc (Hons) Computer Science with Cybersecurity",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Available",
+        workPlacement: "Available",
+        yearAbroad: "Not Available",
+        type: 'major',
+        courseContent: "Cryptography, Network Security, Ethical Hacking, Digital Forensics"
+      }
+    );
+  } else if (programName === "Engineering") {
+    baseCourses.push(
+      {
+        name: "Engineering",
+        fullTitle: "BEng (Hons) Engineering",
+        duration: programData.duration || "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Available",
+        yearAbroad: "Optional",
+        type: 'program',
+        courseContent: programData.courseContent
+      },
+      {
+        name: "Mechanical Engineering",
+        fullTitle: "BEng (Hons) Mechanical Engineering",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Available",
+        yearAbroad: "Optional",
+        type: 'major',
+        courseContent: "Thermodynamics, Fluid Mechanics, Materials Science, CAD Design"
+      },
+      {
+        name: "Electrical Engineering",
+        fullTitle: "BEng (Hons) Electrical Engineering",
+        duration: "4 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Available",
+        yearAbroad: "Optional",
+        type: 'major',
+        courseContent: "Circuit Analysis, Electronics, Power Systems, Signal Processing"
+      }
+    );
+  } else if (programName === "Medicine") {
+    baseCourses.push(
+      {
+        name: "Medicine",
+        fullTitle: "MBBS Medicine",
+        duration: "5-6 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Integrated clinical placement",
+        yearAbroad: "Optional",
+        type: 'program',
+        courseContent: programData.courseContent
+      }
+    );
+  } else if (programName === "Business & Management") {
+    baseCourses.push(
+      {
+        name: "Business Management",
+        fullTitle: "BSc (Hons) Business Management",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Available",
+        workPlacement: "Optional",
+        yearAbroad: "Available",
+        type: 'program',
+        courseContent: programData.courseContent
+      },
+      {
+        name: "International Business",
+        fullTitle: "BSc (Hons) International Business",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Available",
+        workPlacement: "Available",
+        yearAbroad: "Recommended",
+        type: 'major',
+        courseContent: "Global Strategy, Cross-cultural Management, International Trade"
+      }
+    );
+  } else if (programName === "Law") {
+    baseCourses.push(
+      {
+        name: "Law",
+        fullTitle: "LLB (Hons) Law",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        type: 'program',
+        courseContent: programData.courseContent
+      }
+    );
+  } else if (programName === "Psychology") {
+    baseCourses.push(
+      {
+        name: "Psychology",
+        fullTitle: "BSc (Hons) Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        type: 'program',
+        courseContent: programData.courseContent
+      }
+    );
+  }
+  
+  return baseCourses;
+};
+
 const CourseCard = ({ course, university, searchTerm }) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 mb-4 border border-gray-200">
@@ -2748,19 +2896,14 @@ const CourseCard = ({ course, university, searchTerm }) => {
 };
 
 const UniversityCoursesSection = ({ university, searchTerm }) => {
-  const rankingColor = university.ranking <= 10 ? 'text-green-600' : 
-                       university.ranking <= 50 ? 'text-yellow-600' : 'text-blue-600';
-  
   return (
     <div className="mb-8">
       {/* University Header */}
       <div className="bg-gradient-to-r from-green-600 to-green-500 text-white p-4 rounded-t-lg flex justify-between items-center">
         <div>
           <h2 className="text-xl font-bold">{university.name}</h2>
-          <div className="flex items-center gap-2 mt-1">
-            <span className={`text-sm ${rankingColor === 'text-green-600' ? 'text-green-200' : 'text-white'}`}>
-              THE Ranking: #{university.ranking}
-            </span>
+          <div className="flex items-center gap-2 mt-1 text-sm">
+            <span className="text-green-200">THE Ranking: #{university.ranking}</span>
             <span className="text-green-200">•</span>
             <span className="text-green-200">Employment Rate: {university.employmentRate}</span>
           </div>
@@ -2784,6 +2927,8 @@ const UniversityCoursesSection = ({ university, searchTerm }) => {
     </div>
   );
 };
+
+const UniversityCard = ({ university, isSelected, onSelect, isCompareMode, searchMode, searchTerm }) => {
   const rankingColor = university.ranking <= 10 ? 'text-green-600' : 
                        university.ranking <= 50 ? 'text-yellow-600' : 'text-blue-600';
   
