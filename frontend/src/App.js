@@ -6613,12 +6613,16 @@ const getAuthenticCoursesForUniversity = (universityName) => {
   // Find the university in our data
   const university = universitiesData.find(uni => uni.name === universityName);
   
+  console.log('getAuthenticCoursesForUniversity called for:', universityName);
+  console.log('Found university:', university ? 'Yes' : 'No');
+  console.log('Has programs:', university && university.programs ? 'Yes' : 'No');
+  
   if (!university || !university.programs) {
     return [];
   }
   
   // Convert programs object to array format expected by the UI
-  return Object.entries(university.programs).map(([programName, programData]) => ({
+  const courses = Object.entries(university.programs).map(([programName, programData]) => ({
     name: programName,
     fullTitle: `${programData.duration.includes('BA') ? 'BA' : programData.duration.includes('BSc') ? 'BSc' : programData.duration.includes('BEng') ? 'BEng' : programData.duration.includes('MEng') ? 'MEng' : 'Bachelor'} ${programName}`,
     duration: programData.duration,
@@ -6629,6 +6633,9 @@ const getAuthenticCoursesForUniversity = (universityName) => {
     courseContent: programData.courseContent,
     entryRequirements: programData.entryRequirements
   }));
+  
+  console.log('Returning courses:', courses.length);
+  return courses;
 };
 
 // Enhanced comprehensive course data with authentic university-specific courses
