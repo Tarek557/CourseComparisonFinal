@@ -7613,21 +7613,13 @@ function App() {
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-green-600 mb-2">
-                  {searchMode === 'courses' && (searchTerm || selectedInstitution)
-                    ? filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0)
-                    : searchMode === 'courses' && selectedCourses.length > 0
-                    ? selectedCourses.length
-                    : selectedUniversities.length
+                  {(searchTerm || selectedInstitution) ? 
+                    filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0) : 
+                    0
                   }
                 </div>
-                <div className="text-gray-600">
-                  {searchMode === 'courses' && (searchTerm || selectedInstitution)
-                    ? 'Course(s) Found' 
-                    : searchMode === 'courses' && selectedCourses.length > 0
-                    ? 'Courses Selected'
-                    : 'Selected for Comparison'
-                  }
-                </div>
+                <div className="text-gray-600">Course(s) Found</div>
+                <div className="text-sm text-gray-500 mt-1">Across selected providers</div>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-purple-600 mb-2">8+</div>
