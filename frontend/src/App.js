@@ -8390,16 +8390,7 @@ const ComparisonTable = ({ universities, onRemove }) => {
 
 function App() {
   const [selectedUniversities, setSelectedUniversities] = useState([]);
-  const [selectedCourses, setSelectedCourses] = useState([
-    // Test course to verify sticky bar - remove this after testing
-    {
-      courseId: 'test-1',
-      fullTitle: 'BSc Computer Science',
-      universityName: 'University of Oxford',
-      duration: '3 years',
-      courseContent: 'Test course content'
-    }
-  ]); // New state for course-level selection
+  const [selectedCourses, setSelectedCourses] = useState([]); // New state for course-level selection
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedInstitutions, setSelectedInstitutions] = useState([]); // Multi-select institutions
   const [institutionSearchTerm, setInstitutionSearchTerm] = useState(''); // Search within institutions
