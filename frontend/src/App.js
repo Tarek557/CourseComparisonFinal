@@ -8471,9 +8471,25 @@ function App() {
     setCurrentSearchPage(1); // Reset to page 1 when search changes
   };
 
-  const handleInstitutionChange = (e) => {
-    setSelectedInstitution(e.target.value);
-    setCurrentSearchPage(1); // Reset to page 1 when institution changes
+  const handleInstitutionToggle = (universityName) => {
+    setSelectedInstitutions(prev => {
+      const isSelected = prev.includes(universityName);
+      if (isSelected) {
+        return prev.filter(name => name !== universityName);
+      } else {
+        return [...prev, universityName];
+      }
+    });
+    setCurrentSearchPage(1); // Reset to page 1 when institutions change
+  };
+
+  const handleClearInstitutions = () => {
+    setSelectedInstitutions([]);
+    setCurrentSearchPage(1);
+  };
+
+  const handleInstitutionSearchChange = (e) => {
+    setInstitutionSearchTerm(e.target.value);
   };
 
   const handleUniversitySelect = (university) => {
