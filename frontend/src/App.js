@@ -3300,12 +3300,23 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-blue-600 mb-2">{filteredAndSortedUniversities.length}</div>
-                <div className="text-gray-600">Universities Listed</div>
-                <div className="text-sm text-gray-500 mt-1">130+ total available</div>
+                <div className="text-gray-600">
+                  {searchMode === 'courses' && searchTerm ? 'Provider(s)' : 'Universities Listed'}
+                </div>
+                <div className="text-sm text-gray-500 mt-1">
+                  {searchMode === 'courses' && searchTerm ? `for "${searchTerm}"` : '130+ total available'}
+                </div>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
-                <div className="text-3xl font-bold text-green-600 mb-2">{selectedUniversities.length}</div>
-                <div className="text-gray-600">Selected for Comparison</div>
+                <div className="text-3xl font-bold text-green-600 mb-2">
+                  {searchMode === 'courses' && searchTerm 
+                    ? filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0)
+                    : selectedUniversities.length
+                  }
+                </div>
+                <div className="text-gray-600">
+                  {searchMode === 'courses' && searchTerm ? 'Course(s) Found' : 'Selected for Comparison'}
+                </div>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <div className="text-3xl font-bold text-purple-600 mb-2">8+</div>
