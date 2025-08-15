@@ -4847,7 +4847,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
       }
     ],
     "London School of Economics (LSE)": [
-      // Economics & Management
+      // Economics & Finance (BSc)
       {
         name: "Economics",
         fullTitle: "BSc Economics",
@@ -4858,6 +4858,37 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Microeconomics, Macroeconomics, Econometrics, Mathematical Economics, Economic History, Development Economics, International Economics"
       },
+      {
+        name: "Economics and Finance",
+        fullTitle: "BSc Economics and Finance",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Financial Economics, Corporate Finance, Investment Analysis, Portfolio Management, Risk Management, Derivatives, Financial Markets"
+      },
+      {
+        name: "Actuarial Science",
+        fullTitle: "BSc Actuarial Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Actuarial Mathematics, Risk Theory, Insurance, Statistics, Financial Mathematics, Probability Theory, Life Contingencies"
+      },
+      {
+        name: "Financial Mathematics and Statistics",
+        fullTitle: "BSc Financial Mathematics and Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Stochastic Calculus, Financial Modeling, Quantitative Risk Management, Statistical Methods, Time Series Analysis, Derivatives Pricing"
+      },
+      // Business & Management (BSc)
       {
         name: "Management",
         fullTitle: "BSc Management",
@@ -4878,7 +4909,7 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment Analysis, Financial Markets, Auditing"
       },
-      // Mathematics & Statistics
+      // Mathematics & Statistics (BSc)
       {
         name: "Mathematics with Economics",
         fullTitle: "BSc Mathematics with Economics",
@@ -4899,7 +4930,17 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         yearAbroad: "Optional",
         courseContent: "Statistical Theory, Probability, Data Analysis, Regression Analysis, Time Series, Bayesian Statistics, Statistical Computing"
       },
-      // Social Sciences
+      {
+        name: "Mathematics and Statistics",
+        fullTitle: "BSc Mathematics and Statistics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Pure Mathematics, Applied Mathematics, Statistical Theory, Probability Theory, Mathematical Statistics, Data Science"
+      },
+      // Social Sciences (BSc/BA)
       {
         name: "Government",
         fullTitle: "BSc Government",
@@ -4921,6 +4962,58 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         courseContent: "International Theory, Global Governance, Security Studies, International Political Economy, Diplomacy, Conflict Resolution"
       },
       {
+        name: "Government and History",
+        fullTitle: "BSc Government and History",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Political History, Constitutional History, International History, Political Theory, Comparative Government, Historical Methods"
+      },
+      {
+        name: "Social Policy",
+        fullTitle: "BSc Social Policy",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Social Policy Analysis, Welfare Systems, Public Administration, Social Research Methods, Health Policy, Education Policy"
+      },
+      {
+        name: "Sociology",
+        fullTitle: "BSc Sociology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Sociological Theory, Social Research Methods, Social Stratification, Urban Sociology, Political Sociology, Cultural Studies"
+      },
+      // Psychology (BSc)
+      {
+        name: "Psychology",
+        fullTitle: "BSc Psychology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods, Statistics, Behavioral Economics"
+      },
+      {
+        name: "Psychological and Behavioural Science",
+        fullTitle: "BSc Psychological and Behavioural Science",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Behavioral Economics, Decision Science, Cognitive Science, Social Psychology, Research Methods, Experimental Methods"
+      },
+      // Geography & Environmental Sciences (BSc)
+      {
         name: "Geography",
         fullTitle: "BSc Geography",
         duration: "3 years",
@@ -4929,6 +5022,80 @@ const getAuthenticCoursesForUniversity = (universityName) => {
         workPlacement: "Optional",
         yearAbroad: "Optional",
         courseContent: "Human Geography, Economic Geography, Urban Geography, Development Geography, GIS, Research Methods"
+      },
+      {
+        name: "Environment and Development",
+        fullTitle: "BSc Environment and Development",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Environmental Economics, Development Studies, Climate Policy, Sustainable Development, Environmental Management, GIS"
+      },
+      // Philosophy & Logic (BA)
+      {
+        name: "Philosophy",
+        fullTitle: "BA Philosophy",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Not Available",
+        yearAbroad: "Optional",
+        courseContent: "Logic, Ethics, Political Philosophy, Philosophy of Mind, Epistemology, Metaphysics, Philosophy of Science"
+      },
+      {
+        name: "Philosophy, Politics and Economics",
+        fullTitle: "BA Philosophy, Politics and Economics",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Political Philosophy, Economic Theory, Ethics, Logic, Political Theory, Philosophy of Economics, Public Policy"
+      },
+      // History (BA)
+      {
+        name: "History",
+        fullTitle: "BA History",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "British History, European History, World History, Economic History, Social History, Political History, Historical Methods"
+      },
+      {
+        name: "Economic History",
+        fullTitle: "BSc Economic History",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Economic Development, Financial History, Industrial Revolution, Global Economic History, Quantitative Methods, Economic Theory"
+      },
+      // Law (BA)
+      {
+        name: "Law",
+        fullTitle: "BA Law",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Constitutional Law, Criminal Law, Contract Law, Tort Law, EU Law, Human Rights Law, International Law"
+      },
+      // Anthropology (BSc)
+      {
+        name: "Social Anthropology",
+        fullTitle: "BSc Social Anthropology",
+        duration: "3 years",
+        studyMode: "Full time",
+        distanceLearning: "Not Available",
+        workPlacement: "Optional",
+        yearAbroad: "Optional",
+        courseContent: "Anthropological Theory, Ethnography, Cultural Studies, Social Organization, Economic Anthropology, Political Anthropology"
       }
     ],
     "University of York": [
