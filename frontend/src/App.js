@@ -3339,6 +3339,8 @@ function App() {
                   isSelected={selectedUniversities.some(uni => uni.id === university.id)}
                   onSelect={handleUniversitySelect}
                   isCompareMode={selectedUniversities.length > 0}
+                  searchMode={searchMode}
+                  searchTerm={searchTerm}
                 />
               ))}
             </div>
