@@ -8579,7 +8579,7 @@ function App() {
               />
               
               {/* Institution Multi-Select Filter */}
-              <div className="relative">
+              <div className="relative" ref={dropdownRef}>
                 <div 
                   className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 cursor-pointer bg-white min-w-64"
                   onClick={() => setIsInstitutionDropdownOpen(!isInstitutionDropdownOpen)}
