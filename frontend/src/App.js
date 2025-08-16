@@ -9229,29 +9229,31 @@ function App() {
                   </div>
                 )}
                 
-                {/* Rotation controls and indicators */}
+                {/* Manual navigation controls and indicators */}
                 <div className="flex items-center justify-between mt-4 text-xs text-gray-500">
                   <div className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-blue-500 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    <svg className="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
                     </svg>
-                    <span>Rotating recommendations every 4s</span>
+                    <span>Click dots to explore more recommendations</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    {/* Rotation indicator dots */}
+                    {/* Clickable navigation dots */}
                     <div className="flex gap-1">
                       {(() => {
                         const totalSets = Math.ceil(getAllRecommendations().length / 3);
                         const safeRecommendationIndex = Math.min(recommendationSetIndex, totalSets - 1);
                         
                         return Array.from({ length: totalSets }).map((_, index) => (
-                          <div
+                          <button
                             key={index}
-                            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                            onClick={() => handleRecommendationNavigation(index)}
+                            className={`w-3 h-3 rounded-full transition-all duration-300 cursor-pointer hover:scale-110 ${
                               index === safeRecommendationIndex 
-                                ? 'bg-blue-500 dark:bg-blue-400' 
-                                : 'bg-gray-300 dark:bg-gray-600'
+                                ? 'bg-blue-500 dark:bg-blue-400 ring-2 ring-blue-200 dark:ring-blue-800' 
+                                : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
                             }`}
+                            title={`View recommendation set ${index + 1}`}
                           />
                         ));
                       })()}
