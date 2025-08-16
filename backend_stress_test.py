@@ -13,7 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 from typing import Dict, Any, List
 
 # Get backend URL from frontend environment
-BACKEND_URL = "https://degreeseeker.preview.emergentagent.com/api"
+BACKEND_URL = "https://studychoice.preview.emergentagent.com/api"
 
 class BackendStressTester:
     def __init__(self):
