@@ -693,7 +693,7 @@ const universitiesData = [
       distanceLearning: "Not available (campus only)",
       workPlacement: "Varies by course",
       yearAbroad: "Available for language courses and some joint degrees",
-      employmentRate: "N/A",
+      employmentRate: "97%",
 },
 
   {
@@ -957,59 +957,189 @@ const universitiesData = [
   {
     id: 3,
     name: "Imperial College London",
-    ranking: 4, // UK ranking - Complete University Guide
-    location: "London, England",
-    tuitionFeesUK: "£9,250", 
-    tuitionFeesInternational: "£40,940",
-    entryRequirements: "A*A*A (including Mathematics and Further Mathematics)",
-    ucasPoints: "152",
-    scholarships: "Imperial College Scholarships, President's Scholarships",
+    ranking: 5, 
+    location: "London, England", 
+    tuitionFeesUK: "£9,535",
+    tuitionFeesInternational: "£43,300+ (course-dependent; Medicine higher)",
+    entryRequirements: "Typical A*A*A–A*AAA. ESAT for Engineering & Physics; TMUA for Computing, Mathematics & Economics, Finance and Data Science; UCAT for Medicine.",
+    ucasPoints: "N/A",
+    scholarships: "Imperial Bursary, President's Undergraduate Scholarship, Faculty/Departmental awards",
     programs: {
-      "Computer Science": {
-        courseContent: "Programming, Algorithms, Systems Architecture, AI, Data Science",
+      "Aeronautical Engineering": {
+        courseContent: "Flight Mechanics, Aerodynamics, Structures, Propulsion, Controls",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A or A*AAA incl. Maths & Physics; ESAT (Maths 1, Maths 2, Physics)"
+      },
+      "Aeronautics with Spacecraft Engineering": {
+        courseContent: "Space Systems, Orbital Mechanics, Spacecraft Design, Guidance & Control",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths & Physics; ESAT required"
+      },
+      "Biomedical Engineering": {
+        courseContent: "Biomechanics, Biosignals, Medical Imaging, Neural & Tissue Engineering",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; ESAT (typically Maths-focused for Design/Bio routes)"
+      },
+      "Molecular Bioengineering": {
+        courseContent: "Synthetic Biology, Bioprocessing, Systems Biology, Programming for Bio",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths and a science; ESAT not normally required"
+      },
+      "Chemical Engineering": {
+        courseContent: "Thermodynamics, Transport, Reactor Design, Process Control, Safety",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths & Chemistry; ESAT (Maths modules + Chemistry)"
+      },
+      "Civil Engineering": {
+        courseContent: "Structural Analysis, Geotechnics, Fluids, Transport, Infrastructure Systems",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; ESAT (Maths 1, Maths 2, Physics)"
+      },
+      "Design Engineering": {
+        courseContent: "Design Thinking, Mechatronics, Human-Centred Design, Systems, Entrepreneurship",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A; ESAT (Maths-focused)"
+      },
+      "Electrical and Electronic Engineering": {
+        courseContent: "Circuits, Signals, Embedded Systems, Communications, Power Electronics",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A or A*AAA incl. Maths; ESAT required"
+      },
+      "Electronic and Information Engineering": {
+        courseContent: "Digital Systems, Computer Architecture, Networks, Machine Intelligence",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; ESAT required"
+      },
+      "Mechanical Engineering": {
+        courseContent: "Solid & Fluid Mechanics, Dynamics & Control, Design & Manufacturing",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A or A*AAA incl. Maths; ESAT required"
+      },
+      "Mechanical Engineering with Nuclear Engineering": {
+        courseContent: "Thermal-Hydraulics, Reactor Physics, Nuclear Materials, Safety & Regulation",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths & Physics; ESAT required"
+      },
+      "Materials Science and Engineering": {
+        courseContent: "Materials Processing, Crystallography, Polymers, Metals, Ceramics, Data-Driven Materials",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; ESAT sometimes used"
+      },
+      "Materials with Nuclear Engineering": {
+        courseContent: "Radiation Damage, Nuclear Materials, Structural Integrity, Waste & Decommissioning",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths & Physics; ESAT required"
+      },
+      "Computing": {
+        courseContent: "Algorithms, Data Structures, Systems, Databases, ML/AI, Software Engineering",
         duration: "3 years (BEng), 4 years (MEng)",
-        entryRequirements: "A*A*A (including Mathematics and Further Mathematics)"
+        entryRequirements: "A*A*A incl. Maths; TMUA required; Further Maths preferred"
       },
-      "Engineering": {
-        courseContent: "Aeronautical, Chemical, Civil, Electrical, Mechanical, Materials Engineering",
-        duration: "3 years (BEng), 4 years (MEng)",
-        entryRequirements: "A*A*A (including Mathematics and Physics)"
+      "Computing (Artificial Intelligence and Machine Learning)": {
+        courseContent: "Deep Learning, Probabilistic ML, Knowledge Representation, Reinforcement Learning",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; TMUA required"
       },
-      "Business & Management": {
-        courseContent: "Finance, Strategy, Operations, Innovation, Technology Management",
-        duration: "3 years (BSc), 4 years (MSci)",
-        entryRequirements: "A*AA (including Mathematics)"
+      "Computing (International Programme of Study)": {
+        courseContent: "Core Computing plus a study-abroad year; Programming, Systems, Theory, AI",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; TMUA required"
       },
-      "Medicine": {
-        courseContent: "Biomedical Sciences, Clinical Medicine, Surgery, Public Health",
-        duration: "6 years (MBBS)",
-        entryRequirements: "A*AA (including Chemistry and Biology)"
+      "Computing (Software Engineering)": {
+        courseContent: "Large-Scale Software, Distributed Systems, DevOps, Security, Testing",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; TMUA required"
       },
-      "Physics": {
-        courseContent: "Quantum Mechanics, Relativity, Particle Physics, Astrophysics",
-        duration: "3 years (BSc), 4 years (MSci)",
-        entryRequirements: "A*AA (including Mathematics and Physics)"
+      "Computing (Visual Computing and Robotics)": {
+        courseContent: "Computer Vision, Graphics, Robotics, Perception, SLAM",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; TMUA required"
       },
-      "Chemistry": {
-        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Biochemistry",
-        duration: "3 years (BSc), 4 years (MSci)",
-        entryRequirements: "A*AA (including Chemistry and Mathematics)"
+      "Computing (Management and Finance)": {
+        courseContent: "CS core with Management/Finance modules: Strategy, Accounting, Analytics",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; TMUA required"
+      },
+      "Computing (Security and Reliability)": {
+        courseContent: "Computer Security, Cryptography, Program Analysis, Dependability",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*A*A incl. Maths; TMUA required"
       },
       "Mathematics": {
-        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics",
+        courseContent: "Algebra, Analysis, Probability, Differential Equations, Optional Part IV topics",
         duration: "3 years (BSc), 4 years (MSci)",
-        entryRequirements: "A*A*A (including Mathematics and Further Mathematics)"
+        entryRequirements: "A*A*A incl. Maths (and usually Further Maths); TMUA required"
       },
-      "Biology": {
-        courseContent: "Molecular Biology, Genetics, Ecology, Evolution, Biochemistry",
+      "Mathematics with Statistics for Finance": {
+        courseContent: "Stochastic Processes, Financial Mathematics, Statistics, Econometrics",
         duration: "3 years (BSc), 4 years (MSci)",
-        entryRequirements: "A*AA (including Biology and Chemistry)"
+        entryRequirements: "A*A*A incl. Maths & Further Maths; TMUA required"
+      },
+      "Physics": {
+        courseContent: "Classical & Quantum Physics, Electromagnetism, Labs, Computational Physics",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "A*A*A incl. Physics & Maths; ESAT (Maths 1, Maths 2, Physics)"
+      },
+      "Physics with Theoretical Physics": {
+        courseContent: "Advanced Quantum, QFT, General Relativity, Mathematical Methods",
+        duration: "4 years (MSci)",
+        entryRequirements: "A*A*A incl. Physics & Maths; ESAT required"
+      },
+      "Chemistry": {
+        courseContent: "Organic, Inorganic, Physical, Analytical, Lab & Research Projects",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "A*A*A incl. Chemistry and one from Maths/Physics/Biology; no admissions test"
+      },
+      "Biological Sciences": {
+        courseContent: "Genetics, Ecology, Evolution, Quantitative Biology, Research Skills",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "AAA/A*A*A incl. Biology; no admissions test"
+      },
+      "Biochemistry": {
+        courseContent: "Molecular Biology, Protein Science, Genomics, Cell Signalling",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "AAA/A*A*A incl. Chemistry and Biology; no admissions test"
+      },
+      "Biotechnology": {
+        courseContent: "Synthetic Biology, Bioprocessing, Bioinformatics, Industrial Biotechnology",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "AAA/A*A*A incl. Chemistry plus Biology/Maths/Physics; no admissions test"
+      },
+      "Earth and Planetary Science": {
+        courseContent: "Planetary Geology, Geochemistry, Geophysics, Remote Sensing",
+        duration: "4 years (MSci)",
+        entryRequirements: "AAA/A*A*A including a science and Maths; no admissions test"
+      },
+      "Geology": {
+        courseContent: "Petrology, Structural Geology, Fieldwork, Sedimentology, Tectonics",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "AAA/A*A*A incl. a science; no admissions test"
+      },
+      "Geophysics": {
+        courseContent: "Seismology, Geodynamics, Geophysical Inversion, Field/Computational Methods",
+        duration: "3 years (BSc), 4 years (MSci)",
+        entryRequirements: "AAA/A*A*A incl. Maths & Physics preferred; no admissions test"
+      },
+      "Medical Biosciences": {
+        courseContent: "Human Biology, Disease Mechanisms, Data Skills, Research Projects (Lab/Placement)",
+        duration: "3 years (BSc) with optional 4th year in Management",
+        entryRequirements: "AAA incl. Biology & Chemistry; no admissions test"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Sciences, Clinical Placements, Integrated BSc, Patient-centred Care",
+        duration: "6 years",
+        entryRequirements: "A*AA/AAA with Biology & Chemistry; UCAT required"
+      },
+      "Economics, Finance and Data Science": {
+        courseContent: "Micro/Macro, Econometrics, ML for Economics, Finance & Data Engineering",
+        duration: "3 years (BSc)",
+        entryRequirements: "A*A*A incl. Maths; TMUA required"
       }
-    },
-    courseContent: "Programming, Algorithms, Systems Architecture, AI, Data Science",
-    duration: "3 years (BEng), 4 years (MEng)",
-    employmentRate: "97%",
-    researchRating: "5*"
+    }, 
+      distanceLearning: "Not available (campus only)",
+      workPlacement: "Varies by course (many Year in Industry options)",
+      yearAbroad: "Available on many courses (e.g., Engineering, Mathematics, Physics, Chemistry, Life Sciences)",
+      employmentRate: "N/A",
   },
   {
     id: 4,
