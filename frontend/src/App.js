@@ -321,8 +321,176 @@ const getStudentReviews = (universityName) => {
     return sources[index % sources.length];
   };
 
-  // Special detailed reviews for top universities
+  // Special detailed reviews for top universities (detailed, hand-crafted reviews)
   const premiumUniversityReviews = {
+    "University of Oxford": {
+      overallRating: 4.3,
+      totalReviews: 1247,
+      categories: {
+        "Academic Quality": 4.6,
+        "Campus Life": 4.1,
+        "Facilities": 4.2,
+        "Support": 3.9,
+        "Career Prospects": 4.7
+      },
+      reviews: [
+        {
+          rating: 5,
+          title: "World-class education but intense pressure",
+          review: "Oxford is undeniably prestigious and the tutorial system really pushes you to think critically. The workload is immense and pressure can be overwhelming at times. The social life is amazing though - lots of societies, formal events, and incredible traditions. Beautiful buildings and amazing libraries.",
+          year: "3rd Year",
+          date: "November 2024",
+          helpful: 23,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 4,
+          title: "Amazing opportunities but very traditional",
+          review: "The research opportunities here are incredible and the alumni network opens doors everywhere. Libraries are world-class and the city is beautiful. Some traditions feel outdated though, and it can feel quite elitist at times. Great for academic growth but socially challenging if you don't fit in.",
+          year: "2nd Year", 
+          date: "October 2024",
+          helpful: 18,
+          source: "Whatuni"
+        },
+        {
+          rating: 4,
+          title: "Brilliant academics, expensive lifestyle",
+          review: "Academically, Oxford is unmatched. The tutorial system means incredible one-on-one attention from world experts. The city is stunning and full of history. Downside is how expensive everything is and the competitive atmosphere can be quite toxic. Worth it for career prospects though.",
+          year: "Final Year",
+          date: "September 2024",
+          helpful: 31,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "University of Cambridge": {
+      overallRating: 4.4,
+      totalReviews: 1158,
+      categories: {
+        "Academic Quality": 4.7,
+        "Campus Life": 4.2,
+        "Facilities": 4.3,
+        "Support": 4.0,
+        "Career Prospects": 4.8
+      },
+      reviews: [
+        {
+          rating: 5,
+          title: "Best decision I ever made",
+          review: "Cambridge has exceeded all my expectations. The supervision system means incredible academic support, and the college system creates a real sense of community. Yes, it's challenging and the workload is heavy, but the opportunities and friendships you make are priceless. The city and campus are absolutely beautiful.",
+          year: "Final Year",
+          date: "December 2024",
+          helpful: 45,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 4,
+          title: "Amazing place but very demanding",
+          review: "The teaching quality is exceptional and the research opportunities are world-class. Cambridge has amazing traditions and the college system is brilliant for making friends. However, the pressure is intense and mental health support could be better. The punting and formal dinners are highlights!",
+          year: "2nd Year",
+          date: "November 2024",
+          helpful: 29,
+          source: "Whatuni"
+        },
+        {
+          rating: 3,
+          title: "Great academics, challenging socially",
+          review: "Academically brilliant - the labs, libraries and teaching are top tier. The college formal dinners and traditions are fun when you get used to them. But it can feel quite cliquey and the workload leaves little time for relaxation. Good career prospects but comes at a personal cost.",
+          year: "3rd Year", 
+          date: "October 2024",
+          helpful: 16,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "Imperial College London": {
+      overallRating: 4.1,
+      totalReviews: 892,
+      categories: {
+        "Academic Quality": 4.5,
+        "Campus Life": 3.7,
+        "Facilities": 4.4,
+        "Support": 3.8,
+        "Career Prospects": 4.6
+      },
+      reviews: [
+        {
+          rating: 4,
+          title: "Excellent for STEM, lacking social life",
+          review: "Imperial is fantastic if you're serious about science or engineering. The facilities are cutting-edge and the teaching is rigorous. However, the social scene is quite limited compared to other London unis. Very career-focused environment which can feel intense but pays off with amazing job prospects. South Ken location is great.",
+          year: "Final Year",
+          date: "December 2024",
+          helpful: 34,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 5,
+          title: "Research opportunities are unmatched",
+          review: "Imperial offers incredible research opportunities even at undergrad level. The professors are world leaders in their fields and the labs are state-of-the-art. South Kensington location is amazing for museums and culture. Downside is the male-dominated environment and heavy focus on grades over wellbeing.",
+          year: "3rd Year",
+          date: "November 2024",
+          helpful: 27,
+          source: "Whatuni"
+        },
+        {
+          rating: 3,
+          title: "Great education but very stressful",
+          review: "The academic standards are incredibly high which is both good and bad. You'll learn a lot and get excellent career prospects, but the pressure is immense. Not much focus on student welfare or social life. Good if you can handle stress and are very academically focused.",
+          year: "2nd Year",
+          date: "October 2024", 
+          helpful: 19,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "University College London (UCL)": {
+      overallRating: 4.2,
+      totalReviews: 1034,
+      categories: {
+        "Academic Quality": 4.3,
+        "Campus Life": 4.1,
+        "Facilities": 4.0,
+        "Support": 4.0,
+        "Career Prospects": 4.4
+      },
+      reviews: [
+        {
+          rating: 5,
+          title: "Perfect balance of academics and London life",
+          review: "UCL gives you world-class education in the heart of London. The diversity here is incredible - you meet people from everywhere. Great mix of rigorous academics and amazing social opportunities. Bloomsbury location means you're close to everything. The campus is scattered but each building has character.",
+          year: "Final Year",
+          date: "December 2024",
+          helpful: 41,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 4,
+          title: "Great university, expensive city",
+          review: "UCL has excellent facilities and the teaching quality is very good. Being in London opens up so many internship and networking opportunities. The student body is very international which is brilliant. Main downside is how expensive London is - accommodation and living costs are absolutely brutal.",
+          year: "2nd Year",
+          date: "November 2024",
+          helpful: 33,
+          source: "Whatuni"
+        },
+        {
+          rating: 4,
+          title: "Diverse and academically strong",
+          review: "Love the diversity at UCL - you're constantly learning from different perspectives. The campus being scattered around London takes getting used to but means you really experience the city. Good academic support and career services. Can feel impersonal due to the size though.",
+          year: "3rd Year",
+          date: "September 2024",
+          helpful: 22,
+          source: "The Student Room"
+        }
+      ]
+    }
+  };
+
+  // Check if this university has premium reviews first
+  if (premiumUniversityReviews[universityName]) {
+    return premiumUniversityReviews[universityName];
+  }
+
+  // Otherwise generate custom reviews
     "University of Cambridge": {
       overallRating: 4.4,
       totalReviews: 1158,
