@@ -9277,14 +9277,9 @@ function App() {
                   </div>
                 )}
                 
-                {/* Auto-rotation indicator with slide direction */}
-                <div className="mt-3 flex items-center justify-center gap-2 text-xs text-gray-500 dark:text-gray-400">
-                  <div className="w-4 h-4 animate-pulse">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <span>Sliding recommendations every 4s</span>
+                {/* Static recommendations - no animation indicators needed */}
+                <div className="mt-4 text-xs text-gray-500 dark:text-gray-400 text-center">
+                  <span>Smart recommendations based on your search</span>
                 </div>
               </div>
               <div 
