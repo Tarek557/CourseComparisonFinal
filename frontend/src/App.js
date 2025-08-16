@@ -8985,7 +8985,7 @@ function App() {
                       <div 
                         className="flex transition-transform duration-700 ease-in-out"
                         style={{ 
-                          transform: `translateX(-${safeRecommendationIndex * 100}%)`,
+                          transform: `translateX(-${safeRecommendationIndex * (100 / totalSets)}%)`,
                           width: `${totalSets * 100}%`
                         }}
                       >
