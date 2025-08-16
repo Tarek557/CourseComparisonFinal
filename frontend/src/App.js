@@ -8971,24 +8971,30 @@ function App() {
                 
                 {/* Sliding carousel container */}
                 <div className="overflow-hidden rounded-lg">
-                  <div 
-                    className="flex transition-transform duration-700 ease-in-out"
-                    style={{ 
-                      transform: `translateX(-${recommendationSetIndex * 100}%)`,
-                      width: `${Math.ceil(getAllRecommendations().length / 3) * 100}%`
-                    }}
-                  >
-                    {/* Render all recommendation sets for smooth sliding */}
-                    {Array.from({ length: Math.ceil(getAllRecommendations().length / 3) }).map((_, setIndex) => {
-                      const startIdx = setIndex * 3;
-                      const setRecommendations = getAllRecommendations().slice(startIdx, startIdx + 3);
-                      
-                      return (
-                        <div 
-                          key={setIndex}
-                          className="w-full flex-shrink-0 space-y-2"
-                          style={{ width: `${100 / Math.ceil(getAllRecommendations().length / 3)}%` }}
-                        >
+                  {(() => {
+                    const allRecs = getAllRecommendations();
+                    const totalSets = Math.ceil(allRecs.length / 3);
+                    const safeRecommendationIndex = Math.min(recommendationSetIndex, totalSets - 1);
+                    
+                    return (
+                      <div 
+                        className="flex transition-transform duration-700 ease-in-out"
+                        style={{ 
+                          transform: `translateX(-${safeRecommendationIndex * 100}%)`,
+                          width: `${totalSets * 100}%`
+                        }}
+                      >
+                        {/* Render all recommendation sets for smooth sliding */}
+                        {Array.from({ length: totalSets }).map((_, setIndex) => {
+                          const startIdx = setIndex * 3;
+                          const setRecommendations = allRecs.slice(startIdx, startIdx + 3);
+                          
+                          return (
+                            <div 
+                              key={setIndex}
+                              className="w-full flex-shrink-0 space-y-2"
+                              style={{ width: `${100 / totalSets}%` }}
+                            >
                           {setRecommendations.map((rec, index) => (
                             <button
                               key={`${setIndex}-${index}`}
