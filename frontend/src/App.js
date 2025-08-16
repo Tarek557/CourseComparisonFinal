@@ -8594,6 +8594,7 @@ function App() {
         { type: 'course', title: 'Web Development', reason: '£35k starting salary' },
         { type: 'course', title: 'Mobile App Development', reason: '91% in tech roles' }
       );
+      console.log('Computer recommendations:', allRecommendations.length, 'total, sets:', Math.ceil(allRecommendations.length / 3));
     } else if (searchTerm.toLowerCase().includes('medicine') || searchTerm.toLowerCase().includes('health')) {
       allRecommendations.push(
         { type: 'course', title: 'Biomedical Science', reason: '89% employed in 6 months' },
