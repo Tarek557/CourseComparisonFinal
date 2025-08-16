@@ -9098,7 +9098,7 @@ function App() {
                             e.stopPropagation();
                             handleClearInstitutions();
                           }}
-                          className="text-sm text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 font-medium transition-colors duration-300"
+                          className="text-sm text-red-600 dark:text-red-400 font-medium"
                         >
                           Clear all ({selectedInstitutions.length})
                         </button>
