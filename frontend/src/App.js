@@ -491,12 +491,6 @@ const getStudentReviews = (universityName) => {
   }
 
   // Otherwise generate custom reviews
-    "University of Cambridge": {
-      overallRating: 4.4,
-      totalReviews: 1158,
-      categories: {
-        "Academic Quality": 4.7,
-        "Campus Life": 4.2,
         "Facilities": 4.3,
         "Support": 4.0,
         "Career Prospects": 4.8
