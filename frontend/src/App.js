@@ -1105,7 +1105,7 @@ const universitiesData = [
   {
     id: 9,
     name: "University of Warwick",
-    ranking: 64,
+    ranking: 6, // UK ranking - Complete University Guide
     location: "Coventry, England",
     tuitionFeesUK: "£9,250", 
     tuitionFeesInternational: "£31,620",
