@@ -491,40 +491,6 @@ const getStudentReviews = (universityName) => {
   }
 
   // Otherwise generate custom reviews
-        "Facilities": 4.3,
-        "Support": 4.0,
-        "Career Prospects": 4.8
-      },
-      reviews: [
-        {
-          rating: 5,
-          title: "Best decision I ever made",
-          review: "Cambridge has exceeded all my expectations. The supervision system means you get incredible academic support, and the college system creates a real sense of community. Yes, it's challenging and the workload is heavy, but the opportunities and friendships you make are priceless.",
-          year: "Final Year",
-          date: "December 2024",
-          helpful: 45,
-          source: "StudentCrowd"
-        },
-        {
-          rating: 4,
-          title: "Amazing place but very demanding",
-          review: "The teaching quality is exceptional and the research opportunities are world-class. Cambridge has amazing traditions and the college system is brilliant for making friends. However, the pressure is intense and mental health support could be better. Definitely worth it though!",
-          year: "2nd Year",
-          date: "November 2024",
-          helpful: 29,
-          source: "Whatuni"
-        },
-        {
-          rating: 3,
-          title: "Great academics, challenging socially",
-          review: "Academically brilliant - the labs, libraries and teaching are top tier. The college formal dinners and traditions are fun. But it can feel quite cliquey and the workload leaves little time for relaxation. Good career prospects but comes at a personal cost.",
-          year: "3rd Year", 
-          date: "October 2024",
-          helpful: 16,
-          source: "The Student Room"
-        }
-      ]
-    },
     "Imperial College London": {
       overallRating: 4.1,
       totalReviews: 892,
