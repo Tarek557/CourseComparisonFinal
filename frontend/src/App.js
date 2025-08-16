@@ -8395,6 +8395,7 @@ function App() {
   const [selectedInstitutions, setSelectedInstitutions] = useState([]); // Multi-select institutions
   const [institutionSearchTerm, setInstitutionSearchTerm] = useState(''); // Search within institutions
   const [isInstitutionDropdownOpen, setIsInstitutionDropdownOpen] = useState(false); // Dropdown open state
+  const [expandedUniversities, setExpandedUniversities] = useState({}); // Track which universities are expanded
   const [isDarkMode, setIsDarkMode] = useState(() => {
     // Check localStorage for saved preference, default to false
     const savedTheme = localStorage.getItem('darkMode');
