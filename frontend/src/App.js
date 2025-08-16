@@ -984,11 +984,7 @@ const getStudentReviews = (universityName) => {
     ]
   };
 
-  return reviewsData[universityName] || {
-    ...defaultReviews,
-    overallRating: 3.5 + Math.random() * 1.0, // Slight variation for different unis
-    totalReviews: Math.floor(150 + Math.random() * 300)
-  };
+  return reviewsData[universityName] || generateUniversityReviews(universityName);
 };
 const generateDefaultPrograms = (university) => {
   const basePrograms = {
