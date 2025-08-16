@@ -8445,6 +8445,17 @@ function App() {
     }
   }, [isDarkMode]);
 
+  // Auto-rotate recommendations every 4 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const allRecommendations = getAllRecommendations();
+      const totalSets = Math.ceil(allRecommendations.length / 3);
+      setRecommendationSetIndex(prev => (prev + 1) % totalSets);
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, [searchTerm, selectedInstitutions]); // Reset timer when search context changes
+
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
