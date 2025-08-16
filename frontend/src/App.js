@@ -8714,35 +8714,7 @@ function App() {
     }
   }, [isDarkMode]);
 
-  // Reset recommendation index when search context changes
-  useEffect(() => {
-    setRecommendationSetIndex(0);
-  }, [searchTerm, selectedInstitutions]);
-
-  // Auto-rotate recommendations every 4 seconds (pause when dropdown is open)
-  useEffect(() => {
-    // Don't rotate when dropdown is open to prevent glitching
-    if (isInstitutionDropdownOpen) {
-      return;
-    }
-
-    const allRecommendations = getAllRecommendations();
-    const totalSets = Math.ceil(allRecommendations.length / 3);
-    
-    if (totalSets <= 1) {
-      return; // No need to rotate if only one set or no recommendations
-    }
-
-    const timer = setInterval(() => {
-      setRecommendationSetIndex(prev => {
-        const currentRecommendations = getAllRecommendations();
-        const currentTotalSets = Math.ceil(currentRecommendations.length / 3);
-        return (prev + 1) % currentTotalSets;
-      });
-    }, 4000);
-
-    return () => clearInterval(timer);
-  }, [searchTerm, selectedInstitutions, isInstitutionDropdownOpen]); // Include dropdown state
+  // No auto-rotation - static recommendations only
 
   // Close dropdown when clicking outside
   useEffect(() => {
