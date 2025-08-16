@@ -8856,6 +8856,8 @@ function App() {
                             selectedInstitutions={selectedInstitutions}
                             onSelectCourse={handleCourseSelect}
                             selectedCourses={selectedCourses}
+                            isExpanded={expandedUniversities[university.id] || false}
+                            onToggleExpansion={() => toggleUniversityExpansion(university.id)}
                           />
                         ))}
                         
