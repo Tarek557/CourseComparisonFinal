@@ -9210,7 +9210,10 @@ function App() {
                     ) : '130+ total available'
                   }</div>
               </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+              <div 
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
+                style={{ contain: 'layout style paint', willChange: 'transform' }}
+              >
                 <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
                   {(searchTerm || selectedInstitutions.length > 0) ? 
                     filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0) : 
