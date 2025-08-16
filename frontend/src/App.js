@@ -12870,11 +12870,7 @@ function App() {
                 onChange={(e) => setSortBy(e.target.value)}
               >
                 <option value="ranking">Sort by Ranking</option>
-                <option value="name">Sort by Name</option>
-                <option value="fees">Sort by UK Fees</option>
-                {(searchTerm || selectedInstitutions.length > 0) && (
-                  <option value="courses">Sort by Course Count</option>
-                )}
+                <option value="name">Sort from A-Z</option>
               </select>
             </div>
             
