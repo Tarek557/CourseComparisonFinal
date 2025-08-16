@@ -9086,9 +9086,9 @@ function App() {
                     className="fixed z-[99999] bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow-xl max-h-80 overflow-hidden transition-colors duration-300"
                     style={{
                       position: 'fixed',
-                      top: `${dropdownRef.current?.getBoundingClientRect().bottom + 4}px`,
-                      left: `${dropdownRef.current?.getBoundingClientRect().left}px`,
-                      width: `${dropdownRef.current?.getBoundingClientRect().width}px`,
+                      top: `${dropdownPosition.top}px`,
+                      left: `${dropdownPosition.left}px`,
+                      width: `${dropdownPosition.width}px`,
                       zIndex: 999999
                     }}
                   >
