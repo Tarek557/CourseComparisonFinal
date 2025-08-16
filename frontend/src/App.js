@@ -8531,7 +8531,7 @@ const ComparisonTable = ({ universities, onRemove }) => {
                       <p className="text-gray-700 text-sm mb-2 leading-relaxed">{review.review}</p>
                       <div className="flex justify-between items-center text-xs text-gray-500">
                         <div>
-                          <span className="font-medium">{review.course}</span> • {review.year} • {review.date}
+                          <span className="font-medium">{review.year}</span> • {review.date}
                         </div>
                         <div className="flex items-center gap-1">
                           <span>👍 {review.helpful} helpful</span>
