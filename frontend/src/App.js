@@ -8550,8 +8550,71 @@ function App() {
     setCurrentSearchPage(1);
   };
 
-  const handleInstitutionSearchChange = (e) => {
-    setInstitutionSearchTerm(e.target.value);
+  // Recommendation System Logic
+  const getSmartRecommendations = () => {
+    const recommendations = [];
+    
+    // Course-based recommendations
+    if (searchTerm.toLowerCase().includes('computer') || searchTerm.toLowerCase().includes('software')) {
+      recommendations.push(
+        { type: 'course', title: 'Data Science', reason: 'High demand field' },
+        { type: 'course', title: 'Artificial Intelligence', reason: 'Growing industry' },
+        { type: 'course', title: 'Cybersecurity', reason: 'High salary potential' }
+      );
+    } else if (searchTerm.toLowerCase().includes('medicine') || searchTerm.toLowerCase().includes('health')) {
+      recommendations.push(
+        { type: 'course', title: 'Biomedical Science', reason: 'Research opportunities' },
+        { type: 'course', title: 'Nursing', reason: '99% employment rate' },
+        { type: 'course', title: 'Psychology', reason: 'Versatile career paths' }
+      );
+    } else if (searchTerm.toLowerCase().includes('business') || searchTerm.toLowerCase().includes('management')) {
+      recommendations.push(
+        { type: 'course', title: 'Economics', reason: 'High graduate salary' },
+        { type: 'course', title: 'Marketing', reason: 'Creative + analytical' },
+        { type: 'course', title: 'Finance', reason: 'City career prospects' }
+      );
+    } else if (searchTerm.toLowerCase().includes('engineering')) {
+      recommendations.push(
+        { type: 'course', title: 'Mechanical Engineering', reason: 'Diverse opportunities' },
+        { type: 'course', title: 'Civil Engineering', reason: 'Infrastructure demand' },
+        { type: 'course', title: 'Aerospace Engineering', reason: 'Innovation focus' }
+      );
+    } else if (selectedInstitutions.length > 0) {
+      // Institution-based recommendations
+      const hasRussellGroup = selectedInstitutions.some(name => 
+        ['University of Cambridge', 'University of Oxford', 'Imperial College London', 
+         'University College London (UCL)', 'University of Edinburgh'].includes(name)
+      );
+      
+      if (hasRussellGroup) {
+        recommendations.push(
+          { type: 'university', title: 'University of Warwick', reason: 'Similar prestige' },
+          { type: 'university', title: 'University of Bristol', reason: 'Russell Group member' },
+          { type: 'course', title: 'Research-focused programs', reason: 'Match your selections' }
+        );
+      }
+    } else {
+      // Default trending recommendations
+      recommendations.push(
+        { type: 'course', title: 'Computer Science', reason: 'Most searched field' },
+        { type: 'course', title: 'Medicine', reason: 'High employment rate' },
+        { type: 'university', title: 'University of Cambridge', reason: 'Top UK ranking' }
+      );
+    }
+    
+    return recommendations.slice(0, 3); // Return top 3 recommendations
+  };
+
+  const handleRecommendationClick = (recommendation) => {
+    if (recommendation.type === 'course') {
+      setSearchTerm(recommendation.title);
+      setCurrentSearchPage(1);
+    } else if (recommendation.type === 'university') {
+      const isAlreadySelected = selectedInstitutions.includes(recommendation.title);
+      if (!isAlreadySelected) {
+        setSelectedInstitutions(prev => [...prev, recommendation.title]);
+      }
+    }
   };
 
   const toggleUniversityExpansion = (universityId) => {
