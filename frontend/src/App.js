@@ -443,9 +443,7 @@ const getStudentReviews = (universityName) => {
           source: "The Student Room"
         }
       ]
-    }
-  };
-
+    },
     "University of Southampton": {
       overallRating: 4.0,
       totalReviews: 687,
