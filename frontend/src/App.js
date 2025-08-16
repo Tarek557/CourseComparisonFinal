@@ -8566,34 +8566,46 @@ function App() {
     setInstitutionSearchTerm(e.target.value);
   };
 
-  // Recommendation System Logic
-  const getSmartRecommendations = () => {
-    const recommendations = [];
+  // Get all available recommendations (expanded list)
+  const getAllRecommendations = () => {
+    const allRecommendations = [];
     
     // Course-based recommendations with accurate UK data
     if (searchTerm.toLowerCase().includes('computer') || searchTerm.toLowerCase().includes('software')) {
-      recommendations.push(
+      allRecommendations.push(
         { type: 'course', title: 'Data Science', reason: '£45k avg starting salary' },
         { type: 'course', title: 'Artificial Intelligence', reason: '92% employment rate' },
-        { type: 'course', title: 'Cybersecurity', reason: '96% graduate employment' }
+        { type: 'course', title: 'Cybersecurity', reason: '96% graduate employment' },
+        { type: 'course', title: 'Software Engineering', reason: '94% employment rate' },
+        { type: 'course', title: 'Web Development', reason: '£35k starting salary' },
+        { type: 'course', title: 'Mobile App Development', reason: '91% in tech roles' }
       );
     } else if (searchTerm.toLowerCase().includes('medicine') || searchTerm.toLowerCase().includes('health')) {
-      recommendations.push(
+      allRecommendations.push(
         { type: 'course', title: 'Biomedical Science', reason: '89% employed in 6 months' },
         { type: 'course', title: 'Nursing', reason: '98% employment guarantee' },
-        { type: 'course', title: 'Psychology', reason: '85% in graduate-level jobs' }
+        { type: 'course', title: 'Psychology', reason: '85% in graduate-level jobs' },
+        { type: 'course', title: 'Physiotherapy', reason: '97% employment rate' },
+        { type: 'course', title: 'Pharmacy', reason: '95% guaranteed employment' },
+        { type: 'course', title: 'Occupational Therapy', reason: '93% NHS opportunities' }
       );
     } else if (searchTerm.toLowerCase().includes('business') || searchTerm.toLowerCase().includes('management')) {
-      recommendations.push(
+      allRecommendations.push(
         { type: 'course', title: 'Economics', reason: '£35k median graduate salary' },
         { type: 'course', title: 'Marketing', reason: '88% employment rate' },
-        { type: 'course', title: 'Finance', reason: '£40k average starting salary' }
+        { type: 'course', title: 'Finance', reason: '£40k average starting salary' },
+        { type: 'course', title: 'Accounting', reason: '92% professional placement' },
+        { type: 'course', title: 'International Business', reason: '£38k global opportunities' },
+        { type: 'course', title: 'Human Resources', reason: '86% corporate roles' }
       );
     } else if (searchTerm.toLowerCase().includes('engineering')) {
-      recommendations.push(
+      allRecommendations.push(
         { type: 'course', title: 'Mechanical Engineering', reason: '94% graduate employment' },
         { type: 'course', title: 'Civil Engineering', reason: '£28k starting, £45k mid-career' },
-        { type: 'course', title: 'Aerospace Engineering', reason: '91% in professional roles' }
+        { type: 'course', title: 'Aerospace Engineering', reason: '91% in professional roles' },
+        { type: 'course', title: 'Electrical Engineering', reason: '93% employment rate' },
+        { type: 'course', title: 'Chemical Engineering', reason: '£32k starting salary' },
+        { type: 'course', title: 'Environmental Engineering', reason: '90% green sector jobs' }
       );
     } else if (selectedInstitutions.length > 0) {
       // Institution-based recommendations with accurate career data
@@ -8603,28 +8615,44 @@ function App() {
       );
       
       if (hasRussellGroup) {
-        recommendations.push(
+        allRecommendations.push(
           { type: 'course', title: 'Mathematics', reason: '£32k starting, 90% employment' },
           { type: 'course', title: 'Physics', reason: '93% in graduate-level jobs' },
-          { type: 'course', title: 'Philosophy', reason: '84% employment, strong analytics' }
+          { type: 'course', title: 'Philosophy', reason: '84% employment, strong analytics' },
+          { type: 'course', title: 'Chemistry', reason: '91% research opportunities' },
+          { type: 'course', title: 'History', reason: '82% professional roles' },
+          { type: 'course', title: 'English Literature', reason: '80% media/publishing jobs' }
         );
       } else {
-        recommendations.push(
+        allRecommendations.push(
           { type: 'course', title: 'Business Management', reason: '87% employment rate' },
           { type: 'course', title: 'Psychology', reason: '£24k starting salary' },
-          { type: 'course', title: 'English Literature', reason: '82% in professional roles' }
+          { type: 'course', title: 'English Literature', reason: '82% in professional roles' },
+          { type: 'course', title: 'Sociology', reason: '79% public sector roles' },
+          { type: 'course', title: 'Media Studies', reason: '75% creative industry jobs' },
+          { type: 'course', title: 'Geography', reason: '81% graduate employment' }
         );
       }
     } else {
       // Default trending recommendations with real UK data
-      recommendations.push(
+      allRecommendations.push(
         { type: 'course', title: 'Computer Science', reason: '95% employment, £30k+ start' },
         { type: 'course', title: 'Medicine', reason: '99% employment guarantee' },
-        { type: 'course', title: 'Business Management', reason: '87% graduate employment' }
+        { type: 'course', title: 'Business Management', reason: '87% graduate employment' },
+        { type: 'course', title: 'Engineering', reason: '93% professional placement' },
+        { type: 'course', title: 'Law', reason: '£28k starting, high progression' },
+        { type: 'course', title: 'Nursing', reason: '98% NHS guaranteed roles' }
       );
     }
     
-    return recommendations.slice(0, 3); // Return top 3 recommendations
+    return allRecommendations;
+  };
+
+  // Recommendation System Logic - Get current visible set
+  const getSmartRecommendations = () => {
+    const allRecommendations = getAllRecommendations();
+    const startIndex = recommendationSetIndex * 3;
+    return allRecommendations.slice(startIndex, startIndex + 3);
   };
 
   const handleRecommendationClick = (recommendation) => {
