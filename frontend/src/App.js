@@ -8463,9 +8463,7 @@ function App() {
       setRecommendationSetIndex(prev => {
         const currentRecommendations = getAllRecommendations();
         const currentTotalSets = Math.ceil(currentRecommendations.length / 3);
-        const newIndex = (prev + 1) % currentTotalSets;
-        console.log('Slideshow rotation:', prev, '->', newIndex, '(totalSets:', currentTotalSets, 'recs:', currentRecommendations.length, ')');
-        return newIndex;
+        return (prev + 1) % currentTotalSets;
       });
     }, 4000);
 
