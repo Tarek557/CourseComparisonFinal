@@ -8550,6 +8550,10 @@ function App() {
     setCurrentSearchPage(1);
   };
 
+  const handleInstitutionSearchChange = (e) => {
+    setInstitutionSearchTerm(e.target.value);
+  };
+
   // Recommendation System Logic
   const getSmartRecommendations = () => {
     const recommendations = [];
