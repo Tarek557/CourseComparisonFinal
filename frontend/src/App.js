@@ -663,7 +663,7 @@ const universitiesData = [
   {
     id: 3,
     name: "Imperial College London",
-    ranking: 8,
+    ranking: 4, // UK ranking - Complete University Guide
     location: "London, England",
     tuitionFeesUK: "£9,250", 
     tuitionFeesInternational: "£40,940",
