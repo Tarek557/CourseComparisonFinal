@@ -4802,150 +4802,605 @@ const universitiesData = [
   {
     id: 10,
     name: "University of Glasgow",
-    ranking: 87,
-    location: "Glasgow, Scotland",
-    tuitionFeesUK: "£9,250",
-    tuitionFeesInternational: "£27,930",
-    entryRequirements: "AAA-BBB (including Mathematics)", 
-    ucasPoints: "144-96",
-    scholarships: "Glasgow International Leadership Scholarship, Undergraduate Excellence Scholarship",
-    programs: {
-      "Computer Science": {
-        courseContent: "Programming, Software Engineering, AI, Data Science, Computer Systems, HCI",
-        duration: "4 years (BSc), 5 years (MEng)",
-        entryRequirements: "AAA-BBB (including Mathematics)"
-      },
-      "Engineering": {
-        courseContent: "Aerospace, Civil, Electronic, Mechanical, Naval Architecture",
-        duration: "4 years (BEng), 5 years (MEng)",
-        entryRequirements: "AAA (including Mathematics and Physics)"
-      },
-      "Mathematics": {
-        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics",
-        duration: "4 years (BSc), 5 years (MSci)",
-        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
-      },
-      "Physics": {
-        courseContent: "Theoretical Physics, Experimental Physics, Particle Physics, Astrophysics",
-        duration: "4 years (BSc), 5 years (MPhys)",
-        entryRequirements: "AAA (including Mathematics and Physics)"
-      },
-      "Chemistry": {
-        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Chemical Biology",
-        duration: "4 years (BSc), 5 years (MChem)",
-        entryRequirements: "AAA (including Chemistry and Mathematics)"
-      },
-      "Biology": {
-        courseContent: "Molecular Biology, Marine Biology, Ecology, Genetics, Biotechnology",
-        duration: "4 years (BSc)",
-        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
-      },
-      "Psychology": {
-        courseContent: "Cognitive Psychology, Social Psychology, Neuropsychology, Clinical Psychology",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (including Mathematics recommended)"
-      },
-      "Economics": {
-        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA (including Mathematics)"
-      },
-      "Politics": {
-        courseContent: "Political Theory, International Relations, Comparative Politics, Scottish Politics",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "History": {
-        courseContent: "Scottish History, Medieval History, Modern History, Economic History",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (including History preferred)"
-      },
-      "English Literature": {
-        courseContent: "Scottish Literature, English Literature, Creative Writing, Literary Theory",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (including English Literature)"
-      },
-      "Philosophy": {
-        courseContent: "Ethics, Logic, Metaphysics, Philosophy of Mind, Political Philosophy",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Law": {
-        courseContent: "Scots Law, Criminal Law, Contract Law, Constitutional Law",
-        duration: "4 years (LLB)",
-        entryRequirements: "AAA (no specific subjects)"
-      },
-      "Medicine": {
-        courseContent: "Pre-clinical Medicine, Clinical Medicine, Medical Ethics, Global Health",
-        duration: "5 years (MBChB)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
-      },
-      "Veterinary Medicine": {
-        courseContent: "Animal Anatomy, Veterinary Pathology, Clinical Practice, Animal Welfare",
-        duration: "5 years (BVMS)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
-      },
-      "Dentistry": {
-        courseContent: "Dental Anatomy, Oral Pathology, Clinical Dentistry, Dental Materials",
-        duration: "5 years (BDS)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
-      },
-      "Business and Management": {
-        courseContent: "Management, Finance, Marketing, International Business, Entrepreneurship",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Accounting and Finance": {
-        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (including Mathematics)"
-      },
-      "Sociology": {
-        courseContent: "Social Theory, Research Methods, Social Policy, Urban Studies",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Geography": {
-        courseContent: "Physical Geography, Human Geography, Environmental Science, Urban Planning",
-        duration: "4 years (MA/BSc)",
-        entryRequirements: "AAA-ABB (including Geography preferred)"
-      },
-      "Music": {
-        courseContent: "Music Theory, Composition, Performance, Music History, Ethnomusicology",
-        duration: "4 years (BMus/MA)",
-        entryRequirements: "AAA-ABB (audition required)"
-      },
-      "Fine Art": {
-        courseContent: "Drawing, Painting, Sculpture, Digital Art, Art History",
-        duration: "4 years (BFA)",
-        entryRequirements: "AAA-ABB (portfolio required)"
-      },
-      "Theatre Studies": {
-        courseContent: "Performance Studies, Theatre History, Playwriting, Stage Management",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (audition required)"
-      },
-      "Celtic Studies": {
-        courseContent: "Scottish Gaelic, Irish, Celtic History, Celtic Literature",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Archaeology": {
-        courseContent: "Field Archaeology, Scottish Archaeology, Cultural Heritage, Archaeological Science",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Education": {
-        courseContent: "Educational Psychology, Primary Education, Secondary Education, Special Needs",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      }
+    ranking: 31, 
+  location: "Glasgow, Scotland", 
+  tuitionFeesUK: "Scotland: £1,820 (SAAS rate); rUK: £9,535",
+  tuitionFeesInternational: "£26,580",
+  entryRequirements: "Typical A*AA–BBB at A level (Highers usually AAAA–AAABB). Subject requirements vary by course (e.g., Mathematics for Computing/Engineering; Chemistry plus one of Biology/Physics/Maths for Medicine). UCAT required for Medicine and Dentistry.",
+  ucasPoints: "N/A",
+  scholarships: "World Changers Global Excellence Scholarship; World Changers RUK Excellence Scholarship; World Changers RUK Access Bursary",
+  programs: {
+    "Accountancy & Finance": {
+      courseContent: "Financial Accounting, Management Accounting, Audit, Corporate Finance, Tax",
+      duration: "4 years (BAcc Hons)",
+      entryRequirements: "AAB–BBB; Mathematics desirable"
     },
-    courseContent: "Programming, Software Engineering, AI, Data Science, Computer Systems, HCI",
-    duration: "4 years (BSc), 5 years (MEng)",
-    employmentRate: "89%",
-    researchRating: "3*"
-  },
+    "Accounting & Mathematics": {
+      courseContent: "Financial Reporting, Calculus, Linear Algebra, Probability",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB including Mathematics"
+    },
+    "Accounting & Statistics": {
+      courseContent: "Accounting Principles, Statistical Modelling, Data Analysis, Econometrics",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB including Mathematics"
+    },
+    "Aeronautical Engineering": {
+      courseContent: "Aerodynamics, Flight Dynamics, Aircraft Structures, Propulsion, Avionics",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "BEng: AAB–BBB; MEng: AAA including Mathematics and Physics"
+    },
+    "Aeronautical Engineering (in partnership with Tianjin University)": {
+      courseContent: "Aerodynamics, Structures, International Design Project, Systems",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAA including Mathematics and Physics; international study component"
+    },
+    "Aerospace Engineering (joint degree with SIT)": {
+      courseContent: "Aerospace Systems, Flight Testing, Control, Composites",
+      duration: "4–5 years",
+      entryRequirements: "AAA including Mathematics and Physics"
+    },
+    "Aerospace Systems": {
+      courseContent: "Systems Engineering, Avionics, Guidance & Control, Mission Design",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Anatomy": {
+      courseContent: "Gross Anatomy, Histology, Embryology, Imaging",
+      duration: "4 years",
+      entryRequirements: "AAA–ABB; sciences recommended"
+    },
+    "Ancient History": {
+      courseContent: "Greek & Roman History, Epigraphy, Historiography, Material Culture",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Archaeology": {
+      courseContent: "Archaeological Theory, Fieldwork, Bioarchaeology, GIS",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Astronomy": {
+      courseContent: "Stellar Physics, Cosmology, Observational Techniques, Data Analysis",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Mathematics and Physics"
+    },
+    "Biochemistry": {
+      courseContent: "Proteins & Enzymes, Metabolism, Molecular Biology, Structural Biology",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Chemistry and Biology"
+    },
+    "Biomedical Engineering": {
+      courseContent: "Biomechanics, Biomaterials, Medical Imaging, Neural Engineering",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Biomedical Engineering (KMITL partnership)": {
+      courseContent: "Biomedical Instrumentation, Imaging, Design Project, International Study",
+      duration: "4–5 years",
+      entryRequirements: "AAA including Mathematics and Physics"
+    },
+    "Biomedical Engineering (Tianjin partnership)": {
+      courseContent: "Biomechanics, Sensors, Rehabilitation Engineering",
+      duration: "4–5 years",
+      entryRequirements: "AAA including Mathematics and Physics"
+    },
+    "Business & Management": {
+      courseContent: "Organisational Behaviour, Strategy, Marketing, Operations, Analytics",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Business Economics": {
+      courseContent: "Micro/Macroeconomics, Data, Policy, Industrial Organisation",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB; Mathematics useful"
+    },
+    "Celtic Civilisation": {
+      courseContent: "Early Celtic Societies, Myth, Literature, Language & Culture",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Celtic Studies": {
+      courseContent: "Scottish Gaelic, Celtic Literature, History & Culture",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Central & East European Studies": {
+      courseContent: "Politics & Society of CEE, Economics, Languages, Culture",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Chemical Physics": {
+      courseContent: "Quantum Mechanics, Spectroscopy, Physical Chemistry, Materials",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Mathematics and Physics/Chemistry"
+    },
+    "Chemistry": {
+      courseContent: "Organic, Inorganic, Physical, Analytical, Lab Skills",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Chemistry and Mathematics"
+    },
+    "Chemistry with Medicinal Chemistry": {
+      courseContent: "Medicinal Chemistry, Drug Design, Synthesis, Analytical Methods",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Chemistry and Mathematics"
+    },
+    "Chemistry with Work Placement (MSci)": {
+      courseContent: "Advanced Chemistry plus Year-long Industrial Placement",
+      duration: "5 years (MSci)",
+      entryRequirements: "AAA including Chemistry and Mathematics"
+    },
+    "Childhood Practice": {
+      courseContent: "Child Development, Inclusive Practice, Leadership in Early Years",
+      duration: "4 years (BA)",
+      entryRequirements: "ABB–BBB"
+    },
+    "Civil Engineering": {
+      courseContent: "Structures, Geotechnics, Water, Transport, Sustainability",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Civil Engineering with Architecture": {
+      courseContent: "Structural Design, Architecture Studio, Materials, CAD/BIM",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Classics (Classical Civilisation)": {
+      courseContent: "Classical Literature, History, Philosophy, Art & Archaeology",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Common Law": {
+      courseContent: "Contract, Tort, EU/International Law, Public Law",
+      duration: "4 years (LLB)",
+      entryRequirements: "AAA–AAB"
+    },
+    "Community Development": {
+      courseContent: "Social Justice, Policy, Facilitation, Practice Placement",
+      duration: "4 years (BA)",
+      entryRequirements: "ABB–BBB"
+    },
+    "Comparative Literature": {
+      courseContent: "World Literature, Theory, Translation, Cultural Studies",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Computing Science": {
+      courseContent: "Programming, Algorithms, Systems, Databases, HCI, AI/ML",
+      duration: "4 years (BSc/MA), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Mathematics"
+    },
+    "Computing Science (faster route)": {
+      courseContent: "Accelerated CS with advanced Maths/CS in Year 1–2",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "A*AA incl. Mathematics and Computing (accelerated route)"
+    },
+    "Computing Science (BUiD partnership)": {
+      courseContent: "Core CS + Glasgow–Dubai collaborative components",
+      duration: "4–5 years",
+      entryRequirements: "AAA–AAB including Mathematics"
+    },
+    "Computing Science (SIT joint degree)": {
+      courseContent: "Software Engineering, Embedded Systems, International Study",
+      duration: "4–5 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Creative Arts & Industries": {
+      courseContent: "Creative Economies, Media, Entrepreneurship, Project Studio",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Dentistry": {
+      courseContent: "Clinical Dentistry, Oral Biology, Restorative, Oral Surgery",
+      duration: "5 years (BDS)",
+      entryRequirements: "A-levels typically AAA incl. Chemistry and one of Biology/Physics/Maths; UCAT and interview required"
+    },
+    "Design & Technology Education": {
+      courseContent: "Design Pedagogy, Materials, CAD/CAM, School Placements",
+      duration: "4 years (MDTechEd)",
+      entryRequirements: "AAB–BBB; portfolio/experience beneficial"
+    },
+    "Digital Media & Information Studies": {
+      courseContent: "Digital Culture, UX, Data, Heritage Informatics",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Economic & Social History": {
+      courseContent: "Economic Change, Social Structures, Quantitative History",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Economics": {
+      courseContent: "Micro, Macro, Econometrics, Game Theory, Policy",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB; Mathematics required/preferred"
+    },
+    "Education with Primary Teaching Qualification": {
+      courseContent: "Primary Curriculum, Pedagogy, School Placements (GTCS)",
+      duration: "5 years (MEduc)",
+      entryRequirements: "AAA–AAB; interview/assessment"
+    },
+    "Electronic & Software Engineering": {
+      courseContent: "Embedded Systems, Digital Design, Software Design, Control",
+      duration: "4 years (BSc/BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BSc/BEng) / AAA (MEng) incl. Mathematics (and Physics for BEng/MEng)"
+    },
+    "Electronics & Electrical Engineering": {
+      courseContent: "Circuits, Signals, Power, Communications, Semiconductors",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Electronics with Music": {
+      courseContent: "Audio Signal Processing, Electronics, Acoustics, Production",
+      duration: "4 years (BEng/MEng)",
+      entryRequirements: "AAB–BBB incl. Mathematics; music/physics background helpful"
+    },
+    "English Language & Linguistics": {
+      courseContent: "Phonetics, Syntax, Sociolinguistics, Corpus Linguistics",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "English Literature": {
+      courseContent: "Literature 1300–Present, Theory, Drama, Poetry, Criticism",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Environmental Geoscience": {
+      courseContent: "Earth Systems, Geochemistry, Hydrogeology, GIS/Remote Sensing",
+      duration: "4 years",
+      entryRequirements: "AAA–AAB including a science and Mathematics"
+    },
+    "Environmental Science & Sustainability (Dumfries)": {
+      courseContent: "Ecosystems, Climate, Policy, Fieldwork & GIS",
+      duration: "4 years",
+      entryRequirements: "ABB–BBB"
+    },
+    "Film & Television Studies": {
+      courseContent: "Film Theory, World Cinema, TV Cultures, Practice Options",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Finance": {
+      courseContent: "Corporate Finance, Investments, Risk, FinTech/Analytics",
+      duration: "4 years (BFin Hons)",
+      entryRequirements: "AAB–BBB; Mathematics preferred"
+    },
+    "Finance & Mathematics": {
+      courseContent: "Probability, Stochastic Processes, Asset Pricing, Derivatives",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB including Mathematics"
+    },
+    "Finance & Statistics": {
+      courseContent: "Statistical Modelling, Time Series, Portfolio Analysis",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB including Mathematics"
+    },
+    "French": {
+      courseContent: "Language, Literature & Culture; Year Abroad",
+      duration: "4 years (with compulsory year abroad integrated)",
+      entryRequirements: "AAB–BBB; language background advantageous"
+    },
+    "Gaelic": {
+      courseContent: "Scottish Gaelic Language, Literature, Culture; Year Abroad/Immersion",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Genetics": {
+      courseContent: "Genomics, Gene Regulation, Population Genetics, Bioinformatics",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Biology and Chemistry"
+    },
+    "Geography": {
+      courseContent: "Human & Physical Geography, GIS, Field Courses",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Geology": {
+      courseContent: "Petrology, Sedimentology, Structural Geology, Field Mapping",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB including a science"
+    },
+    "German": {
+      courseContent: "Language, Literature, Politics & Culture; Year Abroad",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Global Sustainable Development (Dumfries)": {
+      courseContent: "Sustainability, Policy, Economics, Project-based Learning",
+      duration: "4 years",
+      entryRequirements: "ABB–BBB"
+    },
+    "Greek": {
+      courseContent: "Ancient Greek Language, Literature, History & Philosophy",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "History": {
+      courseContent: "Scottish, British, European & Global History; Sources & Methods",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "History of Art": {
+      courseContent: "Art History, Visual Culture, Curating, Criticism",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Human Biology & Physiology": {
+      courseContent: "Physiology, Anatomy, Neuroscience, Pathophysiology",
+      duration: "4 years",
+      entryRequirements: "AAA–AAB including Biology"
+    },
+    "Immunology": {
+      courseContent: "Innate & Adaptive Immunity, Infection, Vaccines, Immunotherapy",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Biology and Chemistry"
+    },
+    "International Relations": {
+      courseContent: "IR Theory, Security, International Political Economy, Regions",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Italian": {
+      courseContent: "Language, Literature & Culture; Year Abroad",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Latin": {
+      courseContent: "Latin Language, Literature, History & Culture",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Law": {
+      courseContent: "Scots Law core subjects, Options in Commercial/Criminal/International Law",
+      duration: "4 years (LLB)",
+      entryRequirements: "AAA–AAB"
+    },
+    "Marine & Freshwater Biology": {
+      courseContent: "Aquatic Ecology, Marine Biology, Fisheries, Conservation",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Biology"
+    },
+    "Materials Chemistry": {
+      courseContent: "Functional Materials, Polymers, Solid-State, Characterisation",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Chemistry and Mathematics"
+    },
+    "Materials Chemistry with Work Placement (MSci)": {
+      courseContent: "Advanced Materials + Year in Industry",
+      duration: "5 years",
+      entryRequirements: "AAA including Chemistry and Mathematics"
+    },
+    "Mathematics": {
+      courseContent: "Analysis, Algebra, Differential Equations, Probability",
+      duration: "4 years (BSc/MA), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Mathematics"
+    },
+    "Mathematics (faster route)": {
+      courseContent: "Accelerated Maths stream with advanced options",
+      duration: "4–5 years",
+      entryRequirements: "A*AA including Mathematics/Further Mathematics"
+    },
+    "Mathematics & Statistics (ZUEL partnership)": {
+      courseContent: "Mathematical Methods, Probability, Statistical Inference",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB including Mathematics"
+    },
+    "Mechanical Design Engineering": {
+      courseContent: "Product Development, CAD/CAE, Prototyping, Manufacturing",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Mechanical Engineering": {
+      courseContent: "Mechanics, Thermofluids, Materials, Control, Design Projects",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Mechanical Engineering with Aeronautics": {
+      courseContent: "Mechanical Core + Aerostructures, Flight, Propulsion",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Mechatronics": {
+      courseContent: "Robotics, Control, Embedded Systems, Sensors & Actuators",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Medicine": {
+      courseContent: "Pre-clinical Sciences, Clinical Placements, Patient Care",
+      duration: "5 years (MBChB)",
+      entryRequirements: "AAA incl. Chemistry and one of Biology/Physics/Mathematics; UCAT and interview"
+    },
+    "Microbiology": {
+      courseContent: "Bacteriology, Virology, Mycology, Immunology, Genomics",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Biology"
+    },
+    "Molecular & Cellular Biology": {
+      courseContent: "Cell Biology, Molecular Genetics, Biotech, Lab Research",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Biology and Chemistry"
+    },
+    "Molecular & Cellular Biology (with Biotechnology)": {
+      courseContent: "Bioprocessing, Synthetic Biology, Omics, Regulation",
+      duration: "4–5 years",
+      entryRequirements: "AAA including Biology and Chemistry"
+    },
+    "Molecular & Cellular Biology (with Plant Science)": {
+      courseContent: "Plant Genomics, Physiology, Growth & Adaptation",
+      duration: "4–5 years",
+      entryRequirements: "AAA including Biology and Chemistry"
+    },
+    "Music (MA)": {
+      courseContent: "Musicology, Analysis, Composition, Performance options",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB; audition/written work may apply"
+    },
+    "Music (BMus)": {
+      courseContent: "Performance, Composition, Harmony/Counterpoint, Musicianship",
+      duration: "4 years",
+      entryRequirements: "Audition plus academic entry"
+    },
+    "Neuroscience": {
+      courseContent: "Neural Systems, Neurophysiology, Cognitive Neuroscience",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Biology"
+    },
+    "Nursing": {
+      courseContent: "Clinical Practice, Biomedical Sciences, Leadership, Placement",
+      duration: "4 years (BN Hons)",
+      entryRequirements: "AAB–BBB (or Highers); interview/health checks; SAAS PNSMB bursary eligible (Scotland)"
+    },
+    "Pharmacology": {
+      courseContent: "Drug Action, Receptors, Toxicology, Clinical Pharmacology",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Chemistry and Biology"
+    },
+    "Philosophy": {
+      courseContent: "Logic, Epistemology, Ethics, Metaphysics, Philosophy of Science",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Physics / Theoretical Physics": {
+      courseContent: "Classical & Quantum Physics, Electromagnetism, Relativity, Maths Methods",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Mathematics and Physics"
+    },
+    "Physics with Astrophysics": {
+      courseContent: "Core Physics with Astrophysics, Observational Projects",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Mathematics and Physics"
+    },
+    "Politics": {
+      courseContent: "Political Theory, Comparative Politics, UK/EU/Global Politics",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Portuguese": {
+      courseContent: "Language, Lusophone Literatures & Cultures; Year Abroad",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Primary Education with Teaching Qualification (Dumfries)": {
+      courseContent: "Primary Education, Curriculum & Assessment, Placements",
+      duration: "4 years (MA)",
+      entryRequirements: "AAA–AAB; interview/assessment"
+    },
+    "Product Design Engineering": {
+      courseContent: "Design Engineering, Manufacturing, Human-Centred Design",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Psychology": {
+      courseContent: "Cognitive, Biological, Developmental, Social, Methods (BPS)",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB; Mathematics/Science desirable"
+    },
+    "Quantitative Methods": {
+      courseContent: "Data Analysis, Survey Methods, Causal Inference, R/Python",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB; Mathematics recommended"
+    },
+    "Robotics & Artificial Intelligence": {
+      courseContent: "Robotics, Computer Vision, Machine Learning, Control, Embedded Systems",
+      duration: "4 years (BEng), 5 years (MEng)",
+      entryRequirements: "AAB–BBB (BEng) / AAA (MEng) including Mathematics and Physics"
+    },
+    "Russian": {
+      courseContent: "Language, Literature, Culture & Politics; Year Abroad",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Scots Law": {
+      courseContent: "Scots Law Foundations, Honours Options, Professional routes",
+      duration: "4 years (LLB)",
+      entryRequirements: "AAA–AAB"
+    },
+    "Scottish History": {
+      courseContent: "Medieval to Modern Scotland, Sources, Archives, Fieldwork",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Scottish Literature": {
+      courseContent: "Scottish Writing, Language, Culture, Criticism",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Social & Public Policy": {
+      courseContent: "Policy Analysis, Welfare, Inequality, Quant Methods, Internships",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Sociology": {
+      courseContent: "Social Theory, Methods, Culture & Identity, Inequalities",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Software Engineering": {
+      courseContent: "Software Design, Agile, Databases, Distributed Systems, Security",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Mathematics"
+    },
+    "Software Engineering (faster route)": {
+      courseContent: "Accelerated SE with advanced CS/Maths in early years",
+      duration: "4–5 years",
+      entryRequirements: "A*AA incl. Mathematics and Computing (accelerated route)"
+    },
+    "Spanish": {
+      courseContent: "Language, Literature & Culture; Year Abroad",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Sport & Exercise Science": {
+      courseContent: "Exercise Physiology, Biomechanics, Sport Psychology, Nutrition",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAB–BBB; sciences helpful"
+    },
+    "Statistics": {
+      courseContent: "Probability, Inference, Bayesian Methods, Data Science",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAB–BBB including Mathematics"
+    },
+    "Statistics (Double Degree with Bologna)": {
+      courseContent: "Core Statistics in Glasgow + Bologna specialism; dissertation",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB including Mathematics; competitive selection for double degree"
+    },
+    "Statistics (ZUEL partnership)": {
+      courseContent: "Core Statistics, Applied Modelling, Data Analysis",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB including Mathematics"
+    },
+    "Theatre Studies": {
+      courseContent: "Performance Analysis, Theatre History, Practice-based options",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Theology & Religious Studies": {
+      courseContent: "Biblical Studies, Theology, Ethics, Philosophy of Religion",
+      duration: "4 years",
+      entryRequirements: "AAB–BBB"
+    },
+    "Veterinary Biosciences": {
+      courseContent: "Animal Biology, Disease, Genetics, Physiology, Lab Skills",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA including Biology and Chemistry"
+    },
+    "Veterinary Medicine & Surgery": {
+      courseContent: "Pre-clinical Sciences, Clinical Rotations, Animal Health",
+      duration: "5 years (BVMS)",
+      entryRequirements: "High grades incl. Chemistry and Biology; work experience; interview"
+    },
+    "Zoology": {
+      courseContent: "Animal Diversity, Behaviour, Ecology, Conservation, Fieldwork",
+      duration: "4 years (BSc), 5 years (MSci)",
+      entryRequirements: "AAA–AAB including Biology"
+    }
+  }, 
+  distanceLearning: "Primarily campus-based; limited online options",
+  workPlacement: "Available/optional on selected degrees (e.g., Engineering, Chemistry MSci with Work Placement)",
+  yearAbroad: "Compulsory for most languages; options in many other programmes",
+  employmentRate: "89%",
+},
   {
     id: 11,
     name: "Durham University",
