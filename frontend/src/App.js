@@ -9077,7 +9077,10 @@ function App() {
                     style={{
                       zIndex: 9999,
                       transform: 'translateZ(0)',
-                      isolation: 'isolate'
+                      isolation: 'isolate',
+                      top: '100%',
+                      left: '0',
+                      right: '0'
                     }}
                   >
                     {/* Search input */}
