@@ -8445,12 +8445,26 @@ function App() {
     }
   }, [isDarkMode]);
 
+  // Reset recommendation index when search context changes
+  useEffect(() => {
+    setRecommendationSetIndex(0);
+  }, [searchTerm, selectedInstitutions]);
+
   // Auto-rotate recommendations every 4 seconds
   useEffect(() => {
+    const allRecommendations = getAllRecommendations();
+    const totalSets = Math.ceil(allRecommendations.length / 3);
+    
+    if (totalSets <= 1) {
+      return; // No need to rotate if only one set or no recommendations
+    }
+
     const timer = setInterval(() => {
-      const allRecommendations = getAllRecommendations();
-      const totalSets = Math.ceil(allRecommendations.length / 3);
-      setRecommendationSetIndex(prev => (prev + 1) % totalSets);
+      setRecommendationSetIndex(prev => {
+        const currentRecommendations = getAllRecommendations();
+        const currentTotalSets = Math.ceil(currentRecommendations.length / 3);
+        return (prev + 1) % currentTotalSets;
+      });
     }, 4000);
 
     return () => clearInterval(timer);
