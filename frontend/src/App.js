@@ -2021,64 +2021,664 @@ const universitiesData = [
   {
     id: 5,
     name: "University of Edinburgh",
-    ranking: 7, // UK ranking - Complete University Guide
-    location: "Edinburgh, Scotland",
-    tuitionFeesUK: "£9,250",
-    tuitionFeesInternational: "£34,800",
-    entryRequirements: "AAA-ABB (including Mathematics)",
-    ucasPoints: "144-112",
-    scholarships: "Edinburgh Global Undergraduate Scholarships, Principal's Career Development PhD Scholarships",
-    programs: {
-      "Computer Science": {
-        courseContent: "Programming, Algorithms, AI, Machine Learning, Software Engineering, Data Science",
-        duration: "4 years (BEng/BSc), 5 years (MEng)",
-        entryRequirements: "AAA-ABB (including Mathematics)"
-      },
-      "Engineering": {
-        courseContent: "Electronic, Mechanical, Chemical, Civil, Structural Engineering",
-        duration: "4 years (BEng), 5 years (MEng)",
-        entryRequirements: "AAA (including Mathematics and Physics)"
-      },
-      "Business & Management": {
-        courseContent: "Strategy, International Business, Entrepreneurship, Finance",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Medicine": {
-        courseContent: "Medical Sciences, Clinical Medicine, Surgery, Community Medicine",
-        duration: "6 years (MBChB)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
-      },
-      "Law": {
-        courseContent: "Scots Law, Criminal Law, Contract Law, Constitutional Law",
-        duration: "4 years (LLB)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Economics": {
-        courseContent: "Economic Theory, Applied Economics, Economic History, Development Economics",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (including Mathematics)"
-      },
-      "Psychology": {
-        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology",
-        duration: "4 years (MA)",
-        entryRequirements: "AAA-ABB (including Mathematics recommended)"
-      },
-      "Veterinary Medicine": {
-        courseContent: "Animal Anatomy, Veterinary Pathology, Clinical Practice, Animal Welfare",
-        duration: "5 years (BVM&S)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
-      }
+    ranking: 34, 
+  location: "Edinburgh, Scotland", 
+  tuitionFeesUK: "Scotland: £1,820 (SAAS rate); rUK (England/Wales/N. Ireland): £9,250",
+  tuitionFeesInternational: "Varies by course (see fee finder; fixed annual rate once enrolled)",
+  entryRequirements: "Typical A*AA–AAB at A level (or AAAA–AABB Highers); subject specifics/tests vary by course",
+  ucasPoints: "N/A",
+  scholarships: "RUK bursaries, Scotland bursaries, Edinburgh Global scholarships",
+  programs: {
+    "Accounting and Business": {
+      courseContent: "Financial accounting, management, economics, analytics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths preferred"
     },
-    courseContent: "Programming, Algorithms, AI, Machine Learning, Software Engineering, Data Science",
-    duration: "4 years (BEng/BSc), 5 years (MEng)",
-    employmentRate: "94%",
-    researchRating: "4*"
-  },
+    "Accounting and Finance": {
+      courseContent: "Financial reporting, corporate finance, markets, econometrics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths preferred"
+    },
+    "Acoustics and Music Technology": {
+      courseContent: "Audio programming, acoustics, DSP, sound design",
+      duration: "4 years",
+      entryRequirements: "AAA; Maths/Physics helpful"
+    },
+    "Anatomy and Development": {
+      courseContent: "Human anatomy, developmental biology, imaging, labs",
+      duration: "4 years",
+      entryRequirements: "AAA including a science"
+    },
+    "Ancient and Medieval History": {
+      courseContent: "Greek/Roman worlds, late antiquity, medieval Europe, sources",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Ancient History": {
+      courseContent: "Greek/Roman history, epigraphy, historiography, options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Ancient History and Greek": {
+      courseContent: "Ancient history with classical Greek language and texts",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Ancient History and Latin": {
+      courseContent: "Ancient history with Latin language, literature & culture",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Ancient Mediterranean Civilisations": {
+      courseContent: "Archaeology + history of Greece, Rome, Egypt, Near East",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Animation": {
+      courseContent: "2D/3D animation, storytelling, production, portfolio projects",
+      duration: "3 or 4 years",
+      entryRequirements: "AAA; portfolio required"
+    },
+    "Applied Mathematics": {
+      courseContent: "ODEs/PDEs, numerical methods, modelling, computation",
+      duration: "3 or 4 years",
+      entryRequirements: "A*A*A–AAA including Maths"
+    },
+    "Architecture": {
+      courseContent: "Design studio, architectural history, technology, structures",
+      duration: "3 or 4 years",
+      entryRequirements: "AAA; portfolio/interview"
+    },
+    "Artificial Intelligence": {
+      courseContent: "Programming, discrete maths, ML, agents, vision, NLP",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA including Maths"
+    },
+    "Artificial Intelligence and Computer Science": {
+      courseContent: "Algorithms, systems, ML, knowledge representation",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA including Maths"
+    },
+    "Astrophysics": {
+      courseContent: "Stars/galaxies, cosmology, GR, observation & simulation",
+      duration: "3 or 4 years",
+      entryRequirements: "A*AA–AAA incl. Maths & Physics"
+    },
+    "Biological Sciences": {
+      courseContent: "Molecular/cellular biology, ecology, evolution, options",
+      duration: "3 or 4 years",
+      entryRequirements: "AAA including Biology"
+    },
+    "Biomedical Sciences": {
+      courseContent: "Human physiology, pathology, pharmacology, lab skills",
+      duration: "4 years",
+      entryRequirements: "AAA including Biology/Chem"
+    },
+    "Business and Economics": {
+      courseContent: "Micro/macro, business analytics, strategy, policy",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Business and Law": {
+      courseContent: "Business core plus Scots law foundations, options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Business Management": {
+      courseContent: "Accounting, marketing, operations, analytics, strategy",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Business with Decision Analytics": {
+      courseContent: "Optimisation, forecasting, data-driven decisions in business",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Business with Enterprise and Innovation": {
+      courseContent: "Venture creation, design thinking, entrepreneurship",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Business with Human Resource Management": {
+      courseContent: "People management, employment law, analytics, strategy",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Business with Marketing": {
+      courseContent: "Consumer behaviour, branding, digital marketing, analytics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Business with Strategic Economics": {
+      courseContent: "Industrial org, strategy, competition policy, markets",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Celtic": {
+      courseContent: "Scottish Gaelic and/or medieval Celtic languages & culture",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Celtic and Archaeology": {
+      courseContent: "Celtic languages/cultures with archaeology theory & fieldwork",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Celtic and English Language": {
+      courseContent: "Celtic world plus history/structure of English",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Celtic and English Literature": {
+      courseContent: "Celtic literatures alongside English literature across periods",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Celtic and French": {
+      courseContent: "Celtic + Francophone literature/culture; language to advanced level",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Celtic and Linguistics": {
+      courseContent: "Celtic languages/cultures plus phonetics, syntax, semantics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Celtic and Scandinavian Studies": {
+      courseContent: "Celtic with Danish/Norwegian/Swedish; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Celtic and Scottish History": {
+      courseContent: "Celtic languages/cultures with Scotland’s history",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Celtic and Scottish Literature": {
+      courseContent: "Celtic literatures with Scottish literature (varied periods)",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Chemical Engineering": {
+      courseContent: "Thermo, transport, reaction eng, separations, design",
+      duration: "4 or 5 years",
+      entryRequirements: "A*AA–AAA incl. Maths & Chemistry"
+    },
+    "Chemical Physics": {
+      courseContent: "Quantum/thermo, spectroscopy, labs, computational methods",
+      duration: "3–5 years (route-dependent)",
+      entryRequirements: "A*AA–AAA incl. Maths & Physics/Chem"
+    },
+    "Chemistry": {
+      courseContent: "Organic/inorganic/physical chemistry, labs, projects",
+      duration: "3–5 years (route-dependent)",
+      entryRequirements: "A*AA–AAA incl. Chemistry"
+    },
+    "Childhood Practice": {
+      courseContent: "Leadership & management in early years; work-based study",
+      duration: "3 years (part-time)",
+      entryRequirements: "See course page; professional experience required"
+    },
+    "Chinese": {
+      courseContent: "Modern Standard Chinese language, literature, culture, politics",
+      duration: "4 years (with year abroad)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Chinese and Linguistics": {
+      courseContent: "Chinese language + phonetics, syntax, psycholinguistics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Chinese and Russian Studies": {
+      courseContent: "Chinese and Russian languages/cultures; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Chinese and Spanish": {
+      courseContent: "Chinese plus Spanish across language & cultural studies",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Civil Engineering": {
+      courseContent: "Structures, geotechnics, fluids, transport, design projects",
+      duration: "4 or 5 years",
+      entryRequirements: "A*AA–AAA incl. Maths; Physics preferred"
+    },
+    "Classical Archaeology and Ancient History": {
+      courseContent: "Material culture + historical sources of Graeco-Roman world",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Classical Archaeology and Greek": {
+      courseContent: "Archaeology of classical world plus Greek language",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Classical Archaeology and Latin": {
+      courseContent: "Archaeology of classical world plus Latin language",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Classical Studies": {
+      courseContent: "Greek & Roman literature/history in translation; theory",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Classics": {
+      courseContent: "Advanced Greek/Latin language and literature; options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Classics and English Language": {
+      courseContent: "Greek/Latin with linguistic study of English",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Classics and Linguistics": {
+      courseContent: "Greek/Latin with linguistics (phonology, syntax, semantics)",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Cognitive Science (Humanities)": {
+      courseContent: "Philosophy, linguistics, psychology, informatics of mind",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Computational Physics": {
+      courseContent: "Scientific programming, modelling, simulation, HPC",
+      duration: "3–5 years (route-dependent)",
+      entryRequirements: "A*AA–AAA incl. Maths & Physics"
+    },
+    "Computer Science": {
+      courseContent: "Algorithms, systems, databases, HCI, AI/ML options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA including Maths"
+    },
+    "Computer Science and Mathematics": {
+      courseContent: "Pure/applied maths + CS theory/systems/AI",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA including Maths"
+    },
+    "Divinity": {
+      courseContent: "Biblical studies, theology, ethics, church history",
+      duration: "4 years",
+      entryRequirements: "AAA"
+    },
+    "Divinity (Graduate Entry)": {
+      courseContent: "Accelerated honours degree in theology & religion",
+      duration: "3 years",
+      entryRequirements: "Prior degree required"
+    },
+    "Earth Science and Physical Geography": {
+      courseContent: "Earth systems, fieldwork, GIS/remote sensing, climate",
+      duration: "3–5 years (route-dependent)",
+      entryRequirements: "AAA incl. a science/Maths"
+    },
+    "Earth Sciences": {
+      courseContent: "Geology, geochemistry, geophysics, field mapping",
+      duration: "4 years",
+      entryRequirements: "AAA incl. a science/Maths"
+    },
+    "Economics": {
+      courseContent: "Micro/macro, econometrics, data, policy analysis",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths required/preferred"
+    },
+    "Economics and Mathematics": {
+      courseContent: "Real analysis, probability, micro/macro, econometrics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA incl. Maths"
+    },
+    "Economics and Politics": {
+      courseContent: "Political theory, comparative/governance + economics core",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Economics with Finance": {
+      courseContent: "Investments, corporate finance, markets + econ core",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths required/preferred"
+    },
+    "Economics with Management Science": {
+      courseContent: "Optimisation, simulation, OM + economics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths required"
+    },
+    "Electrical and Mechanical Engineering": {
+      courseContent: "Electronics, control, thermo/fluids, design & projects",
+      duration: "4 or 5 years",
+      entryRequirements: "A*AA–AAA incl. Maths & Physics"
+    },
+    "Electronics and Computer Science": {
+      courseContent: "Embedded systems, digital design, OS, networks",
+      duration: "4 or 5 years",
+      entryRequirements: "A*AA–AAA incl. Maths"
+    },
+    "Electronics and Electrical Engineering": {
+      courseContent: "Circuits, power, comms, control, signal processing",
+      duration: "4 or 5 years",
+      entryRequirements: "A*AA–AAA incl. Maths & Physics"
+    },
+    "Engineering": {
+      courseContent: "General engineering first year; specialism choice later",
+      duration: "4 or 5 years",
+      entryRequirements: "A*AA–AAA incl. Maths; Physics preferred"
+    },
+    "English and Scottish Literature": {
+      courseContent: "Scottish & English lit across periods; theory & criticism",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; essay subject"
+    },
+    "Fine Art": {
+      courseContent: "Studio practice (painting, sculpture, media), theory",
+      duration: "4 years",
+      entryRequirements: "AAA; portfolio/interview"
+    },
+    "Interior Design": {
+      courseContent: "Spatial design, reuse/adaptation, user-centred projects",
+      duration: "3 or 4 years",
+      entryRequirements: "AAA; portfolio required"
+    },
+    "International Business": {
+      courseContent: "Global strategy, markets, analytics, language options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Business with Chinese": {
+      courseContent: "Business core plus Chinese language/culture; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Business with French": {
+      courseContent: "Business core plus French language/culture; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Business with German": {
+      courseContent: "Business core plus German language/culture; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Business with Italian": {
+      courseContent: "Business core plus Italian language/culture; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Business with Japanese": {
+      courseContent: "Business core plus Japanese language/culture; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Business with Spanish": {
+      courseContent: "Business core plus Spanish language/culture; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Relations": {
+      courseContent: "Global politics, security, institutions, conflict/co-operation",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Relations with Quantitative Methods": {
+      courseContent: "IR + stats/programming/data analysis for politics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Islamic Studies": {
+      courseContent: "History/thought/cultures of Islam; Arabic options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Italian": {
+      courseContent: "Italian language, literature, film, culture; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Italian and Classics": {
+      courseContent: "Italian with Classics pathway (Latin/Greek/non-language)",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Italian and English Language": {
+      courseContent: "Italian plus linguistics of English; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Italian and English Literature": {
+      courseContent: "Italian plus English literature across genres/periods",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Italian and History": {
+      courseContent: "Italian language + European/global history options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Italian and History of Art": {
+      courseContent: "Italian language + art history/visual culture",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Law": {
+      courseContent: "Scots law foundations (public, private, EU, criminal), options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Mathematics": {
+      courseContent: "Analysis, algebra, probability, numerical methods",
+      duration: "3 or 4 years",
+      entryRequirements: "A*A*A–AAA including Maths"
+    },
+    "Mathematics and Physics": {
+      courseContent: "Mathematical methods, quantum/EM, labs & modelling",
+      duration: "3 or 4 years",
+      entryRequirements: "A*A*A–AAA incl. Maths & Physics"
+    },
+    "Mathematics and Statistics": {
+      courseContent: "Probability, inference, stochastic processes, computing",
+      duration: "3 or 4 years",
+      entryRequirements: "A*A*A–AAA incl. Maths"
+    },
+    "MBChB Medicine (6-year programme)": {
+      courseContent: "Pre-clinical sciences, clinical rotations, SSCs, electives",
+      duration: "6 years",
+      entryRequirements: "A*AA incl. Chemistry & another science; UCAT"
+    },
+    "Mechanical Engineering": {
+      courseContent: "Solid/fluid mechanics, dynamics & control, design/manufacture",
+      duration: "4 or 5 years",
+      entryRequirements: "A*AA–AAA incl. Maths & Physics"
+    },
+    "Medical Sciences": {
+      courseContent: "Human biology, disease mechanisms, translational science",
+      duration: "4 years",
+      entryRequirements: "AAA including Biology"
+    },
+    "Medicinal and Biological Chemistry": {
+      courseContent: "Chemistry of life, drug design, analytical/lab skills",
+      duration: "3–5 years (route-dependent)",
+      entryRequirements: "A*AA–AAA incl. Chemistry"
+    },
+    "Middle Eastern Studies": {
+      courseContent: "History, politics, societies & cultures; Arabic/Persian/Turkish options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Music": {
+      courseContent: "Musicology, analysis, composition, performance options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; audition/portfolio"
+    },
+    "Neuroscience": {
+      courseContent: "Systems/cognitive neuroscience, neuroanatomy, methods",
+      duration: "4 years",
+      entryRequirements: "AAA incl. Biology"
+    },
+    "Nursing Studies": {
+      courseContent: "Adult nursing theory, clinical placements, professional practice",
+      duration: "3–4 years",
+      entryRequirements: "See course page; interview/health checks"
+    },
+    "Pharmacology": {
+      courseContent: "Drug action, receptors, toxicology, experimental methods",
+      duration: "3–4 years",
+      entryRequirements: "AAA incl. a science"
+    },
+    "Philosophy": {
+      courseContent: "Logic, epistemology, ethics, metaphysics, mind & language",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Philosophy and Economics": {
+      courseContent: "Political philosophy + micro/macro/econometrics",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Philosophy and Mathematics": {
+      courseContent: "Logic/foundations + pure/applied maths",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA incl. Maths"
+    },
+    "Philosophy and Politics": {
+      courseContent: "Ethics, political theory, comparative politics, methods",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Physics": {
+      courseContent: "Core physics (mechanics, EM, quantum), labs & computation",
+      duration: "3–5 years (route-dependent)",
+      entryRequirements: "A*AA–AAA incl. Maths & Physics"
+    },
+    "Physics with Meteorology": {
+      courseContent: "Atmospheric physics, climate, fluid dynamics, modelling",
+      duration: "3–5 years",
+      entryRequirements: "A*AA–AAA incl. Maths & Physics"
+    },
+    "Politics": {
+      courseContent: "Political theory, comparative politics, public policy",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Politics and Economics": {
+      courseContent: "Comparative government, policy + econ core & data",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Psychology": {
+      courseContent: "Cognitive, social, developmental & biological psychology; methods",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; one science useful"
+    },
+    "Psychology and Business": {
+      courseContent: "Psychology core + management/marketing/analytics options",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Scottish Ethnology": {
+      courseContent: "Scottish cultures, oral tradition, music, customs; fieldwork",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Scottish History": {
+      courseContent: "Political/social/cultural history of Scotland across eras",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Scottish Literature": {
+      courseContent: "Scottish writing across periods; theory & criticism",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Social Anthropology": {
+      courseContent: "Ethnography, kinship, economy, belief, field methods",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Social Policy": {
+      courseContent: "Welfare state, inequality, policy analysis, methods",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Social Policy and Economics": {
+      courseContent: "Social policy plus econ core, data & evaluation",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Sociology": {
+      courseContent: "Social theory, methods, inequality, institutions",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Sociology and Social Anthropology": {
+      courseContent: "Joint training in sociology & anthropology; mixed methods",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Sociology with Quantitative Methods": {
+      courseContent: "Sociology core plus stats/programming/data skills",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Software Engineering": {
+      courseContent: "Large-scale software, SE methods, testing, security",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA incl. Maths"
+    },
+    "Spanish": {
+      courseContent: "Spanish language + literature/film/culture; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Spanish and Business": {
+      courseContent: "Spanish with business/management; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Spanish and Classics": {
+      courseContent: "Spanish language/culture + Classics pathway",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Spanish and English Literature": {
+      courseContent: "Spanish plus English lit across genres/periods",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Spanish and History": {
+      courseContent: "Spanish + global/European history options; year abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Statistics": {
+      courseContent: "Probability, inference, modelling, computing, ML",
+      duration: "3 or 4 years",
+      entryRequirements: "A*A*A–A*AA incl. Maths"
+    },
+    "Theology": {
+      courseContent: "Biblical studies, systematic theology, ethics, religions",
+      duration: "4 years",
+      entryRequirements: "AAA"
+    },
+    "Theology and Religious Studies": {
+      courseContent: "World religions, philosophy of religion, ethics",
+      duration: "4 years",
+      entryRequirements: "AAA"
+    },
+    "Veterinary Medicine": {
+      courseContent: "Animal health, surgery, pathology; hospital & practice rotations",
+      duration: "5 years",
+      entryRequirements: "A*AA including Chemistry & Biology; work experience"
+    }
+  }, 
+    distanceLearning: "Primarily campus-based; some online modules exist",
+    workPlacement: "Varies by course (clinical, lab or industry options on some programmes)",
+    yearAbroad: "Available on many programmes (especially languages/business/engineering)",
+    employmentRate: "N/A",
+},
   {
     id: 6,
     name: "King's College London",
-    ranking: 19, 
+    ranking: 18, 
   location: "London, England", 
   tuitionFeesUK: "£9,535",
   tuitionFeesInternational: "£25,000",
