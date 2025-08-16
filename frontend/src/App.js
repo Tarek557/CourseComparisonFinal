@@ -11882,8 +11882,8 @@ const CourseComparisonTable = ({ courses, onRemove }) => {
     { key: 'workPlacement', label: 'Work Placement', type: 'text' },
     { key: 'yearAbroad', label: 'Year Abroad', type: 'text' },
     { key: 'university.location', label: 'Location', type: 'text' },
-    { key: 'university.tuitionFeesUK', label: 'UK Student Fees', type: 'fee' },
-    { key: 'university.tuitionFeesInternational', label: 'International Fees', type: 'fee' },
+    { key: 'university.tuitionFeesUK', label: 'UK Student Tuition Fees', type: 'fee' },
+    { key: 'university.tuitionFeesInternational', label: 'International Student Tuition Fees', type: 'fee' },
     { key: 'courseContent', label: 'Course Content', type: 'text' },
     { key: 'university.employmentRate', label: 'Employment Rate', type: 'percentage' },
     { key: 'university.scholarships', label: 'Available Scholarships', type: 'text' }
