@@ -9223,7 +9223,10 @@ function App() {
                 <div className="text-gray-600 dark:text-gray-400">Course(s) Found</div>
                 <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Across selected providers</div>
               </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+              <div 
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
+                style={{ contain: 'layout style paint', willChange: 'transform' }}
+              >
                   <div className="flex items-center justify-between mb-3">
                     <div className="text-lg font-semibold text-gray-800 dark:text-gray-200">Smart Recommendations</div>
                   <div className="flex items-center gap-2">
