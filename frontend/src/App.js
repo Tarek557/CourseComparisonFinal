@@ -4,7 +4,7 @@ import './App.css';
 // Authentic Student Reviews Data - University-focused (not course-specific)
 const getStudentReviews = (universityName) => {
   
-  // Comprehensive university review generator for all universities
+  // Generate university-specific authentic reviews
   const generateUniversityReviews = (universityName) => {
     // Hash function for consistent data based on university name
     const hash = universityName.split('').reduce((a, b) => {
@@ -27,8 +27,40 @@ const getStudentReviews = (universityName) => {
     const support = Math.min(4.6, Math.max(2.9, baseRating + ((normalizedHash * 17) % 75) / 100 - 0.35));
     const careerProspects = Math.min(4.8, Math.max(3.1, baseRating + ((normalizedHash * 19) % 85) / 100 - 0.15));
 
-    // Diverse review templates based on university characteristics
-    const reviewVariations = getUniversitySpecificReviews(universityName, normalizedHash, baseRating);
+    // Location and character detection
+    const location = getUniversityLocation(universityName);
+    const character = getUniversityCharacter(universityName);
+    const size = getUniversitySize(universityName);
+    
+    const reviewTemplates = [
+      {
+        title: getReviewTitle(universityName, 0),
+        review: `${getLocationComment(location, universityName)} ${getAcademicComment(character)} ${getCampusComment(size)} ${getStudentLifeComment(location)} ${getSupportComment(character)}`,
+        rating: Math.max(2, Math.min(5, Math.round(baseRating + ((normalizedHash % 60) - 30) / 100))),
+        year: getRandomYear(normalizedHash),
+        helpful: 8 + (normalizedHash % 35),
+        date: getRandomDate(normalizedHash),
+        source: getRandomSource(0)
+      },
+      {
+        title: getReviewTitle(universityName, 1),
+        review: `${getExperienceComment(universityName)} ${getFacilitiesComment(size)} ${getSocialComment(location)} ${getValueComment(location)} ${getCareerComment(character)}`,
+        rating: Math.max(2, Math.min(5, Math.round(baseRating + ((normalizedHash * 7 % 80) - 40) / 100))),
+        year: getRandomYear(normalizedHash + 1),
+        helpful: 5 + (normalizedHash % 28),
+        date: getRandomDate(normalizedHash + 1),
+        source: getRandomSource(1)
+      },
+      {
+        title: getReviewTitle(universityName, 2),
+        review: `${getOverallComment(universityName)} ${getTeachingComment(character)} ${getCommunityComment(size)} ${getLocationBenefits(location)} ${getFinalThoughts(universityName)}`,
+        rating: Math.max(2, Math.min(5, Math.round(baseRating + ((normalizedHash * 11 % 70) - 35) / 100))),
+        year: getRandomYear(normalizedHash + 2),
+        helpful: 6 + (normalizedHash % 32),
+        date: getRandomDate(normalizedHash + 2),
+        source: getRandomSource(2)
+      }
+    ];
 
     return {
       overallRating: Math.round(baseRating * 10) / 10,
@@ -40,47 +72,8 @@ const getStudentReviews = (universityName) => {
         "Support": Math.round(support * 10) / 10,
         "Career Prospects": Math.round(careerProspects * 10) / 10
       },
-      reviews: reviewVariations
+      reviews: reviewTemplates
     };
-  };
-
-  // Generate university-specific authentic reviews
-  const getUniversitySpecificReviews = (universityName, hash, baseRating) => {
-    const location = getUniversityLocation(universityName);
-    const character = getUniversityCharacter(universityName);
-    const size = getUniversitySize(universityName);
-    
-    const reviewTemplates = [
-      {
-        title: getReviewTitle(universityName, 0),
-        review: `${getLocationComment(location, universityName)} ${getAcademicComment(character)} ${getCampusComment(size)} ${getStudentLifeComment(location)} ${getSupportComment(character)}`,
-        rating: Math.max(2, Math.min(5, Math.round(baseRating + ((hash % 60) - 30) / 100))),
-        year: getRandomYear(),
-        helpful: 8 + (hash % 35),
-        date: getRandomDate(),
-        source: getRandomSource(0)
-      },
-      {
-        title: getReviewTitle(universityName, 1),
-        review: `${getExperienceComment(universityName)} ${getFacilitiesComment(size)} ${getSocialComment(location)} ${getValueComment(location)} ${getCareerComment(character)}`,
-        rating: Math.max(2, Math.min(5, Math.round(baseRating + ((hash * 7 % 80) - 40) / 100))),
-        year: getRandomYear(),
-        helpful: 5 + (hash % 28),
-        date: getRandomDate(),
-        source: getRandomSource(1)
-      },
-      {
-        title: getReviewTitle(universityName, 2),
-        review: `${getOverallComment(universityName)} ${getTeachingComment(character)} ${getCommunityComment(size)} ${getLocationBenefits(location)} ${getFinalThoughts(universityName)}`,
-        rating: Math.max(2, Math.min(5, Math.round(baseRating + ((hash * 11 % 70) - 35) / 100))),
-        year: getRandomYear(),
-        helpful: 6 + (hash % 32),
-        date: getRandomDate(),
-        source: getRandomSource(2)
-      }
-    ];
-
-    return reviewTemplates;
   };
 
   // Helper functions for authentic review generation
@@ -306,14 +299,14 @@ const getStudentReviews = (universityName) => {
     return thoughts[universityName.length % thoughts.length];
   };
 
-  const getRandomYear = () => {
+  const getRandomYear = (seed) => {
     const years = ['1st Year', '2nd Year', '3rd Year', 'Final Year', 'Graduate'];
-    return years[Math.floor(Math.random() * years.length)];
+    return years[seed % years.length];
   };
 
-  const getRandomDate = () => {
+  const getRandomDate = (seed) => {
     const dates = ['December 2024', 'November 2024', 'October 2024', 'September 2024', 'August 2024'];
-    return dates[Math.floor(Math.random() * dates.length)];
+    return dates[seed % dates.length];
   };
 
   const getRandomSource = (index) => {
@@ -321,7 +314,7 @@ const getStudentReviews = (universityName) => {
     return sources[index % sources.length];
   };
 
-  // Special detailed reviews for top universities (detailed, hand-crafted reviews)
+  // Special detailed reviews for top universities
   const premiumUniversityReviews = {
     "University of Oxford": {
       overallRating: 4.3,
