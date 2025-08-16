@@ -484,12 +484,6 @@ const getStudentReviews = (universityName) => {
   }
 
   // Otherwise generate custom reviews
-    "Imperial College London": {
-      overallRating: 4.1,
-      totalReviews: 892,
-      categories: {
-        "Academic Quality": 4.5,
-        "Campus Life": 3.7,
         "Facilities": 4.4,
         "Support": 3.8,
         "Career Prospects": 4.6
