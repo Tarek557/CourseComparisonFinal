@@ -11875,7 +11875,7 @@ const CourseComparisonTable = ({ courses, onRemove }) => {
   const comparisonFields = [
     { key: 'fullTitle', label: 'Course Title', type: 'text' },
     { key: 'university.name', label: 'University', type: 'university' },
-    { key: 'university.ranking', label: 'THE Ranking', type: 'ranking' },
+    { key: 'university.ranking', label: 'CUG Ranking', type: 'ranking' },
     { key: 'duration', label: 'Duration', type: 'text' },
     { key: 'studyMode', label: 'Study Mode', type: 'text' },
     { key: 'distanceLearning', label: 'Distance Learning', type: 'text' },
@@ -12143,7 +12143,7 @@ const ComparisonTable = ({ universities, onRemove }) => {
 
   const comparisonFields = [
     { key: 'name', label: 'University Name', type: 'text' },
-    { key: 'ranking', label: 'THE Ranking', type: 'ranking' },
+    { key: 'ranking', label: 'CUG UK Ranking', type: 'ranking' },
     { key: 'location', label: 'Location', type: 'text' },
     { key: 'tuitionFeesUK', label: 'UK Student Fees', type: 'fee' },
     { key: 'tuitionFeesInternational', label: 'International Fees', type: 'fee' },
