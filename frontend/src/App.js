@@ -9071,7 +9071,16 @@ function App() {
                 </div>
                 
                 {isInstitutionDropdownOpen && (
-                  <div className="absolute z-[9999] mt-1 w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow-xl max-h-80 overflow-hidden transition-colors duration-300" style={{ position: 'absolute', top: '100%', left: '0' }}>
+                  <div 
+                    className="fixed z-[99999] bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow-xl max-h-80 overflow-hidden transition-colors duration-300"
+                    style={{
+                      position: 'fixed',
+                      top: `${dropdownRef.current?.getBoundingClientRect().bottom + 4}px`,
+                      left: `${dropdownRef.current?.getBoundingClientRect().left}px`,
+                      width: `${dropdownRef.current?.getBoundingClientRect().width}px`,
+                      zIndex: 999999
+                    }}
+                  >
                     {/* Search input */}
                     <div className="p-3 border-b border-gray-200 dark:border-gray-700">
                       <input
