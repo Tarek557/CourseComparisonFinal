@@ -9320,11 +9320,8 @@ function App() {
                 <div className="text-gray-600 dark:text-gray-400">Course(s) Found</div>
                 <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Across selected providers</div>
               </div>
-              <div 
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
-                style={{ contain: 'layout style paint', willChange: 'transform' }}
-              >
-                <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">THE</div>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 transition-colors duration-300">
+                <div className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">THE</div>
                 <div className="text-gray-600 dark:text-gray-400">Ranking Source</div>
                 <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Complete University Guide UK</div>
               </div>
