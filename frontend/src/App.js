@@ -9294,10 +9294,10 @@ function App() {
               </div>
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 transition-colors duration-300">
                 <span className="text-2xl font-bold text-green-600 dark:text-green-400">
-                  {(searchTerm || selectedInstitutions.length > 0) ? 
-                    filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0) :
-                    '#1 Portal'
-                  }
+                  {(() => {
+                    const courseCount = filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0);
+                    return courseCount > 0 ? courseCount : (searchTerm || selectedInstitutions.length > 0) ? 0 : '#1 Portal';
+                  })()}
                 </span>
                 <div className="text-gray-600 dark:text-gray-400">Course(s) Found</div>
                 <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Across selected providers</div>
