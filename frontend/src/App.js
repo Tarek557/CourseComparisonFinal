@@ -8719,8 +8719,13 @@ function App() {
     setRecommendationSetIndex(0);
   }, [searchTerm, selectedInstitutions]);
 
-  // Auto-rotate recommendations every 4 seconds
+  // Auto-rotate recommendations every 4 seconds (pause when dropdown is open)
   useEffect(() => {
+    // Don't rotate when dropdown is open to prevent glitching
+    if (isInstitutionDropdownOpen) {
+      return;
+    }
+
     const allRecommendations = getAllRecommendations();
     const totalSets = Math.ceil(allRecommendations.length / 3);
     
@@ -8737,7 +8742,7 @@ function App() {
     }, 4000);
 
     return () => clearInterval(timer);
-  }, [searchTerm, selectedInstitutions]); // Reset timer when search context changes
+  }, [searchTerm, selectedInstitutions, isInstitutionDropdownOpen]); // Include dropdown state
 
   // Close dropdown when clicking outside
   useEffect(() => {
