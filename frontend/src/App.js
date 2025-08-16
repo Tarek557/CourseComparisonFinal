@@ -7736,37 +7736,55 @@ const CourseCard = ({ course, university, searchTerm, onSelectCourse, selectedCo
   );
 };
 
-const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, selectedCourses = [] }) => {
+const UniversityCoursesSection = ({ university, searchTerm, onSelectCourse, selectedCourses = [], isExpanded, onToggleExpansion }) => {
   return (
-    <div className="mb-8">
-      {/* University Header */}
-      <div className="bg-gradient-to-r from-green-600 to-green-500 text-white p-4 rounded-t-lg flex justify-between items-center">
-        <div>
+    <div className="mb-6">
+      {/* University Header - Always Visible */}
+      <div 
+        className="bg-gradient-to-r from-green-600 to-green-500 dark:from-green-700 dark:to-green-600 text-white p-4 rounded-lg flex justify-between items-center cursor-pointer hover:from-green-700 hover:to-green-600 transition-colors duration-200"
+        onClick={onToggleExpansion}
+      >
+        <div className="flex-1">
           <h2 className="text-xl font-bold">{university.name}</h2>
           <div className="flex items-center gap-2 mt-1 text-sm">
-            <span className="text-green-200">THE Ranking: #{university.ranking}</span>
-            <span className="text-green-200">•</span>
-            <span className="text-green-200">Employment Rate: {university.employmentRate}</span>
+            <span className="text-green-100 dark:text-green-200">UK Ranking: #{university.ranking}</span>
+            <span className="text-green-100 dark:text-green-200">•</span>
+            <span className="text-green-100 dark:text-green-200">Employment Rate: {university.employmentRate}</span>
           </div>
         </div>
-        <div className="text-right">
-          <div className="text-2xl font-bold">{university.courseCount} course(s)</div>
+        <div className="flex items-center gap-4">
+          <div className="text-right">
+            <div className="text-lg font-bold">{university.courseCount} course{university.courseCount !== 1 ? 's' : ''}</div>
+          </div>
+          {/* Expand/Collapse Button */}
+          <button className="text-white hover:text-green-100 transition-colors duration-200">
+            <svg 
+              className={`w-6 h-6 transform transition-transform duration-200 ${isExpanded ? 'rotate-45' : ''}`} 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+          </button>
         </div>
       </div>
       
-      {/* Course Cards */}
-      <div className="bg-yellow-50 p-4 rounded-b-lg">
-        {university.matchingCourses && university.matchingCourses.map((course, index) => (
-          <CourseCard 
-            key={index}
-            course={course}
-            university={university}
-            searchTerm={searchTerm}
-            onSelectCourse={onSelectCourse}
-            selectedCourses={selectedCourses}
-          />
-        ))}
-      </div>
+      {/* Course Cards - Only Visible When Expanded */}
+      {isExpanded && (
+        <div className="bg-yellow-50 dark:bg-yellow-900/20 border-2 border-green-200 dark:border-green-700 border-t-0 rounded-b-lg p-4 space-y-4">
+          {university.matchingCourses && university.matchingCourses.map((course, index) => (
+            <CourseCard 
+              key={index}
+              course={course}
+              university={university}
+              searchTerm={searchTerm}
+              onSelectCourse={onSelectCourse}
+              selectedCourses={selectedCourses}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
