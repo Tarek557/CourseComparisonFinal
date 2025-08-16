@@ -9189,7 +9189,10 @@ function App() {
           <>
             {/* Stats */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+              <div 
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
+                style={{ contain: 'layout style paint', willChange: 'transform' }}
+              >
                 <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
                   {(searchTerm || selectedInstitutions.length > 0) ? 
                     filteredAndSortedUniversities.filter(uni => uni.courseCount > 0).length : 
