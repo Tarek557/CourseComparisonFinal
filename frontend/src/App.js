@@ -8891,9 +8891,40 @@ function App() {
                 <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Across selected providers</div>
               </div>
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
-                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">8+</div>
-                <div className="text-gray-600 dark:text-gray-400">Program Types</div>
-                <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">CS, Engineering, Business, Medicine, Law, etc.</div>
+                <div className="flex items-center justify-between mb-3">
+                  <div className="text-lg font-semibold text-gray-800 dark:text-gray-200">Smart Recommendations</div>
+                  <div className="text-2xl">🎯</div>
+                </div>
+                <div className="space-y-2">
+                  {getSmartRecommendations().map((rec, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleRecommendationClick(rec)}
+                      className="w-full text-left p-2 rounded-md bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 hover:from-blue-100 hover:to-purple-100 dark:hover:from-blue-900/40 dark:hover:to-purple-900/40 border border-blue-200 dark:border-blue-700 transition-all duration-200 group"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex-1">
+                          <div className="text-sm font-medium text-blue-800 dark:text-blue-300 group-hover:text-blue-900 dark:group-hover:text-blue-200">
+                            {rec.title}
+                          </div>
+                          <div className="text-xs text-gray-600 dark:text-gray-400">
+                            {rec.reason}
+                          </div>
+                        </div>
+                        <div className="text-blue-500 dark:text-blue-400 group-hover:text-blue-600 dark:group-hover:text-blue-300">
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+                {getSmartRecommendations().length === 0 && (
+                  <div className="text-center text-gray-500 dark:text-gray-400 py-4">
+                    <div className="text-sm">Start searching to get personalized recommendations!</div>
+                  </div>
+                )}
               </div>
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
                 <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">THE</div>
