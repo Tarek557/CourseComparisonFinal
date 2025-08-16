@@ -8683,6 +8683,7 @@ function App() {
   const [isInstitutionDropdownOpen, setIsInstitutionDropdownOpen] = useState(false); // Dropdown open state
   const [expandedUniversities, setExpandedUniversities] = useState({}); // Track which universities are expanded
   const [recommendationSetIndex, setRecommendationSetIndex] = useState(0); // Track current recommendation set
+  const [dropdownPosition, setDropdownPosition] = useState({ top: 0, left: 0, width: 0 });
   const [isDarkMode, setIsDarkMode] = useState(() => {
     // Check localStorage for saved preference, default to false
     const savedTheme = localStorage.getItem('darkMode');
