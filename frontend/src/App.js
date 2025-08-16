@@ -581,7 +581,7 @@ const universitiesData = [
   {
     id: 2,
     name: "University of Oxford",
-    ranking: 1,
+    ranking: 2, // UK ranking - Complete University Guide
     location: "Oxford, England", 
     tuitionFeesUK: "£9,250",
     tuitionFeesInternational: "£39,010",
