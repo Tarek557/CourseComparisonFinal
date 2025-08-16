@@ -9292,7 +9292,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 transition-colors duration-300">
                 <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
                   {(searchTerm || selectedInstitutions.length > 0) ? 
                     filteredAndSortedUniversities.filter(uni => uni.courseCount > 0).length : 
@@ -9310,7 +9310,7 @@ function App() {
                     ) : '130+ total available'
                   }</div>
               </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 transition-colors duration-300">
                 <span className="text-2xl font-bold text-green-600 dark:text-green-400">
                   {(searchTerm || selectedInstitutions.length > 0) ? 
                     filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0) :
