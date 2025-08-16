@@ -9077,15 +9077,7 @@ function App() {
                 </div>
                 
                 {isInstitutionDropdownOpen && (
-                  <div 
-                    className="absolute z-50 mt-1 w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg max-h-80 overflow-hidden transition-colors duration-300"
-                    style={{
-                      contain: 'layout style paint',
-                      willChange: 'transform',
-                      transform: 'translateZ(0)',
-                      backfaceVisibility: 'hidden'
-                    }}
-                  >
+                  <div className="absolute z-[9999] mt-1 w-full bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg shadow-lg max-h-80 overflow-hidden transition-colors duration-300">
                     {/* Search input */}
                     <div className="p-3 border-b border-gray-200 dark:border-gray-700">
                       <input
