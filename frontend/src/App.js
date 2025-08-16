@@ -8536,6 +8536,13 @@ function App() {
     setInstitutionSearchTerm(e.target.value);
   };
 
+  const toggleUniversityExpansion = (universityId) => {
+    setExpandedUniversities(prev => ({
+      ...prev,
+      [universityId]: !prev[universityId]
+    }));
+  };
+
   const handleUniversitySelect = (university) => {
     setSelectedUniversities(prev => {
       const isAlreadySelected = prev.some(uni => uni.id === university.id);
