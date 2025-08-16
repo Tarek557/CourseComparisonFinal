@@ -9168,41 +9168,6 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
               <div 
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
-                style={{ contain: 'layout style paint', willChange: 'transform' }}
-              >
-                <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                  {(searchTerm || selectedInstitutions.length > 0) ? 
-                    filteredAndSortedUniversities.filter(uni => uni.courseCount > 0).length : 
-                    130
-                  }
-                </span>
-                <div className="text-sm text-gray-600 dark:text-gray-400">
-                  {(searchTerm || selectedInstitutions.length > 0) ? 'Provider(s)' : 'Universities Listed'}
-                </div>
-                <div className="text-xs text-gray-500 dark:text-gray-500">
-                  {(searchTerm || selectedInstitutions.length > 0) ?
-                    (searchTerm ? `for "${searchTerm}"` : 
-                     selectedInstitutions.length > 0 ? `${selectedInstitutions.length} selected` : 
-                     'matching criteria'
-                    ) : '130+ total available'
-                  }</div>
-              </div>
-              <div 
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
-                style={{ contain: 'layout style paint', willChange: 'transform' }}
-              >
-                <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
-                  {(searchTerm || selectedInstitutions.length > 0) ? 
-                    filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0) : 
-                    0
-                  }
-                </div>
-                <div className="text-gray-600 dark:text-gray-400">Course(s) Found</div>
-                <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Across selected providers</div>
-              </div>
-              <div 
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
-                style={{ contain: 'layout style paint', willChange: 'transform' }}
               >
                   <div className="flex items-center justify-between mb-3">
                     <div className="text-lg font-semibold text-gray-800 dark:text-gray-200">Smart Recommendations</div>
@@ -9221,7 +9186,7 @@ function App() {
                       <div
                         key={`static-${index}`}
                         onClick={() => handleRecommendationClick(rec)}
-                        className="w-full text-left p-3 rounded-lg bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 cursor-pointer transition-colors duration-200"
+                        className="w-full text-left p-3 rounded-lg bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 cursor-pointer"
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex-1">
@@ -9253,6 +9218,34 @@ function App() {
                 <div className="mt-4 text-xs text-gray-500 dark:text-gray-400 text-center">
                   <span>Smart recommendations based on your search</span>
                 </div>
+              </div>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+                <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
+                  {(searchTerm || selectedInstitutions.length > 0) ? 
+                    filteredAndSortedUniversities.filter(uni => uni.courseCount > 0).length : 
+                    130
+                  }
+                </span>
+                <div className="text-sm text-gray-600 dark:text-gray-400">
+                  {(searchTerm || selectedInstitutions.length > 0) ? 'Provider(s)' : 'Universities Listed'}
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-500">
+                  {(searchTerm || selectedInstitutions.length > 0) ?
+                    (searchTerm ? `for "${searchTerm}"` : 
+                     selectedInstitutions.length > 0 ? `${selectedInstitutions.length} selected` : 
+                     'matching criteria'
+                    ) : '130+ total available'
+                  }</div>
+              </div>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+                <span className="text-2xl font-bold text-green-600 dark:text-green-400">
+                  {(searchTerm || selectedInstitutions.length > 0) ? 
+                    filteredAndSortedUniversities.reduce((total, uni) => total + uni.courseCount, 0) :
+                    '#1 Portal'
+                  }
+                </span>
+                <div className="text-gray-600 dark:text-gray-400">Course(s) Found</div>
+                <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Across selected providers</div>
               </div>
               <div 
                 className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
