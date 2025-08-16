@@ -777,7 +777,7 @@ const universitiesData = [
   {
     id: 5,
     name: "University of Edinburgh",
-    ranking: 30,
+    ranking: 7, // UK ranking - Complete University Guide
     location: "Edinburgh, Scotland",
     tuitionFeesUK: "£9,250",
     tuitionFeesInternational: "£34,800",
