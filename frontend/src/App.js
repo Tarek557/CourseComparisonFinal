@@ -3797,160 +3797,596 @@ const universitiesData = [
   {
     id: 8,
     name: "University of Bristol",
-    ranking: 61,
-    location: "Bristol, England", 
-    tuitionFeesUK: "£9,250",
-    tuitionFeesInternational: "£29,300",
-    entryRequirements: "AAA-ABB (including Mathematics)",
-    ucasPoints: "144-112",
-    scholarships: "Think Big Undergraduate Scholarships, International Office Scholarships",
-    programs: {
-      "Computer Science": {
-        courseContent: "Programming, AI, Machine Learning, Robotics, Computer Vision, Data Science",
-        duration: "3 years (BSc), 4 years (MEng)",
-        entryRequirements: "AAA-ABB (including Mathematics)"
-      },
-      "Engineering": {
-        courseContent: "Aerospace, Civil, Electrical, Mechanical, Computer Systems Engineering",
-        duration: "3 years (BEng), 4 years (MEng)",
-        entryRequirements: "AAA (including Mathematics and Physics)"
-      },
-      "Mathematics": {
-        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Mathematical Physics",
-        duration: "3 years (BSc), 4 years (MMath)",
-        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
-      },
-      "Physics": {
-        courseContent: "Quantum Physics, Particle Physics, Theoretical Physics, Astrophysics",
-        duration: "3 years (BSc), 4 years (MPhys)",
-        entryRequirements: "AAA (including Mathematics and Physics)"
-      },
-      "Chemistry": {
-        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Medicinal Chemistry",
-        duration: "3 years (BSc), 4 years (MChem)",
-        entryRequirements: "AAA (including Chemistry and Mathematics)"
-      },
-      "Biology": {
-        courseContent: "Molecular Biology, Genetics, Ecology, Biochemistry, Cellular Biology",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
-      },
-      "Psychology": {
-        courseContent: "Cognitive Psychology, Social Psychology, Neuroscience, Research Methods",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (including Mathematics/Science)"
-      },
-      "Economics": {
-        courseContent: "Microeconomics, Macroeconomics, Econometrics, Development Economics",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA (including Mathematics)"
-      },
-      "Geography": {
-        courseContent: "Physical Geography, Human Geography, Environmental Science, GIS",
-        duration: "3 years (BSc/BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "History": {
-        courseContent: "British History, European History, Medieval Studies, Modern History",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (including History preferred)"
-      },
-      "English Literature": {
-        courseContent: "British Literature, World Literature, Literary Theory, Creative Writing",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (including English Literature)"
-      },
-      "Philosophy": {
-        courseContent: "Ethics, Logic, Metaphysics, Political Philosophy, Philosophy of Mind",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Law": {
-        courseContent: "Contract Law, Criminal Law, Constitutional Law, European Law",
-        duration: "3 years (LLB)",
-        entryRequirements: "AAA (no specific subjects)"
-      },
-      "Medicine": {
-        courseContent: "Pre-clinical Medicine, Clinical Medicine, Pathology, Public Health",
-        duration: "5 years (MBChB)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
-      },
-      "Veterinary Science": {
-        courseContent: "Animal Anatomy, Veterinary Pathology, Clinical Practice, Animal Welfare",
-        duration: "5 years (BVSc)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
-      },
-      "Business Management": {
-        courseContent: "Management, Finance, Marketing, Operations, International Business",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Accounting and Finance": {
-        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (including Mathematics)"
-      },
-      "Politics": {
-        courseContent: "Political Theory, Comparative Politics, International Relations, Public Policy",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Sociology": {
-        courseContent: "Social Theory, Research Methods, Criminology, Social Policy",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Anthropology": {
-        courseContent: "Cultural Anthropology, Archaeological Methods, Human Evolution, Ethnography",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Archaeology": {
-        courseContent: "Field Archaeology, Material Culture, Archaeological Theory, Heritage Studies",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Modern Languages": {
-        courseContent: "French, German, Spanish, Italian, Linguistics, Cultural Studies",
-        duration: "4 years (BA) with year abroad",
-        entryRequirements: "AAA-ABB (including relevant language)"
-      },
-      "Music": {
-        courseContent: "Music Theory, Composition, Performance, Music History, Ethnomusicology",
-        duration: "3 years (BA/BMus)",
-        entryRequirements: "AAA-ABB (including Music/audition required)"
-      },
-      "Drama and Theatre": {
-        courseContent: "Performance Studies, Theatre History, Playwriting, Stage Management",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (audition/portfolio required)"
-      },
-      "Art History": {
-        courseContent: "Western Art History, Contemporary Art, Museum Studies, Visual Culture",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "Environmental Science": {
-        courseContent: "Climate Science, Environmental Chemistry, Conservation Biology, Sustainability",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (including Science subjects)"
-      },
-      "Geology": {
-        courseContent: "Earth Processes, Mineralogy, Structural Geology, Environmental Geology",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (including Mathematics and Science)"
-      },
-      "Architecture": {
-        courseContent: "Design Studio, Building Technology, Architectural History, Urban Planning",
-        duration: "3 years (BA), 2 years (MArch)",
-        entryRequirements: "AAA (portfolio required)"
-      }
+    ranking: 15, 
+  location: "Bristol, England", 
+  tuitionFeesUK: "£9,535",
+  tuitionFeesInternational: "£24,800",
+  entryRequirements: "Typical A*AA–ABB; tests vary by course (e.g., UCAT for Medicine/Dentistry, LNAT for Law; STEP/TMUA or Bristol Maths Test may apply for some Maths/quantitative routes)",
+  ucasPoints: "N/A",
+  scholarships: "Think Big Undergraduate Awards; University of Bristol Bursary",
+  programs: {
+    "Accounting and Finance": {
+      courseContent: "Financial Accounting, Corporate Finance, Econometrics, Audit & Assurance",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
     },
-    courseContent: "Programming, AI, Machine Learning, Robotics, Computer Vision, Data Science",
-    duration: "3 years (BSc), 4 years (MEng)",
+    "Accounting and Finance with Study Abroad": {
+      courseContent: "Accounting, Corporate Finance, International Financial Management, Study Abroad Year",
+      duration: "4 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Accounting and Management": {
+      courseContent: "Management Theory, Financial Reporting, Strategy, Analytics",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Accounting and Management with Study Abroad": {
+      courseContent: "Management, Accounting, Global Strategy, Study Abroad Year",
+      duration: "4 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Business and Management": {
+      courseContent: "Operations, Marketing, Strategy, Data Analytics",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Business and Management with Study Abroad": {
+      courseContent: "Global Management, Projects, Strategy, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "AAA–AAB"
+    },
+
+    "Economics": {
+      courseContent: "Microeconomics, Macroeconomics, Econometrics, Economic Policy",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics with Study Abroad": {
+      courseContent: "Micro/Macro, Econometrics, Options, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics with Study Abroad in a Modern Language": {
+      courseContent: "Economics Core, Language, Year Abroad, Applied Economics",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Econometrics": {
+      courseContent: "Advanced Micro/Macro, Econometrics, Causal Inference, Data Science",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Econometrics with Study Abroad": {
+      courseContent: "Econometrics, Micro/Macro, Options, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Finance": {
+      courseContent: "Asset Pricing, Corporate Finance, Econometrics, Macro",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Finance with Study Abroad": {
+      courseContent: "Finance, Econometrics, Options, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Accounting": {
+      courseContent: "Micro/Macro, Econometrics, Financial Reporting, Taxation",
+      duration: "3 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Economics and Accounting with Study Abroad": {
+      courseContent: "Accounting, Economics, Analytics, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Economics and Data Science": {
+      courseContent: "Coding for Economics, Machine Learning, Econometrics, Micro/Macro",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Management": {
+      courseContent: "Micro/Macro, Econometrics, Strategy, Operations",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Management with Study Abroad": {
+      courseContent: "Economics, Management, Options, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Mathematics": {
+      courseContent: "Real Analysis, Probability, Micro/Macro, Econometrics",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Economics and Politics": {
+      courseContent: "Micro/Macro, Political Theory, Comparative Politics, Econometrics",
+      duration: "3 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Economics and Politics with Study Abroad": {
+      courseContent: "Economics Core, Politics Core, Year Abroad, Options",
+      duration: "4 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Philosophy and Economics": {
+      courseContent: "Ethics, Logic, Micro/Macro, Econometrics",
+      duration: "3 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Philosophy and Economics with Study Abroad": {
+      courseContent: "Philosophy Core, Economics Core, Year Abroad, Options",
+      duration: "4 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+
+    "Computer Science": {
+      courseContent: "Algorithms & Data Structures, Systems, Databases, HCI",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Computer Science with Artificial Intelligence": {
+      courseContent: "Machine Learning, Neural Networks, NLP, Core CS",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Computer Science with Study Abroad": {
+      courseContent: "Core CS, Advanced Options, Year Abroad, Team Project",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Computer Science with Innovation": {
+      courseContent: "Software Engineering, Product Design, Entrepreneurship, Venture Studio",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Data Science": {
+      courseContent: "Statistics, Programming, Machine Learning, Data Ethics",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Data Science with a Year in Industry": {
+      courseContent: "ML & AI, Statistical Learning, Industry Placement, Big Data",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+
+    "Aerospace Engineering": {
+      courseContent: "Aerodynamics, Structures & Materials, Flight Dynamics & Control, Systems & Design",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+    "Aerospace Engineering with Study Abroad": {
+      courseContent: "Aero Core, Partner-University Modules, Capstone Design, Global Projects",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+    "Aerospace Engineering with a Year in Industry": {
+      courseContent: "Aero Core, Industrial Placement, Systems Integration, Group Project",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+
+    "Mechanical Engineering": {
+      courseContent: "Design & Manufacture, Dynamics & Control, Materials, Thermo/Fluids",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+    "Mechanical Engineering with Study Abroad": {
+      courseContent: "Core Mech, Partner-University Study, Design Projects, Global Engineering",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+    "Mechanical Engineering with a Year in Industry": {
+      courseContent: "Core Mech, Industrial Placement, Professional Skills, Major Project",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+    "Mechanical and Electrical Engineering": {
+      courseContent: "Electro-Mechanical Systems, Power Conversion, Control, Design Integration",
+      duration: "3 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+
+    "Electrical and Electronic Engineering": {
+      courseContent: "Analogue/Digital Electronics, Communications, Control, Electromagnetics",
+      duration: "3 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Electrical and Electronic Engineering with Study Abroad": {
+      courseContent: "EEE Core, Study Abroad Year, Communications/Power Options, Project",
+      duration: "4 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Electrical and Electronic Engineering with a Year in Industry": {
+      courseContent: "EEE Fundamentals, Industrial Placement, Group Design, Advanced Options",
+      duration: "4 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+
+    "Civil Engineering": {
+      courseContent: "Structural Analysis, Geotechnics, Transport, Hydraulics & Water Engineering",
+      duration: "3 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+    "Civil Engineering with a Year in Industry": {
+      courseContent: "Core Civil, Industrial Placement, Infrastructure Design, Professional Practice",
+      duration: "4 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+
+    "Engineering Mathematics": {
+      courseContent: "Mathematical Modelling, Scientific Computing, Optimisation, Control",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics (STEP/TMUA or Bristol Maths Test may apply)"
+    },
+    "Engineering Mathematics with a Year in Industry": {
+      courseContent: "Modelling, Data-Driven Methods, Industrial Placement, Capstone",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics (STEP/TMUA or Bristol Maths Test may apply)"
+    },
+    "Design Engineering": {
+      courseContent: "User-Centred Design, Prototyping, Systems Engineering, Manufacturing",
+      duration: "3 years",
+      entryRequirements: "AAA including Mathematics"
+    },
+
+    "Mathematics": {
+      courseContent: "Algebra, Analysis, Probability, Differential Equations",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics (STEP/TMUA may form part of offer)"
+    },
+    "Mathematics with Study Abroad": {
+      courseContent: "Core Maths, Options, Year Abroad, Project",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics (STEP/TMUA may form part of offer)"
+    },
+    "Mathematics and Philosophy": {
+      courseContent: "Logic, Real Analysis, Metaphysics, Probability",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "Mathematics and Statistics": {
+      courseContent: "Statistical Inference, Stochastic Processes, Machine Learning, Core Maths",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+
+    "Physics": {
+      courseContent: "Classical & Quantum Mechanics, Electromagnetism, Labs, Computational Physics",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+    "Physics with Astrophysics": {
+      courseContent: "Astrophysics, Cosmology, Observational Techniques, Core Physics",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+    "Physics with Study Abroad": {
+      courseContent: "Core Physics, Advanced Options, Year Abroad, Research Project",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics and Physics"
+    },
+    "Chemical Physics": {
+      courseContent: "Quantum Chemistry, Spectroscopy, Thermodynamics, Solid State",
+      duration: "3 years",
+      entryRequirements: "A*AA including Mathematics and Chemistry/Physics"
+    },
+
+    "Chemistry": {
+      courseContent: "Organic, Inorganic, Physical Chemistry, Labs & Research Skills",
+      duration: "3 years",
+      entryRequirements: "A*AA including Chemistry"
+    },
+    "Chemistry with Study Abroad": {
+      courseContent: "Core Chemistry, Year Abroad, Research Project, Options",
+      duration: "4 years",
+      entryRequirements: "A*AA including Chemistry"
+    },
+
+    "Biochemistry": {
+      courseContent: "Protein Structure, Gene Regulation, Metabolism, Bioinformatics",
+      duration: "3 years",
+      entryRequirements: "A*AA including Chemistry"
+    },
+    "Biochemistry with Medical Biochemistry": {
+      courseContent: "Human Disease Pathways, Molecular Medicine, Genomics, Labs",
+      duration: "3 years",
+      entryRequirements: "A*AA including Chemistry"
+    },
+    "Biochemistry with Molecular Biology and Biotechnology": {
+      courseContent: "Molecular Genetics, Synthetic Biology, Systems Biology, Biotech",
+      duration: "3 years",
+      entryRequirements: "A*AA including Chemistry"
+    },
+
+    "Biology": {
+      courseContent: "Ecology & Evolution, Genetics, Cell Biology, Field/Lab Skills",
+      duration: "3 years",
+      entryRequirements: "AAA including a science"
+    },
+    "Zoology": {
+      courseContent: "Animal Behaviour, Ecology, Physiology, Evolutionary Biology",
+      duration: "3 years",
+      entryRequirements: "AAA including a science"
+    },
+    "Environmental Geoscience": {
+      courseContent: "Earth Systems, GIS & Remote Sensing, Hydrology, Environmental Change",
+      duration: "3 years",
+      entryRequirements: "ABB including a science"
+    },
+    "Geology": {
+      courseContent: "Petrology, Structural Geology, Fieldwork, Sedimentary Systems",
+      duration: "3 years",
+      entryRequirements: "ABB including a science"
+    },
+    "Palaeontology and Evolution": {
+      courseContent: "Fossil Record, Palaeobiology, Earth History, Quantitative Methods",
+      duration: "3 years",
+      entryRequirements: "ABB including a science"
+    },
+
+    "Biomedical Sciences": {
+      courseContent: "Molecular Cell Biology, Physiology, Neuroscience, Research Methods",
+      duration: "3 years",
+      entryRequirements: "AAA including Biology/Chemistry"
+    },
+    "Cellular and Molecular Medicine": {
+      courseContent: "Cell Signalling, Immunology, Cancer Biology, Genomics",
+      duration: "3 years",
+      entryRequirements: "AAA including Biology/Chemistry"
+    },
+    "Cancer Biology and Immunology": {
+      courseContent: "Tumour Biology, Immunotherapy, Genomics, Lab Techniques",
+      duration: "3 years",
+      entryRequirements: "AAA including Biology/Chemistry"
+    },
+    "Neuroscience": {
+      courseContent: "Neurophysiology, Cognitive Neuroscience, Neuropharmacology, Data Analysis",
+      duration: "3 years",
+      entryRequirements: "AAA including Biology/Chemistry"
+    },
+    "Pharmacology": {
+      courseContent: "Drug Action, Toxicology, Receptor Pharmacology, Therapeutics",
+      duration: "3 years",
+      entryRequirements: "AAA including Biology/Chemistry"
+    },
+    "Physiological Science": {
+      courseContent: "Systems Physiology, Cardiovascular & Respiratory Physiology, Labs",
+      duration: "3 years",
+      entryRequirements: "AAA including Biology"
+    },
+    "Applied Anatomy": {
+      courseContent: "Human Dissection, Clinical Anatomy, Imaging, Evolutionary Anatomy",
+      duration: "3 years",
+      entryRequirements: "AAA including a science"
+    },
+
+    "Medicine": {
+      courseContent: "Pre-clinical Sciences, Clinical Placements, Patient Safety, SSCs",
+      duration: "5 years",
+      entryRequirements: "AAA including Chemistry and another science; UCAT required"
+    },
+    "Dentistry": {
+      courseContent: "Clinical Dentistry, Oral Biology, Simulation Labs, Hospital Rotations",
+      duration: "5 years",
+      entryRequirements: "AAA including Chemistry and Biology; UCAT required"
+    },
+    "Dental Hygiene and Therapy": {
+      courseContent: "Preventive Dentistry, Restorative Care, Periodontology, Clinical Placements",
+      duration: "3 years",
+      entryRequirements: "Entry criteria per programme; interview and checks apply"
+    },
+    "Veterinary Science": {
+      courseContent: "Animal Health & Disease, Surgery, Clinical Skills, EMS Placements",
+      duration: "5 years",
+      entryRequirements: "A*AA including Chemistry and Biology/Physics/Maths"
+    },
+    "Veterinary Nursing and Companion Animal Behaviour": {
+      courseContent: "Nursing Practice, Anaesthesia, Behaviour, Clinical Rotations",
+      duration: "4 years",
+      entryRequirements: "Typical ABB–BBB plus vocational checks"
+    },
+
+    "Law": {
+      courseContent: "Contract, Tort, Criminal, Public Law; options incl. International/EU Law",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; LNAT required"
+    },
+    "Law with Study Abroad": {
+      courseContent: "Core English Law, Comparative/International Options, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; LNAT required"
+    },
+    "Law and French": {
+      courseContent: "Foundations of Law, French Language & Legal Culture, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; LNAT required"
+    },
+    "Law and German": {
+      courseContent: "English Law, German Language & Legal Culture, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; LNAT required"
+    },
+    "Law and Spanish": {
+      courseContent: "Core Law, Spanish Language & Legal Culture, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; LNAT required"
+    },
+
+    "Politics and International Relations": {
+      courseContent: "Political Theory, International Relations, Comparative Politics, Methods",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Criminology": {
+      courseContent: "Criminal Justice, Policing, Penology, Research Methods",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Criminology and Sociology": {
+      courseContent: "Crime & Society, Social Theory, Methods, Policy",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Sociology": {
+      courseContent: "Social Theory, Inequalities, Culture, Quant/Qual Methods",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Social Policy": {
+      courseContent: "Welfare Systems, Education/Health Policy, Evaluation, Methods",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
+    },
+
+    "English": {
+      courseContent: "Literature 1300–Present, Critical Theory, Drama/Poetry/Prose, Options",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "English and History": {
+      courseContent: "British/World History, Literature, Historiography, Criticism",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "English and Theatre": {
+      courseContent: "Literature, Performance, Dramaturgy, Cultural Theory",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "History": {
+      courseContent: "British/European/Global History, Sources, Historiography, Options",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "History and Politics": {
+      courseContent: "Modern History, Political Thought, Comparative Politics, Methods",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "History of Art": {
+      courseContent: "Visual Culture, Period Studies, Curating, Critical Theory",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Liberal Arts": {
+      courseContent: "Interdisciplinary Core, Humanities Options, Language/Methods, Project",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Philosophy": {
+      courseContent: "Logic, Epistemology, Metaphysics, Ethics & Political Philosophy",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Religion and Theology": {
+      courseContent: "Biblical Studies, Religious Thought, Ethics, Philosophy of Religion",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Film and Television": {
+      courseContent: "Film Theory, Production, Screenwriting, Industry Practices",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Theatre": {
+      courseContent: "Performance, Theatre Making, Theatre Histories, Critical Practice",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Music": {
+      courseContent: "Music History, Analysis, Composition, Performance",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+
+    "French": {
+      courseContent: "Language, Literature & Culture, Translation, Year Abroad",
+      duration: "4 years (includes a year abroad)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "German": {
+      courseContent: "Language, Literature & Culture, Translation, Year Abroad",
+      duration: "4 years (includes a year abroad)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Italian": {
+      courseContent: "Language, Literature & Culture, Translation, Year Abroad",
+      duration: "4 years (includes a year abroad)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Spanish": {
+      courseContent: "Language, Literature & Culture, Translation, Year Abroad",
+      duration: "4 years (includes a year abroad)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Russian": {
+      courseContent: "Language, Literature & Culture, Translation, Year Abroad",
+      duration: "4 years (includes a year abroad)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Portuguese": {
+      courseContent: "Language, Lusophone Cultures, Translation, Year Abroad",
+      duration: "4 years (includes a year abroad)",
+      entryRequirements: "A*AA–AAA"
+    },
+
+    "Anthropology": {
+      courseContent: "Social Anthropology, Material Culture, Methods, Globalisation",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Archaeology and Anthropology": {
+      courseContent: "Archaeological Methods, Social Anthropology, Material Culture, Fieldwork",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Classics": {
+      courseContent: "Latin/Greek, Ancient History, Philosophy, Literature",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Ancient History": {
+      courseContent: "Greek & Roman History, Sources & Methods, Historiography, Options",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+
+    "Geography": {
+      courseContent: "Human & Physical Geography, GIS, Environmental Change, Field Courses",
+      duration: "3 years",
+      entryRequirements: "AAA–AAB"
+    },
+
+    "Management with Innovation": {
+      courseContent: "Management Core, Design Thinking, Venture Creation, Innovation Projects",
+      duration: "4 years",
+      entryRequirements: "AAA–AAB"
+    },
+    "Anthropology with Innovation": {
+      courseContent: "Anthropology Core, Interdisciplinary Venture Studio, Prototyping, Impact",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Economics with Innovation": {
+      courseContent: "Micro/Macro, Econometrics, Opportunity Development, Startup Projects",
+      duration: "4 years",
+      entryRequirements: "A*AA including Mathematics"
+    },
+    "History with Innovation": {
+      courseContent: "History Core, Creative Enterprise, Product/Service Design, Portfolio",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA"
+    }
+  }, 
+    distanceLearning: "Not available (campus only)",
+    workPlacement: "Available on selected courses (e.g., Engineering/EEE/Mechanical/Data Science)",
+    yearAbroad: "Available on many courses (languages, engineering, economics, etc.)",
     employmentRate: "90%",
-    researchRating: "4*"
-  },
+},
   {
     id: 9,
     name: "University of Warwick",
