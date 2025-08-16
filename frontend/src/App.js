@@ -7008,122 +7008,401 @@ const universitiesData = [
     name: "Queen Mary University of London",
     ranking: 117,
     location: "London, England",
-    tuitionFeesUK: "£9,250",
-    tuitionFeesInternational: "£26,250",
+    tuitionFeesUK: "£9,535",
+    tuitionFeesInternational: "£29,950",
     entryRequirements: "AAA-ABB (including Mathematics)",
     ucasPoints: "144-112",
     scholarships: "Principal's Postgraduate Research Scholarship, International Excellence Scholarship",
     programs: {
       "Computer Science": {
-        courseContent: "Programming, AI, Machine Learning, Data Science, Cybersecurity",
-        duration: "3 years (BSc), 4 years (MEng)",
-        entryRequirements: "AAA-ABB (including Mathematics)"
+        courseContent: "Programming, Data Structures, Algorithms, Databases, AI, Software Engineering",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: ABB including A in Mathematics, Physics or Computer Science (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
       },
-      "Engineering": {
-        courseContent: "Aerospace Engineering, Electronic Engineering, Materials Engineering, Biomedical Engineering",
-        duration: "3 years (BEng), 4 years (MEng)",
-        entryRequirements: "AAA (including Mathematics and Physics)"
+       "Computer Science (MSci)": {
+        courseContent: "Programming, Algorithms, Machine Learning, Systems, Security, Project",
+        duration: "4 years (MSci)",
+        entryRequirements: "A-levels: AAB including A in Mathematics/Computer Science/Physics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
       },
-      "Mathematics": {
-        courseContent: "Pure Mathematics, Applied Mathematics, Statistics, Financial Mathematics",
-        duration: "3 years (BSc), 4 years (MMath)",
-        entryRequirements: "AAA (including Mathematics and Further Mathematics)"
+      "Computer Science and Artificial Intelligence": {
+        courseContent: "AI, Machine Learning, Programming, Data, Robotics, Ethics",
+        duration: "3–4 years (BSc)",
+        entryRequirements: "A-levels: ABB including A in Mathematics/Physics/Computer Science (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Computer Systems Engineering": {
+        courseContent: "Embedded Systems, Digital Electronics, Networks, Software, Control",
+        duration: "3–4 years (BEng)",
+        entryRequirements: "A-levels: BBB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Electrical and Electronic Engineering": {
+        courseContent: "Circuits, Signals, Power, Communications, Control, Embedded Systems",
+        duration: "4 years (MEng)",
+        entryRequirements: "A-levels: AAB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Aerospace Engineering": {
+        courseContent: "Aerodynamics, Flight Mechanics, Structures, Propulsion, Avionics",
+        duration: "3–4 years (BEng/MEng)",
+        entryRequirements: "A-levels: AAA including Mathematics and Physics or Chemistry (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Mechanical Engineering": {
+        courseContent: "Mechanics, Materials, Thermofluids, Design, Manufacturing, Control",
+        duration: "3–5 years (BEng/MEng)",
+        entryRequirements: "A-levels: AAB–BBB including Mathematics; Physics or Chemistry often required (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Chemical Engineering": {
+        courseContent: "Thermodynamics, Transport, Reactors, Process Design, Safety",
+        duration: "3–5 years (BEng/MEng)",
+        entryRequirements: "A-levels: BBB including Mathematics and Chemistry or Physics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Materials Science and Engineering": {
+        courseContent: "Materials Processing, Polymers, Metals, Ceramics, Characterisation",
+        duration: "3–5 years (BEng/MEng)",
+        entryRequirements: "A-levels: BBB including two of Maths/Chemistry/Physics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Design, Innovation and Creative Engineering": {
+        courseContent: "Design Thinking, Prototyping, Product Engineering, Systems",
+        duration: "3–5 years (BEng/MEng)",
+        entryRequirements: "A-levels: BBB including Mathematics or Physics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Robotics Engineering": {
+        courseContent: "Robotics, Control, Sensors, AI, Mechatronics, Programming",
+        duration: "3–4 years (BEng)",
+        entryRequirements: "A-levels: BBB including Mathematics; science/tech subject recommended (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Pharmaceutical Chemistry": {
+        courseContent: "Organic/Physical Chemistry, Drug Design, Biochemistry, Lab Techniques",
+        duration: "3–4 years (BSc)",
+        entryRequirements: "A-levels: BBB including Chemistry (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
       },
       "Physics": {
-        courseContent: "Theoretical Physics, Experimental Physics, Particle Physics, Astrophysics",
-        duration: "3 years (BSc), 4 years (MPhys)",
-        entryRequirements: "AAA (including Mathematics and Physics)"
+        courseContent: "Mechanics, Electromagnetism, Quantum, Astrophysics, Labs",
+        duration: "3–5 years (BSc/MSci)",
+        entryRequirements: "A-levels: BBB including Mathematics and Physics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
       },
-      "Chemistry": {
-        courseContent: "Organic Chemistry, Inorganic Chemistry, Physical Chemistry, Pharmaceutical Chemistry",
-        duration: "3 years (BSc), 4 years (MChem)",
-        entryRequirements: "AAA (including Chemistry and Mathematics)"
+      "Physics with Astrophysics": {
+        courseContent: "Astrophysics, Cosmology, Observational Methods, Physics Core",
+        duration: "3–5 years (BSc/MSci)",
+        entryRequirements: "A-levels: BBB including Mathematics and Physics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Mathematics": {
+        courseContent: "Calculus, Algebra, Probability, Statistics, Numerical Methods",
+        duration: "3–4 years (BSc/MSci)",
+        entryRequirements: "A-levels: AAB–BBB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Mathematics with Statistics": {
+        courseContent: "Probability, Inference, Regression, Time Series, Data Analysis",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: ABB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Mathematics with Finance and Accounting": {
+        courseContent: "Mathematics, Finance, Accounting, Econometrics, Risk",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: ABB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Mathematics with Management": {
+        courseContent: "Mathematics, Operations, Strategy, Analytics, Optimisation",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: ABB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
       },
       "Biology": {
-        courseContent: "Molecular Biology, Genetics, Ecology, Biochemistry, Biotechnology",
+        courseContent: "Genetics, Ecology, Evolution, Cell Biology, Research Skills",
         duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (including Biology and Chemistry)"
+        entryRequirements: "A-levels: BBB including Biology or Chemistry (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Biochemistry": {
+        courseContent: "Molecular Biology, Enzymology, Genetics, Structural Biology",
+        duration: "3–4 years (BSc/MSci)",
+        entryRequirements: "A-levels: BBB including Chemistry (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Biomedical Sciences": {
+        courseContent: "Human Physiology, Pathology, Microbiology, Pharmacology",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: BBB including Biology or Chemistry (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Neuroscience": {
+        courseContent: "Neurobiology, Systems Neuroscience, Cognition, Lab Methods",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: BBB including Biology or Chemistry (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
       },
       "Psychology": {
-        courseContent: "Cognitive Psychology, Social Psychology, Clinical Psychology, Forensic Psychology",
+        courseContent: "Cognitive, Biological, Developmental, Social Psychology, Methods",
         duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (including Mathematics or Science)"
-      },
-      "Economics": {
-        courseContent: "Microeconomics, Macroeconomics, Econometrics, International Economics",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA (including Mathematics)"
-      },
-      "Politics and International Relations": {
-        courseContent: "Political Theory, International Relations, Comparative Politics, Public Policy",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
-      },
-      "History": {
-        courseContent: "British History, European History, Medieval History, Modern History",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (including History preferred)"
-      },
-      "English": {
-        courseContent: "English Literature, Creative Writing, Literary Theory, Drama",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (including English Literature)"
-      },
-      "Law": {
-        courseContent: "Contract Law, Criminal Law, Constitutional Law, Commercial Law",
-        duration: "3 years (LLB)",
-        entryRequirements: "AAA (no specific subjects)"
-      },
-      "Medicine and Dentistry": {
-        courseContent: "Pre-clinical Medicine, Clinical Medicine, Dental Sciences, Medical Ethics",
-        duration: "5 years (MBBS), 5 years (BDS)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
+        entryRequirements: "A-levels: ABB–BBB; science subject advantageous (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
       },
       "Business Management": {
-        courseContent: "Strategic Management, International Business, Marketing, Finance",
+        courseContent: "Management, Marketing, Accounting, Strategy, Analytics",
+        duration: "3–4 years (BSc)",
+        entryRequirements: "A-levels: ABB (typical)",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
+      },
+      "Marketing and Management": {
+        courseContent: "Marketing Strategy, Consumer Behaviour, Digital, Analytics",
         duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
+        entryRequirements: "A-levels: ABB (typical)",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
+      },
+      "International Business": {
+        courseContent: "Global Strategy, Trade, Finance, Cross‑Cultural Management",
+        duration: "3–4 years (BSc)",
+        entryRequirements: "A-levels: ABB (typical)",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
       },
       "Accounting and Finance": {
-        courseContent: "Financial Accounting, Management Accounting, Corporate Finance, Investment",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA-ABB (including Mathematics)"
+        courseContent: "Financial Accounting, Management Accounting, Finance, Audit",
+        duration: "3–4 years (BSc)",
+        entryRequirements: "A-levels: ABB including Mathematics preferred (typical)",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
       },
-      "Geography": {
-        courseContent: "Physical Geography, Human Geography, Environmental Geography, Urban Studies",
-        duration: "3 years (BSc/BA)",
-        entryRequirements: "AAA-ABB (including Geography preferred)"
+      "Economics": {
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Maths for Econ",
+        duration: "3 years (BSc (Econ))",
+        entryRequirements: "A-levels: AAB–BBB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
       },
-      "Linguistics": {
-        courseContent: "Phonetics, Syntax, Semantics, Psycholinguistics, Sociolinguistics",
+      "Economics and Finance": {
+        courseContent: "Finance, Micro/Macro, Econometrics, Corporate Finance",
+        duration: "3–4 years (BSc (Econ))",
+        entryRequirements: "A-levels: BBB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
+      },
+      "Economics and Politics": {
+        courseContent: "Political Economy, Micro/Macro, Comparative Politics",
+        duration: "3 years (BSc (Econ))",
+        entryRequirements: "A-levels: ABB–BBB; Mathematics preferred (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Economics, Statistics and Mathematics": {
+        courseContent: "Probability, Statistics, Econometrics, Optimisation",
+        duration: "3 years (BSc (Econ))",
+        entryRequirements: "A-levels: ABB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Economics and International Finance": {
+        courseContent: "International Finance, Markets, Trade, Econometrics",
+        duration: "3 years (BSc (Econ))",
+        entryRequirements: "A-levels: BBB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Economics, Finance and Management": {
+        courseContent: "Economics Core, Corporate Finance, Strategy, Analytics",
+        duration: "3 years (BSc (Econ))",
+        entryRequirements: "A-levels: BBB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Law": {
+        courseContent: "Contract, Tort, Public, Criminal, EU, Property, Equity",
+        duration: "3 years (LLB)",
+        entryRequirements: "Typical A-level offer: high grades (e.g., A*AA); see course page",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
+      },
+      "Law with Business": {
+        courseContent: "Core Law + Business, Company Law, Commercial Awareness",
+        duration: "3 years (LLB)",
+        entryRequirements: "Typical A-level offer: high grades; see course page",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
+      },
+      "Law and Politics": {
+        courseContent: "Core Law + Political Institutions, Public Law, Policy",
+        duration: "3 years (LLB)",
+        entryRequirements: "Typical A-level offer: high grades; see course page",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
+      },
+      "English and European Law": {
+        courseContent: "Core English Law + EU/European Law; year abroad",
+        duration: "4 years (LLB)",
+        entryRequirements: "Typical A-level offer: high grades; see course page",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
+      },
+      "Global Law": {
+        courseContent: "Transnational/Comparative Law, Global Governance; year abroad",
+        duration: "4 years (LLB)",
+        entryRequirements: "Typical A-level offer: A*AA (indicative); see course page",
+        tuitionFees: { home: "£9,535", international: "£27,950" }
+      },
+      "English": {
+        courseContent: "Literary Studies, Poetry, Drama, Prose, Theory",
+        duration: "3–4 years (BA)",
+        entryRequirements: "A-levels: BBB (typical); essay-based subject preferred",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "English with Creative Writing": {
+        courseContent: "Creative Writing Workshops, Poetry, Prose, Drama, Criticism",
         duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
+        entryRequirements: "A-levels: BBB (typical); portfolio may be considered",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
       },
-      "Modern Languages": {
-        courseContent: "French, German, Spanish, Russian, Hispanic Studies, Comparative Literature",
-        duration: "4 years (BA) with year abroad",
-        entryRequirements: "AAA-ABB (including relevant language)"
-      },
-      "Film Studies": {
-        courseContent: "Film Theory, Cinema History, Documentary Studies, Digital Media Production",
+      "English and Drama": {
+        courseContent: "Literature, Performance Studies, Theatre Practice, Criticism",
         duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (no specific subjects)"
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "English Language and Linguistics": {
+        courseContent: "Phonetics, Syntax, Sociolinguistics, Discourse, Psycholinguistics",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Comparative Literature": {
+        courseContent: "World Literature, Theory, Translation, Culture, Criticism",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Comparative Literature and Film": {
+        courseContent: "World Literature, Film Theory, Criticism, Culture",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Film": {
+        courseContent: "Film History, Theory, Analysis, World Cinema, Practice",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
       },
       "Drama": {
-        courseContent: "Performance Studies, Theatre History, Playwriting, Applied Theatre",
+        courseContent: "Theatre Studies, Performance, Directing, Stagecraft",
         duration: "3 years (BA)",
-        entryRequirements: "AAA-ABB (audition required)"
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
       },
-      "Music": {
-        courseContent: "Music Performance, Composition, Music Technology, Ethnomusicology",
-        duration: "3 years (BA/BMus)",
-        entryRequirements: "AAA-ABB (audition required)"
+      "Drama with Creative Writing": {
+        courseContent: "Performance, Playwriting, Creative Workshops, Theatre Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "History": {
+        courseContent: "British/European/Global History, Sources, Historiography",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "History and Politics": {
+        courseContent: "Modern History, Political Theory, Comparative Politics",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Politics": {
+        courseContent: "Political Theory, Comparative Politics, IR, Public Policy",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "International Relations": {
+        courseContent: "IR Theory, International Security, Global Governance, Diplomacy",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Global Development": {
+        courseContent: "Development Theory, Policy, Inequality, Sustainability, Methods",
+        duration: "3–4 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Sociology": {
+        courseContent: "Social Theory, Methods, Inequality, Culture, Institutions",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Linguistics": {
+        courseContent: "Phonetics, Phonology, Morphology, Syntax, Semantics",
+        duration: "3 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Geography BA": {
+        courseContent: "Human Geography, GIS, Environment, Development, Fieldwork",
+        duration: "3–4 years (BA)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Geography BSc": {
+        courseContent: "Physical Geography, GIS, Earth Systems, Field/Lab Methods",
+        duration: "3–4 years (BSc)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Environmental Science": {
+        courseContent: "Ecology, Environmental Change, GIS, Policy, Fieldwork",
+        duration: "3–4 years (BSc)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£26,400" }
+      },
+      "Environmental Science with Business Management": {
+        courseContent: "Environment, Sustainability, Business, Policy, Analytics",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: BBB (typical)",
+        tuitionFees: { home: "£9,535", international: "£26,400" }
+      },
+      "Modern Languages (French, German, Russian, Spanish)": {
+        courseContent: "Language, Translation, Literature, Culture, Year Abroad",
+        duration: "4 years (BA)",
+        entryRequirements: "A-levels: BBB including relevant language (typical)",
+        tuitionFees: { home: "£9,535", international: "£25,000" }
+      },
+      "Medical Genetics": {
+        courseContent: "Genetics, Genomics, Molecular Biology, Disease Mechanisms",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: BBB including Biology or Chemistry (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Software Engineering": {
+        courseContent: "Software Design, Project, Testing, Databases, Web/Cloud",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: ABB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Applied Artificial Intelligence": {
+        courseContent: "Machine Learning, Data, Programming, Robotics, Ethics",
+        duration: "3 years (BSc)",
+        entryRequirements: "A-levels: ABB including Mathematics (typical)",
+        tuitionFees: { home: "£9,535", international: "£29,950" }
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Sciences, Clinical Practice, Placements, SSCs",
+        duration: "5 years (MBBS)",
+        entryRequirements: "A-levels: A*AA including Chemistry and/or Biology (typical)",
+        tuitionFees: { home: "£9,535", international: "£46,900" }
+      },
+      "Dentistry": {
+        courseContent: "Dental Sciences, Clinical Skills, Restorative, Oral Surgery",
+        duration: "5 years (BDS)",
+        entryRequirements: "A-levels: A*AA including Chemistry and Biology (typical)",
+        tuitionFees: { home: "£9,535", international: "£46,900" },
       }
     },
-    courseContent: "Programming, AI, Machine Learning, Data Science, Cybersecurity",
-    duration: "3 years (BSc), 4 years (MEng)",
-    employmentRate: "86%",
-    researchRating: "4*"
+      distanceLearning: "Not available (campus only)",
+      workPlacement: "Optional (Industrial Placement Year)",
+      yearAbroad: "Optional (Study Abroad Year)",
+      employmentRate: "92%",
   },
   {
     id: 23,
