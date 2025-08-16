@@ -8584,7 +8584,7 @@ function App() {
         { type: 'course', title: 'Aerospace Engineering', reason: 'Innovation focus' }
       );
     } else if (selectedInstitutions.length > 0) {
-      // Institution-based recommendations
+      // Institution-based recommendations - FIXED: Only suggest courses, not universities
       const hasRussellGroup = selectedInstitutions.some(name => 
         ['University of Cambridge', 'University of Oxford', 'Imperial College London', 
          'University College London (UCL)', 'University of Edinburgh'].includes(name)
@@ -8592,9 +8592,15 @@ function App() {
       
       if (hasRussellGroup) {
         recommendations.push(
-          { type: 'university', title: 'University of Warwick', reason: 'Similar prestige' },
-          { type: 'university', title: 'University of Bristol', reason: 'Russell Group member' },
-          { type: 'course', title: 'Research-focused programs', reason: 'Match your selections' }
+          { type: 'course', title: 'Mathematics', reason: 'Strong at selected unis' },
+          { type: 'course', title: 'Physics', reason: 'Excellent research facilities' },
+          { type: 'course', title: 'Philosophy', reason: 'World-class departments' }
+        );
+      } else {
+        recommendations.push(
+          { type: 'course', title: 'Business Management', reason: 'Popular at your selections' },
+          { type: 'course', title: 'Psychology', reason: 'Good career prospects' },
+          { type: 'course', title: 'English Literature', reason: 'Strong programs available' }
         );
       }
     } else {
@@ -8602,7 +8608,7 @@ function App() {
       recommendations.push(
         { type: 'course', title: 'Computer Science', reason: 'Most searched field' },
         { type: 'course', title: 'Medicine', reason: 'High employment rate' },
-        { type: 'university', title: 'University of Cambridge', reason: 'Top UK ranking' }
+        { type: 'course', title: 'Business Management', reason: 'Versatile career path' }
       );
     }
     
@@ -8613,12 +8619,10 @@ function App() {
     if (recommendation.type === 'course') {
       setSearchTerm(recommendation.title);
       setCurrentSearchPage(1);
-    } else if (recommendation.type === 'university') {
-      const isAlreadySelected = selectedInstitutions.includes(recommendation.title);
-      if (!isAlreadySelected) {
-        setSelectedInstitutions(prev => [...prev, recommendation.title]);
-      }
+      // Clear institution selection to avoid conflicts
+      setSelectedInstitutions([]);
     }
+    // Removed university recommendation handling to fix the bug
   };
 
   const toggleUniversityExpansion = (universityId) => {
