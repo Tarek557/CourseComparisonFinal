@@ -849,83 +849,259 @@ const universitiesData = [
   {
     id: 2,
     name: "University of Oxford",
-    ranking: 2, // UK ranking - Complete University Guide
+    ranking: 2, 
     location: "Oxford, England", 
-    tuitionFeesUK: "£9,250",
-    tuitionFeesInternational: "£39,010",
-    entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)",
-    ucasPoints: "152",
-    scholarships: "Rhodes Scholarship, Clarendon Scholarship",
+    tuitionFeesUK: "£9,535",
+    tuitionFeesInternational: "£35,260",
+    entryRequirements: "Typical offers AAA–A*AA; subject requirements/tests vary by course (see course page)",
+    ucasPoints: "N/A",
+    scholarships: "Crankstart Scholarship, Reach Oxford Scholarship",
     programs: {
-      "Computer Science": {
-        courseContent: "Functional Programming, Logic & Proof, Digital Systems, Machine Learning",
-        duration: "3 years (BA), 4 years (MEng)",
-        entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
-      },
-      "Software Engineering": {
-        courseContent: "Software Development, System Architecture, Project Management, Quality Assurance, Agile Methods",
-        duration: "3 years (BA), 4 years (MEng)",
-        entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
-      },
-      "Information Technology": {
-        courseContent: "IT Systems, Network Management, Database Systems, Cloud Computing, Information Security",
+      "BA Archaeology and Anthropology": {
+        courseContent: "Human evolution, material culture, social anthropology, fieldwork methods",
         duration: "3 years (BA)",
-        entryRequirements: "A*A*A (including Mathematics)"
+        entryRequirements: "AAA; see course page"
       },
-      "Cybersecurity": {
-        courseContent: "Network Security, Cryptography, Ethical Hacking, Digital Forensics, Cyber Law, Information Assurance",
-        duration: "3 years (BA), 4 years (MEng)",
-        entryRequirements: "A*A*A (including Mathematics)"
+      "BA Asian and Middle Eastern Studies": {
+        courseContent: "Arabic/Hebrew/Persian/Turkish etc., literature, history, year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language mix varies"
       },
-      "Data Science": {
-        courseContent: "Big Data Analytics, Machine Learning, Statistical Analysis, Data Mining, Predictive Modeling",
-        duration: "3 years (BA), 4 years (MEng)",
-        entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
+      "MBiochem Biochemistry (Molecular and Cellular)": {
+        courseContent: "Molecular biology, genetics, cell biology, structural biology, research project",
+        duration: "4 years (MBiochem)",
+        entryRequirements: "A*AA incl. Chemistry; another science/Maths"
       },
-      "Artificial Intelligence": {
-        courseContent: "Machine Learning, Neural Networks, Computer Vision, Natural Language Processing, AI Ethics",
-        duration: "3 years (BA), 4 years (MEng)",
-        entryRequirements: "A*A*A (including Mathematics and Further Mathematics preferred)"
+      "BA Biology": {
+        courseContent: "Evolution, ecology, behaviour, physiology, genetics, statistics",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA incl. a science/maths"
       },
-      "Engineering": {
-        courseContent: "Engineering Science, Materials, Electrical, Mechanical, Chemical Engineering",
+      "BA Biomedical Sciences": {
+        courseContent: "Human physiology, neuroscience, biochemistry, genetics, lab skills",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA incl. Biology + another science/maths"
+      },
+      "MChem Chemistry": {
+        courseContent: "Organic, inorganic, physical, theoretical chemistry, labs, research project",
+        duration: "4 years (MChem)",
+        entryRequirements: "A*AA incl. Chemistry; Maths recommended"
+      },
+      "BA Classical Archaeology and Ancient History": {
+        courseContent: "Greek/Roman history, archaeology, material culture; optional language",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; Classics/Ancient History helpful"
+      },
+      "BA Classics": {
+        courseContent: "Latin/Greek, literature, ancient history, philosophy, linguistics",
+        duration: "4 years (BA)",
+        entryRequirements: "AAA; beginners/advanced routes available"
+      },
+      "BA Classics and Asian and Middle Eastern Studies": {
+        courseContent: "Latin/Greek with AMES language, literature, history; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language mix varies"
+      },
+      "BA Classics and English": {
+        courseContent: "Classical + English literature, language, reception studies; link papers",
+        duration: "3–4 years (BA; beginners route 4 years)",
+        entryRequirements: "AAA; English required"
+      },
+      "BA Classics and Modern Languages": {
+        courseContent: "Latin/Greek with a modern language; literature, linguistics; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language requirements vary"
+      },
+      "BA/MCompSci Computer Science": {
+        courseContent: "Functional & imperative programming, discrete maths, algorithms, logic, systems; AI/ML options",
+        duration: "3 years (BA), 4 years (MCompSci)",
+        entryRequirements: "A*AA incl. Maths; MAT"
+      },
+      "BA/MCompSciPhil Computer Science and Philosophy": {
+        courseContent: "Core CS (prog/algorithms/logic) + philosophy (logic, mind, ethics of AI)",
+        duration: "3 years (BA), 4 years (MCompSciPhil)",
+        entryRequirements: "A*AA incl. Maths; MAT"
+      },
+      "BA/MEarthSci Earth Sciences (Geology)": {
+        courseContent: "Planetary & earth systems, mineralogy, geophysics, mapping, field trips",
+        duration: "3 years (BA), 4 years (MEarthSci)",
+        entryRequirements: "A*AA incl. Maths + a science"
+      },
+      "BA Economics and Management": {
+        courseContent: "Micro/macro, econometrics, strategy, marketing, operations, finance",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; TSA Section 1"
+      },
+      "MEng Engineering Science": {
+        courseContent: "General engineering (mechanical, civil, electrical, information), maths, design project",
         duration: "4 years (MEng)",
-        entryRequirements: "A*A*A (including Mathematics and Physics)"
+        entryRequirements: "A*A*A incl. Maths & Physics; PAT"
       },
-      "Business & Management": {
-        courseContent: "Strategy, Finance, Marketing, Entrepreneurship, International Business",
+      "BA English Language and Literature": {
+        courseContent: "Literature across periods, language, criticism; optional thesis",
         duration: "3 years (BA)",
-        entryRequirements: "A*A*A (no specific subjects)"
+        entryRequirements: "AAA incl. English Lit (or Lang & Lit)"
       },
-      "Medicine": {
-        courseContent: "Pre-clinical Medicine, Clinical Medicine, Pathology, Pharmacology",
-        duration: "6 years (BM BCh)",
-        entryRequirements: "A*AA (including Chemistry and Biology/Physics/Mathematics)"
+      "BA English and Modern Languages": {
+        courseContent: "English literature + modern language; linguistics/film/culture; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA incl. English; language reqs vary"
       },
-      "Law": {
-        courseContent: "Constitutional Law, Contract Law, Criminal Law, Jurisprudence, European Law",
+      "BA European and Middle Eastern Languages": {
+        courseContent: "One European + one Middle Eastern language; literature/culture; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language mix varies"
+      },
+      "BFA Fine Art": {
+        courseContent: "Studio practice (painting, sculpture, print, lens-based), art history, theory",
+        duration: "3 years (BFA)",
+        entryRequirements: "Portfolio + interview; academic offers vary"
+      },
+      "BA Geography": {
+        courseContent: "Human/physical geography, GIS, field courses, research methods, dissertation",
         duration: "3 years (BA)",
-        entryRequirements: "A*AA (no specific subjects)"
+        entryRequirements: "A*AA; Geography helpful"
       },
-      "Economics": {
-        courseContent: "Microeconomics, Macroeconomics, Economic History, Development Economics",
+      "BA History": {
+        courseContent: "British/European/World history options, methods, optional thesis",
         duration: "3 years (BA)",
-        entryRequirements: "A*AA (Mathematics strongly recommended)"
+        entryRequirements: "AAA; History helpful"
       },
-      "Psychology": {
-        courseContent: "Experimental Psychology, Social Psychology, Developmental Psychology, Neuroscience",
+      "BA History (Ancient and Modern)": {
+        courseContent: "Ancient history with modern periods; languages optional; methods training",
         duration: "3 years (BA)",
-        entryRequirements: "A*AA (Mathematics or Science recommended)"
+        entryRequirements: "AAA; History helpful"
       },
-      "English Literature": {
-        courseContent: "Anglo-Saxon Literature, Shakespeare, Romantic Poetry, Modern Literature",
+      "BA History and Economics": {
+        courseContent: "Economic theory/econometrics + historical analysis; optional thesis",
         duration: "3 years (BA)",
-        entryRequirements: "A*AA (including English Literature)"
+        entryRequirements: "A*AA; TSA Section 1; Maths recommended"
+      },
+      "BA History and English": {
+        courseContent: "Historical periods with English literature; interdisciplinary ‘link’ papers",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; English required"
+      },
+      "BA History and Modern Languages": {
+        courseContent: "History + a modern language; literature/culture; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language requirements vary"
+      },
+      "BA History and Politics": {
+        courseContent: "Political theory/IR + historical methods/periods; optional thesis",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; History/Politics helpful"
+      },
+      "BA History of Art": {
+        courseContent: "Art history from late antiquity to modern; visual analysis, theory, museums",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; subject background helpful"
+      },
+      "BA Human Sciences": {
+        courseContent: "Biology of humans, demography, behaviour, genetics, ecology, policy",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; science/maths helpful; TSA Section 1"
+      },
+      "BA Law (Jurisprudence)": {
+        courseContent: "Foundations of legal knowledge, jurisprudence, options; Europe year option",
+        duration: "3 years (BA), or 4 years with Law Studies in Europe",
+        entryRequirements: "AAA; LNAT"
+      },
+      "MEng Materials Science": {
+        courseContent: "Structure/properties of materials, processing, modelling, labs, research project",
+        duration: "4 years (MEng)",
+        entryRequirements: "A*AA incl. Maths & Physics; PAT"
+      },
+      "BA/MMath Mathematics": {
+        courseContent: "Pure/applied maths, analysis, algebra, probability, options, thesis (MMath)",
+        duration: "3 years (BA), 4 years (MMath)",
+        entryRequirements: "A*A*A/A*AA incl. Mathematics; MAT"
+      },
+      "BA/MMathCompSci Mathematics and Computer Science": {
+        courseContent: "Analysis/algebra/probability + algorithms, programming, logic; options",
+        duration: "3 years (BA), 4 years (MMathCompSci)",
+        entryRequirements: "A*AA incl. Maths; MAT"
+      },
+      "BA/MMathPhil Mathematics and Philosophy": {
+        courseContent: "Pure/applied maths + logic, language, epistemology, metaphysics",
+        duration: "3 years (BA), 4 years (MMathPhil)",
+        entryRequirements: "A*AA incl. Maths; MAT"
+      },
+      "BA/MMath Mathematics and Statistics": {
+        courseContent: "Probability, inference, stochastic processes, statistical learning, computation",
+        duration: "3 years (BA), 4 years (MMath)",
+        entryRequirements: "A*AA incl. Maths; MAT"
+      },
+      "BA/BM BCh Medicine": {
+        courseContent: "Pre-clinical medical sciences (BA in Medical Sciences) + clinical training (BM BCh)",
+        duration: "6 years (BA + BM BCh)",
+        entryRequirements: "A*AA incl. Chemistry + another science/maths; UCAT"
+      },
+      "BA Modern Languages": {
+        courseContent: "One/two languages, literature, linguistics, film/culture; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language requirements vary"
+      },
+      "BA Modern Languages and Linguistics": {
+        courseContent: "Modern language(s) with theoretical/applied linguistics; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language requirements vary"
+      },
+      "BA Music": {
+        courseContent: "Music history, analysis, composition, performance, ethnomusicology; options",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; musical background/ABRSM useful"
+      },
+      "BA Philosophy and Modern Languages": {
+        courseContent: "Core philosophy (logic, ethics, mind) + a modern language; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language requirements vary"
+      },
+      "BA Philosophy, Politics and Economics (PPE)": {
+        courseContent: "Logic/ethics + micro/macro/econometrics + politics/IR; wide options",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; TSA (both sections)"
+      },
+      "BA Philosophy and Theology": {
+        courseContent: "Philosophy (ethics, logic, metaphysics) + theology (biblical studies, doctrine)",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; Philosophy Test (PhilAT)"
+      },
+      "BA/MPhys Physics": {
+        courseContent: "Mechanics, EM, QM, thermal/statistical physics, math methods, labs; options",
+        duration: "3 years (BA), 4 years (MPhys)",
+        entryRequirements: "A*AA incl. Maths & Physics; PAT"
+      },
+      "BA/MPhysPhil Physics and Philosophy": {
+        courseContent: "Core physics with philosophy of physics, logic, metaphysics; advanced options",
+        duration: "3 years (BA), 4 years (MPhysPhil)",
+        entryRequirements: "A*AA incl. Maths & Physics; PAT"
+      },
+      "BA/MSci Psychology (Experimental)": {
+        courseContent: "Cognitive neuroscience, perception, social/developmental, statistics, labs; 4th-year research project (MSci)",
+        duration: "3 years (BA), 4 years (MSci in Experimental Psychology)",
+        entryRequirements: "A*AA; TSA Section 1"
+      },
+      "BA/MSci Psychology, Philosophy and Linguistics (PPL)": {
+        courseContent: "Psychology core + options in philosophy/linguistics; quantitative methods",
+        duration: "3 years (BA), 4 years (MSci available for Psychology pathway)",
+        entryRequirements: "A*AA; TSA Section 1"
+      },
+      "BA Religion and Asian and Middle Eastern Studies": {
+        courseContent: "Theology/religion with AMES language/culture; year abroad",
+        duration: "4 years (BA, year abroad)",
+        entryRequirements: "AAA; language requirements vary"
+      },
+      "BA Theology and Religion": {
+        courseContent: "Biblical studies, doctrine, ethics, history of religion, philosophy of religion",
+        duration: "3 years (BA)",
+        entryRequirements: "AAA; written work may apply"
       }
-    },
-    courseContent: "Functional Programming, Logic & Proof, Digital Systems, Machine Learning",
-    duration: "3 years (BA), 4 years (MEng)",
-    employmentRate: "99%",
+    }, 
+      distanceLearning: "Not available (campus only)",
+      workPlacement: "Varies by course (limited/optional)",
+      yearAbroad: "Available on language courses and some joint degrees",
+      employmentRate: "99%",
     researchRating: "5*"
   },
   {
