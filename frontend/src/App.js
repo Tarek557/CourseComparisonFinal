@@ -263,7 +263,7 @@ const universitiesData = [
   {
     id: 1,
     name: "University of Cambridge",
-    ranking: 2,
+    ranking: 1, // UK ranking - Complete University Guide
     location: "Cambridge, England",
     tuitionFeesUK: "£9,250",
     tuitionFeesInternational: "£37,293",
