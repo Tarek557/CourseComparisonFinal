@@ -957,10 +957,10 @@ const universitiesData = [
   {
     id: 3,
     name: "Imperial College London",
-    ranking: 5, 
+    ranking: 6, 
     location: "London, England", 
     tuitionFeesUK: "£9,535",
-    tuitionFeesInternational: "£43,300+ (course-dependent; Medicine higher)",
+    tuitionFeesInternational: "£43,300",
     entryRequirements: "Typical A*A*A–A*AAA. ESAT for Engineering & Physics; TMUA for Computing, Mathematics & Economics, Finance and Data Science; UCAT for Medicine.",
     ucasPoints: "N/A",
     scholarships: "Imperial Bursary, President's Undergraduate Scholarship, Faculty/Departmental awards",
@@ -1139,7 +1139,7 @@ const universitiesData = [
       distanceLearning: "Not available (campus only)",
       workPlacement: "Varies by course (many Year in Industry options)",
       yearAbroad: "Available on many courses (e.g., Engineering, Mathematics, Physics, Chemistry, Life Sciences)",
-      employmentRate: "N/A",
+      employmentRate: "97%",
   },
   {
     id: 4,
