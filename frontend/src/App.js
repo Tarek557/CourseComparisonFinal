@@ -9261,7 +9261,13 @@ function App() {
                 </div>
                 
                 {/* Sliding carousel container */}
-                <div className="overflow-hidden rounded-lg">
+                <div 
+                  className="overflow-hidden rounded-lg"
+                  style={{ 
+                    contain: 'layout style paint',
+                    willChange: 'transform'
+                  }}
+                >
                   {(() => {
                     const allRecs = getAllRecommendations();
                     const totalSets = Math.ceil(allRecs.length / 3);
