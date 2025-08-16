@@ -9236,24 +9236,6 @@ function App() {
                     <div className="text-lg font-semibold text-gray-800 dark:text-gray-200">Smart Recommendations</div>
                   <div className="flex items-center gap-2">
                     <div className="text-2xl">🎯</div>
-                    {/* Rotation indicator dots */}
-                    <div className="flex gap-1">
-                      {(() => {
-                        const totalSets = Math.ceil(getAllRecommendations().length / 3);
-                        const safeRecommendationIndex = Math.min(recommendationSetIndex, totalSets - 1);
-                        
-                        return Array.from({ length: totalSets }).map((_, index) => (
-                          <div
-                            key={index}
-                            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                              index === safeRecommendationIndex 
-                                ? 'bg-blue-500 dark:bg-blue-400' 
-                                : 'bg-gray-300 dark:bg-gray-600'
-                            }`}
-                          />
-                        ));
-                      })()}
-                    </div>
                   </div>
                 </div>
                 
