@@ -19,7 +19,6 @@ const getStudentReviews = (universityName) => {
           rating: 5,
           title: "World-class education but intense pressure",
           review: "Oxford is undeniably prestigious and the teaching quality is exceptional. The tutorial system really pushes you to think critically. However, the workload is immense and the pressure can be overwhelming at times. The social life is amazing though - lots of societies and formal events.",
-          course: "Philosophy, Politics & Economics",
           year: "3rd Year",
           date: "November 2024",
           helpful: 23,
@@ -29,7 +28,6 @@ const getStudentReviews = (universityName) => {
           rating: 4,
           title: "Amazing opportunities but very traditional",
           review: "The research opportunities here are incredible and the alumni network opens doors everywhere. Libraries are fantastic. Some traditions feel outdated though, and it can feel quite elitist. Great for academic growth but socially can be challenging if you don't fit the typical mold.",
-          course: "Computer Science",
           year: "2nd Year", 
           date: "October 2024",
           helpful: 18,
@@ -39,7 +37,6 @@ const getStudentReviews = (universityName) => {
           rating: 4,
           title: "Brilliant academics, expensive lifestyle",
           review: "Academically, Oxford is unmatched. The tutorial system means you get incredible one-on-one attention from world experts. The city is beautiful and full of history. Downside is how expensive everything is and the competitive atmosphere can be toxic. Worth it for career prospects though.",
-          course: "Medicine", 
           year: "4th Year",
           date: "September 2024",
           helpful: 31,
@@ -62,7 +59,6 @@ const getStudentReviews = (universityName) => {
           rating: 5,
           title: "Best decision I ever made",
           review: "Cambridge has exceeded all my expectations. The supervision system means you get incredible academic support, and the college system creates a real sense of community. Yes, it's challenging and the workload is heavy, but the opportunities and friendships you make are priceless.",
-          course: "Natural Sciences",
           year: "Final Year",
           date: "December 2024",
           helpful: 45,
@@ -72,7 +68,6 @@ const getStudentReviews = (universityName) => {
           rating: 4,
           title: "Amazing place but very demanding",
           review: "The teaching quality is exceptional and the research opportunities are world-class. Cambridge has amazing traditions and the college system is brilliant for making friends. However, the pressure is intense and mental health support could be better. Definitely worth it though!",
-          course: "Engineering",
           year: "2nd Year",
           date: "November 2024",
           helpful: 29,
@@ -82,7 +77,6 @@ const getStudentReviews = (universityName) => {
           rating: 3,
           title: "Great academics, challenging socially",
           review: "Academically brilliant - the labs, libraries and teaching are top tier. The college formal dinners and traditions are fun. But it can feel quite cliquey and the workload leaves little time for relaxation. Good career prospects but comes at a personal cost.",
-          course: "Mathematics",
           year: "3rd Year", 
           date: "October 2024",
           helpful: 16,
@@ -105,7 +99,6 @@ const getStudentReviews = (universityName) => {
           rating: 4,
           title: "Excellent for STEM, lacking social life",
           review: "Imperial is fantastic if you're serious about science/engineering. The facilities are cutting-edge and the teaching is rigorous. However, the social scene is quite limited compared to other London unis. Very career-focused environment which can feel intense but pays off with amazing job prospects.",
-          course: "Electrical Engineering",
           year: "Final Year",
           date: "December 2024",
           helpful: 34,
@@ -115,7 +108,6 @@ const getStudentReviews = (universityName) => {
           rating: 5,
           title: "Research opportunities are unmatched",
           review: "As a science student, Imperial offers incredible research opportunities even at undergrad level. The professors are world leaders in their fields. South Kensington location is amazing. Downside is the male-dominated environment and heavy focus on grades over wellbeing.",
-          course: "Physics",
           year: "3rd Year",
           date: "November 2024",
           helpful: 27,
@@ -125,7 +117,6 @@ const getStudentReviews = (universityName) => {
           rating: 3,
           title: "Great education but very stressful",
           review: "The academic standards are incredibly high which is both good and bad. You'll learn a lot and get excellent career prospects, but the pressure is immense. Not much focus on student welfare. Good if you can handle stress and are very academically focused.",
-          course: "Computer Science",
           year: "2nd Year",
           date: "October 2024", 
           helpful: 19,
@@ -148,7 +139,6 @@ const getStudentReviews = (universityName) => {
           rating: 5,
           title: "Perfect balance of academics and London life",
           review: "UCL gives you world-class education in the heart of London. The diversity here is incredible - you meet people from everywhere. Great mix of rigorous academics and amazing social opportunities. Bloomsbury location means you're close to everything. Highly recommend!",
-          course: "Psychology",
           year: "Final Year",
           date: "December 2024",
           helpful: 41,
@@ -158,7 +148,6 @@ const getStudentReviews = (universityName) => {
           rating: 4,
           title: "Great university, expensive city",
           review: "UCL has excellent facilities and the teaching quality is very good. Being in London opens up so many internship and networking opportunities. The student body is very international which is great. Main downside is how expensive London is - accommodation and living costs are brutal.",
-          course: "Economics",
           year: "2nd Year",
           date: "November 2024",
           helpful: 33,
@@ -168,10 +157,289 @@ const getStudentReviews = (universityName) => {
           rating: 4,
           title: "Diverse and academically strong",
           review: "Love the diversity at UCL - you're constantly learning from different perspectives. The campus is scattered around London which takes getting used to but means you really experience the city. Good academic support and career services. Can feel impersonal due to size though.",
-          course: "Architecture",
           year: "3rd Year",
           date: "September 2024",
           helpful: 22,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "University of Edinburgh": {
+      overallRating: 4.2,
+      totalReviews: 1156,
+      categories: {
+        "Academic Quality": 4.4,
+        "Campus Life": 4.3,
+        "Facilities": 4.1,
+        "Support": 4.0,
+        "Career Prospects": 4.3
+      },
+      reviews: [
+        {
+          rating: 5,
+          title: "Amazing city, world-class university",
+          review: "Edinburgh is absolutely magical - the city itself is stunning and full of culture. The university has a great reputation and the teaching is excellent. The campus buildings are beautiful and historic. Student life is fantastic with the Festival every year. Can be quite competitive but in a good way.",
+          year: "3rd Year",
+          date: "December 2024",
+          helpful: 38,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 4,
+          title: "Great academics, expensive accommodation",
+          review: "Really enjoying my time at Edinburgh. The lecturers are knowledgeable and passionate, and there are loads of societies to join. The city is incredible for student life. Only downsides are the accommodation costs and it can get quite cold! Overall very happy with my choice.",
+          year: "2nd Year",
+          date: "November 2024",
+          helpful: 24,
+          source: "Whatuni"
+        },
+        {
+          rating: 4,
+          title: "Historic prestige with modern outlook",
+          review: "Edinburgh combines tradition with innovation really well. The campus is spread across the city which means you really get to know Edinburgh. Academic standards are high and career services are good. Weather is challenging but the culture and nightlife more than make up for it.",
+          year: "Final Year",
+          date: "October 2024",
+          helpful: 19,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "King's College London": {
+      overallRating: 4.0,
+      totalReviews: 967,
+      categories: {
+        "Academic Quality": 4.2,
+        "Campus Life": 3.9,
+        "Facilities": 4.0,
+        "Support": 3.8,
+        "Career Prospects": 4.3
+      },
+      reviews: [
+        {
+          rating: 4,
+          title: "Central London location is unbeatable",
+          review: "King's location on the Strand is incredible - right in the heart of London with easy access to everything. The teaching quality is very good and there are excellent industry connections. Can feel a bit impersonal due to the size, but plenty of opportunities if you seek them out.",
+          year: "3rd Year",
+          date: "December 2024",
+          helpful: 26,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 5,
+          title: "Great for networking and career prospects",
+          review: "Loving King's so far. The alumni network is strong and being in London means loads of internship opportunities. The Strand campus is beautiful and the facilities are good. Academic standards are high but manageable. Social life takes effort but London has everything you could want.",
+          year: "2nd Year",
+          date: "November 2024",
+          helpful: 31,
+          source: "Whatuni"
+        },
+        {
+          rating: 3,
+          title: "Good university, very expensive location",
+          review: "King's has a solid reputation and the teaching is generally good. Being in central London is amazing for culture and opportunities but absolutely kills your budget. The campus is quite spread out which can be inconvenient. Good for career prospects though.",
+          year: "Final Year",
+          date: "October 2024",
+          helpful: 14,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "University of Manchester": {
+      overallRating: 4.1,
+      totalReviews: 1243,
+      categories: {
+        "Academic Quality": 4.2,
+        "Campus Life": 4.3,
+        "Facilities": 4.0,
+        "Support": 3.9,
+        "Career Prospects": 4.1
+      },
+      reviews: [
+        {
+          rating: 5,
+          title: "Buzzing student city with great university",
+          review: "Manchester is THE student city - there's always something happening and the nightlife is incredible. The university itself is massive which means loads of opportunities and societies. Teaching quality varies by department but generally good. Love the diversity and energy here.",
+          year: "2nd Year",
+          date: "December 2024",
+          helpful: 42,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 4,
+          title: "Large university with good facilities",
+          review: "Manchester is huge but that's both good and bad. Loads of facilities, clubs, and opportunities but can feel impersonal at times. The city is great for students - affordable compared to London with plenty to do. Academic quality is solid across most subjects.",
+          year: "3rd Year",
+          date: "November 2024",
+          helpful: 28,
+          source: "Whatuni"
+        },
+        {
+          rating: 4,
+          title: "Great student experience overall",
+          review: "Really enjoying Manchester. The university has a good reputation and the campus facilities are impressive. City center location means everything is walkable. Can be quite competitive to get into popular societies due to the size, but there's something for everyone.",
+          year: "Final Year",
+          date: "September 2024",
+          helpful: 21,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "University of Bristol": {
+      overallRating: 4.2,
+      totalReviews: 876,
+      categories: {
+        "Academic Quality": 4.4,
+        "Campus Life": 4.2,
+        "Facilities": 4.1,
+        "Support": 4.0,
+        "Career Prospects": 4.3
+      },
+      reviews: [
+        {
+          rating: 5,
+          title: "Beautiful campus, excellent academics",
+          review: "Bristol is stunning - the campus buildings are gorgeous and the city has such character. Academic standards are really high and the teaching is excellent. Great student atmosphere and the social scene is brilliant. Can feel a bit posh at times but overall fantastic experience.",
+          year: "3rd Year",
+          date: "December 2024",
+          helpful: 35,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 4,
+          title: "High academic standards, great city",
+          review: "Bristol challenges you academically which I love. The lecturers are passionate and knowledgeable. The city is perfect size - not too big, not too small, with great music scene and culture. Accommodation can be expensive but worth it for the experience.",
+          year: "2nd Year",
+          date: "November 2024",
+          helpful: 22,
+          source: "Whatuni"
+        },
+        {
+          rating: 4,
+          title: "Competitive but rewarding",
+          review: "Bristol has a great reputation for good reason. The academic standards are demanding but the support is there. Love the city - great food scene, music venues, and outdoor activities nearby. Student life is active and engaging. Definitely worth the high entry requirements.",
+          year: "Final Year",
+          date: "October 2024",
+          helpful: 17,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "University of Warwick": {
+      overallRating: 4.1,
+      totalReviews: 743,
+      categories: {
+        "Academic Quality": 4.3,
+        "Campus Life": 4.0,
+        "Facilities": 4.2,
+        "Support": 3.9,
+        "Career Prospects": 4.4
+      },
+      reviews: [
+        {
+          rating: 4,
+          title: "Modern campus with strong academics",
+          review: "Warwick has a really modern campus with excellent facilities. The teaching quality is high and there's a strong focus on employability. Being a campus university means everything is close together which creates a great community feel. Social life is good but can feel isolated from city life.",
+          year: "3rd Year",
+          date: "December 2024",
+          helpful: 29,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 5,
+          title: "Excellent career prospects and facilities",
+          review: "Warwick's reputation with employers is fantastic - loads of big companies recruit here. The campus is modern and well-equipped. Strong student union and societies. Only downside is the location isn't the most exciting, but Birmingham and Coventry are nearby for city life.",
+          year: "Final Year",
+          date: "November 2024",
+          helpful: 33,
+          source: "Whatuni"
+        },
+        {
+          rating: 3,
+          title: "Good university, boring location",
+          review: "Academic quality at Warwick is definitely high and the facilities are impressive. The campus community is strong. However, the location is pretty dull and you really need a car to get anywhere interesting. Good for focusing on studies but social life requires more effort.",
+          year: "2nd Year",
+          date: "October 2024",
+          helpful: 15,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "University of Glasgow": {
+      overallRating: 4.0,
+      totalReviews: 912,
+      categories: {
+        "Academic Quality": 4.2,
+        "Campus Life": 4.1,
+        "Facilities": 3.9,
+        "Support": 4.0,
+        "Career Prospects": 4.0
+      },
+      reviews: [
+        {
+          rating: 5,
+          title: "Beautiful campus, friendly atmosphere",
+          review: "Glasgow University has one of the most beautiful campuses in the UK - the Gothic buildings are stunning. The atmosphere is really friendly and welcoming, much less pretentious than some unis. Glasgow city is brilliant for students - affordable, great music scene, and amazing people.",
+          year: "2nd Year",
+          date: "December 2024",
+          helpful: 37,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 4,
+          title: "Great value and quality education",
+          review: "Glasgow offers excellent value for money compared to English universities. The teaching quality is good and there are plenty of opportunities to get involved. The city has amazing culture and nightlife. Weather can be challenging but the community spirit makes up for it.",
+          year: "3rd Year",
+          date: "November 2024",
+          helpful: 25,
+          source: "Whatuni"
+        },
+        {
+          rating: 4,
+          title: "Historic university with modern outlook",
+          review: "Love the blend of tradition and innovation at Glasgow. The campus is gorgeous and the academic standards are solid. Glasgow as a city is underrated - so much culture, great food, and friendly locals. Would definitely recommend, especially for the value.",
+          year: "Final Year",
+          date: "September 2024",
+          helpful: 18,
+          source: "The Student Room"
+        }
+      ]
+    },
+    "Durham University": {
+      overallRating: 4.3,
+      totalReviews: 634,
+      categories: {
+        "Academic Quality": 4.5,
+        "Campus Life": 4.4,
+        "Facilities": 4.2,
+        "Support": 4.1,
+        "Career Prospects": 4.4
+      },
+      reviews: [
+        {
+          rating: 5,
+          title: "Oxbridge alternative with amazing community",
+          review: "Durham has that collegiate feel like Oxbridge but less pretentious. The cathedral and castle make it incredibly beautiful. The college system creates brilliant friendships and community spirit. Academic standards are very high. Can feel small after a while but perfect for undergraduate experience.",
+          year: "3rd Year",
+          date: "December 2024",
+          helpful: 41,
+          source: "StudentCrowd"
+        },
+        {
+          rating: 4,
+          title: "Beautiful city, excellent academics",
+          review: "Durham is stunning - the UNESCO World Heritage site makes studying here feel special. Teaching quality is excellent and the small class sizes mean good support. College life is brilliant for making friends. Can feel a bit bubble-like but that creates a unique atmosphere.",
+          year: "2nd Year",
+          date: "November 2024",
+          helpful: 28,
+          source: "Whatuni"
+        },
+        {
+          rating: 4,
+          title: "Traditional but excellent quality",
+          review: "Durham maintains that traditional university feel while delivering excellent education. The college system is great for pastoral care and social life. City is small but charming. Can feel quite privileged/posh at times but the academic quality and student experience are top-notch.",
+          year: "Final Year",
+          date: "October 2024",
+          helpful: 23,
           source: "The Student Room"
         }
       ]
@@ -194,7 +462,6 @@ const getStudentReviews = (universityName) => {
         rating: 4,
         title: "Good overall experience",
         review: "Solid university with decent facilities and teaching quality. The campus life is pretty good and there are plenty of opportunities to get involved. Some courses are stronger than others, so do your research. Good value for money compared to London unis.",
-        course: "Various",
         year: "Graduate",
         date: "Recent",
         helpful: 12,
@@ -204,7 +471,6 @@ const getStudentReviews = (universityName) => {
         rating: 3,
         title: "Mixed experience",
         review: "Has its pros and cons like most universities. Some fantastic lecturers and some not so great ones. The student support services are reasonable but could be improved. Location and facilities are generally good. Worth considering but not outstanding.",
-        course: "Various",
         year: "Current Student",
         date: "Recent",
         helpful: 8,
