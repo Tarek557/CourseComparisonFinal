@@ -9199,58 +9199,40 @@ function App() {
                   </div>
                 </div>
                 
-                {/* Sliding carousel container */}
-                <div className="overflow-hidden rounded-lg">
+                {/* Fade in/out container - no transforms */}
+                <div className="rounded-lg">
                   {(() => {
                     const allRecs = getAllRecommendations();
                     const totalSets = Math.ceil(allRecs.length / 3);
                     const safeRecommendationIndex = Math.min(recommendationSetIndex, totalSets - 1);
+                    const startIdx = safeRecommendationIndex * 3;
+                    const currentRecommendations = allRecs.slice(startIdx, startIdx + 3);
                     
                     return (
-                      <div 
-                        className="flex transition-transform duration-700 ease-in-out"
-                        style={{ 
-                          transform: `translateX(-${safeRecommendationIndex * (100 / totalSets)}%)`,
-                          width: `${totalSets * 100}%`
-                        }}
-                      >
-                        {/* Render all recommendation sets for smooth sliding */}
-                        {Array.from({ length: totalSets }).map((_, setIndex) => {
-                          const startIdx = setIndex * 3;
-                          const setRecommendations = allRecs.slice(startIdx, startIdx + 3);
-                          
-                          return (
-                            <div 
-                              key={setIndex}
-                              className="w-full flex-shrink-0 space-y-2"
-                              style={{ width: `${100 / totalSets}%` }}
-                            >
-                              {setRecommendations.map((rec, index) => (
-                                <button
-                                  key={`${setIndex}-${index}`}
-                                  onClick={() => handleRecommendationClick(rec)}
-                                  className="w-full text-left p-2 mb-2 rounded-md bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 hover:from-blue-100 hover:to-purple-100 dark:hover:from-blue-900/40 dark:hover:to-purple-900/40 border border-blue-200 dark:border-blue-700 transition-all duration-200 group transform hover:scale-[1.02]"
-                                >
-                                  <div className="flex items-center justify-between">
-                                    <div className="flex-1">
-                                      <div className="text-sm font-medium text-blue-800 dark:text-blue-300 group-hover:text-blue-900 dark:group-hover:text-blue-200">
-                                        {rec.title}
-                                      </div>
-                                      <div className="text-xs text-gray-600 dark:text-gray-400">
-                                        {rec.reason}
-                                      </div>
-                                    </div>
-                                    <div className="text-blue-500 dark:text-blue-400 group-hover:text-blue-600 dark:group-hover:text-blue-300">
-                                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                      </svg>
-                                    </div>
-                                  </div>
-                                </button>
-                              ))}
+                      <div className="space-y-2 transition-opacity duration-500 ease-in-out">
+                        {currentRecommendations.map((rec, index) => (
+                          <button
+                            key={`fade-${safeRecommendationIndex}-${index}`}
+                            onClick={() => handleRecommendationClick(rec)}
+                            className="w-full text-left p-2 mb-2 rounded-md bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 hover:from-blue-100 hover:to-purple-100 dark:hover:from-blue-900/40 dark:hover:to-purple-900/40 border border-blue-200 dark:border-blue-700 transition-all duration-200 group hover:scale-[1.02]"
+                          >
+                            <div className="flex items-center justify-between">
+                              <div className="flex-1">
+                                <div className="text-sm font-medium text-blue-800 dark:text-blue-300 group-hover:text-blue-900 dark:group-hover:text-blue-200">
+                                  {rec.title}
+                                </div>
+                                <div className="text-xs text-gray-600 dark:text-gray-400">
+                                  {rec.reason}
+                                </div>
+                              </div>
+                              <div className="text-blue-500 dark:text-blue-400 group-hover:text-blue-600 dark:group-hover:text-blue-300">
+                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                              </div>
                             </div>
-                          );
-                        })}
+                          </button>
+                        ))}
                       </div>
                     );
                   })()}
