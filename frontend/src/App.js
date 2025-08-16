@@ -9056,7 +9056,17 @@ function App() {
               <div className="relative" ref={dropdownRef} style={{ zIndex: '10000' }}>
                 <div 
                   className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 cursor-pointer bg-white dark:bg-gray-700 min-w-64 transition-colors duration-300"
-                  onClick={() => setIsInstitutionDropdownOpen(!isInstitutionDropdownOpen)}
+                  onClick={() => {
+                    if (!isInstitutionDropdownOpen && dropdownRef.current) {
+                      const rect = dropdownRef.current.getBoundingClientRect();
+                      setDropdownPosition({
+                        top: rect.bottom + 4,
+                        left: rect.left,
+                        width: rect.width
+                      });
+                    }
+                    setIsInstitutionDropdownOpen(!isInstitutionDropdownOpen);
+                  }}
                 >
                   <div className="flex justify-between items-center">
                     <span className="text-gray-700 dark:text-gray-300">
