@@ -9115,7 +9115,7 @@ function App() {
                         .map(uni => (
                           <div
                             key={uni.id}
-                            className="px-3 py-2 hover:bg-gray-50 dark:hover:bg-gray-700 cursor-pointer flex items-center gap-2 transition-colors duration-300"
+                            className="px-3 py-2 cursor-pointer flex items-center gap-2"
                             onClick={(e) => {
                               e.stopPropagation();
                               handleInstitutionToggle(uni.name);
