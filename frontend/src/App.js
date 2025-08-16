@@ -9325,7 +9325,10 @@ function App() {
                   <span>Sliding recommendations every 4s</span>
                 </div>
               </div>
-              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300">
+              <div 
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 transition-colors duration-300"
+                style={{ contain: 'layout style paint', willChange: 'transform' }}
+              >
                 <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400 mb-2">THE</div>
                 <div className="text-gray-600 dark:text-gray-400">Ranking Source</div>
                 <div className="text-sm text-gray-500 dark:text-gray-500 mt-1">Complete University Guide UK</div>
