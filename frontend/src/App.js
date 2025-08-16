@@ -2078,60 +2078,395 @@ const universitiesData = [
   {
     id: 6,
     name: "King's College London",
-    ranking: 35,
-    location: "London, England",
-    tuitionFeesUK: "£9,250",
-    tuitionFeesInternational: "£33,450",
-    entryRequirements: "AAA (including Mathematics)",
-    ucasPoints: "144",
-    scholarships: "King's International Scholarship, Dickson Poon Scholarship",
-    programs: {
-      "Computer Science": {
-        courseContent: "Programming, Data Structures, AI, Cybersecurity, Software Engineering",
-        duration: "3 years (BSc), 4 years (MSci)",
-        entryRequirements: "AAA (including Mathematics)"
-      },
-      "Engineering": {
-        courseContent: "Electronic Engineering, Robotics, Telecommunications, Biomedical Engineering",
-        duration: "3 years (BEng), 4 years (MEng)",
-        entryRequirements: "AAA (including Mathematics and Physics)"
-      },
-      "Business & Management": {
-        courseContent: "International Management, Digital Business, Strategic Management",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA (no specific subjects)"
-      },
-      "Medicine": {
-        courseContent: "Medical Education, Clinical Skills, Research Methods, Global Health",
-        duration: "5 years (MBBS)",
-        entryRequirements: "AAA (including Chemistry and Biology)"
-      },
-      "Law": {
-        courseContent: "English Law, International Law, Human Rights Law, Medical Law",
-        duration: "3 years (LLB)",
-        entryRequirements: "AAA (no specific subjects)"
-      },
-      "Psychology": {
-        courseContent: "Clinical Psychology, Neuropsychology, Health Psychology",
-        duration: "3 years (BSc)",
-        entryRequirements: "AAA (including Mathematics/Science)"
-      },
-      "International Relations": {
-        courseContent: "Global Politics, Diplomatic Studies, International Security, Political Theory",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA (no specific subjects)"
-      },
-      "History": {
-        courseContent: "British History, European History, World History, Historical Methods",
-        duration: "3 years (BA)",
-        entryRequirements: "AAA (including History)"
-      }
+    ranking: 19, 
+  location: "London, England", 
+  tuitionFeesUK: "£9,535",
+  tuitionFeesInternational: "£25,000",
+  entryRequirements: "Typical A*AA–BBB; some courses require LNAT (Law) or UCAT (Medicine/Dentistry); check course pages for subject specifics",
+  ucasPoints: "N/A",
+  scholarships: "King’s Scholars, King’s Living Bursary, King’s International Scholarships",
+  programs: {
+    "Accounting & Finance": {
+      courseContent: "Financial Accounting, Corporate Finance, Econometrics, Valuation",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; Maths preferred"
     },
-    courseContent: "Programming, Data Structures, AI, Cybersecurity, Software Engineering",
-    duration: "3 years (BSc), 4 years (MSci)",
-    employmentRate: "92%", 
-    researchRating: "4*"
-  },
+    "Anatomy, Developmental & Human Biology": {
+      courseContent: "Human Anatomy, Developmental Biology, Neuroscience, Research Project",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA including Biology; Chemistry recommended"
+    },
+    "Ancient History": {
+      courseContent: "Greek & Roman History, Historiography, Languages in Translation, Dissertation",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; essay-based subject preferred"
+    },
+    "Artificial Intelligence": {
+      courseContent: "Algorithms, Machine Learning, Neural Networks, Data & Ethics",
+      duration: "3 years (or 4 years with Year in Industry/Abroad)",
+      entryRequirements: "A*AA–AAA including Mathematics"
+    },
+    "Artificial Intelligence and Philosophy": {
+      courseContent: "Logic, ML & AI, Ethics of AI, Philosophy of Mind",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; Maths preferred"
+    },
+    "Artificial Intelligence with a Year in Industry": {
+      courseContent: "ML & AI core, Software Engineering, Industrial Placement",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA including Mathematics"
+    },
+    "Biochemistry": {
+      courseContent: "Molecular Biology, Proteins & Enzymes, Genomics, Lab Research",
+      duration: "3 years (or 4 years with Year Abroad/Placement)",
+      entryRequirements: "A*AA–AAA including Chemistry"
+    },
+    "Biomedical Engineering": {
+      courseContent: "Signals & Systems, Biomechanics, Medical Imaging, Design Projects",
+      duration: "3 years (BEng) or 4 years (MEng)",
+      entryRequirements: "A*AA–AAA including Maths & Physics"
+    },
+    "Biomedical Science": {
+      courseContent: "Cell Biology, Physiology, Microbiology, Research Skills",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA including Biology or Chemistry"
+    },
+    "Business Management": {
+      courseContent: "Accounting, Strategy, Marketing, Analytics",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Chemistry": {
+      courseContent: "Organic, Inorganic & Physical Chemistry, Spectroscopy, Lab Practicals",
+      duration: "3 years (BSc) or 4 years (MSci)",
+      entryRequirements: "A*AA–AAA including Chemistry"
+    },
+    "Classics and the Ancient World": {
+      courseContent: "Latin/Greek (optional), Ancient History, Literature, Philosophy, Reception",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; essay-based subject preferred"
+    },
+    "Classical Studies with English": {
+      courseContent: "Ancient Literature/History, English Literature, Theory, Dissertation",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Comparative Literature": {
+      courseContent: "World Literatures, Theory, Translation, Cross-Cultural Studies",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; essay-based subject preferred"
+    },
+    "Comparative Literature with Film Studies": {
+      courseContent: "World Literatures, Film Theory, Text–Screen Analysis",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Computer Science": {
+      courseContent: "Programming (Java/Python), Algorithms, Systems & Networks, Databases, AI",
+      duration: "3 years (or 4 years with Year in Industry/Abroad)",
+      entryRequirements: "A*AA–AAA including Mathematics"
+    },
+    "Computer Science with a Year in Industry": {
+      courseContent: "CS Core, Software Engineering, 12-month Industrial Placement",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA including Mathematics"
+    },
+    "Culture, Media & Creative Industries": {
+      courseContent: "Media Industries, Cultural Policy, Audience & Data, Creative Economies",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Dental Therapy & Hygiene": {
+      courseContent: "Oral Biology, Periodontology, Clinical Skills, Patient Care",
+      duration: "3 years",
+      entryRequirements: "Typical ABB–BBB; interview, DBS/health checks"
+    },
+    "Dentistry": {
+      courseContent: "Pre-clinical Sciences, Sim Clinics, Restorative & Oral Surgery, Rotations",
+      duration: "5 years",
+      entryRequirements: "A*AA incl. Chemistry & Biology; UCAT"
+    },
+    "Digital Media and Culture": {
+      courseContent: "Digital Society, Platforms & Policy, Data Cultures, Creative Practice",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Economics": {
+      courseContent: "Micro, Macro, Econometrics, Maths for Economists",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; Maths required/preferred"
+    },
+    "Electronic Engineering": {
+      courseContent: "Circuits, Signals & Comms, Embedded Systems, Control, Design",
+      duration: "3 years (BEng) or 4 years (MEng)",
+      entryRequirements: "A*AA–AAA including Mathematics"
+    },
+    "English": {
+      courseContent: "Literature 1300–Present, Theory & Criticism, Option Modules, Dissertation",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA including English Literature/Language & Literature"
+    },
+    "English Language & Linguistics": {
+      courseContent: "Phonetics & Phonology, Syntax, Semantics, Sociolinguistics",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "English with Film Studies": {
+      courseContent: "English Literature, Film History/Theory, Adaptation, Optional Modules",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "European Politics": {
+      courseContent: "European Government, EU Integration, Comparative Politics, Methods",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "European Studies (French pathway) with a year abroad": {
+      courseContent: "European History/Politics, Advanced French, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; language required"
+    },
+    "European Studies (German pathway) with a year abroad": {
+      courseContent: "European History/Politics, Advanced German, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; language required"
+    },
+    "European Studies (Spanish pathway) with a year abroad": {
+      courseContent: "European History/Politics, Advanced Spanish, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; language required"
+    },
+    "Film Studies": {
+      courseContent: "Film History, Theory, World Cinema, Filmmaking/Video Essay",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Geography": {
+      courseContent: "Human & Physical Geography, GIS/Remote Sensing, Fieldwork",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; Geography not required"
+    },
+    "Geography & Environmental Science": {
+      courseContent: "Environmental Change, Policy, GIS, Field/Lab Methods",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Global Health & Social Medicine": {
+      courseContent: "Global Health Challenges, Bioethics, Policy, Methods",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Global Health & Social Science": {
+      courseContent: "Sociology of Health, Inequalities, Policy Analysis, Research Methods",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "History": {
+      courseContent: "Global History (300 AD–present), Sources & Methods, Optional Pathways",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; essay-based subject preferred"
+    },
+    "History & International Relations": {
+      courseContent: "World History, IR Theory, Security, Diplomacy",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "History & Political Economy": {
+      courseContent: "Economic History, Political Economy, Quantitative Methods",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "International Relations": {
+      courseContent: "IR Theory, Security, International Political Economy, Area Studies",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "International Development": {
+      courseContent: "Development Theory, Policy, Quant/Qual Methods, Field-led Cases",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Liberal Arts": {
+      courseContent: "Interdisciplinary Core, Major (choice of ~13), Electives across faculties",
+      duration: "3 years (4 years if Modern Languages major)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Law": {
+      courseContent: "Contract, Tort, Public Law, EU/International Law, Options",
+      duration: "3 years",
+      entryRequirements: "A*AA; LNAT required"
+    },
+    "Politics": {
+      courseContent: "Political Theory, Comparative Politics, Public Policy, Methods",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Political Economy": {
+      courseContent: "Politics & Economics Interface, Quant Methods, Policy Evaluation",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Philosophy": {
+      courseContent: "Logic, Epistemology, Ethics, Metaphysics, Mind & Language",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Philosophy & Modern Languages (French/German/Portuguese/Spanish) with a year abroad": {
+      courseContent: "Core Philosophy, Language & Culture, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; language required"
+    },
+    "Philosophy, Politics & Economics": {
+      courseContent: "Micro/Macro, Political Theory, Ethics/Public Policy, Econometrics",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; Maths helpful"
+    },
+    "Mathematics": {
+      courseContent: "Analysis, Algebra, Probability/Stats, Differential Equations",
+      duration: "3 years (or 4 years with Study Abroad)",
+      entryRequirements: "A*A*A–AAA including Mathematics"
+    },
+    "Mathematics & Philosophy": {
+      courseContent: "Pure/Applied Maths, Logic, Epistemology, Philosophy of Science",
+      duration: "3 years (or 4 years with Study Abroad)",
+      entryRequirements: "A*AA–AAA including Mathematics"
+    },
+    "Mathematics with Management & Finance": {
+      courseContent: "Core Maths, Statistics, Finance, Management",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA including Mathematics"
+    },
+    "Modern Languages (French/German/Spanish/Portuguese) with a year abroad": {
+      courseContent: "Language, Literature & Culture, Translation, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; language required"
+    },
+    "Music": {
+      courseContent: "Musicology, Analysis, Composition, Ethnomusicology; RAM performance option",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA; audition/portfolio elements"
+    },
+    "Neuroscience": {
+      courseContent: "Neuroanatomy, Systems Neuroscience, Neuropharmacology, Lab Project",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA including Biology/Chemistry"
+    },
+    "Neuroscience and Psychology": {
+      courseContent: "Brain & Behaviour, Cognitive Neuroscience, Methods, Research Project",
+      duration: "3 years (or 4 years with Year Abroad/Placement)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Nutritional Sciences": {
+      courseContent: "Human Nutrition, Metabolism, Public Health, Dietetics (elements)",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA including a science"
+    },
+    "Pharmacology": {
+      courseContent: "Drug Action, Physiology, Toxicology, Experimental Methods",
+      duration: "3 years (or 4 years with Year Abroad/MSci route)",
+      entryRequirements: "A*AA–AAA including Chemistry"
+    },
+    "Pharmacy": {
+      courseContent: "Pharmaceutics, Pharmacology, Clinical Pharmacy, Law & Ethics, Placements",
+      duration: "4 years",
+      entryRequirements: "AAA–AAB including Chemistry plus Biology/Maths; interview"
+    },
+    "Physiotherapy": {
+      courseContent: "MSK/Neuro/Cardiorespiratory, Rehabilitation, Clinical Placements",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA including a science; interview, DBS/health checks"
+    },
+    "Physics": {
+      courseContent: "Classical & Quantum Mechanics, EM, Statistical Physics, Labs",
+      duration: "3 years (BSc) or 4 years (MSci)",
+      entryRequirements: "A*AA–AAA including Mathematics; Physics required/preferred"
+    },
+    "Physics & Philosophy": {
+      courseContent: "Core Physics, Logic, Philosophy of Science, Foundations of QM",
+      duration: "3 years (BSc) or 4 years (MSci)",
+      entryRequirements: "A*AA–AAA including Mathematics"
+    },
+    "Psychology": {
+      courseContent: "Cognitive, Biological, Developmental, Social Psychology; Research Methods",
+      duration: "3 years (or 4 years with Year Abroad/Placement)",
+      entryRequirements: "A*AA–AAA; science/maths helpful"
+    },
+    "Psychology and Criminology": {
+      courseContent: "Core Psychology, Criminological Theory, Forensic Psychology, Methods",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "Religion, Philosophy & Ethics": {
+      courseContent: "World Religions, Ethics, Philosophy of Religion, Texts & Contexts",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "War Studies": {
+      courseContent: "Conflict & Security, Strategy, IR, History of War, Diplomacy",
+      duration: "3 years (optional year abroad)",
+      entryRequirements: "A*AA–AAA"
+    },
+    "War Studies & History": {
+      courseContent: "War & Society, Strategy, Global History, Research Project",
+      duration: "3 years",
+      entryRequirements: "A*AA–AAA"
+    },
+    "English Law & French Law": {
+      courseContent: "English Legal Core + French Law (Maîtrise 1), Year(s) Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA; LNAT required"
+    },
+    "English Law & German Law": {
+      courseContent: "English Legal Core + German Law (LLM/Erstes Staatsexamen elements)",
+      duration: "4 years",
+      entryRequirements: "A*AA; LNAT required"
+    },
+    "English Law & Spanish Law": {
+      courseContent: "English Legal Core + Spanish Law (Grado en Derecho), Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA; LNAT required"
+    },
+    "English Law & Australian Law": {
+      courseContent: "English Legal Core + Australian JD at partner, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA; LNAT required"
+    },
+    "English Law & Hong Kong Law": {
+      courseContent: "English Legal Core + Hong Kong JD at CUHK, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA; LNAT required"
+    },
+    "Medicine": {
+      courseContent: "Pre-clinical Sciences, Clinical Placements, SSCs, Electives",
+      duration: "5–6 years",
+      entryRequirements: "A*AA including Chemistry & Biology; UCAT"
+    },
+    "Extended Medical Degree Programme": {
+      courseContent: "Foundation Year + MBBS integrated, Clinical Placements",
+      duration: "6 years",
+      entryRequirements: "Contextual; UCAT"
+    },
+    "Medicine Maxfax Entry Programme": {
+      courseContent: "Accelerated MBBS for Dentists, Clinical Placements",
+      duration: "4 years",
+      entryRequirements: "Dental degree required; UCAT"
+    },
+    "Management & Modern Languages (French/German/Portuguese/Spanish) with a year abroad": {
+      courseContent: "Management Core, Advanced Language & Culture, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; language required"
+    },
+    "English & Modern Languages (French/German/Portuguese/Spanish) with a year abroad": {
+      courseContent: "English Literature, Language & Culture studies, Year Abroad",
+      duration: "4 years",
+      entryRequirements: "A*AA–AAA; language required"
+    }
+  }, 
+    distanceLearning: "Primarily campus-based; select online options exist",
+    workPlacement: "Varies by course (many offer placement or Year in Industry)",
+    yearAbroad: "Available on many programmes (especially languages/law partnerships)",
+    employmentRate: "90%",
+},
   {
     id: 7,
     name: "University of Manchester", 
