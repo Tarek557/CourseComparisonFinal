@@ -720,7 +720,7 @@ const universitiesData = [
   {
     id: 4,
     name: "University College London (UCL)",
-    ranking: 22,
+    ranking: 5, // UK ranking - Complete University Guide
     location: "London, England",
     tuitionFeesUK: "£9,250",
     tuitionFeesInternational: "£35,000",
