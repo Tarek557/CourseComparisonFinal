@@ -532,320 +532,170 @@ const universitiesData = [
     id: 1,
     name: "University of Cambridge",
     ranking: 1, // UK ranking - Complete University Guide
-    location: "Cambridge, England",
-    tuitionFeesUK: "£9,250",
-    tuitionFeesInternational: "£37,293",
-    entryRequirements: "A*AA (including Mathematics)",
-    ucasPoints: "144",
-    scholarships: "Gates Cambridge Scholarship, Trinity College Scholarships",
+    location: "Cambridge, England", 
+    tuitionFeesUK: "£9,535",
+    tuitionFeesInternational: "£27,024–£70,554 (course-dependent)",
+    entryRequirements: "Typical A*AA–A*A*A; admissions tests vary by course (e.g., TMUA, ESAT, LNAT, UCAT)",
+    ucasPoints: "N/A",
+    scholarships: "Cambridge Bursary Scheme, Cambridge Trust (Overseas), Stormzy Scholarship",
     programs: {
-      "Computer Science": {
-        courseContent: "Algorithms, Computer Systems, Software Engineering, Machine Learning, AI",
+      "Anglo-Saxon, Norse, and Celtic": {
+        courseContent: "Old English, Old Norse, Medieval Irish, Palaeography",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment/written work may be required"
+      },
+      "Archaeology": {
+        courseContent: "Archaeological Theory, Fieldwork, Bioarchaeology, Material Culture",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment/written work may be required"
+      },
+      "Architecture": {
+        courseContent: "Studio Design, History & Theory, Structures, Environmental Design",
+        duration: "3 years (BA), 4 years (MArch)",
+        entryRequirements: "A*AA; portfolio and college assessment"
+      },
+      "Asian and Middle Eastern Studies": {
+        courseContent: "Language Study (e.g., Arabic/Chinese/Japanese/Hebrew), Literature, History, Year Abroad",
+        duration: "4 years (includes a year abroad)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "Chemical Engineering and Biotechnology": {
+        courseContent: "Thermodynamics, Fluid Mechanics, Reaction Engineering, Bioprocessing",
         duration: "3 years (BA), 4 years (MEng)",
-        entryRequirements: "A*AA (including Mathematics)",
-        majors: [
-          {
-            name: "Computer Science",
-            description: "Core computer science with programming, algorithms, and theory",
-            courseContent: "Data Structures, Algorithms, Software Engineering, Operating Systems"
-          },
-          {
-            name: "Artificial Intelligence",
-            description: "Focus on machine learning, neural networks, and AI applications",
-            courseContent: "Machine Learning, Neural Networks, Computer Vision, Natural Language Processing"
-          },
-          {
-            name: "Cybersecurity",
-            description: "Information security, cryptography, and network security",
-            courseContent: "Cryptography, Network Security, Ethical Hacking, Digital Forensics"
-          },
-          {
-            name: "Data Science",
-            description: "Big data analysis, statistics, and data mining techniques",
-            courseContent: "Statistics, Data Mining, Big Data Analytics, Visualization"
-          },
-          {
-            name: "Software Engineering",
-            description: "Large-scale software development and project management",
-            courseContent: "Software Architecture, Agile Development, Testing, Project Management"
-          }
-        ]
+        entryRequirements: "A*A*A; ESAT required"
       },
-      "Software Engineering": {
-        courseContent: "Software Development, System Design, Project Management, Quality Assurance, Agile Methods",
-        duration: "3 years (BSc), 4 years (MEng)",
-        entryRequirements: "A*AA (including Mathematics)"
+      "Classics": {
+        courseContent: "Latin, Greek, Ancient History, Philosophy, Linguistics",
+        duration: "3 or 4 years (route dependent)",
+        entryRequirements: "A*AA; college assessment; 4-year route available for those without Latin"
       },
-      "Information Technology": {
-        courseContent: "IT Systems, Network Administration, Database Management, Cloud Computing, IT Security, System Integration",
-        duration: "3 years (BSc)",
-        entryRequirements: "A*AA (including Mathematics)"
+      "Computer Science": {
+        courseContent: "Programming (OCaml/Java/C/C++/Prolog), Algorithms, Systems, Machine Learning",
+        duration: "3 years (BA), 4 years (MEng)",
+        entryRequirements: "A*A*A; TMUA required (CSAT additionally at some Colleges)"
       },
-      "Information Systems": {
-        courseContent: "Business Information Systems, Enterprise Systems, IT Management, Systems Analysis, Data Management",
-        duration: "3 years (BSc)",
-        entryRequirements: "A*AA (including Mathematics)"
-      },
-      "Cybersecurity": {
-        courseContent: "Network Security, Cryptography, Ethical Hacking, Digital Forensics, Information Assurance, Cyber Law",
-        duration: "3 years (BSc), 4 years (MEng)",
-        entryRequirements: "A*AA (including Mathematics)"
-      },
-      "Data Science": {
-        courseContent: "Big Data Analytics, Machine Learning, Statistical Analysis, Data Mining, Visualization, Predictive Modeling",
-        duration: "3 years (BSc), 4 years (MSci)",
-        entryRequirements: "A*AA (including Mathematics)"
-      },
-      "Artificial Intelligence": {
-        courseContent: "Machine Learning, Neural Networks, Computer Vision, Natural Language Processing, Robotics, AI Ethics",
-        duration: "3 years (BSc), 4 years (MEng)",
-        entryRequirements: "A*AA (including Mathematics)"
-      },
-      "Computer Games Technology": {
-        courseContent: "Game Programming, 3D Graphics, Game Engines, Virtual Reality, Game Design, Interactive Media",
-        duration: "3 years (BSc), 4 years (MEng)",
-        entryRequirements: "A*AA (including Mathematics)"
-      },
-      "Web Development": {
-        courseContent: "Front-end Development, Back-end Development, Database Design, Web Security, Mobile Web Development",
-        duration: "3 years (BSc)",
-        entryRequirements: "A*AA (including Mathematics)"
-      },
-      "Mobile Computing": {
-        courseContent: "Mobile App Development, iOS Development, Android Development, Cross-platform Development, Mobile Security",
-        duration: "3 years (BSc)",
-        entryRequirements: "A*AA (including Mathematics)"
-      },
-      "Engineering": {
-        courseContent: "Mathematics, Physics, Materials Science, Thermodynamics, Design Engineering",
-        duration: "4 years (MEng)",
-        entryRequirements: "A*AA (including Mathematics and Physics)",
-        majors: [
-          {
-            name: "Mechanical Engineering",
-            description: "Design and manufacture of mechanical systems",
-            courseContent: "Thermodynamics, Fluid Mechanics, Materials Science, CAD Design"
-          },
-          {
-            name: "Electrical Engineering",
-            description: "Electronics, power systems, and electrical devices",
-            courseContent: "Circuit Analysis, Electronics, Power Systems, Signal Processing"
-          },
-          {
-            name: "Civil Engineering",
-            description: "Infrastructure, construction, and structural engineering",
-            courseContent: "Structural Analysis, Geotechnics, Construction Management, Surveying"
-          },
-          {
-            name: "Chemical Engineering",
-            description: "Chemical processes and materials transformation",
-            courseContent: "Process Design, Chemical Reactions, Heat Transfer, Process Control"
-          },
-          {
-            name: "Aerospace Engineering",
-            description: "Aircraft and spacecraft design and manufacturing",
-            courseContent: "Aerodynamics, Propulsion, Flight Mechanics, Spacecraft Design"
-          }
-        ]
-      },
-      "Business & Management": {
-        courseContent: "Strategy, Finance, Marketing, Operations, Organizational Behaviour",
-        duration: "3 years (BA)",
-        entryRequirements: "A*AA (no specific subjects)",
-        majors: [
-          {
-            name: "Business Administration",
-            description: "General business management and operations",
-            courseContent: "Management Theory, Business Strategy, Operations, Leadership"
-          },
-          {
-            name: "Finance",
-            description: "Financial markets, investment, and corporate finance",
-            courseContent: "Corporate Finance, Investment Analysis, Financial Markets, Risk Management"
-          },
-          {
-            name: "Marketing",
-            description: "Consumer behavior, branding, and digital marketing",
-            courseContent: "Consumer Psychology, Brand Management, Digital Marketing, Market Research"
-          },
-          {
-            name: "International Business",
-            description: "Global business operations and cross-cultural management",
-            courseContent: "Global Strategy, Cross-cultural Management, International Trade, Emerging Markets"
-          },
-          {
-            name: "Entrepreneurship",
-            description: "Starting and growing new business ventures",
-            courseContent: "Venture Creation, Innovation Management, Startup Finance, Business Planning"
-          }
-        ]
-      },
-      "Medicine": {
-        courseContent: "Anatomy, Physiology, Pathology, Clinical Medicine, Research Methods",
-        duration: "6 years (MB BChir)",
-        entryRequirements: "A*AA (including Chemistry and Biology)",
-        majors: [
-          {
-            name: "Medicine",
-            description: "General medical practice and clinical medicine",
-            courseContent: "Human Anatomy, Physiology, Pathology, Clinical Skills, Medical Ethics"
-          },
-          {
-            name: "Surgery",
-            description: "Surgical procedures and operative medicine",
-            courseContent: "Surgical Techniques, Anatomy, Perioperative Care, Surgical Ethics"
-          },
-          {
-            name: "Psychiatry",
-            description: "Mental health and psychiatric disorders",
-            courseContent: "Psychopathology, Therapeutic Techniques, Neuroscience, Mental Health Law"
-          },
-          {
-            name: "Pediatrics",
-            description: "Medical care of children and adolescents",
-            courseContent: "Child Development, Pediatric Diseases, Family Medicine, Child Psychology"
-          },
-          {
-            name: "Public Health",
-            description: "Population health and disease prevention",
-            courseContent: "Epidemiology, Health Policy, Disease Prevention, Global Health"
-          }
-        ]
-      },
-      "Law": {
-        courseContent: "Constitutional Law, Contract Law, Criminal Law, Human Rights, Legal Theory",
-        duration: "3 years (BA)",
-        entryRequirements: "A*AA (no specific subjects)",
-        majors: [
-          {
-            name: "Law",
-            description: "General legal studies and jurisprudence",
-            courseContent: "Constitutional Law, Contract Law, Tort Law, Criminal Law, Legal Theory"
-          },
-          {
-            name: "International Law",
-            description: "Global legal systems and international relations",
-            courseContent: "Public International Law, Human Rights Law, International Trade Law, Diplomacy"
-          },
-          {
-            name: "Criminal Law",
-            description: "Criminal justice system and criminal procedure",
-            courseContent: "Criminal Procedure, Evidence Law, Criminology, Forensic Science"
-          },
-          {
-            name: "Commercial Law",
-            description: "Business law and corporate legal practice",
-            courseContent: "Company Law, Commercial Contracts, Intellectual Property, Competition Law"
-          },
-          {
-            name: "Human Rights Law",
-            description: "Civil liberties and human rights protection",
-            courseContent: "Constitutional Rights, European Human Rights, Equality Law, Public Law"
-          }
-        ]
+      "Design": {
+        courseContent: "Design Thinking, Materials & Manufacturing, Systems Engineering, Sustainability",
+        duration: "3 years (BA), 4 years (MDes)",
+        entryRequirements: "A*AA; college admission assessment"
       },
       "Economics": {
-        courseContent: "Microeconomics, Macroeconomics, Econometrics, Mathematical Economics",
+        courseContent: "Microeconomics, Macroeconomics, Econometrics, Economic History/Policy",
         duration: "3 years (BA)",
-        entryRequirements: "A*AA (including Mathematics)",
-        majors: [
-          {
-            name: "Economics",
-            description: "General economic theory and analysis",
-            courseContent: "Microeconomics, Macroeconomics, Economic Theory, Statistical Analysis"
-          },
-          {
-            name: "Development Economics",
-            description: "Economic development in emerging countries",
-            courseContent: "Development Theory, International Aid, Poverty Analysis, Sustainable Development"
-          },
-          {
-            name: "Financial Economics",
-            description: "Financial markets and monetary policy",
-            courseContent: "Financial Markets, Monetary Policy, Investment Theory, Risk Analysis"
-          },
-          {
-            name: "Behavioral Economics",
-            description: "Psychology and decision-making in economics",
-            courseContent: "Decision Theory, Behavioral Finance, Experimental Economics, Consumer Psychology"
-          },
-          {
-            name: "Environmental Economics",
-            description: "Economics of environmental policy and sustainability",
-            courseContent: "Environmental Policy, Resource Economics, Climate Economics, Sustainability"
-          }
-        ]
+        entryRequirements: "A*A*A; TMUA required"
       },
-      "Psychology": {
-        courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods",
+      "Education": {
+        courseContent: "Education Theory, Psychology of Education, Policy, Sociology of Education",
         duration: "3 years (BA)",
-        entryRequirements: "A*AA (including Mathematics recommended)",
-        majors: [
-          {
-            name: "Psychology",
-            description: "General psychological science and behavior",
-            courseContent: "Cognitive Psychology, Social Psychology, Developmental Psychology, Research Methods"
-          },
-          {
-            name: "Clinical Psychology",
-            description: "Mental health treatment and therapy",
-            courseContent: "Abnormal Psychology, Therapeutic Techniques, Assessment, Clinical Practice"
-          },
-          {
-            name: "Educational Psychology",
-            description: "Learning and development in educational settings",
-            courseContent: "Learning Theory, Educational Assessment, Child Development, Special Education"
-          },
-          {
-            name: "Neuropsychology",
-            description: "Brain function and neurological disorders",
-            courseContent: "Neuroscience, Brain Imaging, Neurological Assessment, Cognitive Rehabilitation"
-          },
-          {
-            name: "Forensic Psychology",
-            description: "Psychology applied to legal and criminal contexts",
-            courseContent: "Criminal Behavior, Legal Psychology, Risk Assessment, Expert Testimony"
-          }
-        ]
+        entryRequirements: "A*AA; no University-set admission test"
       },
-      "English Literature": {
-        courseContent: "Medieval Literature, Renaissance Drama, Victorian Novel, Modern Poetry",
+      "Engineering": {
+        courseContent: "Mechanics & Structures, Materials, Electrical & Information Engineering, Design",
+        duration: "3 years (BA), 4 years (MEng)",
+        entryRequirements: "A*A*A; ESAT required (Maths 1, Maths 2, Physics)"
+      },
+      "English": {
+        courseContent: "Literature 1300–Present, Criticism & Theory, Drama, Poetry",
         duration: "3 years (BA)",
-        entryRequirements: "A*AA (including English Literature)",
-        majors: [
-          {
-            name: "English Literature",
-            description: "Study of literary works and literary criticism",
-            courseContent: "Literary Analysis, British Literature, World Literature, Creative Writing"
-          },
-          {
-            name: "Creative Writing",
-            description: "Fiction, poetry, and scriptwriting",
-            courseContent: "Fiction Writing, Poetry, Scriptwriting, Publishing, Literary Workshops"
-          },
-          {
-            name: "Comparative Literature",
-            description: "Literature across cultures and languages",
-            courseContent: "World Literature, Translation Studies, Cultural Studies, Literary Theory"
-          },
-          {
-            name: "English Language",
-            description: "Linguistics and language structure",
-            courseContent: "Linguistics, Phonetics, Syntax, Language History, Sociolinguistics"
-          },
-          {
-            name: "Drama and Theatre",
-            description: "Theatre studies and dramatic performance",
-            courseContent: "Theatre History, Performance Studies, Playwriting, Stage Management"
-          }
-        ]
+        entryRequirements: "A*AA; written work/college assessment"
+      },
+      "Geography": {
+        courseContent: "Human Geography, Physical Geography, GIS, Environmental Change",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "History and Modern Languages": {
+        courseContent: "European/Global History, Language & Literature, Cultural Studies, Year Abroad",
+        duration: "4 years (includes a year abroad)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "History and Politics": {
+        courseContent: "British/European/Global History, Political Thought, Comparative Politics",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "History of Art": {
+        courseContent: "Art History, Visual Culture, Criticism, Curatorial Studies",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; written work/college assessment"
+      },
+      "History": {
+        courseContent: "British/European/World History, Historiography, Primary Source Analysis",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "Human, Social, and Political Sciences": {
+        courseContent: "Politics, Sociology, Social Anthropology, International Relations",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "Land Economy": {
+        courseContent: "Law, Economics, Environmental Policy, Real Estate & Planning",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; some Colleges may specify subjects"
+      },
+      "Law": {
+        courseContent: "Criminal Law, Constitutional Law, Contract, Tort, EU/International Law",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; LNAT required"
+      },
+      "Linguistics": {
+        courseContent: "Phonetics & Phonology, Syntax, Semantics & Pragmatics, Language Acquisition",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "Mathematics": {
+        courseContent: "Pure & Applied Mathematics, Probability, Methods, Optional Part III topics",
+        duration: "3 years (BA), 4 years (MMath)",
+        entryRequirements: "A*A*A; TMUA at application; STEP (usually grades 1 in papers 2 & 3) in offer"
+      },
+      "Medicine": {
+        courseContent: "Pre-clinical Sciences, Anatomy & Physiology, Clinical Placements, Patient Care",
+        duration: "6 years",
+        entryRequirements: "A*A*A; UCAT required"
+      },
+      "Modern and Medieval Languages": {
+        courseContent: "Language(s), Literature & Culture, Linguistics, Year Abroad",
+        duration: "4 years (includes a year abroad)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "Music": {
+        courseContent: "Music History, Analysis, Composition, Performance/Practical Musicianship",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; audition/written work; college assessment"
+      },
+      "Natural Sciences": {
+        courseContent: "Options across Biology, Chemistry, Physics, Earth Sciences; Lab & Field Work",
+        duration: "3 years (BA), 4 years (MSci)",
+        entryRequirements: "A*A*A; ESAT required"
+      },
+      "Philosophy": {
+        courseContent: "Metaphysics, Epistemology, Ethics, Logic & Philosophy of Science",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "Psychological and Behavioural Sciences": {
+        courseContent: "Cognitive, Social, Developmental & Biological Psychology; Research Methods",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment (one science/maths useful)"
+      },
+      "Theology, Religion, and Philosophy of Religion": {
+        courseContent: "Biblical Studies, Theology, Philosophy of Religion, Ethics",
+        duration: "3 years (BA)",
+        entryRequirements: "A*AA; college assessment"
+      },
+      "Veterinary Medicine": {
+        courseContent: "Animal Biology, Pathology, Clinical Skills, Hospital & Practice Rotations",
+        duration: "6 years",
+        entryRequirements: "A*A*A; ESAT required"
       }
-    },
-    courseContent: "Algorithms, Computer Systems, Software Engineering, Machine Learning, AI", // Default for display
-    duration: "3 years (BA), 4 years (MEng)",
-    employmentRate: "98%",
-    researchRating: "5*"
-  },
+    }, 
+      distanceLearning: "Not available (campus only)",
+      workPlacement: "Varies by course",
+      yearAbroad: "Available for language courses and some joint degrees",
+      employmentRate: "N/A",
+},
+
   {
     id: 2,
     name: "University of Oxford",
