@@ -13150,6 +13150,7 @@ function App() {
               >
                 <option value="ranking">Sort by Ranking</option>
                 <option value="name">Sort from A-Z</option>
+                <option value="TuitionFeesUK">Sort by Tuition Fee</option>
               </select>
             </div>
             
